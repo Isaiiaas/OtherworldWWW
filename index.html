@@ -1616,6 +1616,42 @@
       if (!_eventsResp.ok) throw new Error('Failed to load events.json: ' + _eventsResp.status);
       window.OTHERWORLD_DATA = await _eventsResp.json();
 
+      // Defensive dedupe: collapse same-named entries and same (title,day,startTime)
+      // events within an entry. The reconcile cron used to leak duplicates for
+      // claimed camps; that's fixed at the source, but keeping this as a
+      // belt-and-suspenders so the page never shows stale dups.
+      (function dedupe(data) {
+        if (!data || !Array.isArray(data.entries)) return;
+        const evKey = e => (e.title || "").trim().toLowerCase()
+                         + "|" + (e.day || "").trim()
+                         + "|" + (e.startTime || "").trim();
+        const byName = new Map();
+        for (const entry of data.entries) {
+          const name = entry.name || "";
+          if (!byName.has(name)) {
+            byName.set(name, entry);
+            const seen = new Set();
+            entry.events = (entry.events || []).filter(ev => {
+              const k = evKey(ev);
+              if (seen.has(k)) return false;
+              seen.add(k);
+              return true;
+            });
+            continue;
+          }
+          // Merge: keep primary (first), pull in any net-new events from this dupe.
+          const primary = byName.get(name);
+          const seen = new Set((primary.events || []).map(evKey));
+          for (const ev of (entry.events || [])) {
+            const k = evKey(ev);
+            if (seen.has(k)) continue;
+            seen.add(k);
+            primary.events.push(ev);
+          }
+        }
+        data.entries = [...byName.values()];
+      })(window.OTHERWORLD_DATA);
+
       const DATA = window.OTHERWORLD_DATA;
       const MAP = window.OTHERWORLD_MAP || { pins: [] };
       const PIN_BY_NAME = new Map(

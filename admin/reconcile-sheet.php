@@ -207,6 +207,15 @@ foreach ($events['entries'] as $i => $entry) {
     }
     if ($claimKey !== null) {
         $summary['claimed_preserved'][] = $entry['name'];
+        // Consume the sheet group for this claimed camp so the leftover-sheet
+        // loop at the bottom doesn't re-append it as a "new" entry every
+        // reconcile run — that was creating one fresh duplicate per hour.
+        if (isset($bySheet[$entryKey])) {
+            unset($bySheet[$entryKey]);
+        } else {
+            $sheetMatch = fuzzy_find($entryKey, $bySheet);
+            if ($sheetMatch !== null) unset($bySheet[$sheetMatch]);
+        }
         continue;
     }
 
