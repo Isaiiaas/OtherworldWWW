@@ -1,1 +1,22 @@
+# Runtime state (password hashes, rate-limit data, logs — never source)
 claims.php
+claim_rate.php
+
+node_modules/
+# Backups and stray copies
+*.bak
+*.bak.*
+*.backup
+* copy.json
+* copy.js
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Logs
+*.log

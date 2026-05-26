@@ -1,0 +1,21 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parse-schedule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parse": "node parse-schedule.js",
+    "parse-map": "node parse-map.js",
+    "crop-map": "node scripts/crop-map.js",
+    "merge-agent-results": "node scripts/merge-agent-results.js",
+    "serve": "php -S 127.0.0.1:8000 -t ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
