@@ -172,6 +172,15 @@ function recompute_metadata(array $data): array {
 function save_events(array $data): void {
     global $EVENTS_FILE, $DATA_JS_FILE;
     $data = recompute_metadata($data);
+
+    // Bake the claim flag into events.json so the client (which reads events.json
+    // directly) can render the Verified pill without depending on data.js.
+    $claims = load_claims();
+    foreach ($data['entries'] as &$entry) {
+        $entry['claimed'] = isset($claims[$entry['name']]);
+    }
+    unset($entry);
+
     $json = json_encode(
         $data,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
@@ -355,7 +364,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $claims[$camp] = password_hash($pass, hash_algo());
             save_claims($claims);
-            regenerate_data_js();
+            save_events(load_events());
             record_claim_attempt();
             $_SESSION['camp'] = $camp;
             flash('ok', 'Claim successful. You can now edit events for "' . $camp . '".');
