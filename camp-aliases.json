@@ -1,0 +1,15 @@
+{
+  "_comment": "Maps misspelled or alternate camp names to their canonical display name. Applied across scripts/dedupe-events.php, admin/reconcile-sheet.php, changelog.php, and index.html (client-side dedup). Keys and values are display names; matching is done on canonical form (lowercased, accents stripped, leading 'The'/trailing 'Camp' removed, alpha-only). Add a new entry whenever a typo or alternate name lands and you don't want it to keep coming back as a duplicate camp. The value is the name that should be kept; the key is the variant to fold into it.",
+  "aliases": {
+    "The Saloon Saloon": "Salon Saloon",
+    "Jellyfish Longue": "Jellyfish Lounge",
+    "The Fafffway Village": "Fafway Village",
+    "Electric Circus Lounge": "Electric Circus",
+    "Chai Trance-Psytrance": "Chai Trance",
+    "Steeped in Art: Jon and Ethan": "Steeped in Art",
+    "The Cottage Theme & Sound Camp": "The Cottage",
+    "Crib Bar 2026: PUN GOES HERE": "Crib Bar",
+    "Reframing (Art Project/Camp)": "Reframing",
+    "Camp Mystic Redneck": "Mystic Redneck"
+  }
+}

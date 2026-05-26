@@ -9,19 +9,6 @@ declare(strict_types=1);
  *   php scripts/dedupe-events.php              # dry run — prints what would change
  *   php scripts/dedupe-events.php --apply      # write the changes
  *
- * Rules:
- *   - Entries are grouped by exact `.name`.
- *   - Primary entry = the FIRST occurrence by array index (the original, since
- *     reconcile appends new dupes at the end). Its fields (type, claimed,
- *     neighbourhood, etc.) win.
- *   - Events are merged: primary's events come first; events from later dupes
- *     are appended only if their (lowercased title, day, startTime) key isn't
- *     already present. Preserves owner edits while pulling in any net-new
- *     events the dupes carried.
- *   - Metadata counts (entryCount, eventCount, countsByType) are recomputed.
- *
- * Atomic via tmp+rename. Snapshots via /usr/local/bin/otherworld-snapshot if
- * available (matching dashboard.php / reconcile-sheet.php).
  */
 
 if (PHP_SAPI !== 'cli') {
@@ -31,14 +18,62 @@ if (PHP_SAPI !== 'cli') {
 
 $ROOT         = dirname(__DIR__);
 $EVENTS_FILE  = $ROOT . '/events.json';
+$ALIAS_FILE   = $ROOT . '/camp-aliases.json';
 $SNAPSHOT_BIN = '/usr/local/bin/otherworld-snapshot';
 
 $apply = in_array('--apply', $argv ?? [], true);
+
+/**
+ * Returns an array of [canonical(typo-name) => canonical-display-name].
+ * Empty if the file is missing/malformed.
+ */
+function load_alias_map(string $path): array {
+    if (!is_file($path)) return [];
+    $raw = @file_get_contents($path);
+    if ($raw === false) return [];
+    $data = json_decode($raw, true);
+    $aliases = (is_array($data) && isset($data['aliases']) && is_array($data['aliases']))
+        ? $data['aliases']
+        : [];
+    $out = [];
+    foreach ($aliases as $from => $to) {
+        $k = canonical((string)$from);
+        if ($k === '' || !is_string($to)) continue;
+        $out[$k] = (string)$to;
+    }
+    return $out;
+}
 
 function event_key(array $e): string {
     return strtolower(trim((string)($e['title'] ?? ''))) . '|'
          . trim((string)($e['day'] ?? '')) . '|'
          . trim((string)($e['startTime'] ?? ''));
+}
+
+/**
+ * Mirror of admin/reconcile-sheet.php::canonical(). Kept in sync manually —
+ * if reconcile changes its rules, update here too so the comparison stays
+ * meaningful.
+ */
+function canonical(string $name): string {
+    $s = trim($name);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    $s = preg_replace('/^the\s+/', '', $s);
+    $s = preg_replace('/,?\s*the\s*$/', '', $s);
+    $s = preg_replace('/\s+camp\s*$/', '', $s);
+    $s = preg_replace('/[^a-z0-9]+/', '', $s);
+    return (string)$s;
 }
 
 function recompute_metadata(array $data): array {
@@ -70,11 +105,15 @@ if (!is_array($data) || !isset($data['entries']) || !is_array($data['entries']))
     exit(1);
 }
 
-// ── Group + dedupe ────────────────────────────────────────────────────────
-$groups = []; // name => [['entry'=>..., 'index'=>i], ...]
+// ── Group by canonical name + dedupe ──────────────────────────────────────
+// Apply the alias map first so misspelled camp names ("The Saloon Saloon")
+// hash to the same canonical key as their canonical version ("Salon Saloon").
+$aliasMap = load_alias_map($ALIAS_FILE); // canonical(typo) => canonical-name
+$groups = []; // canonicalKey => [['entry'=>..., 'index'=>i], ...]
 foreach ($data['entries'] as $i => $entry) {
-    $name = (string)($entry['name'] ?? '');
-    $groups[$name][] = ['entry' => $entry, 'index' => $i];
+    $rawCanon = canonical((string)($entry['name'] ?? ''));
+    $key = isset($aliasMap[$rawCanon]) ? canonical($aliasMap[$rawCanon]) : $rawCanon;
+    $groups[$key][] = ['entry' => $entry, 'index' => $i];
 }
 
 $merged = [];
@@ -83,7 +122,7 @@ $removedEntries = 0;
 $mergedInEvents = 0;
 $droppedDupes   = 0;
 
-foreach ($groups as $name => $list) {
+foreach ($groups as $canon => $list) {
     if (count($list) === 1) {
         // Singleton — still scrub self-duplicate events within the entry.
         $entry = $list[0]['entry'];
@@ -98,22 +137,43 @@ foreach ($groups as $name => $list) {
         }
         $entry['events'] = $kept;
         if (count($kept) !== $before) {
-            $report[] = sprintf("  · %s — %d self-duplicate event(s) dropped", $name, $before - count($kept));
+            $report[] = sprintf(
+                "  · %s — %d self-duplicate event(s) dropped",
+                $entry['name'] ?? '(unnamed)', $before - count($kept)
+            );
         }
         $merged[] = $entry;
         continue;
     }
 
-    // Multi-entry group: merge events into primary (lowest index).
-    usort($list, fn($a, $b) => $a['index'] - $b['index']);
+    // Multi-entry group. Pick primary: a claimed entry wins; else the first
+    // occurrence by array index. Among multiple claimed (shouldn't happen
+    // post-fix, but does in current data), fall back to lowest index.
+    usort($list, function ($a, $b) {
+        $ac = !empty($a['entry']['claimed']) ? 0 : 1;
+        $bc = !empty($b['entry']['claimed']) ? 0 : 1;
+        if ($ac !== $bc) return $ac - $bc;
+        return $a['index'] - $b['index'];
+    });
+
     $primary = $list[0]['entry'];
+
+    // If the primary's name is itself an aliased (typo'd) variant, rewrite
+    // it to the canonical name so the merged entry doesn't carry the typo.
+    $primaryCanon = canonical((string)($primary['name'] ?? ''));
+    if (isset($aliasMap[$primaryCanon])) {
+        $primary['name'] = $aliasMap[$primaryCanon];
+    }
+
     $events  = is_array($primary['events'] ?? null) ? $primary['events'] : [];
     $seen    = [];
     foreach ($events as $ev) $seen[event_key($ev)] = true;
 
     $added   = 0;
     $skipped = 0;
+    $dupNames = [];
     for ($i = 1, $n = count($list); $i < $n; $i++) {
+        $dupNames[] = $list[$i]['entry']['name'] ?? '(unnamed)';
         foreach (($list[$i]['entry']['events'] ?? []) as $ev) {
             $k = event_key($ev);
             if (isset($seen[$k])) { $skipped++; continue; }
@@ -128,9 +188,13 @@ foreach ($groups as $name => $list) {
     $removedEntries   += count($list) - 1;
     $mergedInEvents   += $added;
     $droppedDupes     += $skipped;
+    $primaryTag = !empty($primary['claimed']) ? ' ✓ claimed' : '';
     $report[] = sprintf(
-        "  · %s — %d copies → 1 (kept primary at index %d, +%d net-new events, dropped %d duplicate events)",
-        $name, count($list), $list[0]['index'], $added, $skipped
+        "  · %s%s — %d copies → 1 (merged %s; +%d net-new events, dropped %d duplicate events)",
+        $primary['name'] ?? '(unnamed)', $primaryTag,
+        count($list),
+        implode(', ', $dupNames),
+        $added, $skipped
     );
 }
 
@@ -147,6 +211,34 @@ printf(
 if ($report) {
     echo "\nChanges:\n";
     foreach ($report as $line) echo $line . "\n";
+}
+
+// ── Fuzzy near-match report (not auto-merged) ─────────────────────────────
+// Surface typo-suspects so a human can decide whether to fold them in.
+$canonByEntry = [];
+foreach ($data['entries'] as $e) {
+    $c = canonical((string)($e['name'] ?? ''));
+    if ($c === '' || strlen($c) < 6) continue;
+    $canonByEntry[$c] = $e['name'] ?? '';
+}
+$canons = array_keys($canonByEntry);
+sort($canons);
+$fuzzy = [];
+for ($i = 0, $n = count($canons); $i < $n; $i++) {
+    for ($j = $i + 1; $j < $n; $j++) {
+        if (abs(strlen($canons[$i]) - strlen($canons[$j])) > 2) continue;
+        $d = levenshtein($canons[$i], $canons[$j]);
+        if ($d > 0 && $d <= 2) {
+            $fuzzy[] = sprintf(
+                "  · d=%d : %s  ↔  %s",
+                $d, $canonByEntry[$canons[$i]], $canonByEntry[$canons[$j]]
+            );
+        }
+    }
+}
+if ($fuzzy) {
+    echo "\nFuzzy near-matches (likely typos — not auto-merged, review by hand):\n";
+    foreach ($fuzzy as $line) echo $line . "\n";
 }
 
 if (!$apply) {

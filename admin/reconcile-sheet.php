@@ -125,7 +125,28 @@ foreach (['Day','Start Time','End Time','Camp','Neighbourhood','Event Name','Des
 
 $dataRows = array_slice($rows, $headerRowIdx + 1);
 
-// Group sheet rows by canonicalised camp name.
+// Load the alias map (typo'd name → canonical name) so sheet rows with a
+// misspelled camp resolve to the same group as the canonical entry instead
+// of being added as a new duplicate. Lives at repo-root /camp-aliases.json.
+$ALIAS_FILE = $ROOT . '/camp-aliases.json';
+$aliasMap = [];   // canonical(typo) => canonical-display-name
+if (is_file($ALIAS_FILE)) {
+    $aliasRaw = @file_get_contents($ALIAS_FILE);
+    $aliasData = $aliasRaw !== false ? json_decode($aliasRaw, true) : null;
+    if (is_array($aliasData) && isset($aliasData['aliases']) && is_array($aliasData['aliases'])) {
+        foreach ($aliasData['aliases'] as $from => $to) {
+            $k = canonical((string)$from);
+            if ($k !== '' && is_string($to)) $aliasMap[$k] = (string)$to;
+        }
+    }
+}
+// Helper: resolve a name through the alias map and return its canonical key.
+$resolveCanon = static function (string $name) use ($aliasMap): string {
+    $c = canonical($name);
+    return $aliasMap[$c] !== null && isset($aliasMap[$c]) ? canonical($aliasMap[$c]) : $c;
+};
+
+// Group sheet rows by canonicalised camp name (after alias resolution).
 $bySheet = [];
 $skipped = ['no_camp' => 0, 'no_title' => 0, 'section_header' => 0];
 
@@ -141,7 +162,11 @@ foreach ($dataRows as $r) {
     if ($camp === '')  { $skipped['no_camp']++;  continue; }
     if ($title === '') { $skipped['no_title']++; continue; }
 
-    $key = canonical($camp);
+    $rawKey = canonical($camp);
+    $key    = isset($aliasMap[$rawKey]) ? canonical($aliasMap[$rawKey]) : $rawKey;
+    // If the alias applied, rewrite the display name to the canonical one so
+    // any new entries we create downstream use the corrected spelling.
+    if (isset($aliasMap[$rawKey])) $camp = $aliasMap[$rawKey];
     if (!isset($bySheet[$key])) {
         $bySheet[$key] = [
             'displayName'   => $camp,
@@ -190,7 +215,17 @@ $summary = [
 // can never be fuzz-bound to more than one entry.
 $entriesNeedingFuzzy = []; // entry index => canonical key
 foreach ($events['entries'] as $i => $entry) {
-    $entryKey = canonical((string)($entry['name'] ?? ''));
+    $rawEntryKey = canonical((string)($entry['name'] ?? ''));
+    // Resolve through the alias map so a misspelled entry name still matches
+    // the canonical sheet group. Also rewrite the entry's own display name to
+    // the canonical form so the corrected spelling persists in events.json.
+    if (isset($aliasMap[$rawEntryKey])) {
+        $events['entries'][$i]['name'] = $aliasMap[$rawEntryKey];
+        $entry['name'] = $aliasMap[$rawEntryKey];
+        $entryKey = canonical($aliasMap[$rawEntryKey]);
+    } else {
+        $entryKey = $rawEntryKey;
+    }
 
     // Claim check: exact first, then fuzzy.
     $claimKey = isset($claimedCanonical[$entryKey]) ? $entryKey : null;

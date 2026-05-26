@@ -1612,45 +1612,96 @@
   <script src="./map-data.js?v=1779772892"></script>
   <script>
     (async () => {
-      const _eventsResp = await fetch('./events.json', { cache: 'no-store' });
+      const [_eventsResp, _aliasResp] = await Promise.all([
+        fetch('./events.json',       { cache: 'no-store' }),
+        fetch('./camp-aliases.json', { cache: 'no-store' }).catch(() => null),
+      ]);
       if (!_eventsResp.ok) throw new Error('Failed to load events.json: ' + _eventsResp.status);
       window.OTHERWORLD_DATA = await _eventsResp.json();
+      const _aliasData = (_aliasResp && _aliasResp.ok) ? await _aliasResp.json().catch(() => null) : null;
 
-      // Defensive dedupe: collapse same-named entries and same (title,day,startTime)
-      // events within an entry. The reconcile cron used to leak duplicates for
-      // claimed camps; that's fixed at the source, but keeping this as a
-      // belt-and-suspenders so the page never shows stale dups.
-      (function dedupe(data) {
+      // Defensive dedupe: collapse entries whose names canonicalize to the
+      // same key (so "Orcar" and "Orcar Camp" / "Magic Stick" and "The Magic
+      // Stick" fold together) AND apply the typo-alias map from
+      // camp-aliases.json so misspelled camp names ("The Saloon Saloon")
+      // merge with their canonical version. Also collapses same
+      // (title,day,startTime) events within each entry. The reconcile cron
+      // used to leak duplicates for claimed camps; that's fixed at the
+      // source, but this is the belt-and-suspenders so the page never shows
+      // stale dups.
+      //
+      // Keep in sync with admin/reconcile-sheet.php::canonical() and
+      // scripts/dedupe-events.php::canonical(), and with the alias map.
+      (function dedupe(data, aliasData) {
         if (!data || !Array.isArray(data.entries)) return;
+        const canonical = name => {
+          if (!name) return "";
+          let s = String(name).trim().toLowerCase();
+          // Strip accents.
+          s = s.normalize("NFKD").replace(/[̀-ͯ]/g, "");
+          s = s.replace(/^the\s+/, "");
+          s = s.replace(/,?\s*the\s*$/, "");
+          s = s.replace(/\s+camp\s*$/, "");
+          s = s.replace(/[^a-z0-9]+/g, "");
+          return s;
+        };
+        // Build alias map: canonical(typo) -> canonical(target).
+        const aliasMap = new Map();
+        const rawAliases = (aliasData && aliasData.aliases) || {};
+        for (const [from, to] of Object.entries(rawAliases)) {
+          const k = canonical(from);
+          if (k && typeof to === "string") aliasMap.set(k, canonical(to));
+        }
+        const resolveKey = name => {
+          const c = canonical(name);
+          return aliasMap.get(c) || c;
+        };
         const evKey = e => (e.title || "").trim().toLowerCase()
                          + "|" + (e.day || "").trim()
                          + "|" + (e.startTime || "").trim();
-        const byName = new Map();
-        for (const entry of data.entries) {
-          const name = entry.name || "";
-          if (!byName.has(name)) {
-            byName.set(name, entry);
-            const seen = new Set();
-            entry.events = (entry.events || []).filter(ev => {
-              const k = evKey(ev);
-              if (seen.has(k)) return false;
-              seen.add(k);
-              return true;
-            });
-            continue;
+        const groups = new Map(); // canonicalKey -> array of {entry, index}
+        data.entries.forEach((entry, index) => {
+          const k = resolveKey(entry.name || "");
+          if (!groups.has(k)) groups.set(k, []);
+          groups.get(k).push({ entry, index });
+        });
+        const out = [];
+        for (const list of groups.values()) {
+          // Primary: claimed wins, otherwise lowest index.
+          list.sort((a, b) => {
+            const ac = a.entry.claimed ? 0 : 1;
+            const bc = b.entry.claimed ? 0 : 1;
+            if (ac !== bc) return ac - bc;
+            return a.index - b.index;
+          });
+          const primary = list[0].entry;
+          // If the primary's name is itself an aliased (typo'd) variant,
+          // rewrite to the canonical display name from the alias map.
+          const primaryCanon = canonical(primary.name || "");
+          for (const [from, to] of Object.entries(rawAliases)) {
+            if (canonical(from) === primaryCanon) { primary.name = to; break; }
           }
-          // Merge: keep primary (first), pull in any net-new events from this dupe.
-          const primary = byName.get(name);
-          const seen = new Set((primary.events || []).map(evKey));
-          for (const ev of (entry.events || [])) {
+          // Dedupe primary's own events (first-wins), then append any net-new
+          // events from the other dupes in the group.
+          const seen = new Set();
+          primary.events = (primary.events || []).filter(ev => {
             const k = evKey(ev);
-            if (seen.has(k)) continue;
+            if (seen.has(k)) return false;
             seen.add(k);
-            primary.events.push(ev);
+            return true;
+          });
+          for (let i = 1; i < list.length; i++) {
+            for (const ev of (list[i].entry.events || [])) {
+              const k = evKey(ev);
+              if (seen.has(k)) continue;
+              seen.add(k);
+              primary.events.push(ev);
+            }
           }
+          out.push(primary);
         }
-        data.entries = [...byName.values()];
-      })(window.OTHERWORLD_DATA);
+        data.entries = out;
+      })(window.OTHERWORLD_DATA, _aliasData);
 
       const DATA = window.OTHERWORLD_DATA;
       const MAP = window.OTHERWORLD_MAP || { pins: [] };

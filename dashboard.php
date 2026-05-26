@@ -79,6 +79,73 @@ function save_claims(array $claims): void {
     @chmod($CLAIMS_FILE, 0640);
 }
 
+/**
+ * Mirror of admin/reconcile-sheet.php::canonical(). Used for claim lookups
+ * via the alias map so that a claim made under a typo'd name (e.g.,
+ * "Electric Circus Lounge") still unlocks the canonical entry ("Electric
+ * Circus") after dedup. Keep in sync with the other canonical()
+ * implementations across the repo.
+ */
+function canonical(string $name): string {
+    $s = trim($name);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    $s = preg_replace('/^the\s+/', '', $s);
+    $s = preg_replace('/,?\s*the\s*$/', '', $s);
+    $s = preg_replace('/\s+camp\s*$/', '', $s);
+    $s = preg_replace('/[^a-z0-9]+/', '', $s);
+    return (string)$s;
+}
+
+/**
+ * Loads camp-aliases.json (typo display name => canonical display name) and
+ * returns it keyed by canonical(typo) for fast lookup. Cached per request.
+ */
+function load_alias_map(): array {
+    static $cache = null;
+    if ($cache !== null) return $cache;
+    global $ROOT;
+    $path = $ROOT . '/camp-aliases.json';
+    $cache = [];
+    if (!is_file($path)) return $cache;
+    $data = json_decode((string)@file_get_contents($path), true);
+    $aliases = (is_array($data) && isset($data['aliases']) && is_array($data['aliases']))
+        ? $data['aliases'] : [];
+    foreach ($aliases as $from => $to) {
+        $k = canonical((string)$from);
+        if ($k !== '' && is_string($to)) $cache[$k] = (string)$to;
+    }
+    return $cache;
+}
+
+/**
+ * Finds which key in $claims (if any) corresponds to $camp, treating the
+ * alias map as an equivalence relation on canonical form. Returns the
+ * matching claim key (the original string the hash is stored under), or
+ * null if no claim covers this camp.
+ */
+function find_claim_key(array $claims, string $camp, array $aliasMap): ?string {
+    if (isset($claims[$camp])) return $camp;
+    $canon = canonical($camp);
+    $target = isset($aliasMap[$canon]) ? canonical($aliasMap[$canon]) : $canon;
+    foreach ($claims as $k => $_) {
+        $kc = canonical((string)$k);
+        $kt = isset($aliasMap[$kc]) ? canonical($aliasMap[$kc]) : $kc;
+        if ($kt === $target) return (string)$k;
+    }
+    return null;
+}
+
 function client_ip(): string {
     // REMOTE_ADDR is the only thing we can trust without a configured reverse
     // proxy. X-Forwarded-For would be spoofable by any client.
@@ -175,9 +242,12 @@ function save_events(array $data): void {
 
     // Bake the claim flag into events.json so the client (which reads events.json
     // directly) can render the Verified pill without depending on data.js.
-    $claims = load_claims();
+    // Alias-aware: a claim under "Electric Circus Lounge" still marks the
+    // canonical "Electric Circus" entry as claimed.
+    $claims    = load_claims();
+    $aliasMap  = load_alias_map();
     foreach ($data['entries'] as &$entry) {
-        $entry['claimed'] = isset($claims[$entry['name']]);
+        $entry['claimed'] = find_claim_key($claims, (string)$entry['name'], $aliasMap) !== null;
     }
     unset($entry);
 
@@ -207,9 +277,10 @@ function save_events(array $data): void {
 function regenerate_data_js(?array $data = null): void {
     global $DATA_JS_FILE;
     if ($data === null) $data = load_events();
-    $claims = load_claims();
+    $claims   = load_claims();
+    $aliasMap = load_alias_map();
     foreach ($data['entries'] as &$entry) {
-        $entry['claimed'] = isset($claims[$entry['name']]);
+        $entry['claimed'] = find_claim_key($claims, (string)$entry['name'], $aliasMap) !== null;
     }
     unset($entry);
     $body = "window.OTHERWORLD_DATA = "
@@ -353,9 +424,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $claims  = load_claims();
         $data    = load_events();
 
+        $aliasMap = load_alias_map();
         if (get_entry_index($data, $camp) === null) {
             flash('err', 'Camp not found.');
-        } elseif (isset($claims[$camp])) {
+        } elseif (find_claim_key($claims, $camp, $aliasMap) !== null) {
             flash('err', 'This camp is already claimed. Use the unlock form instead.');
         } elseif (strlen($pass) < $MIN_PASS_LEN) {
             flash('err', "Passphrase must be at least {$MIN_PASS_LEN} characters.");
@@ -373,15 +445,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($action === 'unlock') {
-        $camp   = trim((string)($_POST['camp'] ?? ''));
-        $pass   = (string)($_POST['passphrase'] ?? '');
-        $claims = load_claims();
+        $camp     = trim((string)($_POST['camp'] ?? ''));
+        $pass     = (string)($_POST['passphrase'] ?? '');
+        $claims   = load_claims();
+        $aliasMap = load_alias_map();
+        $key      = find_claim_key($claims, $camp, $aliasMap);
 
-        if (!isset($claims[$camp])) {
+        if ($key === null) {
             flash('err', 'That camp has not been claimed yet. Set a passphrase to claim it.');
-        } elseif (!password_verify($pass, $claims[$camp])) {
+        } elseif (!password_verify($pass, $claims[$key])) {
             flash('err', 'Wrong passphrase.');
         } else {
+            // If the claim is stored under an aliased / typo'd name, migrate
+            // it to the canonical name on successful unlock so future lookups
+            // don't have to scan.
+            if ($key !== $camp) {
+                $claims[$camp] = $claims[$key];
+                unset($claims[$key]);
+                save_claims($claims);
+            }
             $_SESSION['camp'] = $camp;
             flash('ok', 'Unlocked "' . $camp . '".');
         }
@@ -450,7 +532,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // ── View state ────────────────────────────────────────────────────────────
-$claims     = load_claims();
+$claims          = load_claims();
+$aliasMapForView = load_alias_map();
 $data       = load_events();
 $authedCamp = $_SESSION['camp'] ?? null;
 $flashes    = read_flashes();
@@ -829,7 +912,7 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
       <select id="camp-picker" autofocus>
         <option value="">— Select a camp —</option>
         <?php foreach ($entries as $entry): ?>
-          <option value="<?= h($entry['name']) ?>"><?= h($entry['name']) ?><?= isset($claims[$entry['name']]) ? '  ✓ claimed' : '' ?></option>
+          <option value="<?= h($entry['name']) ?>"><?= h($entry['name']) ?><?= find_claim_key($claims, (string)$entry['name'], $aliasMapForView) !== null ? '  ✓ claimed' : '' ?></option>
         <?php endforeach; ?>
       </select>
 

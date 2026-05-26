@@ -54,15 +54,36 @@ function canonical(string $name): string {
     return (string)$s;
 }
 
-function event_key(string $camp, string $title, string $day): string {
-    return canonical($camp) . '|' . strtolower(trim($title)) . '|' . strtolower(trim($day));
+/**
+ * Loads camp-aliases.json and returns [canonical(typo) => canonical-name]
+ * so misspelled names match the canonical version when comparing sides.
+ */
+function load_alias_map(string $path): array {
+    if (!is_file($path)) return [];
+    $raw = @file_get_contents($path);
+    if ($raw === false) return [];
+    $data = json_decode($raw, true);
+    $aliases = (is_array($data) && isset($data['aliases']) && is_array($data['aliases']))
+        ? $data['aliases'] : [];
+    $out = [];
+    foreach ($aliases as $from => $to) {
+        $k = canonical((string)$from);
+        if ($k !== '' && is_string($to)) $out[$k] = (string)$to;
+    }
+    return $out;
+}
+
+function event_key(string $camp, string $title, string $day, array $aliasMap): string {
+    $c = canonical($camp);
+    if (isset($aliasMap[$c])) $c = canonical($aliasMap[$c]);
+    return $c . '|' . strtolower(trim($title)) . '|' . strtolower(trim($day));
 }
 
 /**
  * Fetch the sheet and build a set of (camp,title,day) keys.
  * Returns [keys, error] — keys is empty if the fetch failed.
  */
-function fetch_sheet_keys(string $url): array {
+function fetch_sheet_keys(string $url, array $aliasMap): array {
     $ctx = stream_context_create([
         'http' => [
             'timeout'         => 20,
@@ -123,7 +144,7 @@ function fetch_sheet_keys(string $url): array {
         $title = trim((string)($r[$headerIndex['Event Name']] ?? ''));
         $day   = trim((string)($r[$headerIndex['Day']] ?? ''));
         if ($camp === '' || $title === '') continue;
-        $keys[event_key($camp, $title, $day)] = true;
+        $keys[event_key($camp, $title, $day, $aliasMap)] = true;
     }
     return [$keys, null];
 }
@@ -144,7 +165,8 @@ if (!is_file($EVENTS_FILE)) {
 }
 
 // ── Fetch sheet keys ──────────────────────────────────────────────────────
-[$sheetKeys, $sheetError] = fetch_sheet_keys($SHEET_URL);
+$aliasMap = load_alias_map($ROOT . '/camp-aliases.json');
+[$sheetKeys, $sheetError] = fetch_sheet_keys($SHEET_URL, $aliasMap);
 
 // ── Compute the missing-from-sheet rows ───────────────────────────────────
 $missing = [];
@@ -158,7 +180,7 @@ if ($sheetError === null && $eventsError === null) {
             $totalEvents++;
             $title = (string)($e['title'] ?? '');
             $day   = (string)($e['day'] ?? '');
-            $key = event_key($camp, $title, $day);
+            $key = event_key($camp, $title, $day, $aliasMap);
             if (isset($sheetKeys[$key])) continue;
             $missing[] = [
                 'camp'      => $camp,
