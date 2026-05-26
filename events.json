@@ -14023,12 +14023,12 @@
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Friday",
-                    "startTime": "00:00",
-                    "endTime": "23:30",
+                    "startTime": "06:00",
+                    "endTime": "05:30",
                     "durationHours": 23.5,
-                    "crossesMidnight": false,
+                    "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 23:30"
+                    "rawTimeText": "Friday 06:00 - 05:30"
                 },
                 {
                     "owner": "MOUTH",
@@ -14036,12 +14036,12 @@
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Saturday",
-                    "startTime": "00:00",
-                    "endTime": "23:30",
+                    "startTime": "06:00",
+                    "endTime": "05:30",
                     "durationHours": 23.5,
-                    "crossesMidnight": false,
+                    "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 23:30"
+                    "rawTimeText": "Saturday 06:00 - 05:30"
                 },
                 {
                     "owner": "MOUTH",
@@ -14049,12 +14049,12 @@
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Sunday",
-                    "startTime": "00:00",
-                    "endTime": "23:30",
+                    "startTime": "06:00",
+                    "endTime": "05:30",
                     "durationHours": 23.5,
-                    "crossesMidnight": false,
+                    "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 23:30"
+                    "rawTimeText": "Sunday 06:00 - 05:30"
                 },
                 {
                     "owner": "MOUTH",
