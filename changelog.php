@@ -168,6 +168,64 @@ if (!is_file($EVENTS_FILE)) {
 $aliasMap = load_alias_map($ROOT . '/camp-aliases.json');
 [$sheetKeys, $sheetError] = fetch_sheet_keys($SHEET_URL, $aliasMap);
 
+// ── Dedup entries in memory (canonical name + alias resolution) ───────────
+// Mirrors scripts/dedupe-events.php so the list reflects the post-dedup view
+// even before the script has been run on this events.json. Within a group:
+//   - Primary = claimed wins; else lowest array index.
+//   - Display name rewritten to the alias target if the primary is itself an
+//     aliased / typo'd variant.
+//   - Events merged with first-wins on (title, day, startTime).
+//   - Claimed flag = OR of every entry in the group.
+$groups = []; // canonicalKey => ['entry'=>array, 'index'=>int]
+foreach ($entries as $i => $entry) {
+    $rawCanon = canonical((string)($entry['name'] ?? ''));
+    $key = isset($aliasMap[$rawCanon]) ? canonical($aliasMap[$rawCanon]) : $rawCanon;
+    if (!isset($groups[$key])) {
+        $groups[$key] = [];
+    }
+    $groups[$key][] = ['entry' => $entry, 'index' => $i];
+}
+$dedupedEntries = [];
+foreach ($groups as $list) {
+    usort($list, function ($a, $b) {
+        $ac = !empty($a['entry']['claimed']) ? 0 : 1;
+        $bc = !empty($b['entry']['claimed']) ? 0 : 1;
+        if ($ac !== $bc) return $ac - $bc;
+        return $a['index'] - $b['index'];
+    });
+    $primary = $list[0]['entry'];
+    $primaryCanon = canonical((string)($primary['name'] ?? ''));
+    if (isset($aliasMap[$primaryCanon])) {
+        $primary['name'] = $aliasMap[$primaryCanon];
+    }
+    $evKey = static fn(array $e) => strtolower(trim((string)($e['title'] ?? '')))
+                                  . '|' . trim((string)($e['day'] ?? ''))
+                                  . '|' . trim((string)($e['startTime'] ?? ''));
+    $events = is_array($primary['events'] ?? null) ? $primary['events'] : [];
+    $seen = [];
+    $kept = [];
+    foreach ($events as $ev) {
+        $k = $evKey($ev);
+        if (isset($seen[$k])) continue;
+        $seen[$k] = true;
+        $kept[] = $ev;
+    }
+    $claimed = !empty($primary['claimed']);
+    for ($i = 1, $n = count($list); $i < $n; $i++) {
+        if (!empty($list[$i]['entry']['claimed'])) $claimed = true;
+        foreach (($list[$i]['entry']['events'] ?? []) as $ev) {
+            $k = $evKey($ev);
+            if (isset($seen[$k])) continue;
+            $seen[$k] = true;
+            $kept[] = $ev;
+        }
+    }
+    $primary['events']  = $kept;
+    $primary['claimed'] = $claimed;
+    $dedupedEntries[]   = $primary;
+}
+$entries = $dedupedEntries;
+
 // ── Compute the missing-from-sheet rows ───────────────────────────────────
 $missing = [];
 $totalEvents = 0;
