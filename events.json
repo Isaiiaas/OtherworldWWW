@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 301,
-        "eventCount": 1043,
+        "eventCount": 1041,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 229,
-            "camp_events": 988,
+            "camp_events": 986,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -1580,24 +1580,6 @@
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
-                    "title": "Dim Sum, Drinks and DJs!",
-                    "description": "Dim Sum, Drinks and DJs!: Step into Cathartic Cantina for our soul- feeding camp experience with small bites for your belly and big releases for your soul. All served with spicy tunes, cool drinks and interactive art.",
-                    "day": "Friday",
-                    "startTime": "00:00",
-                    "endTime": "02:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Music / Dance",
-                        "Alcohol Involved"
-                    ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
                     "title": "Shark Tank",
                     "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree.",
                     "day": "Friday",
@@ -1643,25 +1625,9 @@
                         "Food / Drink",
                         "19+"
                     ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
-                    "title": "Dim Sum Brunch",
-                    "description": "Nothing describes Sunday morning camping experience better than dim sum brunch with your friends at Cathartic Cantina. Come eat, drink and vibe until we run out.",
-                    "day": "Sunday",
-                    "startTime": "12:30",
-                    "endTime": "14:20",
-                    "durationHours": 1.83,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:30 - 14:20",
-                    "tags": [
-                        "Food / Drink"
-                    ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SIDEQUEST"
         },
         {
