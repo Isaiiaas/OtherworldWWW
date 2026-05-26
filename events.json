@@ -13830,12 +13830,12 @@
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Monday",
-                    "startTime": "00:00",
+                    "startTime": "06:00",
                     "endTime": "09:00",
-                    "durationHours": 9,
+                    "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Monday 00:00 - 09:00"
+                    "rawTimeText": "Monday 06:00 - 09:00"
                 }
             ]
         },
