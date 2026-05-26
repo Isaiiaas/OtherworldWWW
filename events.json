@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 301,
-        "eventCount": 1042,
+        "eventCount": 1043,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 229,
-            "camp_events": 987,
+            "camp_events": 988,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -1584,14 +1584,11 @@
                     "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree.",
                     "day": "Friday",
                     "startTime": "17:00",
-                    "endTime": "17:30",
-                    "durationHours": 0.5,
+                    "endTime": "18:00",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 17:30",
-                    "tags": [
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Friday 17:00 - 18:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -8955,6 +8952,19 @@
                     "ownerType": "camp",
                     "title": "SHOT DOGS!",
                     "description": "Back again for a 3rd season from our resident Sommelier, Picnic Party is proud to support SHOT DOGS!\r\nSHOT DOGS is a bold multi step shot experience with notes of chaos and an inquisitive finish. Alcohol alcoholic, and non-alcoholic SHOT DOGS available!",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "19:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 19:00"
+                },
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "CULT-DE-SAC Block Party",
+                    "description": "CULT-DE-SAC is a hot new downstairs neighborhood made up of several camps who will have their own BLOCK PARTY offerings! Join Temple of Jeff, Fafffway Village, The Magic Mystery Bus, CAMP CAMP and Picnic Party. This isn’t just a dead end, it’s a cult! Formal Friday Attire requested.",
                     "day": "Friday",
                     "startTime": "17:00",
                     "endTime": "19:00",
