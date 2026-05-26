@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 318,
-        "eventCount": 1134,
+        "eventCount": 1137,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 246,
-            "camp_events": 1079,
+            "camp_events": 1082,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -1532,17 +1532,14 @@
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
                     "title": "The Celestial Ramen Bowl Plounge",
-                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. Sundown to sunup all weekend. No ramen, unless you’re lucky.",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. No ramen guaranteed, but maybe you'll get lucky!",
                     "day": "Thursday",
                     "startTime": "21:00",
-                    "endTime": "21:00",
-                    "durationHours": 24,
+                    "endTime": "04:00",
+                    "durationHours": 7,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 21:00 - 21:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Thursday 21:00 - 04:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -1576,19 +1573,54 @@
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
-                    "title": "Dommy U-MAMI’s Nood Takeover",
-                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy U-MAMI crew will be present to add some optional spice to your ramen experience. 19+!",
+                    "title": "Dommy UMAMI Nood Takeover",
+                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional *spice* to your ramen experience. 19+!",
                     "day": "Sunday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "19+"
-                    ]
+                    "rawTimeText": "Sunday 00:00 - 02:00"
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. No ramen guaranteed, but maybe you'll get lucky!",
+                    "day": "Friday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 21:00 - 04:00"
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. No ramen guaranteed, but maybe you'll get lucky!",
+                    "day": "Saturday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 21:00 - 04:00"
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. No ramen guaranteed, but maybe you'll get lucky!",
+                    "day": "Sunday",
+                    "startTime": "21:00",
+                    "endTime": "02:00",
+                    "durationHours": 5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 21:00 - 02:00"
                 }
             ],
             "claimed": true,
@@ -5557,7 +5589,7 @@
                     ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "YES...AND?"
         },
         {
