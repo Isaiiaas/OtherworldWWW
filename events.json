@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 336,
-        "eventCount": 1238,
+        "eventCount": 1239,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 264,
-            "camp_events": 1183,
+            "camp_events": 1184,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -6688,9 +6688,22 @@
                         "Refuge / Introspective",
                         "Game / Activity"
                     ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Pink Pony Café",
+                    "description": "Sip a little, sparkle a lot! An unapologetically pink coffee experience, just for you <3",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "13:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 13:00"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SMOLDER"
         },
         {
