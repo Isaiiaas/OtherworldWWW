@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 336,
-        "eventCount": 1237,
+        "eventCount": 1238,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 264,
-            "camp_events": 1182,
+            "camp_events": 1183,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -1621,6 +1621,19 @@
                     "crossesMidnight": true,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 21:00 - 02:00"
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Noods and Noods Life Drawing",
+                    "description": "Join us in Camp Umami's noodle lounge for a life drawing event. Materials provided",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 14:00"
                 }
             ],
             "claimed": true,
@@ -20695,7 +20708,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SMOLDER"
+            "neighbourhood": "SMOLDER",
+            "claimed": true
         },
         {
             "name": "Yarnia",
@@ -20803,7 +20817,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "TINKER"
+            "neighbourhood": "TINKER",
+            "claimed": true
         },
         {
             "name": "Luscious Lemon camp",
@@ -20878,7 +20893,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "DOACRACY"
+            "neighbourhood": "DOACRACY",
+            "claimed": true
         },
         {
             "name": "Picnic Party",
@@ -20969,7 +20985,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SCORCH"
+            "neighbourhood": "SCORCH",
+            "claimed": true
         },
         {
             "name": "NERRRRRDS",
@@ -21141,7 +21158,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "YES...AND?"
+            "neighbourhood": "YES...AND?",
+            "claimed": true
         },
         {
             "name": "Garden Cósmico",
@@ -21197,7 +21215,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "YES...AND?"
+            "neighbourhood": "YES...AND?",
+            "claimed": true
         },
         {
             "name": "Camp UMAMI",
@@ -21303,7 +21322,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SIDEQUEST"
+            "neighbourhood": "SIDEQUEST",
+            "claimed": true
         },
         {
             "name": "Electric Circus",
@@ -21547,7 +21567,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "MIDDLE EARTH"
+            "neighbourhood": "MIDDLE EARTH",
+            "claimed": true
         },
         {
             "name": "Camp phat glASSes",
@@ -21587,7 +21608,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "CONDENSATION"
+            "neighbourhood": "CONDENSATION",
+            "claimed": true
         },
         {
             "name": "Camp Wet Landing",
@@ -21679,7 +21701,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "EVAPORATION"
+            "neighbourhood": "EVAPORATION",
+            "claimed": true
         },
         {
             "name": "Curiouser & Curiouser Café",
@@ -21734,7 +21757,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "CONDENSATION"
+            "neighbourhood": "CONDENSATION",
+            "claimed": true
         },
         {
             "name": "Wild Things Camp",
@@ -21893,7 +21917,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "COLLECTION"
+            "neighbourhood": "COLLECTION",
+            "claimed": true
         },
         {
             "name": "Cozy Corner",
@@ -21997,7 +22022,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SMOLDER"
+            "neighbourhood": "SMOLDER",
+            "claimed": true
         },
         {
             "name": "Portal Lounge",
@@ -22092,7 +22118,8 @@
                     "tags": []
                 }
             ],
-            "neighbourhood": "EVAPORATION"
+            "neighbourhood": "EVAPORATION",
+            "claimed": true
         },
         {
             "name": "Harmonious Haberdashery",
@@ -22168,7 +22195,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "PRECIPITATION"
+            "neighbourhood": "PRECIPITATION",
+            "claimed": true
         },
         {
             "name": "Flamingo camp",
@@ -22205,7 +22233,8 @@
                     "tags": []
                 }
             ],
-            "neighbourhood": "DOACRACY"
+            "neighbourhood": "DOACRACY",
+            "claimed": true
         },
         {
             "name": "Chai Trance",
@@ -22280,7 +22309,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "MOOP"
+            "neighbourhood": "MOOP",
+            "claimed": false
         },
         {
             "name": "Cosmic Kev The Dreamidifier®",
@@ -22302,7 +22332,8 @@
                         "Game / Activity"
                     ]
                 }
-            ]
+            ],
+            "claimed": true
         }
     ],
     "unassignedEvents": []
