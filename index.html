@@ -1,0 +1,1985 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Otherworld 2026 — Schedule</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ── Otherworld 2026 palette — gallery night edition ──────────────
+       Deep midnight-teal background like a moonlit lake, with neon
+       accents pulled straight from the cover's psychedelic mushrooms.
+       Each card is matted with a translucent wash of its type color, so
+       the whole grid feels like a curated wall of prints. Variable
+       names kept ("--night-N", "--cream") so the rest of the CSS just
+       picks up the new values. */
+    :root {
+      /* Surfaces — deep teal-navy, rich and saturated */
+      --night-0: #04090c;          /* deepest void */
+      --night-1: #0a1620;          /* page bg */
+      --night-2: #122332;          /* card surface */
+      --night-3: #1a3045;          /* card hover */
+      --night-4: #244257;          /* deeper / focus */
+      --moss-1: rgba(120, 180, 200, 0.10);   /* soft divider */
+      --moss-2: rgba(120, 180, 200, 0.22);   /* strong border */
+      --moss-3: #6e8a9c;                      /* dim ink */
+
+      /* Ink — bright warm cream against the navy for max contrast */
+      --cream: #f2ead0;              /* primary ink */
+      --cream-soft: #d4cea7;
+      --cream-dim: #95a3a9;
+
+      /* Accents — bright neon, full intensity, the cover's mushroom hues */
+      --lime: #cce84e;               /* camp neon */
+      --lime-soft: #e6f099;          /* highlight */
+      --lime-deep: #7ea529;          /* deep variant for filled buttons */
+
+      --pink: #ff86bd;               /* sound stage */
+      --pink-soft: #ffb5d4;
+      --pink-deep: #c44679;
+
+      --cyan: #74dce8;               /* art installation */
+      --cyan-soft: #a8ecf2;
+      --cyan-deep: #2a8c9a;
+
+      --amber: #ffae5a;              /* mutant vehicle */
+      --amber-soft: #ffcb8d;
+      --amber-deep: #b76a14;
+      --warn: #ffd24a;
+
+      --type-camp: var(--lime);
+      --type-camp-deep: var(--lime-deep);
+      --type-stage: var(--pink);
+      --type-stage-deep: var(--pink-deep);
+      --type-art: var(--cyan);
+      --type-art-deep: var(--cyan-deep);
+      --type-vehicle: var(--amber);
+      --type-vehicle-deep: var(--amber-deep);
+
+      --font-display: "Fraunces", Georgia, serif;
+      --font-sans: "Inter", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      --radius: 10px;
+      --radius-lg: 14px;
+      --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 4px 14px rgba(0, 0, 0, 0.35);
+      --shadow-2: 0 18px 50px rgba(0, 0, 0, 0.55), 0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background:
+        radial-gradient(ellipse 80% 50% at 12% -10%, rgba(204, 232, 78, 0.10), transparent 60%),
+        radial-gradient(ellipse 70% 60% at 92% 10%, rgba(255, 134, 189, 0.08), transparent 60%),
+        radial-gradient(ellipse 80% 60% at 50% 110%, rgba(116, 220, 232, 0.07), transparent 60%),
+        var(--night-1);
+      color: var(--cream);
+      line-height: 1.5;
+      font-feature-settings: "ss01", "cv11";
+    }
+
+    ::selection {
+      background: var(--lime);
+      color: var(--night-0);
+    }
+
+    /* ── Header ─────────────────────────────────────────────── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background:
+        linear-gradient(180deg, rgba(10, 22, 32, 0.92) 0%, rgba(10, 22, 32, 0.80) 100%);
+      backdrop-filter: saturate(160%) blur(12px);
+      -webkit-backdrop-filter: saturate(160%) blur(12px);
+      border-bottom: 1px solid var(--moss-1);
+      padding: 18px 24px 0;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-variation-settings: "SOFT" 30, "opsz" 144;
+      font-size: 30px;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin: 0;
+      color: var(--cream);
+    }
+
+    h1 .accent {
+      color: var(--lime);
+      font-style: italic;
+    }
+
+    h1.logo-h1 {
+      font-size: 0;            /* collapse whitespace from inline children */
+      line-height: 1;
+      margin: 0;
+    }
+    h1.logo-h1 a {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo {
+      height: 56px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45));
+    }
+    .logo-text {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cream-soft);
+    }
+    .logo-text .accent {
+      color: var(--lime);
+      margin-left: 2px;
+    }
+    @media (max-width: 640px) {
+      .logo { height: 44px; }
+      .logo-text { font-size: 11px; letter-spacing: 0.18em; }
+
+      header {
+        padding: 12px 14px 0;
+      }
+      .header-row {
+        align-items: center;
+        gap: 10px 14px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .tag-line {
+        font-size: 10px;
+        letter-spacing: 0.12em;
+      }
+      .stats {
+        margin-left: 0;
+        flex-basis: 100%;
+        font-size: 11px;
+      }
+      .community-note {
+        font-size: 11.5px;
+        margin: -4px 0 12px;
+        line-height: 1.4;
+      }
+      .community-note .disclaimer {
+        font-size: 10.5px;
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .tag-line { display: none; }
+      h1 { font-size: 20px; }
+    }
+
+    .tag-line {
+      font-size: 12px;
+      color: var(--moss-3);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .community-note {
+      font-size: 12.5px;
+      color: var(--moss-3);
+      margin: -6px 0 14px;
+      letter-spacing: 0.01em;
+    }
+
+    .community-note a {
+      color: var(--lime);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(204, 232, 78, 0.4);
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .community-note a:hover {
+      color: var(--lime-soft);
+      border-bottom-color: var(--lime-soft);
+    }
+
+    .community-note .disclaimer {
+      display: inline-block;
+      margin-top: 4px;
+      font-weight: 600;
+      background: linear-gradient(90deg, var(--lime), var(--cyan), var(--pink), var(--amber));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .controls input[type="search"],
+    .controls select {
+      background: var(--night-3);
+      border: 1px solid var(--moss-1);
+      color: var(--cream);
+      padding: 9px 12px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .controls input[type="search"]:focus,
+    .controls select:focus {
+      outline: none;
+      border-color: var(--lime-deep);
+      background: var(--night-4);
+    }
+
+    .controls input[type="search"] {
+      min-width: 260px;
+      flex: 1;
+      max-width: 420px;
+    }
+
+    .controls input[type="search"]::placeholder {
+      color: var(--moss-3);
+    }
+
+    .controls .field {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--cream-dim);
+      font-size: 13px;
+    }
+
+    .stats {
+      margin-left: auto;
+      color: var(--moss-3);
+      font-size: 12px;
+      font-family: var(--font-mono);
+      letter-spacing: 0;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin: 0 -24px;
+      padding: 0 24px;
+      overflow-x: auto;
+      border-bottom: 1px solid var(--moss-1);
+      scrollbar-width: thin;
+    }
+
+    .tab {
+      background: transparent;
+      border: 0;
+      color: var(--cream-dim);
+      padding: 12px 16px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: inherit;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      white-space: nowrap;
+      letter-spacing: 0.01em;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .tab:hover {
+      color: var(--cream);
+    }
+
+    .tab.active {
+      color: var(--lime);
+      border-bottom-color: var(--lime);
+    }
+
+    .tab .count {
+      color: var(--moss-3);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-left: 6px;
+    }
+
+    .tab.active .count {
+      color: var(--lime-deep);
+    }
+
+    .mode-tabs .tab {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* ── Main ────────────────────────────────────────────────── */
+    main {
+      padding: 28px 24px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── By Day timeline ─────────────────────────────────────── */
+    .hour-row {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 24px;
+      padding: 18px 0;
+      border-top: 1px solid var(--moss-1);
+      align-items: start;
+    }
+
+    .hour-row:first-child {
+      border-top: 0;
+      padding-top: 4px;
+    }
+
+    .hour-row.empty {
+      opacity: 0.32;
+    }
+
+    .hour-row.empty .hour-events::before {
+      content: "—";
+      color: var(--moss-3);
+      font-size: 18px;
+    }
+
+    .hour-label {
+      position: sticky;
+      top: 220px;
+    }
+
+    .hour-label .time {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      font-size: 34px;
+      line-height: 1;
+      color: var(--cream);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+    .hour-row:not(.empty) .hour-label .time {
+      color: var(--cyan);
+    }
+
+    .hour-label .period {
+      display: block;
+      margin-top: 6px;
+      font-size: 10px;
+      color: var(--moss-3);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .hour-events {
+      min-height: 24px;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 12px;
+      align-items: start;
+    }
+
+    /* Each card is matted with a translucent wash of its type color so
+       the grid reads like a curated gallery wall. The top edge has a
+       brighter type-color band; the body fades to the surface tone. */
+    .event-card {
+      position: relative;
+      background:
+        linear-gradient(180deg, rgba(204, 232, 78, 0.10) 0%, transparent 38%),
+        var(--night-2);
+      border: 1px solid rgba(204, 232, 78, 0.22);
+      border-radius: var(--radius);
+      padding: 16px 18px;
+      cursor: pointer;
+      transition: background 0.18s, border-color 0.18s, transform 0.12s, box-shadow 0.18s;
+      box-shadow: var(--shadow-1);
+    }
+
+    .event-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 3px;
+      background: var(--type-camp);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .event-card[data-type="sound_stage"] {
+      background:
+        linear-gradient(180deg, rgba(255, 134, 189, 0.10) 0%, transparent 38%),
+        var(--night-2);
+      border-color: rgba(255, 134, 189, 0.22);
+    }
+    .event-card[data-type="sound_stage"]::before { background: var(--type-stage); }
+
+    .event-card[data-type="art_installation"] {
+      background:
+        linear-gradient(180deg, rgba(116, 220, 232, 0.10) 0%, transparent 38%),
+        var(--night-2);
+      border-color: rgba(116, 220, 232, 0.22);
+    }
+    .event-card[data-type="art_installation"]::before { background: var(--type-art); }
+
+    .event-card[data-type="mutant_vehicle"] {
+      background:
+        linear-gradient(180deg, rgba(255, 174, 90, 0.10) 0%, transparent 38%),
+        var(--night-2);
+      border-color: rgba(255, 174, 90, 0.22);
+    }
+    .event-card[data-type="mutant_vehicle"]::before { background: var(--type-vehicle); }
+
+    .event-card:hover {
+      background:
+        linear-gradient(180deg, rgba(204, 232, 78, 0.16) 0%, transparent 42%),
+        var(--night-3);
+      border-color: rgba(204, 232, 78, 0.5);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-2);
+    }
+    .event-card[data-type="sound_stage"]:hover {
+      background:
+        linear-gradient(180deg, rgba(255, 134, 189, 0.16) 0%, transparent 42%),
+        var(--night-3);
+      border-color: rgba(255, 134, 189, 0.5);
+    }
+    .event-card[data-type="art_installation"]:hover {
+      background:
+        linear-gradient(180deg, rgba(116, 220, 232, 0.16) 0%, transparent 42%),
+        var(--night-3);
+      border-color: rgba(116, 220, 232, 0.5);
+    }
+    .event-card[data-type="mutant_vehicle"]:hover {
+      background:
+        linear-gradient(180deg, rgba(255, 174, 90, 0.16) 0%, transparent 42%),
+        var(--night-3);
+      border-color: rgba(255, 174, 90, 0.5);
+    }
+
+    .event-card.is-ongoing {
+      opacity: 0.55;
+      background: var(--night-2);
+      border-style: dashed;
+    }
+
+    .event-card.is-ongoing:hover {
+      opacity: 0.95;
+      background: var(--night-3);
+      border-style: solid;
+    }
+
+    .event-card.is-ongoing::before {
+      opacity: 0.55;
+      height: 2px;
+    }
+
+    .event-card .ongoing-tag {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      padding: 2px 7px;
+      border: 1px solid var(--moss-2);
+      border-radius: 999px;
+    }
+
+    .event-card .meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+
+    .event-card .time {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--lime);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .event-card[data-type="sound_stage"] .time { color: var(--pink); }
+    .event-card[data-type="art_installation"] .time { color: var(--cyan); }
+    .event-card[data-type="mutant_vehicle"] .time { color: var(--amber); }
+
+    .event-card .meta-right {
+      font-size: 11px;
+      color: var(--moss-3);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .event-card .duration {
+      font-family: var(--font-mono);
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    .event-card .title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-variation-settings: "opsz" 144, "SOFT" 20;
+      font-size: 19px;
+      line-height: 1.2;
+      color: var(--cream);
+      margin: 2px 0 6px;
+      letter-spacing: -0.015em;
+    }
+
+    .event-card .owner {
+      font-size: 12px;
+      color: var(--cream-dim);
+      margin-bottom: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .event-card .owner .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--type-camp);
+    }
+
+    .event-card[data-type="sound_stage"] .owner .dot {
+      background: var(--type-stage);
+    }
+
+    .event-card[data-type="art_installation"] .owner .dot {
+      background: var(--type-art);
+    }
+
+    .event-card[data-type="mutant_vehicle"] .owner .dot {
+      background: var(--type-vehicle);
+    }
+
+    .event-card .description {
+      color: var(--cream-soft);
+      font-size: 13.5px;
+      line-height: 1.55;
+      margin: 6px 0 0;
+    }
+
+    .event-card .description.is-clamped {
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .event-card .description.is-clamped::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 36px;
+      background: linear-gradient(180deg, rgba(18, 35, 50, 0) 0%, var(--night-2) 100%);
+      pointer-events: none;
+    }
+
+    .event-card:hover .description.is-clamped::after {
+      background: linear-gradient(180deg, rgba(26, 48, 69, 0) 0%, var(--night-3) 100%);
+    }
+
+    .event-card .flags {
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--warn);
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      padding: 3px 8px;
+      background: rgba(255, 210, 74, 0.10);
+      border: 1px solid rgba(255, 210, 74, 0.35);
+      border-radius: 999px;
+    }
+
+    .event-card .cross-midnight {
+      color: var(--cyan);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      margin-left: 4px;
+    }
+
+    /* ── By Camp view ────────────────────────────────────────── */
+    .camp-block {
+      background: var(--night-2);
+      border: 1px solid var(--moss-1);
+      border-radius: var(--radius-lg);
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow-1);
+    }
+
+    .camp-block summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      user-select: none;
+      transition: background 0.15s;
+    }
+
+    .camp-block summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .camp-block summary::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 6px solid var(--moss-3);
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      transition: transform 0.15s;
+    }
+
+    .camp-block[open] summary::before {
+      transform: rotate(90deg);
+      border-left-color: var(--lime);
+    }
+
+    .camp-block summary:hover {
+      background: var(--night-3);
+    }
+
+    .camp-block .name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-variation-settings: "opsz" 100, "SOFT" 40;
+      font-size: 17px;
+      color: var(--cream);
+      flex: 1;
+      letter-spacing: -0.01em;
+    }
+
+    .type-pill {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-family: var(--font-sans);
+      background: rgba(204, 232, 78, 0.14);
+      color: var(--type-camp);
+      border: 1px solid rgba(204, 232, 78, 0.45);
+    }
+
+    .type-pill[data-type="sound_stage"] {
+      background: rgba(255, 134, 189, 0.14);
+      color: var(--type-stage);
+      border-color: rgba(255, 134, 189, 0.45);
+    }
+
+    .type-pill[data-type="art_installation"] {
+      background: rgba(116, 220, 232, 0.14);
+      color: var(--type-art);
+      border-color: rgba(116, 220, 232, 0.45);
+    }
+
+    .type-pill[data-type="mutant_vehicle"] {
+      background: rgba(255, 174, 90, 0.14);
+      color: var(--type-vehicle);
+      border-color: rgba(255, 174, 90, 0.45);
+    }
+
+    .camp-block .count {
+      color: var(--moss-3);
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }
+
+    .verified-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(204, 232, 78, 0.16);
+      color: var(--lime);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(204, 232, 78, 0.45);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-family: var(--font-sans);
+    }
+    .event-card .owner .verified-pill {
+      font-size: 9px;
+      padding: 1px 6px;
+    }
+
+    .camp-block .body {
+      padding: 4px 18px 18px;
+      border-top: 1px solid var(--moss-1);
+    }
+
+    .camp-day {
+      margin-top: 14px;
+    }
+
+    .camp-day h3 {
+      margin: 0 0 8px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--lime);
+      font-weight: 600;
+    }
+
+    .camp-day-event {
+      padding: 10px 12px;
+      margin: 0 -12px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      align-items: baseline;
+      transition: background 0.12s;
+    }
+
+    .camp-day-event+.camp-day-event {
+      margin-top: 2px;
+    }
+
+    .camp-day-event:hover {
+      background: var(--night-3);
+    }
+
+    .camp-day-event .time {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--lime);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .camp-day-event .title {
+      font-size: 14px;
+      color: var(--cream);
+      font-weight: 500;
+    }
+
+    .camp-empty {
+      color: var(--moss-3);
+      font-size: 13px;
+      font-style: italic;
+      padding: 12px 0;
+    }
+
+    /* ── Modal ───────────────────────────────────────────────── */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 9, 12, 0.78);
+      backdrop-filter: blur(8px) saturate(140%);
+      -webkit-backdrop-filter: blur(8px) saturate(140%);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 50;
+      padding: 24px;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal {
+      background: var(--night-2);
+      border: 1px solid var(--moss-2);
+      border-radius: var(--radius-lg);
+      max-width: 580px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: auto;
+      padding: 26px 28px;
+      box-shadow: var(--shadow-2);
+    }
+
+    .modal h2 {
+      margin: 0 0 4px;
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+    }
+
+    .modal .meta {
+      color: var(--cream-dim);
+      font-size: 13px;
+      margin-bottom: 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .modal .meta .time {
+      color: var(--lime);
+      font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .modal .meta .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--moss-2);
+      flex-shrink: 0;
+    }
+
+    .modal p {
+      margin: 14px 0;
+      color: var(--cream-soft);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .modal .flags-block {
+      color: var(--warn);
+      font-size: 13px;
+      padding: 8px 12px;
+      background: rgba(255, 210, 74, 0.10);
+      border: 1px solid rgba(255, 210, 74, 0.35);
+      border-radius: 8px;
+    }
+
+    .modal .raw {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--moss-3);
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--moss-1);
+    }
+
+    .modal .close-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 16px;
+      gap: 8px;
+    }
+
+    .modal button {
+      background: var(--lime);
+      color: var(--night-0);
+      border: 0;
+      padding: 9px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      font-family: inherit;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .modal button:hover {
+      background: var(--lime-soft);
+      transform: translateY(-1px);
+    }
+
+    /* ── Map preview (in event modal) ───────────────────────── */
+    .map-preview {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 794 / 615;
+      background: var(--night-3);
+      border: 1px solid var(--moss-1);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin: 14px 0 4px;
+      cursor: pointer;
+    }
+    .map-preview.empty {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--moss-3);
+      font-size: 12px;
+      font-style: italic;
+      aspect-ratio: auto;
+      padding: 20px;
+    }
+    .map-preview img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .map-preview .marker {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      margin-left: -9px;
+      margin-top: -9px;
+      border-radius: 50%;
+      border: 3px solid var(--cream);
+      box-shadow: 0 0 0 2px rgba(18, 42, 53, 0.6), 0 2px 6px rgba(0,0,0,0.4);
+      pointer-events: none;
+      animation: pulse 1.6s ease-out infinite;
+    }
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.15); }
+      100% { transform: scale(1); }
+    }
+    .map-preview .marker.camp { background: var(--lime-soft); }
+    .map-preview .marker.sound_stage { background: var(--pink-soft); }
+    .map-preview .marker.art_installation { background: var(--cyan-soft); }
+    .map-preview .open-hint {
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      background: rgba(18, 42, 53, 0.82);
+      color: var(--night-0);
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .map-preview.loading::after {
+      content: "Loading map…";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--night-3);
+      color: var(--moss-3);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    /* ── Map view (full Map tab) ────────────────────────────── */
+    .map-view {
+      position: relative;
+      width: 100%;
+      background: var(--night-2);
+      border: 1px solid var(--moss-1);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .map-view .stage {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 794 / 615;
+      overflow: hidden;
+      cursor: grab;
+    }
+    .map-view .stage.panning { cursor: grabbing; }
+    .map-view .canvas {
+      position: absolute;
+      top: 0; left: 0;
+      transform-origin: 0 0;
+      will-change: transform;
+    }
+    .map-view .canvas img {
+      display: block;
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+      user-select: none;
+    }
+    .map-view .loading-shade {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--night-2);
+      color: var(--moss-3);
+      font-size: 13px;
+      font-style: italic;
+      transition: opacity 0.25s ease-out;
+      z-index: 5;
+      pointer-events: none;
+    }
+    .map-view .loading-shade.hidden { opacity: 0; }
+    .map-view .pin {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      margin-left: -7px;
+      margin-top: -7px;
+      border-radius: 50%;
+      border: 2px solid var(--cream);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      cursor: pointer;
+      transition: transform 0.12s ease-out;
+    }
+    .map-view .pin:hover {
+      transform: scale(1.5);
+      z-index: 5;
+    }
+    .map-view .pin.camp { background: var(--lime-soft); }
+    .map-view .pin.sound_stage { background: var(--pink-soft); }
+    .map-view .pin.art_installation { background: var(--cyan-soft); }
+    .map-view .pin.dim { opacity: 0.25; }
+    .map-view .pin.dim:hover { opacity: 1; }
+    .map-view .controls-overlay {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      gap: 2px;
+      background: rgba(18, 42, 53, 0.94);
+      backdrop-filter: blur(8px);
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+      z-index: 10;
+    }
+    .map-view .controls-overlay button {
+      background: transparent;
+      border: 0;
+      color: #eff7f8;
+      width: 30px;
+      height: 30px;
+      border-radius: 7px;
+      cursor: pointer;
+      font: 700 16px/1 var(--font-sans);
+      padding: 0;
+      transition: background 0.12s;
+    }
+    .map-view .controls-overlay button:hover {
+      background: rgba(255,255,255,0.14);
+    }
+    .map-view .controls-overlay button:active {
+      background: rgba(255,255,255,0.22);
+    }
+    .map-view .controls-overlay .zoom-readout {
+      font: 600 12px/30px var(--font-mono);
+      color: #eff7f8;
+      min-width: 44px;
+      text-align: center;
+      padding: 0 4px;
+    }
+    .map-view .legend {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(18, 42, 53, 0.94);
+      backdrop-filter: blur(8px);
+      padding: 8px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+      display: flex;
+      gap: 16px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #eff7f8;
+      align-items: center;
+      z-index: 10;
+    }
+    .map-view .legend .swatch {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .map-view .legend .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 2px solid #eff7f8;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    }
+    .map-view .legend .dot.camp { background: var(--lime-soft); }
+    .map-view .legend .dot.sound_stage { background: var(--pink-soft); }
+    .map-view .legend .dot.art_installation { background: var(--cyan-soft); }
+    .map-view .empty-state {
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--moss-3);
+      font-size: 14px;
+    }
+    .map-view .empty-state code {
+      background: var(--night-3);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* Camp modal (list of events for a camp) */
+    #camp-modal .event-list {
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0;
+      max-height: 50vh;
+      overflow-y: auto;
+      border-top: 1px solid var(--moss-1);
+    }
+    #camp-modal .event-row {
+      display: grid;
+      grid-template-columns: 70px 90px 1fr;
+      gap: 12px;
+      padding: 8px 4px;
+      align-items: baseline;
+      border-bottom: 1px solid var(--moss-1);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    #camp-modal .event-row:hover { background: var(--night-3); }
+    #camp-modal .event-row .day { color: var(--moss-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+    #camp-modal .event-row .time { font-family: var(--font-mono); font-size: 12px; color: var(--cream-soft); }
+    #camp-modal .event-row .title { color: var(--cream); }
+    #camp-modal .empty { color: var(--moss-3); padding: 12px 0; font-style: italic; font-size: 13px; }
+
+    .empty-state {
+      color: var(--moss-3);
+      text-align: center;
+      padding: 60px 0;
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-style: italic;
+    }
+
+    /* mobile tweaks */
+    @media (max-width: 720px) {
+      .hour-row {
+        grid-template-columns: 64px 1fr;
+        gap: 14px;
+      }
+
+      .hour-label .time {
+        font-size: 22px;
+      }
+
+      main {
+        padding: 20px 16px 60px;
+      }
+
+      header {
+        padding: 14px 16px 0;
+      }
+
+      .controls input[type="search"] {
+        min-width: 160px;
+      }
+
+      .starting-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .camp-day-event {
+        grid-template-columns: 92px 1fr;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-row">
+      <h1 class="logo-h1">
+        <a href="index.html">
+          <img src="logo.png" alt="Otherworld 2026" class="logo">
+          <span class="logo-text">Otherworld <span class="accent">· 2026</span></span>
+        </a>
+      </h1>
+      <span class="tag-line">What · When · Where</span>
+      <span class="stats" id="stats"></span>
+    </div>
+    <div class="community-note">
+      This page is community managed. Run a camp? <a href="dashboard.php">Claim it to add, edit, or remove your events →</a>
+      <br>
+      <small class="disclaimer">This website is not affiliated with Kindle Arts Society or Otherworld.</small>
+    </div>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search events, camps, descriptions…" autocomplete="off" />
+      <label class="field">
+        Type
+        <select id="type-filter">
+          <option value="all">All</option>
+          <option value="camp">Camps</option>
+          <option value="sound_stage">Sound stages</option>
+          <option value="art_installation">Art installations</option>
+          <option value="mutant_vehicle">Mutant vehicles</option>
+        </select>
+      </label>
+    </div>
+    <div class="tabs mode-tabs" id="mode-tabs">
+      <button class="tab active" data-mode="day">By Day</button>
+      <button class="tab" data-mode="camp">By Camp</button>
+      <button class="tab" data-mode="map">Map</button>
+    </div>
+    <div class="tabs" id="day-tabs"></div>
+  </header>
+  <main id="view"></main>
+
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal" id="modal">
+      <h2 id="m-title"></h2>
+      <div class="meta">
+        <span id="m-owner"></span>
+        <span class="dot"></span>
+        <span id="m-day"></span>
+        <span class="dot"></span>
+        <span class="time" id="m-time"></span>
+      </div>
+      <div class="map-preview" id="m-map-preview"></div>
+      <p id="m-desc"></p>
+      <div class="flags-block" id="m-flags"></div>
+      <div class="raw" id="m-raw"></div>
+      <div class="close-row"><button id="m-close">Close</button></div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="camp-modal-backdrop">
+    <div class="modal" id="camp-modal">
+      <h2 id="cm-title"></h2>
+      <div class="meta"><span id="cm-meta"></span></div>
+      <div class="event-list" id="cm-events"></div>
+      <div class="close-row"><button id="cm-close">Close</button></div>
+    </div>
+  </div>
+
+  <script src="./map-data.js?v=1779772892"></script>
+  <script>
+  (async () => {
+    const _eventsResp = await fetch('./events.json', { cache: 'no-store' });
+    if (!_eventsResp.ok) throw new Error('Failed to load events.json: ' + _eventsResp.status);
+    window.OTHERWORLD_DATA = await _eventsResp.json();
+
+    const DATA = window.OTHERWORLD_DATA;
+    const MAP = window.OTHERWORLD_MAP || { pins: [] };
+    const PIN_BY_NAME = new Map(
+      (MAP.pins || []).filter(p => p && p.name).map(p => [p.name, p])
+    );
+
+    // Lazy-load + localStorage cache the map image. The PNG is ~2.5 MB;
+    // we only fetch it the first time something requests it (map tab open
+    // or first event modal), then keep a base64 data URL in localStorage
+    // keyed by the parser's `version` so re-runs of parse-map invalidate
+    // the cache automatically. Falls back to a direct <img src> if fetch
+    // is blocked (file://) or localStorage is full.
+    const MapImage = (() => {
+      const IMG_PATH = MAP.imagePath || "map.png";
+      const VERSION = MAP.version || "0";
+      const KEY = "otherworld:map:" + VERSION;
+      let cachedSrc = null;
+      let inflight = null;
+      let triedCache = false;
+
+      function readCache() {
+        try { return localStorage.getItem(KEY); } catch { return null; }
+      }
+      function writeCache(dataUrl) {
+        try {
+          // Clear stale versions before writing.
+          for (let i = localStorage.length - 1; i >= 0; i--) {
+            const k = localStorage.key(i);
+            if (k && k.startsWith("otherworld:map:") && k !== KEY) localStorage.removeItem(k);
+          }
+          localStorage.setItem(KEY, dataUrl);
+        } catch { /* quota exceeded — browser HTTP cache still helps */ }
+      }
+      async function fetchAsDataUrl() {
+        const resp = await fetch(IMG_PATH, { cache: "force-cache" });
+        if (!resp.ok) throw new Error("map fetch " + resp.status);
+        const blob = await resp.blob();
+        return await new Promise((resolve, reject) => {
+          const fr = new FileReader();
+          fr.onload = () => resolve(fr.result);
+          fr.onerror = reject;
+          fr.readAsDataURL(blob);
+        });
+      }
+
+      // Returns a Promise<src> usable as <img src>. Always resolves —
+      // falls back to the plain path if anything goes wrong.
+      function get() {
+        if (cachedSrc) return Promise.resolve(cachedSrc);
+        if (!triedCache) {
+          triedCache = true;
+          const cached = readCache();
+          if (cached) { cachedSrc = cached; return Promise.resolve(cached); }
+        }
+        if (inflight) return inflight;
+        inflight = fetchAsDataUrl()
+          .then(src => { cachedSrc = src; writeCache(src); inflight = null; return src; })
+          .catch(() => { inflight = null; return IMG_PATH; });
+        return inflight;
+      }
+
+      // Optimistic synchronous src: returns cached data URL if already
+      // available, otherwise null (caller should attach .get().then()).
+      function syncSrc() {
+        if (cachedSrc) return cachedSrc;
+        if (!triedCache) {
+          triedCache = true;
+          const cached = readCache();
+          if (cached) { cachedSrc = cached; return cached; }
+        }
+        return null;
+      }
+
+      return { get, syncSrc };
+    })();
+    const DAY_ORDER = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+    const FESTIVAL_START_HOUR = 6;
+    const HOURS_IN_DAY = 24;
+
+    const ALL_EVENTS = [];
+    for (const entry of DATA.entries) {
+      for (const ev of entry.events) ALL_EVENTS.push({ ...ev, _entry: entry });
+    }
+
+    const state = {
+      mode: "day",
+      day: discoverDefaultDay(),
+      search: "",
+      type: "all",
+    };
+
+    function discoverDefaultDay() {
+      const counts = Object.fromEntries(DAY_ORDER.map(d => [d, 0]));
+      for (const e of ALL_EVENTS) if (counts[e.day] !== undefined) counts[e.day]++;
+      const present = DAY_ORDER.filter(d => counts[d] > 0);
+      return present[0] || DAY_ORDER[0];
+    }
+
+    function toMinutes(t) { const [h, m] = t.split(":").map(Number); return h * 60 + m; }
+    function festivalMinutes(t) {
+      const min = toMinutes(t);
+      const start = FESTIVAL_START_HOUR * 60;
+      return min >= start ? min - start : (HOURS_IN_DAY * 60 - start) + min;
+    }
+    const HOUR_ORDER = (() => {
+      const out = [];
+      for (let i = 0; i < HOURS_IN_DAY; i++) out.push((FESTIVAL_START_HOUR + i) % HOURS_IN_DAY);
+      return out;
+    })();
+    function fmtHour(h) { return String(h).padStart(2, "0") + ":00"; }
+    function hourPeriodLabel(h) {
+      if (h >= 6 && h < 12) return "Morning";
+      if (h >= 12 && h < 17) return "Afternoon";
+      if (h >= 17 && h < 21) return "Evening";
+      if (h >= 21 || h < 2) return "Night";
+      return "Late night";
+    }
+    function fmtDuration(hours) {
+      if (hours == null) return "";
+      const totalMins = Math.round(hours * 60);
+      if (totalMins < 60) return totalMins + "m";
+      const h = Math.floor(totalMins / 60), m = totalMins % 60;
+      return m ? `${h}h ${m}m` : `${h}h`;
+    }
+    function typeLabel(t) {
+      return ({ camp: "Camp", art_installation: "Art", sound_stage: "Stage", mutant_vehicle: "Vehicle" })[t] || t;
+    }
+
+    function eventMatchesFilters(ev) {
+      if (state.type !== "all" && ev.ownerType !== state.type) return false;
+      if (!state.search) return true;
+      const q = state.search.toLowerCase();
+      return (
+        (ev.title || "").toLowerCase().includes(q) ||
+        (ev._entry.name || "").toLowerCase().includes(q) ||
+        (ev.description || "").toLowerCase().includes(q)
+      );
+    }
+    function entryMatchesFilters(entry) {
+      if (state.type !== "all" && entry.type !== state.type) return false;
+      if (!state.search) return true;
+      const q = state.search.toLowerCase();
+      if ((entry.name || "").toLowerCase().includes(q)) return true;
+      return entry.events.some(ev =>
+        (ev.title || "").toLowerCase().includes(q) ||
+        (ev.description || "").toLowerCase().includes(q)
+      );
+    }
+
+    // ── By Day view ─────────────────────────────────────────
+    function renderDayView() {
+      const view = document.getElementById("view");
+      view.innerHTML = "";
+
+      const dayEvents = ALL_EVENTS.filter(e => e.day === state.day && eventMatchesFilters(e));
+      if (dayEvents.length === 0) {
+        view.innerHTML = `<div class="empty-state">No events match your filters on ${state.day}.</div>`;
+        return;
+      }
+
+      const byHour = new Map();
+      for (const h of HOUR_ORDER) byHour.set(h, { starting: [], ongoing: [] });
+
+      for (const ev of dayEvents) {
+        if (!ev.startTime) continue;
+        const startBucket = Math.floor(toMinutes(ev.startTime) / 60);
+        if (byHour.has(startBucket)) byHour.get(startBucket).starting.push(ev);
+        if (!ev.endTime) continue;
+        const startFest = festivalMinutes(ev.startTime);
+        const endFest = festivalMinutes(ev.endTime);
+        if (endFest <= startFest) continue;
+        for (let i = 0; i < HOUR_ORDER.length; i++) {
+          const h = HOUR_ORDER[i];
+          if (h === startBucket) continue;
+          const hourFestStart = i * 60;
+          const hourFestEnd = hourFestStart + 60;
+          if (startFest < hourFestEnd && endFest > hourFestStart) {
+            byHour.get(h).ongoing.push(ev);
+          }
+        }
+      }
+
+      for (const bucket of byHour.values()) {
+        bucket.starting.sort((a, b) => toMinutes(a.startTime) - toMinutes(b.startTime));
+        bucket.ongoing.sort((a, b) => toMinutes(a.startTime) - toMinutes(b.startTime));
+      }
+
+      for (const h of HOUR_ORDER) {
+        const bucket = byHour.get(h);
+        const isEmpty = bucket.starting.length === 0 && bucket.ongoing.length === 0;
+        const row = document.createElement("div");
+        row.className = "hour-row" + (isEmpty ? " empty" : "");
+        row.innerHTML = `
+          <div class="hour-label">
+            <div class="time">${fmtHour(h)}</div>
+            <span class="period">${hourPeriodLabel(h)}</span>
+          </div>
+          <div class="hour-events">
+            <div class="event-grid"></div>
+          </div>
+        `;
+        const grid = row.querySelector(".event-grid");
+        for (const ev of bucket.starting) grid.appendChild(eventCard(ev, false));
+        for (const ev of bucket.ongoing) grid.appendChild(eventCard(ev, true));
+
+        view.appendChild(row);
+      }
+    }
+
+    function eventCard(ev, ongoing) {
+      const card = document.createElement("article");
+      card.className = "event-card" + (ongoing ? " is-ongoing" : "");
+      card.dataset.type = ev.ownerType || "camp";
+
+      const flags = (ev.normalizationFlags || []).length
+        ? `<div class="flags">⚠ ${ev.normalizationFlags.join(", ")}</div>`
+        : "";
+      const cross = ev.crossesMidnight ? `<span class="cross-midnight">→ next day</span>` : "";
+      const dur = ev.durationHours != null ? `<span class="duration">${fmtDuration(ev.durationHours)}</span>` : "";
+      const tag = ongoing ? `<span class="ongoing-tag">Ongoing</span>` : "";
+
+      const desc = (ev.description || "").trim();
+      // Only show the full description on starting events — ongoing cards stay
+      // compact so the eye is drawn to what's beginning at this hour.
+      const showDesc = !ongoing && desc;
+      const descNeedsClamp = desc.length > 320;
+
+      card.innerHTML = `
+        <div class="meta-row">
+          <span class="time">${ev.startTime}–${ev.endTime}${cross}</span>
+          <span class="meta-right">${tag}${tag && dur ? " · " : ""}${typeLabel(ev.ownerType)}${dur ? " · " : ""}${dur}</span>
+        </div>
+        <h3 class="title"></h3>
+        <div class="owner"><span class="dot"></span><span class="n"></span></div>
+        ${showDesc ? `<p class="description${descNeedsClamp ? " is-clamped" : ""}"></p>` : ""}
+        ${flags}
+      `;
+      card.querySelector(".title").textContent = ev.title || "(untitled)";
+      card.querySelector(".owner .n").textContent = ev._entry.name;
+      if (ev._entry.claimed) {
+        const pill = document.createElement("span");
+        pill.className = "verified-pill";
+        pill.title = "Verified camp";
+        pill.textContent = "✓ Verified";
+        card.querySelector(".owner").appendChild(pill);
+      }
+      if (showDesc) card.querySelector(".description").textContent = desc;
+      card.addEventListener("click", () => showModal(ev));
+      return card;
+    }
+
+    // ── By Camp view ────────────────────────────────────────
+    function renderCampView() {
+      const view = document.getElementById("view");
+      view.innerHTML = "";
+
+      const entries = DATA.entries.filter(entryMatchesFilters);
+      if (entries.length === 0) {
+        view.innerHTML = `<div class="empty-state">No entries match your filters.</div>`;
+        return;
+      }
+
+      for (const entry of entries) {
+        const events = entry.events.filter(ev => {
+          if (!state.search) return true;
+          const q = state.search.toLowerCase();
+          if ((entry.name || "").toLowerCase().includes(q)) return true;
+          return (
+            (ev.title || "").toLowerCase().includes(q) ||
+            (ev.description || "").toLowerCase().includes(q)
+          );
+        });
+
+        const byDay = new Map();
+        for (const ev of events) {
+          const k = ev.day || "Unknown";
+          if (!byDay.has(k)) byDay.set(k, []);
+          byDay.get(k).push(ev);
+        }
+        const dayKeys = Array.from(byDay.keys()).sort((a, b) => DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b));
+
+        const block = document.createElement("details");
+        block.className = "camp-block";
+        if (state.search && events.length > 0) block.open = true;
+        block.innerHTML = `
+          <summary>
+            <span class="name"></span>
+            ${entry.claimed ? `<span class="verified-pill" title="Verified camp">✓ Verified</span>` : ""}
+            <span class="type-pill" data-type="${entry.type}">${typeLabel(entry.type)}</span>
+            <span class="count">${events.length} event${events.length === 1 ? "" : "s"}</span>
+          </summary>
+          <div class="body"></div>
+        `;
+        block.querySelector(".name").textContent = entry.name;
+
+        const body = block.querySelector(".body");
+        if (events.length === 0) {
+          const note = document.createElement("div");
+          note.className = "camp-empty";
+          note.textContent = "No scheduled events listed in the PDF.";
+          body.appendChild(note);
+        } else {
+          for (const day of dayKeys) {
+            const sec = document.createElement("div");
+            sec.className = "camp-day";
+            const h3 = document.createElement("h3");
+            h3.textContent = day;
+            sec.appendChild(h3);
+            const dayEvs = byDay.get(day).slice().sort(
+              (a, b) => toMinutes(a.startTime || "00:00") - toMinutes(b.startTime || "00:00")
+            );
+            for (const ev of dayEvs) {
+              const row = document.createElement("div");
+              row.className = "camp-day-event";
+              const cross = ev.crossesMidnight ? ` →` : "";
+              row.innerHTML = `<span class="time">${ev.startTime}–${ev.endTime}${cross}</span><span class="title"></span>`;
+              row.querySelector(".title").textContent = ev.title || "(untitled)";
+              row.addEventListener("click", () => showModal({ ...ev, _entry: entry }));
+              sec.appendChild(row);
+            }
+            body.appendChild(sec);
+          }
+        }
+        view.appendChild(block);
+      }
+    }
+
+    function renderDayTabs() {
+      const wrap = document.getElementById("day-tabs");
+      wrap.style.display = state.mode === "day" ? "" : "none";
+      wrap.innerHTML = "";
+      const counts = Object.fromEntries(DAY_ORDER.map(d => [d, 0]));
+      for (const e of ALL_EVENTS) if (eventMatchesFilters(e) && counts[e.day] !== undefined) counts[e.day]++;
+      const present = DAY_ORDER.filter(d => counts[d] > 0);
+      if (!present.length) {
+        wrap.innerHTML = `<div style="color:var(--moss-3);padding:12px 0;font-size:13px;">No days match filters.</div>`;
+        return;
+      }
+      if (!present.includes(state.day)) state.day = present[0];
+      for (const d of present) {
+        const btn = document.createElement("button");
+        btn.className = "tab" + (d === state.day ? " active" : "");
+        btn.innerHTML = `${d}<span class="count">${counts[d]}</span>`;
+        btn.addEventListener("click", () => { state.day = d; renderAll(); });
+        wrap.appendChild(btn);
+      }
+    }
+
+    // ── Modal ────────────────────────────────────────────────
+    function showModal(ev) {
+      document.getElementById("m-title").textContent = ev.title || "(untitled)";
+      document.getElementById("m-owner").textContent = `${ev._entry.name} · ${typeLabel(ev.ownerType)}`;
+      document.getElementById("m-day").textContent = ev.day || "?";
+      document.getElementById("m-time").textContent =
+        `${ev.startTime || "?"}–${ev.endTime || "?"}${ev.crossesMidnight ? " (→ next day)" : ""}`;
+      document.getElementById("m-desc").textContent = ev.description || "";
+      const flagsEl = document.getElementById("m-flags");
+      if ((ev.normalizationFlags || []).length) {
+        flagsEl.textContent = "⚠ Flags: " + ev.normalizationFlags.join(", ");
+        flagsEl.style.display = "";
+      } else {
+        flagsEl.style.display = "none";
+      }
+      document.getElementById("m-raw").textContent =
+        `Raw: "${ev.rawTimeText || ""}"  ·  duration: ${ev.durationHours != null ? ev.durationHours + " h" : "?"}`;
+      renderModalMapPreview(ev._entry);
+      document.getElementById("modal-backdrop").classList.add("open");
+    }
+    function hideModal() { document.getElementById("modal-backdrop").classList.remove("open"); }
+
+    function renderModalMapPreview(entry) {
+      const el = document.getElementById("m-map-preview");
+      const pin = PIN_BY_NAME.get(entry.name);
+      el.innerHTML = "";
+      if (!pin) {
+        el.classList.add("empty");
+        el.textContent = "Location not yet mapped for this camp.";
+        el.onclick = null;
+        return;
+      }
+      el.classList.remove("empty");
+      const img = document.createElement("img");
+      img.alt = "Map";
+      const sync = MapImage.syncSrc();
+      if (sync) {
+        img.src = sync;
+      } else {
+        el.classList.add("loading");
+        MapImage.get().then(src => {
+          img.src = src;
+          el.classList.remove("loading");
+        });
+      }
+      el.appendChild(img);
+      const marker = document.createElement("div");
+      marker.className = "marker " + pin.type;
+      marker.style.left = (pin.x * 100) + "%";
+      marker.style.top = (pin.y * 100) + "%";
+      el.appendChild(marker);
+      const hint = document.createElement("div");
+      hint.className = "open-hint";
+      hint.textContent = "Open map";
+      el.appendChild(hint);
+      el.onclick = () => {
+        hideModal();
+        switchMode("map");
+        mapView.focusOn(pin);
+      };
+    }
+
+    function switchMode(mode) {
+      state.mode = mode;
+      for (const b of document.querySelectorAll("#mode-tabs .tab")) {
+        b.classList.toggle("active", b.dataset.mode === mode);
+      }
+      renderAll();
+    }
+
+    function bindUi() {
+      for (const btn of document.querySelectorAll("#mode-tabs .tab")) {
+        btn.addEventListener("click", () => switchMode(btn.dataset.mode));
+      }
+      document.getElementById("search").addEventListener("input", e => {
+        state.search = e.target.value.trim();
+        renderAll();
+      });
+      document.getElementById("type-filter").addEventListener("change", e => {
+        state.type = e.target.value;
+        renderAll();
+      });
+      document.getElementById("modal-backdrop").addEventListener("click", e => {
+        if (e.target.id === "modal-backdrop") hideModal();
+      });
+      document.getElementById("m-close").addEventListener("click", hideModal);
+      document.getElementById("camp-modal-backdrop").addEventListener("click", e => {
+        if (e.target.id === "camp-modal-backdrop") hideCampModal();
+      });
+      document.getElementById("cm-close").addEventListener("click", hideCampModal);
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") { hideModal(); hideCampModal(); }
+      });
+    }
+
+    // ── Camp modal (events for a camp, opened from a map pin) ──
+    function showCampModal(entry) {
+      document.getElementById("cm-title").textContent = entry.name;
+      document.getElementById("cm-meta").textContent =
+        `${typeLabel(entry.type)} · ${entry.events.length} event${entry.events.length === 1 ? "" : "s"}`;
+      const list = document.getElementById("cm-events");
+      list.innerHTML = "";
+      if (!entry.events.length) {
+        const e = document.createElement("div");
+        e.className = "empty";
+        e.textContent = "No scheduled events.";
+        list.appendChild(e);
+      } else {
+        const byDay = new Map();
+        for (const ev of entry.events) {
+          if (!byDay.has(ev.day)) byDay.set(ev.day, []);
+          byDay.get(ev.day).push(ev);
+        }
+        for (const day of DAY_ORDER) {
+          if (!byDay.has(day)) continue;
+          for (const ev of byDay.get(day)) {
+            const row = document.createElement("div");
+            row.className = "event-row";
+            const cross = ev.crossesMidnight ? " →" : "";
+            row.innerHTML = `<span class="day"></span><span class="time"></span><span class="title"></span>`;
+            row.children[0].textContent = day;
+            row.children[1].textContent = `${ev.startTime}–${ev.endTime}${cross}`;
+            row.children[2].textContent = ev.title || "(untitled)";
+            row.addEventListener("click", () => {
+              hideCampModal();
+              showModal({ ...ev, _entry: entry });
+            });
+            list.appendChild(row);
+          }
+        }
+      }
+      document.getElementById("camp-modal-backdrop").classList.add("open");
+    }
+    function hideCampModal() {
+      document.getElementById("camp-modal-backdrop").classList.remove("open");
+    }
+
+    // ── Map view ──────────────────────────────────────────────
+    const mapView = (() => {
+      let root = null, canvas = null, stage = null, zoomReadout = null;
+      let zoom = 1, pan = { x: 0, y: 0 };
+      let panning = false, panStart = null;
+      let pendingFocus = null;
+
+      function ensureNode() {
+        if (root) return root;
+        root = document.createElement("div");
+        root.className = "map-view";
+        if (!MAP.pins || !MAP.pins.length) {
+          root.innerHTML = `
+            <div class="empty-state">
+              No camp locations have been placed yet.<br>
+              Open <code>map-annotate.html</code> to place pins, then run
+              <code>node parse-map.js</code> to update <code>map-data.js</code>.
+            </div>`;
+          return root;
+        }
+        root.innerHTML = `
+          <div class="stage">
+            <div class="canvas"><img alt="Map"></div>
+            <div class="loading-shade"><span>Loading map…</span></div>
+            <div class="legend">
+              <span class="swatch"><span class="dot camp"></span>Camps</span>
+              <span class="swatch"><span class="dot sound_stage"></span>Stages</span>
+              <span class="swatch"><span class="dot art_installation"></span>Art</span>
+            </div>
+            <div class="controls-overlay">
+              <button data-act="out" title="Zoom out">−</button>
+              <span class="zoom-readout">100%</span>
+              <button data-act="in" title="Zoom in">+</button>
+              <button data-act="fit" title="Fit to screen">⤢</button>
+            </div>
+          </div>`;
+        stage = root.querySelector(".stage");
+        canvas = root.querySelector(".canvas");
+        zoomReadout = root.querySelector(".zoom-readout");
+        const shade = root.querySelector(".loading-shade");
+
+        const img = canvas.querySelector("img");
+        img.addEventListener("load", () => {
+          if (shade) shade.classList.add("hidden");
+          fit();
+          if (pendingFocus) { focusOn(pendingFocus); pendingFocus = null; }
+        });
+        const sync = MapImage.syncSrc();
+        if (sync) {
+          img.src = sync;
+        } else {
+          MapImage.get().then(src => { img.src = src; });
+        }
+
+        root.querySelector('[data-act="in"]').addEventListener("click", () => setZoom(zoom * 1.3));
+        root.querySelector('[data-act="out"]').addEventListener("click", () => setZoom(zoom / 1.3));
+        root.querySelector('[data-act="fit"]').addEventListener("click", fit);
+
+        stage.addEventListener("wheel", e => {
+          e.preventDefault();
+          setZoom(zoom * Math.exp(-e.deltaY * 0.0015), e.clientX, e.clientY);
+        }, { passive: false });
+        stage.addEventListener("mousedown", e => {
+          if (e.target.closest(".pin") || e.target.closest(".controls-overlay") || e.target.closest(".legend")) return;
+          panning = true;
+          panStart = { x: e.clientX - pan.x, y: e.clientY - pan.y };
+          stage.classList.add("panning");
+        });
+        window.addEventListener("mousemove", e => {
+          if (!panning) return;
+          pan.x = e.clientX - panStart.x;
+          pan.y = e.clientY - panStart.y;
+          applyTransform();
+        });
+        window.addEventListener("mouseup", () => {
+          if (panning) { panning = false; stage.classList.remove("panning"); }
+        });
+
+        renderPins();
+        return root;
+      }
+
+      function renderPins() {
+        if (!canvas) return;
+        canvas.querySelectorAll(".pin").forEach(n => n.remove());
+        const entriesByName = new Map(DATA.entries.map(e => [e.name, e]));
+        for (const pin of MAP.pins) {
+          const entry = entriesByName.get(pin.name);
+          const dim = entry && !entryMatchesFilters(entry);
+          const el = document.createElement("div");
+          el.className = "pin " + pin.type + (dim ? " dim" : "");
+          el.style.left = (pin.x * 100) + "%";
+          el.style.top = (pin.y * 100) + "%";
+          el.title = pin.name + (entry ? ` (${entry.events.length} events)` : "");
+          el.addEventListener("click", e => {
+            e.stopPropagation();
+            if (entry) showCampModal(entry);
+          });
+          canvas.appendChild(el);
+        }
+      }
+
+      function applyTransform() {
+        if (!canvas) return;
+        canvas.style.transform = `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`;
+        if (zoomReadout) zoomReadout.textContent = Math.round(zoom * 100) + "%";
+      }
+
+      function setZoom(z, clientX, clientY) {
+        z = Math.max(0.3, Math.min(8, z));
+        const rect = stage.getBoundingClientRect();
+        const ax = (clientX ?? rect.left + rect.width / 2) - rect.left;
+        const ay = (clientY ?? rect.top + rect.height / 2) - rect.top;
+        const imgX = (ax - pan.x) / zoom;
+        const imgY = (ay - pan.y) / zoom;
+        zoom = z;
+        pan.x = ax - imgX * zoom;
+        pan.y = ay - imgY * zoom;
+        applyTransform();
+      }
+
+      function fit() {
+        zoom = 1;
+        pan = { x: 0, y: 0 };
+        applyTransform();
+      }
+
+      function focusOn(pin) {
+        if (!stage) { pendingFocus = pin; return; }
+        const rect = stage.getBoundingClientRect();
+        zoom = Math.min(3, Math.max(zoom, 2));
+        // Pin is at (pin.x * stageWidth * zoom, pin.y * stageHeight * zoom)
+        // after scale (canvas starts at 100% of stage width).
+        const px = pin.x * rect.width * zoom;
+        const py = pin.y * rect.height * zoom;
+        pan.x = rect.width / 2 - px;
+        pan.y = rect.height / 2 - py;
+        applyTransform();
+      }
+
+      return {
+        mount(container) {
+          container.appendChild(ensureNode());
+          // Re-evaluate dimming on every mount (filters may have changed).
+          renderPins();
+        },
+        focusOn(pin) {
+          ensureNode();
+          focusOn(pin);
+        },
+        refreshDim: renderPins,
+      };
+    })();
+
+    function renderMapView() {
+      const view = document.getElementById("view");
+      view.innerHTML = "";
+      mapView.mount(view);
+    }
+
+    function renderStats() {
+      let text;
+      if (state.mode === "map") {
+        const placed = MAP.pins.filter(p => {
+          const entry = DATA.entries.find(e => e.name === p.name);
+          return entry && entryMatchesFilters(entry);
+        }).length;
+        text = `${placed} / ${MAP.pins.length} pins shown · ${DATA.metadata.entryCount} entries`;
+      } else {
+        const visible = state.mode === "day"
+          ? ALL_EVENTS.filter(e => e.day === state.day && eventMatchesFilters(e)).length
+          : DATA.entries.filter(entryMatchesFilters).reduce((n, e) => n + e.events.length, 0);
+        text = `${visible} / ${DATA.metadata.eventCount} events · ${DATA.metadata.entryCount} entries`;
+      }
+      document.getElementById("stats").textContent = text;
+    }
+
+    function renderAll() {
+      renderDayTabs();
+      renderStats();
+      if (state.mode === "day") renderDayView();
+      else if (state.mode === "camp") renderCampView();
+      else if (state.mode === "map") renderMapView();
+    }
+
+    bindUi();
+    renderAll();
+  })();
+  </script>
+</body>
+
+</html>

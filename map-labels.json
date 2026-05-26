@@ -1,0 +1,2686 @@
+{
+  "pageWidth": 794.578125,
+  "pageHeight": 615.341553,
+  "labels": [
+    {
+      "text": "MUDDERWORLD",
+      "x": 0.0916,
+      "y": 0.0194,
+      "xMin": 0.0584,
+      "yMin": 0.0081,
+      "xMax": 0.1249,
+      "yMax": 0.0307,
+      "fragmentCount": 1
+    },
+    {
+      "text": "(parking)",
+      "x": 0.0916,
+      "y": 0.0407,
+      "xMin": 0.0701,
+      "yMin": 0.0374,
+      "xMax": 0.1132,
+      "yMax": 0.0439,
+      "fragmentCount": 1
+    },
+    {
+      "text": "BAONHLY",
+      "x": 0.3993,
+      "y": 0.0669,
+      "xMin": 0.3867,
+      "yMin": 0.0446,
+      "xMax": 0.4119,
+      "yMax": 0.0893,
+      "fragmentCount": 2
+    },
+    {
+      "text": "FAheRoMad",
+      "x": 0.3737,
+      "y": 0.0686,
+      "xMin": 0.3539,
+      "yMin": 0.033,
+      "xMax": 0.3935,
+      "yMax": 0.1042,
+      "fragmentCount": 1
+    },
+    {
+      "text": "LEGEND*",
+      "x": 0.7018,
+      "y": 0.0849,
+      "xMin": 0.6359,
+      "yMin": 0.0484,
+      "xMax": 0.7678,
+      "yMax": 0.1214,
+      "fragmentCount": 1
+    },
+    {
+      "text": "NTTE",
+      "x": 0.3926,
+      "y": 0.0922,
+      "xMin": 0.3879,
+      "yMin": 0.0816,
+      "xMax": 0.3973,
+      "yMax": 0.1027,
+      "fragmentCount": 1
+    },
+    {
+      "text": "midnightburrito",
+      "x": 0.4375,
+      "y": 0.0939,
+      "xMin": 0.4283,
+      "yMin": 0.0899,
+      "xMax": 0.4467,
+      "yMax": 0.0979,
+      "fragmentCount": 2
+    },
+    {
+      "text": "jellyfishlounge",
+      "x": 0.4616,
+      "y": 0.0995,
+      "xMin": 0.453,
+      "yMin": 0.0936,
+      "xMax": 0.4702,
+      "yMax": 0.1054,
+      "fragmentCount": 5
+    },
+    {
+      "text": "RNEVELAND",
+      "x": 0.1357,
+      "y": 0.1033,
+      "xMin": 0.0832,
+      "yMin": 0.0711,
+      "xMax": 0.1882,
+      "yMax": 0.1354,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ftdo",
+      "x": 0.3485,
+      "y": 0.1053,
+      "xMin": 0.3313,
+      "yMin": 0.0858,
+      "xMax": 0.3656,
+      "yMax": 0.1248,
+      "fragmentCount": 2
+    },
+    {
+      "text": "FROGBog",
+      "x": 0.2373,
+      "y": 0.1274,
+      "xMin": 0.2039,
+      "yMin": 0.1095,
+      "xMax": 0.2708,
+      "yMax": 0.1453,
+      "fragmentCount": 1
+    },
+    {
+      "text": "VehiclesOnly",
+      "x": 0.5862,
+      "y": 0.1283,
+      "xMin": 0.554,
+      "yMin": 0.1173,
+      "xMax": 0.6184,
+      "yMax": 0.1393,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SharedRoad",
+      "x": 0.6926,
+      "y": 0.1305,
+      "xMin": 0.661,
+      "yMin": 0.1195,
+      "xMax": 0.7241,
+      "yMax": 0.1414,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DOROBthirsttrap",
+      "x": 0.4077,
+      "y": 0.1308,
+      "xMin": 0.3893,
+      "yMin": 0.08,
+      "xMax": 0.4262,
+      "yMax": 0.1816,
+      "fragmentCount": 3
+    },
+    {
+      "text": "Footpath",
+      "x": 0.7913,
+      "y": 0.132,
+      "xMin": 0.769,
+      "yMin": 0.1215,
+      "xMax": 0.8136,
+      "yMax": 0.1426,
+      "fragmentCount": 1
+    },
+    {
+      "text": "simplepleasures",
+      "x": 0.4472,
+      "y": 0.1378,
+      "xMin": 0.4373,
+      "yMin": 0.1336,
+      "xMax": 0.457,
+      "yMax": 0.142,
+      "fragmentCount": 2
+    },
+    {
+      "text": "eswishtheinwind",
+      "x": 0.3683,
+      "y": 0.1392,
+      "xMin": 0.3593,
+      "yMin": 0.1285,
+      "xMax": 0.3773,
+      "yMax": 0.1499,
+      "fragmentCount": 12
+    },
+    {
+      "text": "OVGENEREARFLOW*CAMPILNG",
+      "x": 0.1013,
+      "y": 0.1545,
+      "xMin": 0.0761,
+      "yMin": 0.1306,
+      "xMax": 0.1266,
+      "yMax": 0.1784,
+      "fragmentCount": 2
+    },
+    {
+      "text": "SPONSIBILITY",
+      "x": 0.1367,
+      "y": 0.1548,
+      "xMin": 0.1137,
+      "yMin": 0.1234,
+      "xMax": 0.1598,
+      "yMax": 0.1863,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DOA",
+      "x": 0.2274,
+      "y": 0.1559,
+      "xMin": 0.2091,
+      "yMin": 0.1321,
+      "xMax": 0.2458,
+      "yMax": 0.1797,
+      "fragmentCount": 1
+    },
+    {
+      "text": "FICAMREP",
+      "x": 0.1549,
+      "y": 0.165,
+      "xMin": 0.1502,
+      "yMin": 0.1586,
+      "xMax": 0.1596,
+      "yMax": 0.1714,
+      "fragmentCount": 3
+    },
+    {
+      "text": "lunarmoth",
+      "x": 0.4413,
+      "y": 0.1658,
+      "xMin": 0.4337,
+      "yMin": 0.1606,
+      "xMax": 0.4489,
+      "yMax": 0.171,
+      "fragmentCount": 2
+    },
+    {
+      "text": "OpsTeams:Placement,VolunteerDesk,OrangeTeamMedicalRangersHQ",
+      "x": 0.7099,
+      "y": 0.1733,
+      "xMin": 0.6345,
+      "yMin": 0.1502,
+      "xMax": 0.7854,
+      "yMax": 0.1964,
+      "fragmentCount": 1
+    },
+    {
+      "text": "CRACY",
+      "x": 0.2799,
+      "y": 0.1751,
+      "xMin": 0.2483,
+      "yMin": 0.1488,
+      "xMax": 0.3115,
+      "yMax": 0.2014,
+      "fragmentCount": 1
+    },
+    {
+      "text": "LIMOCREARARWGNB",
+      "x": 0.2092,
+      "y": 0.1799,
+      "xMin": 0.1997,
+      "yMin": 0.1733,
+      "xMax": 0.2188,
+      "yMax": 0.1866,
+      "fragmentCount": 5
+    },
+    {
+      "text": "lrai",
+      "x": 0.4556,
+      "y": 0.1907,
+      "xMin": 0.4432,
+      "yMin": 0.176,
+      "xMax": 0.468,
+      "yMax": 0.2053,
+      "fragmentCount": 2
+    },
+    {
+      "text": "DGRAONERKYJDTHEEN",
+      "x": 0.2375,
+      "y": 0.1948,
+      "xMin": 0.2207,
+      "yMin": 0.1793,
+      "xMax": 0.2542,
+      "yMax": 0.2103,
+      "fragmentCount": 7
+    },
+    {
+      "text": "hiddenheart",
+      "x": 0.4313,
+      "y": 0.1953,
+      "xMin": 0.4223,
+      "yMin": 0.1901,
+      "xMax": 0.4402,
+      "yMax": 0.2004,
+      "fragmentCount": 2
+    },
+    {
+      "text": "Sanctuary",
+      "x": 0.6556,
+      "y": 0.2042,
+      "xMin": 0.635,
+      "yMin": 0.1959,
+      "xMax": 0.6762,
+      "yMax": 0.2125,
+      "fragmentCount": 1
+    },
+    {
+      "text": "REICCIV",
+      "x": 0.1087,
+      "y": 0.2055,
+      "xMin": 0.0921,
+      "yMin": 0.1863,
+      "xMax": 0.1253,
+      "yMax": 0.2248,
+      "fragmentCount": 3
+    },
+    {
+      "text": "Lost&Flailed",
+      "x": 0.7473,
+      "y": 0.206,
+      "xMin": 0.7208,
+      "yMin": 0.1977,
+      "xMax": 0.7738,
+      "yMax": 0.2143,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DROHEAESNINGVN",
+      "x": 0.3756,
+      "y": 0.2091,
+      "xMin": 0.3648,
+      "yMin": 0.2007,
+      "xMax": 0.3865,
+      "yMax": 0.2176,
+      "fragmentCount": 5
+    },
+    {
+      "text": "undeermoththeeertrACCECAMSSIBLEPING",
+      "x": 0.1344,
+      "y": 0.2098,
+      "xMin": 0.1151,
+      "yMin": 0.1826,
+      "xMax": 0.1536,
+      "yMax": 0.2371,
+      "fragmentCount": 11
+    },
+    {
+      "text": "THEGECOTTA",
+      "x": 0.2126,
+      "y": 0.2138,
+      "xMin": 0.1937,
+      "yMin": 0.2023,
+      "xMax": 0.2315,
+      "yMax": 0.2252,
+      "fragmentCount": 5
+    },
+    {
+      "text": "simplespleasureCONSENghealinkissChe",
+      "x": 0.4175,
+      "y": 0.2151,
+      "xMin": 0.3847,
+      "yMin": 0.1754,
+      "xMax": 0.4503,
+      "yMax": 0.2548,
+      "fragmentCount": 8
+    },
+    {
+      "text": "INEUSCOUSTHEEMOTRACEMPRESSENOTEATELEAVAMOCAMOOSFLMMCMCSUNCIIPOS4TATIATIOONNAPPAUSE",
+      "x": 0.3065,
+      "y": 0.234,
+      "xMin": 0.2555,
+      "yMin": 0.1973,
+      "xMax": 0.3575,
+      "yMax": 0.2706,
+      "fragmentCount": 15
+    },
+    {
+      "text": "HarmReductionSubstanceCheck",
+      "x": 0.6669,
+      "y": 0.2354,
+      "xMin": 0.6348,
+      "yMin": 0.2167,
+      "xMax": 0.699,
+      "yMax": 0.2541,
+      "fragmentCount": 2
+    },
+    {
+      "text": "CommissaryDPW&LNT:",
+      "x": 0.7442,
+      "y": 0.2364,
+      "xMin": 0.7192,
+      "yMin": 0.2198,
+      "xMax": 0.7691,
+      "yMax": 0.253,
+      "fragmentCount": 1
+    },
+    {
+      "text": "INGP",
+      "x": 0.3246,
+      "y": 0.2393,
+      "xMin": 0.3205,
+      "yMin": 0.2342,
+      "xMax": 0.3287,
+      "yMax": 0.2443,
+      "fragmentCount": 2
+    },
+    {
+      "text": "BNIVDILAASURTECORACMSOCWOIFL",
+      "x": 0.2291,
+      "y": 0.2429,
+      "xMin": 0.209,
+      "yMin": 0.2248,
+      "xMax": 0.2491,
+      "yMax": 0.2611,
+      "fragmentCount": 8
+    },
+    {
+      "text": "REtruelovetempleSP",
+      "x": 0.397,
+      "y": 0.2535,
+      "xMin": 0.3755,
+      "yMin": 0.241,
+      "xMax": 0.4185,
+      "yMax": 0.2659,
+      "fragmentCount": 5
+    },
+    {
+      "text": "DepartmentofPublicWorks&LeaveNoTrace",
+      "x": 0.757,
+      "y": 0.2572,
+      "xMin": 0.722,
+      "yMin": 0.2481,
+      "xMax": 0.7921,
+      "yMax": 0.2663,
+      "fragmentCount": 1
+    },
+    {
+      "text": "GVFOYAEOTHEAWDN",
+      "x": 0.1741,
+      "y": 0.2629,
+      "xMin": 0.1651,
+      "yMin": 0.2505,
+      "xMax": 0.1832,
+      "yMax": 0.2754,
+      "fragmentCount": 6
+    },
+    {
+      "text": "EDIACYNDINIWOERWEAWSOMDVINGG",
+      "x": 0.2476,
+      "y": 0.2679,
+      "xMin": 0.2299,
+      "yMin": 0.2463,
+      "xMax": 0.2652,
+      "yMax": 0.2895,
+      "fragmentCount": 9
+    },
+    {
+      "text": "IceSalestheonlythingforsale",
+      "x": 0.6651,
+      "y": 0.2679,
+      "xMin": 0.6382,
+      "yMin": 0.2569,
+      "xMax": 0.692,
+      "yMax": 0.279,
+      "fragmentCount": 2
+    },
+    {
+      "text": "ojellyfishlunge",
+      "x": 0.3723,
+      "y": 0.2686,
+      "xMin": 0.3525,
+      "yMin": 0.2539,
+      "xMax": 0.3921,
+      "yMax": 0.2834,
+      "fragmentCount": 2
+    },
+    {
+      "text": "ArtGallery",
+      "x": 0.7415,
+      "y": 0.2724,
+      "xMin": 0.72,
+      "yMin": 0.2641,
+      "xMax": 0.7631,
+      "yMax": 0.2807,
+      "fragmentCount": 1
+    },
+    {
+      "text": "TEC",
+      "x": 0.4046,
+      "y": 0.2749,
+      "xMin": 0.3924,
+      "yMin": 0.2659,
+      "xMax": 0.4167,
+      "yMax": 0.284,
+      "fragmentCount": 1
+    },
+    {
+      "text": "FVEERMREADFL..A.M.EXAIMM",
+      "x": 0.2101,
+      "y": 0.2841,
+      "xMin": 0.1804,
+      "yMin": 0.2556,
+      "xMax": 0.2398,
+      "yMax": 0.3126,
+      "fragmentCount": 8
+    },
+    {
+      "text": "NCOHERACECEREMOYN",
+      "x": 0.3417,
+      "y": 0.288,
+      "xMin": 0.3281,
+      "yMin": 0.2785,
+      "xMax": 0.3553,
+      "yMax": 0.2974,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LVOESUTHERIGD",
+      "x": 0.1602,
+      "y": 0.2952,
+      "xMin": 0.1493,
+      "yMin": 0.2848,
+      "xMax": 0.171,
+      "yMax": 0.3056,
+      "fragmentCount": 6
+    },
+    {
+      "text": ".MOIST",
+      "x": 0.3859,
+      "y": 0.3006,
+      "xMin": 0.3774,
+      "yMin": 0.286,
+      "xMax": 0.3944,
+      "yMax": 0.3152,
+      "fragmentCount": 2
+    },
+    {
+      "text": "FAMILYCAMPING",
+      "x": 0.7007,
+      "y": 0.3009,
+      "xMin": 0.6891,
+      "yMin": 0.2899,
+      "xMax": 0.7124,
+      "yMax": 0.312,
+      "fragmentCount": 1
+    },
+    {
+      "text": "GENERALCAMPING",
+      "x": 0.6572,
+      "y": 0.3012,
+      "xMin": 0.645,
+      "yMin": 0.2903,
+      "xMax": 0.6694,
+      "yMax": 0.3121,
+      "fragmentCount": 1
+    },
+    {
+      "text": "METHEMCAP",
+      "x": 0.7392,
+      "y": 0.3055,
+      "xMin": 0.7282,
+      "yMin": 0.2922,
+      "xMax": 0.7501,
+      "yMax": 0.3189,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ARTSUPPORTCAMPS",
+      "x": 0.7874,
+      "y": 0.3055,
+      "xMin": 0.7619,
+      "yMin": 0.294,
+      "xMax": 0.8129,
+      "yMax": 0.317,
+      "fragmentCount": 1
+    },
+    {
+      "text": "QUIETCAMPING",
+      "x": 0.956,
+      "y": 0.3061,
+      "xMin": 0.936,
+      "yMin": 0.2835,
+      "xMax": 0.9759,
+      "yMax": 0.3287,
+      "fragmentCount": 1
+    },
+    {
+      "text": "NAD",
+      "x": 0.2103,
+      "y": 0.3111,
+      "xMin": 0.1969,
+      "yMin": 0.2879,
+      "xMax": 0.2236,
+      "yMax": 0.3343,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ACCESSIBToiletsCAMPINGAccessibleToilets",
+      "x": 0.5808,
+      "y": 0.3114,
+      "xMin": 0.5348,
+      "yMin": 0.2907,
+      "xMax": 0.6268,
+      "yMax": 0.332,
+      "fragmentCount": 1
+    },
+    {
+      "text": "eDVTHEYARRAG",
+      "x": 0.3112,
+      "y": 0.3176,
+      "xMin": 0.2992,
+      "yMin": 0.3068,
+      "xMax": 0.3232,
+      "yMax": 0.3284,
+      "fragmentCount": 5
+    },
+    {
+      "text": "IMSTMERKSSOAYABIIVE",
+      "x": 0.1457,
+      "y": 0.3184,
+      "xMin": 0.1307,
+      "yMin": 0.3041,
+      "xMax": 0.1607,
+      "yMax": 0.3328,
+      "fragmentCount": 7
+    },
+    {
+      "text": "COSMCOWIEFL...RIPPLEFFTECUB",
+      "x": 0.2617,
+      "y": 0.3187,
+      "xMin": 0.2236,
+      "yMin": 0.288,
+      "xMax": 0.2998,
+      "yMax": 0.3494,
+      "fragmentCount": 13
+    },
+    {
+      "text": "AUTHENTICITY",
+      "x": 0.0389,
+      "y": 0.3232,
+      "xMin": 0.0264,
+      "yMin": 0.2906,
+      "xMax": 0.0514,
+      "yMax": 0.3558,
+      "fragmentCount": 1
+    },
+    {
+      "text": "YES",
+      "x": 0.2778,
+      "y": 0.3287,
+      "xMin": 0.2623,
+      "yMin": 0.311,
+      "xMax": 0.2932,
+      "yMax": 0.3463,
+      "fragmentCount": 1
+    },
+    {
+      "text": "UNDEERRTHETHMOETRENNYIHOEODCOMBATEHEASSOSCESSOUUIDINTosDR",
+      "x": 0.1158,
+      "y": 0.3338,
+      "xMin": 0.0789,
+      "yMin": 0.2883,
+      "xMax": 0.1526,
+      "yMax": 0.3794,
+      "fragmentCount": 17
+    },
+    {
+      "text": "KiNDLeWOODS",
+      "x": 0.0664,
+      "y": 0.3417,
+      "xMin": 0.0366,
+      "yMin": 0.2943,
+      "xMax": 0.0962,
+      "yMax": 0.3891,
+      "fragmentCount": 1
+    },
+    {
+      "text": "LVD",
+      "x": 0.2523,
+      "y": 0.3471,
+      "xMin": 0.2431,
+      "yMin": 0.331,
+      "xMax": 0.2616,
+      "yMax": 0.3631,
+      "fragmentCount": 1
+    },
+    {
+      "text": "Medical",
+      "x": 0.7633,
+      "y": 0.3475,
+      "xMin": 0.7491,
+      "yMin": 0.3395,
+      "xMax": 0.7776,
+      "yMax": 0.3555,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DSHAMANOME",
+      "x": 0.2923,
+      "y": 0.3497,
+      "xMin": 0.2824,
+      "yMin": 0.3405,
+      "xMax": 0.3023,
+      "yMax": 0.3589,
+      "fragmentCount": 2
+    },
+    {
+      "text": "NCE",
+      "x": 0.8807,
+      "y": 0.3501,
+      "xMin": 0.8743,
+      "yMin": 0.3413,
+      "xMax": 0.8871,
+      "yMax": 0.3589,
+      "fragmentCount": 1
+    },
+    {
+      "text": "Effigy",
+      "x": 0.6475,
+      "y": 0.3505,
+      "xMin": 0.6351,
+      "yMin": 0.3416,
+      "xMax": 0.66,
+      "yMax": 0.3594,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ShowersShuttleStop",
+      "x": 0.5599,
+      "y": 0.3536,
+      "xMin": 0.5343,
+      "yMin": 0.334,
+      "xMax": 0.5855,
+      "yMax": 0.3732,
+      "fragmentCount": 2
+    },
+    {
+      "text": "RELIA",
+      "x": 0.8656,
+      "y": 0.3571,
+      "xMin": 0.8568,
+      "yMin": 0.3478,
+      "xMax": 0.8743,
+      "yMax": 0.3665,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SiMMer",
+      "x": 0.8969,
+      "y": 0.3573,
+      "xMin": 0.8536,
+      "yMin": 0.3039,
+      "xMax": 0.9402,
+      "yMax": 0.4108,
+      "fragmentCount": 1
+    },
+    {
+      "text": "19+",
+      "x": 0.4233,
+      "y": 0.3575,
+      "xMin": 0.4119,
+      "yMin": 0.3428,
+      "xMax": 0.4346,
+      "yMax": 0.3721,
+      "fragmentCount": 1
+    },
+    {
+      "text": "BARARABBRATHEtPaMOSTRERIFFIZZYAMARILIteIDGCEESCRTHECAMWHOSAYSPrnARENCOSMCODI”NI”SLWECOMETOARCAADI",
+      "x": 0.342,
+      "y": 0.3608,
+      "xMin": 0.2979,
+      "yMin": 0.3114,
+      "xMax": 0.3861,
+      "yMax": 0.4102,
+      "fragmentCount": 30
+    },
+    {
+      "text": "GZERORATASVI",
+      "x": 0.2327,
+      "y": 0.3712,
+      "xMin": 0.2215,
+      "yMin": 0.3626,
+      "xMax": 0.2438,
+      "yMax": 0.3797,
+      "fragmentCount": 4
+    },
+    {
+      "text": "ELFICALS",
+      "x": 0.8396,
+      "y": 0.3729,
+      "xMin": 0.8243,
+      "yMin": 0.3617,
+      "xMax": 0.8549,
+      "yMax": 0.3841,
+      "fragmentCount": 1
+    },
+    {
+      "text": "EFFORT",
+      "x": 0.2019,
+      "y": 0.3754,
+      "xMin": 0.1903,
+      "yMin": 0.357,
+      "xMax": 0.2134,
+      "yMax": 0.3938,
+      "fragmentCount": 1
+    },
+    {
+      "text": "IceSalesHelpDesk",
+      "x": 0.7673,
+      "y": 0.3781,
+      "xMin": 0.7486,
+      "yMin": 0.3589,
+      "xMax": 0.786,
+      "yMax": 0.3974,
+      "fragmentCount": 2
+    },
+    {
+      "text": "RAD",
+      "x": 0.8175,
+      "y": 0.3803,
+      "xMin": 0.8107,
+      "yMin": 0.372,
+      "xMax": 0.8243,
+      "yMax": 0.3885,
+      "fragmentCount": 1
+    },
+    {
+      "text": "Temple",
+      "x": 0.6496,
+      "y": 0.3837,
+      "xMin": 0.6347,
+      "yMin": 0.3749,
+      "xMax": 0.6646,
+      "yMax": 0.3926,
+      "fragmentCount": 1
+    },
+    {
+      "text": "UARYSESN",
+      "x": 0.4333,
+      "y": 0.3869,
+      "xMin": 0.4219,
+      "yMin": 0.378,
+      "xMax": 0.4447,
+      "yMax": 0.3958,
+      "fragmentCount": 3
+    },
+    {
+      "text": "DMV:DepartmentofMutantVehicles",
+      "x": 0.555,
+      "y": 0.3903,
+      "xMin": 0.5341,
+      "yMin": 0.3756,
+      "xMax": 0.576,
+      "yMax": 0.405,
+      "fragmentCount": 2
+    },
+    {
+      "text": "BADGERSHIDEOUTLeYth&FFPTEMEPORTSUPIGmy",
+      "x": 0.1082,
+      "y": 0.3937,
+      "xMin": 0.0801,
+      "yMin": 0.359,
+      "xMax": 0.1362,
+      "yMax": 0.4284,
+      "fragmentCount": 15
+    },
+    {
+      "text": "DOMMMOMMRKSYYDIN",
+      "x": 0.4054,
+      "y": 0.4032,
+      "xMin": 0.3984,
+      "yMin": 0.3944,
+      "xMax": 0.4125,
+      "yMax": 0.4121,
+      "fragmentCount": 6
+    },
+    {
+      "text": "RIP",
+      "x": 0.2242,
+      "y": 0.4046,
+      "xMin": 0.2174,
+      "yMin": 0.4019,
+      "xMax": 0.2311,
+      "yMax": 0.4072,
+      "fragmentCount": 1
+    },
+    {
+      "text": "THEOCCUTRARLYLIB",
+      "x": 0.3742,
+      "y": 0.4065,
+      "xMin": 0.3648,
+      "yMin": 0.3948,
+      "xMax": 0.3835,
+      "yMax": 0.4183,
+      "fragmentCount": 4
+    },
+    {
+      "text": "THEAROUYGpLNDLLSKMOUOATNIN",
+      "x": 0.2581,
+      "y": 0.4068,
+      "xMin": 0.2366,
+      "yMin": 0.3907,
+      "xMax": 0.2795,
+      "yMax": 0.4228,
+      "fragmentCount": 10
+    },
+    {
+      "text": "IADLCARNERRRRRSDNTUSNIOCLINLWECOMENTOTHERESSTACETWHAPESSHASUI",
+      "x": 0.3227,
+      "y": 0.4111,
+      "xMin": 0.2912,
+      "yMin": 0.3607,
+      "xMax": 0.3541,
+      "yMax": 0.4614,
+      "fragmentCount": 15
+    },
+    {
+      "text": "MUNALVICD",
+      "x": 0.1973,
+      "y": 0.4135,
+      "xMin": 0.1774,
+      "yMin": 0.3965,
+      "xMax": 0.2173,
+      "yMax": 0.4306,
+      "fragmentCount": 3
+    },
+    {
+      "text": "ACCESSIBLECAMPING",
+      "x": 0.0827,
+      "y": 0.421,
+      "xMin": 0.0623,
+      "yMin": 0.4065,
+      "xMax": 0.103,
+      "yMax": 0.4355,
+      "fragmentCount": 1
+    },
+    {
+      "text": "GPHATASMAORANI",
+      "x": 0.2944,
+      "y": 0.428,
+      "xMin": 0.2836,
+      "yMin": 0.4189,
+      "xMax": 0.3053,
+      "yMax": 0.4371,
+      "fragmentCount": 4
+    },
+    {
+      "text": "ZLE",
+      "x": 0.8916,
+      "y": 0.4332,
+      "xMin": 0.8813,
+      "yMin": 0.4156,
+      "xMax": 0.902,
+      "yMax": 0.4508,
+      "fragmentCount": 1
+    },
+    {
+      "text": "LSUTPCAM",
+      "x": 0.3894,
+      "y": 0.4372,
+      "xMin": 0.3832,
+      "yMin": 0.4276,
+      "xMax": 0.3956,
+      "yMax": 0.4467,
+      "fragmentCount": 2
+    },
+    {
+      "text": "XBAYBLONUEST",
+      "x": 0.4314,
+      "y": 0.4377,
+      "xMin": 0.397,
+      "yMin": 0.4112,
+      "xMax": 0.4659,
+      "yMax": 0.4642,
+      "fragmentCount": 8
+    },
+    {
+      "text": "SCORCH",
+      "x": 0.8169,
+      "y": 0.4381,
+      "xMin": 0.7938,
+      "yMin": 0.4247,
+      "xMax": 0.84,
+      "yMax": 0.4515,
+      "fragmentCount": 1
+    },
+    {
+      "text": "COM",
+      "x": 0.1787,
+      "y": 0.4417,
+      "xMin": 0.1698,
+      "yMin": 0.4306,
+      "xMax": 0.1876,
+      "yMax": 0.4528,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SMOLDERM",
+      "x": 0.7208,
+      "y": 0.4446,
+      "xMin": 0.6878,
+      "yMin": 0.4275,
+      "xMax": 0.7538,
+      "yMax": 0.4617,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ASHLANyarniaWHTEILIGHTNING",
+      "x": 0.2312,
+      "y": 0.4454,
+      "xMin": 0.1883,
+      "yMin": 0.4129,
+      "xMax": 0.2742,
+      "yMax": 0.478,
+      "fragmentCount": 9
+    },
+    {
+      "text": "SIZ",
+      "x": 0.8728,
+      "y": 0.4457,
+      "xMin": 0.865,
+      "yMin": 0.4304,
+      "xMax": 0.8807,
+      "yMax": 0.4611,
+      "fragmentCount": 1
+    },
+    {
+      "text": "VFRAEORESTCAEF",
+      "x": 0.0953,
+      "y": 0.4489,
+      "xMin": 0.0814,
+      "yMin": 0.4397,
+      "xMax": 0.1093,
+      "yMax": 0.4581,
+      "fragmentCount": 4
+    },
+    {
+      "text": "sisterhtheood",
+      "x": 0.1603,
+      "y": 0.4577,
+      "xMin": 0.1462,
+      "yMin": 0.4524,
+      "xMax": 0.1744,
+      "yMax": 0.4629,
+      "fragmentCount": 3
+    },
+    {
+      "text": "IFFYSAI",
+      "x": 0.7825,
+      "y": 0.4583,
+      "xMin": 0.7755,
+      "yMin": 0.4481,
+      "xMax": 0.7894,
+      "yMax": 0.4685,
+      "fragmentCount": 5
+    },
+    {
+      "text": "SPARK",
+      "x": 0.6278,
+      "y": 0.4641,
+      "xMin": 0.6098,
+      "yMin": 0.4507,
+      "xMax": 0.6457,
+      "yMax": 0.4775,
+      "fragmentCount": 1
+    },
+    {
+      "text": "taconoods",
+      "x": 0.1918,
+      "y": 0.4646,
+      "xMin": 0.1837,
+      "yMin": 0.4596,
+      "xMax": 0.1998,
+      "yMax": 0.4697,
+      "fragmentCount": 2
+    },
+    {
+      "text": "NCARALCARANIVLChem",
+      "x": 0.3844,
+      "y": 0.4648,
+      "xMin": 0.3628,
+      "yMin": 0.4478,
+      "xMax": 0.4059,
+      "yMax": 0.4818,
+      "fragmentCount": 5
+    },
+    {
+      "text": "FLJFF",
+      "x": 0.8028,
+      "y": 0.472,
+      "xMin": 0.7978,
+      "yMin": 0.4639,
+      "xMax": 0.8077,
+      "yMax": 0.48,
+      "fragmentCount": 4
+    },
+    {
+      "text": "PQICARRELSUURTALAEFIckysLLYrcoeationNcBCESUSTAORTSUPP",
+      "x": 0.6849,
+      "y": 0.4819,
+      "xMin": 0.6499,
+      "yMin": 0.4532,
+      "xMax": 0.7198,
+      "yMax": 0.5107,
+      "fragmentCount": 22
+    },
+    {
+      "text": "EMPOWERMETNTHEMACSTCKIGI",
+      "x": 0.1047,
+      "y": 0.484,
+      "xMin": 0.0868,
+      "yMin": 0.4645,
+      "xMax": 0.1226,
+      "yMax": 0.5034,
+      "fragmentCount": 5
+    },
+    {
+      "text": "INGBMOSTEMPEMMARTOCERSARCAMTEMCAMPUMMPMHYUTSSKSCOTCAMUROPINDBLI",
+      "x": 0.7807,
+      "y": 0.4848,
+      "xMin": 0.7445,
+      "yMin": 0.4557,
+      "xMax": 0.8168,
+      "yMax": 0.5139,
+      "fragmentCount": 9
+    },
+    {
+      "text": "NINNCOSCSCOECTOUOCAMPSIN",
+      "x": 0.8391,
+      "y": 0.4852,
+      "xMin": 0.8232,
+      "yMin": 0.4728,
+      "xMax": 0.855,
+      "yMax": 0.4976,
+      "fragmentCount": 6
+    },
+    {
+      "text": "THIRRTRRSGBA",
+      "x": 0.2609,
+      "y": 0.4919,
+      "xMin": 0.2409,
+      "yMin": 0.4832,
+      "xMax": 0.2809,
+      "yMax": 0.5007,
+      "fragmentCount": 5
+    },
+    {
+      "text": "moistlylhelpfudeskofficeposthelpfantasti",
+      "x": 0.1488,
+      "y": 0.4938,
+      "xMin": 0.1271,
+      "yMin": 0.4794,
+      "xMax": 0.1704,
+      "yMax": 0.5083,
+      "fragmentCount": 12
+    },
+    {
+      "text": "lSOARTRIFD",
+      "x": 0.3217,
+      "y": 0.4952,
+      "xMin": 0.3146,
+      "yMin": 0.4857,
+      "xMax": 0.3289,
+      "yMax": 0.5047,
+      "fragmentCount": 4
+    },
+    {
+      "text": "NNAUTIORSECALNSIDEQ",
+      "x": 0.4278,
+      "y": 0.4965,
+      "xMin": 0.4044,
+      "yMin": 0.4642,
+      "xMax": 0.4511,
+      "yMax": 0.5288,
+      "fragmentCount": 6
+    },
+    {
+      "text": "BIIRTHRESSTACEINGN",
+      "x": 0.3611,
+      "y": 0.4974,
+      "xMin": 0.3477,
+      "yMin": 0.4888,
+      "xMax": 0.3745,
+      "yMax": 0.506,
+      "fragmentCount": 5
+    },
+    {
+      "text": "steepedHAUSEinERKUNSARAKES&cartSTOAERSRMBG",
+      "x": 0.2106,
+      "y": 0.5005,
+      "xMin": 0.1705,
+      "yMin": 0.483,
+      "xMax": 0.2507,
+      "yMax": 0.5179,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LUCKUCKUCKYYYFD",
+      "x": 0.3885,
+      "y": 0.5006,
+      "xMin": 0.3802,
+      "yMin": 0.4882,
+      "xMax": 0.3967,
+      "yMax": 0.5131,
+      "fragmentCount": 6
+    },
+    {
+      "text": "rulezero",
+      "x": 0.7085,
+      "y": 0.5013,
+      "xMin": 0.7023,
+      "yMin": 0.4951,
+      "xMax": 0.7146,
+      "yMax": 0.5075,
+      "fragmentCount": 5
+    },
+    {
+      "text": "EPSAYLOCPAMC",
+      "x": 0.6224,
+      "y": 0.5018,
+      "xMin": 0.5959,
+      "yMin": 0.4698,
+      "xMax": 0.6489,
+      "yMax": 0.5338,
+      "fragmentCount": 11
+    },
+    {
+      "text": "(BI",
+      "x": 0.8011,
+      "y": 0.5026,
+      "xMin": 0.7972,
+      "yMin": 0.4983,
+      "xMax": 0.805,
+      "yMax": 0.5069,
+      "fragmentCount": 2
+    },
+    {
+      "text": "PI?)",
+      "x": 0.8143,
+      "y": 0.5046,
+      "xMin": 0.8115,
+      "yMin": 0.4961,
+      "xMax": 0.8171,
+      "yMax": 0.5131,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LNLDD",
+      "x": 0.2365,
+      "y": 0.5062,
+      "xMin": 0.2304,
+      "yMin": 0.498,
+      "xMax": 0.2426,
+      "yMax": 0.5144,
+      "fragmentCount": 4
+    },
+    {
+      "text": "CBI",
+      "x": 0.7468,
+      "y": 0.5081,
+      "xMin": 0.7418,
+      "yMin": 0.5014,
+      "xMax": 0.7518,
+      "yMax": 0.5147,
+      "fragmentCount": 3
+    },
+    {
+      "text": "ERAPLINGNEGCAM",
+      "x": 0.9046,
+      "y": 0.5128,
+      "xMin": 0.8686,
+      "yMin": 0.48,
+      "xMax": 0.9405,
+      "yMax": 0.5455,
+      "fragmentCount": 1
+    },
+    {
+      "text": "NESSIOEXPRESTBILOUMIN",
+      "x": 0.2917,
+      "y": 0.5169,
+      "xMin": 0.2703,
+      "yMin": 0.4957,
+      "xMax": 0.3131,
+      "yMax": 0.5381,
+      "fragmentCount": 6
+    },
+    {
+      "text": "UNSPWOEAKARLDBLE",
+      "x": 0.8439,
+      "y": 0.5177,
+      "xMin": 0.8298,
+      "yMin": 0.5041,
+      "xMax": 0.858,
+      "yMax": 0.5314,
+      "fragmentCount": 10
+    },
+    {
+      "text": "eweturn",
+      "x": 0.676,
+      "y": 0.5193,
+      "xMin": 0.6699,
+      "yMin": 0.5146,
+      "xMax": 0.6822,
+      "yMax": 0.5241,
+      "fragmentCount": 2
+    },
+    {
+      "text": "orfd",
+      "x": 0.7739,
+      "y": 0.5202,
+      "xMin": 0.7683,
+      "yMin": 0.5165,
+      "xMax": 0.7795,
+      "yMax": 0.5239,
+      "fragmentCount": 4
+    },
+    {
+      "text": "TINKERPART",
+      "x": 0.1597,
+      "y": 0.5242,
+      "xMin": 0.1305,
+      "yMin": 0.5,
+      "xMax": 0.189,
+      "yMax": 0.5483,
+      "fragmentCount": 2
+    },
+    {
+      "text": "NEW&SOUSOPNGSUTOTNBBLYBBURA",
+      "x": 0.5499,
+      "y": 0.5278,
+      "xMin": 0.5187,
+      "yMin": 0.5063,
+      "xMax": 0.5811,
+      "yMax": 0.5494,
+      "fragmentCount": 15
+    },
+    {
+      "text": "SOTAEFDZ",
+      "x": 0.1194,
+      "y": 0.5298,
+      "xMin": 0.1135,
+      "yMin": 0.521,
+      "xMax": 0.1254,
+      "yMax": 0.5385,
+      "fragmentCount": 4
+    },
+    {
+      "text": "STRPOTHEIT",
+      "x": 0.6384,
+      "y": 0.53,
+      "xMin": 0.63,
+      "yMin": 0.5192,
+      "xMax": 0.6467,
+      "yMax": 0.5408,
+      "fragmentCount": 3
+    },
+    {
+      "text": "littlebig",
+      "x": 0.7112,
+      "y": 0.53,
+      "xMin": 0.7049,
+      "yMin": 0.5236,
+      "xMax": 0.7175,
+      "yMax": 0.5363,
+      "fragmentCount": 5
+    },
+    {
+      "text": "IPCPARTYCNI",
+      "x": 0.8097,
+      "y": 0.5339,
+      "xMin": 0.8021,
+      "yMin": 0.5241,
+      "xMax": 0.8174,
+      "yMax": 0.5437,
+      "fragmentCount": 3
+    },
+    {
+      "text": "DSEUESTERECARO",
+      "x": 0.7466,
+      "y": 0.5405,
+      "xMin": 0.7401,
+      "yMin": 0.4949,
+      "xMax": 0.7531,
+      "yMax": 0.5862,
+      "fragmentCount": 2
+    },
+    {
+      "text": "CAMUMAMPDYIDOMMMOMMRKSINYSLNNOTETEATEKETMARNI19+",
+      "x": 0.3841,
+      "y": 0.5418,
+      "xMin": 0.3558,
+      "yMin": 0.5113,
+      "xMax": 0.4125,
+      "yMax": 0.5723,
+      "fragmentCount": 16
+    },
+    {
+      "text": "TER-ACEIN2.0F",
+      "x": 0.3211,
+      "y": 0.5428,
+      "xMin": 0.3084,
+      "yMin": 0.534,
+      "xMax": 0.3338,
+      "yMax": 0.5516,
+      "fragmentCount": 4
+    },
+    {
+      "text": "INDLGNUYOECESURUS",
+      "x": 0.7789,
+      "y": 0.5443,
+      "xMin": 0.7686,
+      "yMin": 0.5318,
+      "xMax": 0.7891,
+      "yMax": 0.5568,
+      "fragmentCount": 5
+    },
+    {
+      "text": "LSELFRELIANCE",
+      "x": 0.4816,
+      "y": 0.5448,
+      "xMin": 0.4744,
+      "yMin": 0.5102,
+      "xMax": 0.4888,
+      "yMax": 0.5793,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SOCICIPATIONTAPESTRY",
+      "x": 0.181,
+      "y": 0.546,
+      "xMin": 0.1516,
+      "yMin": 0.5345,
+      "xMax": 0.2105,
+      "yMax": 0.5575,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DUSTEST&EL",
+      "x": 0.6084,
+      "y": 0.5489,
+      "xMin": 0.6009,
+      "yMin": 0.5386,
+      "xMax": 0.6158,
+      "yMax": 0.5592,
+      "fragmentCount": 2
+    },
+    {
+      "text": "GQHUEUAERLIZ",
+      "x": 0.5633,
+      "y": 0.5513,
+      "xMin": 0.551,
+      "yMin": 0.5427,
+      "xMax": 0.5755,
+      "yMax": 0.5598,
+      "fragmentCount": 4
+    },
+    {
+      "text": "BMOTAHLL",
+      "x": 0.7097,
+      "y": 0.5536,
+      "xMin": 0.7046,
+      "yMin": 0.5468,
+      "xMax": 0.7148,
+      "yMax": 0.5603,
+      "fragmentCount": 4
+    },
+    {
+      "text": "betweenSELFKESusALDICSNARALITTESOMASLportals",
+      "x": 0.2322,
+      "y": 0.5569,
+      "xMin": 0.1928,
+      "yMin": 0.5261,
+      "xMax": 0.2716,
+      "yMax": 0.5877,
+      "fragmentCount": 13
+    },
+    {
+      "text": "SPACEETWEEGIHATREGISTRATIONRDBnBMACALMYSTERUSY",
+      "x": 0.828,
+      "y": 0.5607,
+      "xMin": 0.8004,
+      "yMin": 0.5159,
+      "xMax": 0.8556,
+      "yMax": 0.6054,
+      "fragmentCount": 8
+    },
+    {
+      "text": "THMOU",
+      "x": 0.1482,
+      "y": 0.5624,
+      "xMin": 0.1404,
+      "yMin": 0.5548,
+      "xMax": 0.1561,
+      "yMax": 0.57,
+      "fragmentCount": 2
+    },
+    {
+      "text": "ApocalypseMeowRD",
+      "x": 0.5887,
+      "y": 0.5631,
+      "xMin": 0.5817,
+      "yMin": 0.5086,
+      "xMax": 0.5957,
+      "yMax": 0.6177,
+      "fragmentCount": 1
+    },
+    {
+      "text": "UPSTAIRS",
+      "x": 0.4399,
+      "y": 0.5658,
+      "xMin": 0.4157,
+      "yMin": 0.5545,
+      "xMax": 0.4641,
+      "yMax": 0.5771,
+      "fragmentCount": 1
+    },
+    {
+      "text": "AASARTHATLUFEEMAPLING",
+      "x": 0.2831,
+      "y": 0.5684,
+      "xMin": 0.2654,
+      "yMin": 0.5449,
+      "xMax": 0.3007,
+      "yMax": 0.5919,
+      "fragmentCount": 4
+    },
+    {
+      "text": "KANGAROORD",
+      "x": 0.9253,
+      "y": 0.5698,
+      "xMin": 0.9202,
+      "yMin": 0.5403,
+      "xMax": 0.9304,
+      "yMax": 0.5992,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DFNIEERRETCRCESL",
+      "x": 0.5417,
+      "y": 0.5706,
+      "xMin": 0.5291,
+      "yMin": 0.5621,
+      "xMax": 0.5542,
+      "yMax": 0.579,
+      "fragmentCount": 6
+    },
+    {
+      "text": "AMRERINGFTHEEEECOWBOISINSPACERDpinkFDRtorpedoBITFRDINGFLAMAERTETHBLL",
+      "x": 0.6412,
+      "y": 0.5708,
+      "xMin": 0.5944,
+      "yMin": 0.5189,
+      "xMax": 0.6879,
+      "yMax": 0.6227,
+      "fragmentCount": 18
+    },
+    {
+      "text": "ELEMENTALITYRD",
+      "x": 0.7278,
+      "y": 0.5721,
+      "xMin": 0.7222,
+      "yMin": 0.5364,
+      "xMax": 0.7334,
+      "yMax": 0.6079,
+      "fragmentCount": 1
+    },
+    {
+      "text": "JARGONRD",
+      "x": 0.8938,
+      "y": 0.5737,
+      "xMin": 0.8887,
+      "yMin": 0.5505,
+      "xMax": 0.8989,
+      "yMax": 0.597,
+      "fragmentCount": 1
+    },
+    {
+      "text": "fiSTATTOxIDISCOVAMPIRERDIN",
+      "x": 0.684,
+      "y": 0.5751,
+      "xMin": 0.6673,
+      "yMin": 0.5303,
+      "xMax": 0.7007,
+      "yMax": 0.6198,
+      "fragmentCount": 7
+    },
+    {
+      "text": "FLOATINGWORLDRDanansayQbembasHUMACATNTREEGARYRDNFSONCOESSSOCOCEININ",
+      "x": 0.7735,
+      "y": 0.5761,
+      "xMin": 0.7471,
+      "yMin": 0.5223,
+      "xMax": 0.8,
+      "yMax": 0.63,
+      "fragmentCount": 23
+    },
+    {
+      "text": "sloplandia",
+      "x": 0.7107,
+      "y": 0.5788,
+      "xMin": 0.7021,
+      "yMin": 0.571,
+      "xMax": 0.7193,
+      "yMax": 0.5865,
+      "fragmentCount": 3
+    },
+    {
+      "text": "PLLVAMWEOECTHERAMP&ORCAEBIGNDLBo’’DRADICA",
+      "x": 0.5014,
+      "y": 0.5822,
+      "xMin": 0.479,
+      "yMin": 0.5538,
+      "xMax": 0.5238,
+      "yMax": 0.6106,
+      "fragmentCount": 12
+    },
+    {
+      "text": "DLTHA",
+      "x": 0.1208,
+      "y": 0.5826,
+      "xMin": 0.0997,
+      "yMin": 0.5499,
+      "xMax": 0.1419,
+      "yMax": 0.6153,
+      "fragmentCount": 1
+    },
+    {
+      "text": "TAB",
+      "x": 0.2598,
+      "y": 0.5849,
+      "xMin": 0.2542,
+      "yMin": 0.5743,
+      "xMax": 0.2654,
+      "yMax": 0.5955,
+      "fragmentCount": 2
+    },
+    {
+      "text": "SPECTRSPHEREA",
+      "x": 0.1624,
+      "y": 0.5866,
+      "xMin": 0.1528,
+      "yMin": 0.5784,
+      "xMax": 0.1721,
+      "yMax": 0.5948,
+      "fragmentCount": 2
+    },
+    {
+      "text": "MIEDRE",
+      "x": 0.0974,
+      "y": 0.5903,
+      "xMin": 0.0673,
+      "yMin": 0.5627,
+      "xMax": 0.1275,
+      "yMax": 0.6179,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SIDEDOWgsN",
+      "x": 0.3492,
+      "y": 0.5954,
+      "xMin": 0.3338,
+      "yMin": 0.5701,
+      "xMax": 0.3647,
+      "yMax": 0.6207,
+      "fragmentCount": 1
+    },
+    {
+      "text": "AEOALIN",
+      "x": 0.5328,
+      "y": 0.5966,
+      "xMin": 0.523,
+      "yMin": 0.5904,
+      "xMax": 0.5425,
+      "yMax": 0.6027,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LTHEOARWIRONICRDB",
+      "x": 0.851,
+      "y": 0.5968,
+      "xMin": 0.8378,
+      "yMin": 0.5723,
+      "xMax": 0.8643,
+      "yMax": 0.6213,
+      "fragmentCount": 5
+    },
+    {
+      "text": "DOWNSTAIR",
+      "x": 0.4335,
+      "y": 0.5988,
+      "xMin": 0.4034,
+      "yMin": 0.5863,
+      "xMax": 0.4637,
+      "yMax": 0.6112,
+      "fragmentCount": 1
+    },
+    {
+      "text": "CHA",
+      "x": 0.3869,
+      "y": 0.6089,
+      "xMin": 0.3761,
+      "yMin": 0.5907,
+      "xMax": 0.3976,
+      "yMax": 0.627,
+      "fragmentCount": 1
+    },
+    {
+      "text": "COCORYERZN",
+      "x": 0.7121,
+      "y": 0.6093,
+      "xMin": 0.7035,
+      "yMin": 0.5987,
+      "xMax": 0.7207,
+      "yMax": 0.6199,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LIVINGM,ROOHETGTHEAECYN",
+      "x": 0.5124,
+      "y": 0.6099,
+      "xMin": 0.499,
+      "yMin": 0.5891,
+      "xMax": 0.5258,
+      "yMax": 0.6307,
+      "fragmentCount": 8
+    },
+    {
+      "text": "DNGFEARTAOEIN’",
+      "x": 0.6758,
+      "y": 0.6103,
+      "xMin": 0.6656,
+      "yMin": 0.5983,
+      "xMax": 0.686,
+      "yMax": 0.6224,
+      "fragmentCount": 7
+    },
+    {
+      "text": "THEUSOPOTAMUOASSSI",
+      "x": 0.8131,
+      "y": 0.6114,
+      "xMin": 0.7979,
+      "yMin": 0.5994,
+      "xMax": 0.8284,
+      "yMax": 0.6235,
+      "fragmentCount": 2
+    },
+    {
+      "text": "INTHERTCHACATATCINA",
+      "x": 0.6395,
+      "y": 0.6115,
+      "xMin": 0.6276,
+      "yMin": 0.5978,
+      "xMax": 0.6513,
+      "yMax": 0.6252,
+      "fragmentCount": 5
+    },
+    {
+      "text": "LACHEMSTSSKETCHOOKBI",
+      "x": 0.2414,
+      "y": 0.6116,
+      "xMin": 0.2266,
+      "yMin": 0.6027,
+      "xMax": 0.2562,
+      "yMax": 0.6205,
+      "fragmentCount": 4
+    },
+    {
+      "text": "LLNSAOOSAON",
+      "x": 0.7446,
+      "y": 0.612,
+      "xMin": 0.736,
+      "yMin": 0.6006,
+      "xMax": 0.7533,
+      "yMax": 0.6233,
+      "fragmentCount": 4
+    },
+    {
+      "text": "driftinfreedom",
+      "x": 0.3383,
+      "y": 0.6149,
+      "xMin": 0.3278,
+      "yMin": 0.6101,
+      "xMax": 0.3487,
+      "yMax": 0.6197,
+      "fragmentCount": 2
+    },
+    {
+      "text": "NTM",
+      "x": 0.4077,
+      "y": 0.6217,
+      "xMin": 0.3974,
+      "yMin": 0.6026,
+      "xMax": 0.418,
+      "yMax": 0.6409,
+      "fragmentCount": 1
+    },
+    {
+      "text": "SARAMSA",
+      "x": 0.5819,
+      "y": 0.6352,
+      "xMin": 0.5716,
+      "yMin": 0.6263,
+      "xMax": 0.5921,
+      "yMax": 0.6442,
+      "fragmentCount": 2
+    },
+    {
+      "text": "SUNNYDAZEESPLANADE",
+      "x": 0.8594,
+      "y": 0.6354,
+      "xMin": 0.798,
+      "yMin": 0.6238,
+      "xMax": 0.9207,
+      "yMax": 0.6471,
+      "fragmentCount": 1
+    },
+    {
+      "text": "ENT",
+      "x": 0.4309,
+      "y": 0.6356,
+      "xMin": 0.4197,
+      "yMin": 0.6164,
+      "xMax": 0.442,
+      "yMax": 0.6549,
+      "fragmentCount": 1
+    },
+    {
+      "text": "NITROUSOXYOPHOELN",
+      "x": 0.2832,
+      "y": 0.6359,
+      "xMin": 0.268,
+      "yMin": 0.6268,
+      "xMax": 0.2984,
+      "yMax": 0.6451,
+      "fragmentCount": 4
+    },
+    {
+      "text": "AERIAL",
+      "x": 0.2225,
+      "y": 0.6449,
+      "xMin": 0.1977,
+      "yMin": 0.6268,
+      "xMax": 0.2472,
+      "yMax": 0.663,
+      "fragmentCount": 1
+    },
+    {
+      "text": "BDNB&BIEKOSASSKCKSTHESOTWARM)EYOTHEEASTIN(BLLFFB",
+      "x": 0.3721,
+      "y": 0.6463,
+      "xMin": 0.3448,
+      "yMin": 0.6268,
+      "xMax": 0.3994,
+      "yMax": 0.6658,
+      "fragmentCount": 14
+    },
+    {
+      "text": "N&OONCAEFelectriccircus",
+      "x": 0.1536,
+      "y": 0.6468,
+      "xMin": 0.132,
+      "yMin": 0.6233,
+      "xMax": 0.1753,
+      "yMax": 0.6703,
+      "fragmentCount": 4
+    },
+    {
+      "text": "PORTAEULLNG",
+      "x": 0.607,
+      "y": 0.6469,
+      "xMin": 0.5979,
+      "yMin": 0.6363,
+      "xMax": 0.6162,
+      "yMax": 0.6575,
+      "fragmentCount": 4
+    },
+    {
+      "text": "SOUNHABI",
+      "x": 0.6703,
+      "y": 0.6506,
+      "xMin": 0.6577,
+      "yMin": 0.6436,
+      "xMax": 0.6828,
+      "yMax": 0.6576,
+      "fragmentCount": 2
+    },
+    {
+      "text": "INFIAKSEGHVILL",
+      "x": 0.6393,
+      "y": 0.654,
+      "xMin": 0.63,
+      "yMin": 0.6443,
+      "xMax": 0.6486,
+      "yMax": 0.6637,
+      "fragmentCount": 9
+    },
+    {
+      "text": "worstpcamever",
+      "x": 0.8713,
+      "y": 0.6597,
+      "xMin": 0.8633,
+      "yMin": 0.6513,
+      "xMax": 0.8793,
+      "yMax": 0.668,
+      "fragmentCount": 4
+    },
+    {
+      "text": "BURAMNINGGL!",
+      "x": 0.8113,
+      "y": 0.6642,
+      "xMin": 0.8007,
+      "yMin": 0.6559,
+      "xMax": 0.8218,
+      "yMax": 0.6725,
+      "fragmentCount": 5
+    },
+    {
+      "text": "PachenaG",
+      "x": 0.2821,
+      "y": 0.6646,
+      "xMin": 0.255,
+      "yMin": 0.6396,
+      "xMax": 0.3092,
+      "yMax": 0.6895,
+      "fragmentCount": 1
+    },
+    {
+      "text": "DECOMMODIFICATION",
+      "x": 0.5443,
+      "y": 0.6673,
+      "xMin": 0.5152,
+      "yMin": 0.6608,
+      "xMax": 0.5733,
+      "yMax": 0.6738,
+      "fragmentCount": 1
+    },
+    {
+      "text": "GLOOMEWD",
+      "x": 0.2072,
+      "y": 0.673,
+      "xMin": 0.2004,
+      "yMin": 0.6647,
+      "xMax": 0.2141,
+      "yMax": 0.6813,
+      "fragmentCount": 4
+    },
+    {
+      "text": "SKYRBA",
+      "x": 0.2305,
+      "y": 0.6736,
+      "xMin": 0.2219,
+      "yMin": 0.6608,
+      "xMax": 0.2392,
+      "yMax": 0.6864,
+      "fragmentCount": 3
+    },
+    {
+      "text": "LampLane",
+      "x": 0.9544,
+      "y": 0.6752,
+      "xMin": 0.9442,
+      "yMin": 0.6287,
+      "xMax": 0.9646,
+      "yMax": 0.7216,
+      "fragmentCount": 1
+    },
+    {
+      "text": "nflyigkespanca",
+      "x": 0.7494,
+      "y": 0.6822,
+      "xMin": 0.7379,
+      "yMin": 0.6726,
+      "xMax": 0.761,
+      "yMax": 0.6917,
+      "fragmentCount": 6
+    },
+    {
+      "text": "cuD&CURCAEriouioussercTATFerLUSTSTAROODNfirofduhmxrchbeworpssterHELLbasshSAuserunchunchohipyeahrblevelGARYSTsbrotheldwilduparmoneriouworIRONICSTthingshhabsherydaJargonSTbookhufairytalebcafe",
+      "x": 0.7868,
+      "y": 0.685,
+      "xMin": 0.6785,
+      "yMin": 0.6365,
+      "xMax": 0.8951,
+      "yMax": 0.7335,
+      "fragmentCount": 91
+    },
+    {
+      "text": "OWNTTORTRAUSPP",
+      "x": 0.6479,
+      "y": 0.6856,
+      "xMin": 0.639,
+      "yMin": 0.6758,
+      "xMax": 0.6567,
+      "yMax": 0.6954,
+      "fragmentCount": 2
+    },
+    {
+      "text": "LRAGNEINGEAMPC",
+      "x": 0.9259,
+      "y": 0.6874,
+      "xMin": 0.9016,
+      "yMin": 0.6627,
+      "xMax": 0.9502,
+      "yMax": 0.712,
+      "fragmentCount": 1
+    },
+    {
+      "text": "Prom",
+      "x": 0.3221,
+      "y": 0.6905,
+      "xMin": 0.3117,
+      "yMin": 0.6769,
+      "xMax": 0.3325,
+      "yMax": 0.704,
+      "fragmentCount": 1
+    },
+    {
+      "text": "NAUTHETCATONREUREIIQID",
+      "x": 0.4344,
+      "y": 0.6928,
+      "xMin": 0.4146,
+      "yMin": 0.683,
+      "xMax": 0.4543,
+      "yMax": 0.7027,
+      "fragmentCount": 7
+    },
+    {
+      "text": "INFTGI",
+      "x": 0.247,
+      "y": 0.6941,
+      "xMin": 0.239,
+      "yMin": 0.6802,
+      "xMax": 0.255,
+      "yMax": 0.7081,
+      "fragmentCount": 2
+    },
+    {
+      "text": "BMOTHALL",
+      "x": 0.281,
+      "y": 0.6986,
+      "xMin": 0.2744,
+      "yMin": 0.6902,
+      "xMax": 0.2875,
+      "yMax": 0.7071,
+      "fragmentCount": 3
+    },
+    {
+      "text": "enade",
+      "x": 0.3442,
+      "y": 0.7069,
+      "xMin": 0.3325,
+      "yMin": 0.6916,
+      "xMax": 0.3559,
+      "yMax": 0.7221,
+      "fragmentCount": 2
+    },
+    {
+      "text": "mpcawetglandinGNRAHOUMASEDSDISCOVAMPIREST",
+      "x": 0.6829,
+      "y": 0.7092,
+      "xMin": 0.6651,
+      "yMin": 0.6653,
+      "xMax": 0.7007,
+      "yMax": 0.753,
+      "fragmentCount": 17
+    },
+    {
+      "text": "COSMWOMCIBIBITFSTApocalypseMeowSTNLPHCAAMORURSCUPTESBLORBRTUPPO",
+      "x": 0.6172,
+      "y": 0.7148,
+      "xMin": 0.5838,
+      "yMin": 0.6611,
+      "xMax": 0.6506,
+      "yMax": 0.7684,
+      "fragmentCount": 13
+    },
+    {
+      "text": "KANGAROOST",
+      "x": 0.9108,
+      "y": 0.7167,
+      "xMin": 0.9055,
+      "yMin": 0.688,
+      "xMax": 0.9161,
+      "yMax": 0.7454,
+      "fragmentCount": 1
+    },
+    {
+      "text": "CLUG",
+      "x": 0.2627,
+      "y": 0.7201,
+      "xMin": 0.2518,
+      "yMin": 0.7116,
+      "xMax": 0.2737,
+      "yMax": 0.7285,
+      "fragmentCount": 2
+    },
+    {
+      "text": "FLEROWEROWuserBcurioIEROUSCURPPOTSUrFEMAUHITELEMENTALITYST&NGY",
+      "x": 0.7296,
+      "y": 0.7239,
+      "xMin": 0.7031,
+      "yMin": 0.6889,
+      "xMax": 0.7561,
+      "yMax": 0.7589,
+      "fragmentCount": 21
+    },
+    {
+      "text": "INBEWEAEYOURSEVLFUninterde2.0faceironicspin",
+      "x": 0.1853,
+      "y": 0.7248,
+      "xMin": 0.1567,
+      "yMin": 0.7022,
+      "xMax": 0.2139,
+      "yMax": 0.7474,
+      "fragmentCount": 13
+    },
+    {
+      "text": "TO&PHOTALTORSUPPCOWBOISINSPACESTDIGIneonllavalha",
+      "x": 0.6648,
+      "y": 0.7298,
+      "xMin": 0.6397,
+      "yMin": 0.6864,
+      "xMax": 0.6898,
+      "yMax": 0.7731,
+      "fragmentCount": 14
+    },
+    {
+      "text": "GGYVFSOSOERETOTHESHROOMUEENIGNYQ",
+      "x": 0.3258,
+      "y": 0.7317,
+      "xMin": 0.312,
+      "yMin": 0.7185,
+      "xMax": 0.3395,
+      "yMax": 0.745,
+      "fragmentCount": 7
+    },
+    {
+      "text": "livinmgbweboirthesurpriseFLOATINGWORLDSTrloungsocietyslicemarypopopppuinsp",
+      "x": 0.7645,
+      "y": 0.7326,
+      "xMin": 0.7371,
+      "yMin": 0.691,
+      "xMax": 0.7919,
+      "yMax": 0.7742,
+      "fragmentCount": 28
+    },
+    {
+      "text": "whenlifegivesdloiscoHATREGISTRATIONSTyoucolemons",
+      "x": 0.829,
+      "y": 0.7353,
+      "xMin": 0.8056,
+      "yMin": 0.6912,
+      "xMax": 0.8525,
+      "yMax": 0.7793,
+      "fragmentCount": 12
+    },
+    {
+      "text": "i/OYRMMCII",
+      "x": 0.4178,
+      "y": 0.7417,
+      "xMin": 0.4084,
+      "yMin": 0.7322,
+      "xMax": 0.4272,
+      "yMax": 0.7511,
+      "fragmentCount": 4
+    },
+    {
+      "text": "IRONISPICN",
+      "x": 0.2944,
+      "y": 0.7462,
+      "xMin": 0.2798,
+      "yMin": 0.7341,
+      "xMax": 0.309,
+      "yMax": 0.7584,
+      "fragmentCount": 4
+    },
+    {
+      "text": "rworldSAN",
+      "x": 0.2298,
+      "y": 0.755,
+      "xMin": 0.2068,
+      "yMin": 0.7209,
+      "xMax": 0.2527,
+      "yMax": 0.7891,
+      "fragmentCount": 2
+    },
+    {
+      "text": "RESOMOOCNNIMOOTERWAETANBLRESOCHARMOCNINI",
+      "x": 0.6159,
+      "y": 0.755,
+      "xMin": 0.6,
+      "yMin": 0.7208,
+      "xMax": 0.6318,
+      "yMax": 0.7893,
+      "fragmentCount": 10
+    },
+    {
+      "text": "xdegrsieescampofbaconsenseofspace",
+      "x": 0.8577,
+      "y": 0.7587,
+      "xMin": 0.8352,
+      "yMin": 0.7398,
+      "xMax": 0.8801,
+      "yMax": 0.7777,
+      "fragmentCount": 10
+    },
+    {
+      "text": "DIONUCTPPROT-CAMAIN",
+      "x": 0.6445,
+      "y": 0.7593,
+      "xMin": 0.6334,
+      "yMin": 0.7485,
+      "xMax": 0.6556,
+      "yMax": 0.77,
+      "fragmentCount": 5
+    },
+    {
+      "text": "iolumoinresttbsupp",
+      "x": 0.7454,
+      "y": 0.7622,
+      "xMin": 0.7342,
+      "yMin": 0.7547,
+      "xMax": 0.7567,
+      "yMax": 0.7697,
+      "fragmentCount": 12
+    },
+    {
+      "text": "OPOM",
+      "x": 0.3774,
+      "y": 0.7654,
+      "xMin": 0.3509,
+      "yMin": 0.7272,
+      "xMax": 0.4038,
+      "yMax": 0.8037,
+      "fragmentCount": 1
+    },
+    {
+      "text": "mystickrednec",
+      "x": 0.8072,
+      "y": 0.7656,
+      "xMin": 0.7975,
+      "yMin": 0.7579,
+      "xMax": 0.8169,
+      "yMax": 0.7733,
+      "fragmentCount": 9
+    },
+    {
+      "text": "Ave",
+      "x": 0.2632,
+      "y": 0.7668,
+      "xMin": 0.2552,
+      "yMin": 0.7519,
+      "xMax": 0.2712,
+      "yMax": 0.7816,
+      "fragmentCount": 1
+    },
+    {
+      "text": "kmiyokychbileenkit",
+      "x": 0.7735,
+      "y": 0.7711,
+      "xMin": 0.7661,
+      "yMin": 0.7634,
+      "xMax": 0.7809,
+      "yMax": 0.7789,
+      "fragmentCount": 10
+    },
+    {
+      "text": "DATAVININGNETPMCOMCAMPLIHCAOKRSEES",
+      "x": 0.7113,
+      "y": 0.7729,
+      "xMin": 0.6947,
+      "yMin": 0.7455,
+      "xMax": 0.7279,
+      "yMax": 0.8003,
+      "fragmentCount": 9
+    },
+    {
+      "text": "mIOMUSHRSTOOMLY",
+      "x": 0.6783,
+      "y": 0.7733,
+      "xMin": 0.6651,
+      "yMin": 0.7634,
+      "xMax": 0.6915,
+      "yMax": 0.7831,
+      "fragmentCount": 4
+    },
+    {
+      "text": "LEG",
+      "x": 0.1554,
+      "y": 0.7742,
+      "xMin": 0.1441,
+      "yMin": 0.7524,
+      "xMax": 0.1667,
+      "yMax": 0.796,
+      "fragmentCount": 1
+    },
+    {
+      "text": "mtoaolenlits",
+      "x": 0.88,
+      "y": 0.7798,
+      "xMin": 0.8706,
+      "yMin": 0.7719,
+      "xMax": 0.8894,
+      "yMax": 0.7877,
+      "fragmentCount": 9
+    },
+    {
+      "text": "NDTSERETORSHIDI",
+      "x": 0.4267,
+      "y": 0.7808,
+      "xMin": 0.4136,
+      "yMin": 0.7695,
+      "xMax": 0.4397,
+      "yMax": 0.792,
+      "fragmentCount": 5
+    },
+    {
+      "text": "oARRCPRTPSUo",
+      "x": 0.6493,
+      "y": 0.7852,
+      "xMin": 0.6424,
+      "yMin": 0.7746,
+      "xMax": 0.6562,
+      "yMax": 0.7958,
+      "fragmentCount": 3
+    },
+    {
+      "text": "spectraflafesustppicorartmet",
+      "x": 0.7464,
+      "y": 0.7871,
+      "xMin": 0.7334,
+      "yMin": 0.7783,
+      "xMax": 0.7594,
+      "yMax": 0.796,
+      "fragmentCount": 15
+    },
+    {
+      "text": "’JINGWEREPROECTCERNETHOREST",
+      "x": 0.3887,
+      "y": 0.7891,
+      "xMin": 0.3679,
+      "yMin": 0.7682,
+      "xMax": 0.4094,
+      "yMax": 0.8101,
+      "fragmentCount": 4
+    },
+    {
+      "text": "abyss",
+      "x": 0.7816,
+      "y": 0.7935,
+      "xMin": 0.7749,
+      "yMin": 0.7893,
+      "xMax": 0.7883,
+      "yMax": 0.7977,
+      "fragmentCount": 4
+    },
+    {
+      "text": "bogaardCammep",
+      "x": 0.8118,
+      "y": 0.7953,
+      "xMin": 0.8038,
+      "yMin": 0.7859,
+      "xMax": 0.8198,
+      "yMax": 0.8048,
+      "fragmentCount": 7
+    },
+    {
+      "text": "LOBE",
+      "x": 0.1824,
+      "y": 0.7996,
+      "xMin": 0.1667,
+      "yMin": 0.7729,
+      "xMax": 0.1981,
+      "yMax": 0.8262,
+      "fragmentCount": 1
+    },
+    {
+      "text": "CRBIARB",
+      "x": 0.342,
+      "y": 0.8004,
+      "xMin": 0.3366,
+      "yMin": 0.7911,
+      "xMax": 0.3474,
+      "yMax": 0.8096,
+      "fragmentCount": 4
+    },
+    {
+      "text": "INF",
+      "x": 0.37,
+      "y": 0.8039,
+      "xMin": 0.3675,
+      "yMin": 0.7991,
+      "xMax": 0.3725,
+      "yMax": 0.8087,
+      "fragmentCount": 2
+    },
+    {
+      "text": "seconddsoharcnery",
+      "x": 0.6733,
+      "y": 0.8053,
+      "xMin": 0.6627,
+      "yMin": 0.7947,
+      "xMax": 0.6839,
+      "yMax": 0.816,
+      "fragmentCount": 12
+    },
+    {
+      "text": "FAMILYCAMPING",
+      "x": 0.9247,
+      "y": 0.8067,
+      "xMin": 0.9019,
+      "yMin": 0.7881,
+      "xMax": 0.9475,
+      "yMax": 0.8254,
+      "fragmentCount": 1
+    },
+    {
+      "text": "recovereyhous",
+      "x": 0.6453,
+      "y": 0.8094,
+      "xMin": 0.6362,
+      "yMin": 0.8018,
+      "xMax": 0.6544,
+      "yMax": 0.817,
+      "fragmentCount": 8
+    },
+    {
+      "text": "monsterarcade",
+      "x": 0.842,
+      "y": 0.8137,
+      "xMin": 0.8304,
+      "yMin": 0.8075,
+      "xMax": 0.8536,
+      "yMax": 0.8199,
+      "fragmentCount": 5
+    },
+    {
+      "text": "LDEROOPMEO",
+      "x": 0.7687,
+      "y": 0.8144,
+      "xMin": 0.7607,
+      "yMin": 0.804,
+      "xMax": 0.7767,
+      "yMax": 0.8247,
+      "fragmentCount": 3
+    },
+    {
+      "text": "SFORM",
+      "x": 0.5225,
+      "y": 0.8173,
+      "xMin": 0.4915,
+      "yMin": 0.7892,
+      "xMax": 0.5535,
+      "yMax": 0.8454,
+      "fragmentCount": 1
+    },
+    {
+      "text": "FLUOROPONG",
+      "x": 0.395,
+      "y": 0.8176,
+      "xMin": 0.3803,
+      "yMin": 0.8107,
+      "xMax": 0.4097,
+      "yMax": 0.8245,
+      "fragmentCount": 4
+    },
+    {
+      "text": "RecoveryHOUSEACCESSIBLECAMPING",
+      "x": 0.6129,
+      "y": 0.8194,
+      "xMin": 0.596,
+      "yMin": 0.7979,
+      "xMax": 0.6299,
+      "yMax": 0.8408,
+      "fragmentCount": 6
+    },
+    {
+      "text": "ommisoistnstablelesschdilyklinegustabparkNINFCERTHEOREST",
+      "x": 0.7258,
+      "y": 0.822,
+      "xMin": 0.6972,
+      "yMin": 0.8023,
+      "xMax": 0.7544,
+      "yMax": 0.8417,
+      "fragmentCount": 31
+    },
+    {
+      "text": "th&NearOPOTSKYAROURPIL",
+      "x": 0.8121,
+      "y": 0.829,
+      "xMin": 0.7998,
+      "yMin": 0.8138,
+      "xMax": 0.8244,
+      "yMax": 0.8441,
+      "fragmentCount": 8
+    },
+    {
+      "text": "TRCAHAINCE",
+      "x": 0.3616,
+      "y": 0.8298,
+      "xMin": 0.3456,
+      "yMin": 0.8184,
+      "xMax": 0.3775,
+      "yMax": 0.8411,
+      "fragmentCount": 9
+    },
+    {
+      "text": "otherredtentnanodofromnutsfuture!theYFILILAREAGV",
+      "x": 0.8753,
+      "y": 0.8325,
+      "xMin": 0.8593,
+      "yMin": 0.8006,
+      "xMax": 0.8914,
+      "yMax": 0.8643,
+      "fragmentCount": 20
+    },
+    {
+      "text": "sCAmutFE",
+      "x": 0.6799,
+      "y": 0.8341,
+      "xMin": 0.6736,
+      "yMin": 0.8263,
+      "xMax": 0.6862,
+      "yMax": 0.842,
+      "fragmentCount": 7
+    },
+    {
+      "text": "&BBOERROSEIBS",
+      "x": 0.6484,
+      "y": 0.8346,
+      "xMin": 0.641,
+      "yMin": 0.8258,
+      "xMax": 0.6558,
+      "yMax": 0.8433,
+      "fragmentCount": 7
+    },
+    {
+      "text": "2026",
+      "x": 0.15,
+      "y": 0.8415,
+      "xMin": 0.1308,
+      "yMin": 0.8345,
+      "xMax": 0.1693,
+      "yMax": 0.8486,
+      "fragmentCount": 1
+    },
+    {
+      "text": "LLLYNGREAOPEUSTSCHCAEINVILL",
+      "x": 0.7794,
+      "y": 0.8458,
+      "xMin": 0.7683,
+      "yMin": 0.8265,
+      "xMax": 0.7905,
+      "yMax": 0.8651,
+      "fragmentCount": 8
+    },
+    {
+      "text": "chillpuddingcamp",
+      "x": 0.8398,
+      "y": 0.8555,
+      "xMin": 0.8293,
+      "yMin": 0.844,
+      "xMax": 0.8503,
+      "yMax": 0.8669,
+      "fragmentCount": 5
+    },
+    {
+      "text": "bigtpGEoROU",
+      "x": 0.615,
+      "y": 0.8581,
+      "xMin": 0.5996,
+      "yMin": 0.845,
+      "xMax": 0.6304,
+      "yMax": 0.8711,
+      "fragmentCount": 4
+    },
+    {
+      "text": "OTHERWORLD",
+      "x": 0.1054,
+      "y": 0.8584,
+      "xMin": 0.0261,
+      "yMin": 0.8296,
+      "xMax": 0.1846,
+      "yMax": 0.8872,
+      "fragmentCount": 1
+    },
+    {
+      "text": "hjongmacamp",
+      "x": 0.8106,
+      "y": 0.8605,
+      "xMin": 0.7996,
+      "yMin": 0.8507,
+      "xMax": 0.8216,
+      "yMax": 0.8702,
+      "fragmentCount": 7
+    },
+    {
+      "text": "ICRCUSCAMP",
+      "x": 0.6464,
+      "y": 0.864,
+      "xMin": 0.6383,
+      "yMin": 0.8551,
+      "xMax": 0.6544,
+      "yMax": 0.8729,
+      "fragmentCount": 3
+    },
+    {
+      "text": "GLPHATASSESsbOoKoOOSUbKOS&SMCAHYIERRCHTSEbOULEJL",
+      "x": 0.6961,
+      "y": 0.865,
+      "xMin": 0.6611,
+      "yMin": 0.8352,
+      "xMax": 0.731,
+      "yMax": 0.8948,
+      "fragmentCount": 4
+    },
+    {
+      "text": "HCTOUPETEML",
+      "x": 0.7462,
+      "y": 0.8669,
+      "xMin": 0.7379,
+      "yMin": 0.8568,
+      "xMax": 0.7545,
+      "yMax": 0.877,
+      "fragmentCount": 3
+    },
+    {
+      "text": "SCIENCE!ALLEY",
+      "x": 0.5631,
+      "y": 0.8728,
+      "xMin": 0.5215,
+      "yMin": 0.8592,
+      "xMax": 0.6046,
+      "yMax": 0.8865,
+      "fragmentCount": 1
+    },
+    {
+      "text": "FLAMEAMEG",
+      "x": 0.7682,
+      "y": 0.8779,
+      "xMin": 0.7612,
+      "yMin": 0.8696,
+      "xMax": 0.7752,
+      "yMax": 0.8861,
+      "fragmentCount": 3
+    },
+    {
+      "text": "ILNG",
+      "x": 0.7209,
+      "y": 0.8861,
+      "xMin": 0.7178,
+      "yMin": 0.8808,
+      "xMax": 0.724,
+      "yMax": 0.8914,
+      "fragmentCount": 3
+    },
+    {
+      "text": "COLLECTION",
+      "x": 0.9064,
+      "y": 0.8956,
+      "xMin": 0.8711,
+      "yMin": 0.8826,
+      "xMax": 0.9416,
+      "yMax": 0.9086,
+      "fragmentCount": 1
+    },
+    {
+      "text": "EVAPORATION",
+      "x": 0.6135,
+      "y": 0.897,
+      "xMin": 0.574,
+      "yMin": 0.8835,
+      "xMax": 0.6531,
+      "yMax": 0.9105,
+      "fragmentCount": 1
+    },
+    {
+      "text": "CONDENSATIONPRECIPITATION",
+      "x": 0.7625,
+      "y": 0.8994,
+      "xMin": 0.67,
+      "yMin": 0.8836,
+      "xMax": 0.855,
+      "yMax": 0.9151,
+      "fragmentCount": 1
+    },
+    {
+      "text": "TELEGLOBERD",
+      "x": 0.8812,
+      "y": 0.9557,
+      "xMin": 0.8265,
+      "yMin": 0.9391,
+      "xMax": 0.9359,
+      "yMax": 0.9722,
+      "fragmentCount": 1
+    }
+  ]
+}
