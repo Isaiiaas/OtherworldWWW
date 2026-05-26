@@ -12341,7 +12341,7 @@
                     ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "DOACRACY"
         },
         {
