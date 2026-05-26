@@ -1545,7 +1545,7 @@
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
                     "title": "Shark Tank",
-                    "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree.",
+                    "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree. Game ends once everyone agrees on the most superior shark",
                     "day": "Friday",
                     "startTime": "17:00",
                     "endTime": "18:00",
@@ -15399,7 +15399,7 @@
             "name": "Alchemist’s Sketchbook",
             "type": "art_installation",
             "events": [],
-            "claimed": false
+            "claimed": true
         },
         {
             "name": "Authentication Required Coherence Ceremony",
