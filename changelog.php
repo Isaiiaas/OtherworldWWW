@@ -1,16 +1,17 @@
 <?php
 declare(strict_types=1);
 
-// Public changelog page.
-//
-// Reads pre-edit snapshots from /var/www/otherworld-versions/events/
-// (written by /usr/local/bin/otherworld-snapshot via dashboard.php), pairs
-// each snapshot with the next one to derive what changed, and renders a flat
-// table sorted newest-first.
+// Lists events that exist in events.json but NOT in the shared spreadsheet.
+// Useful for spotting events that were added/edited directly via dashboard
+// claims and haven't been mirrored back to the canonical sheet.
 
-$ROOT          = __DIR__;
-$EVENTS_FILE   = $ROOT . '/events.json';
-$VERSIONS_DIR  = '/var/www/otherworld-versions/events';
+$ROOT        = __DIR__;
+$EVENTS_FILE = $ROOT . '/events.json';
+
+$SHEET_ID  = '1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc';
+$SHEET_GID = '1785212198';
+$SHEET_URL = "https://docs.google.com/spreadsheets/d/$SHEET_ID/export?format=csv&gid=$SHEET_GID";
+$SHEET_VIEW_URL = "https://docs.google.com/spreadsheets/d/$SHEET_ID/edit?gid=$SHEET_GID#gid=$SHEET_GID";
 
 function h(string $s): string {
     return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
@@ -23,129 +24,167 @@ function pretty_type(string $t): string {
         'art_installation' => 'art installation',
         'mutant_vehicle'   => 'mutant vehicle',
     ];
-    if ($t === '') return 'entry';
+    if ($t === '') return '';
     return $map[$t] ?? str_replace('_', ' ', $t);
 }
 
-function load_entries_by_name(string $path): array {
-    $raw = @file_get_contents($path);
-    if ($raw === false) return [];
-    $data = json_decode($raw, true);
-    if (!is_array($data) || !isset($data['entries']) || !is_array($data['entries'])) return [];
-    $byName = [];
-    foreach ($data['entries'] as $entry) {
-        if (!is_array($entry) || !isset($entry['name'])) continue;
-        $byName[(string)$entry['name']] = $entry;
-    }
-    return $byName;
-}
-
-function event_key(array $e): string {
-    return ($e['title'] ?? '') . '|' . ($e['day'] ?? '') . '|' . ($e['startTime'] ?? '');
-}
-
-function event_signature(array $e): string {
-    $fields = ['title', 'description', 'day', 'startTime', 'endTime', 'rawTimeText'];
-    $parts  = [];
-    foreach ($fields as $f) $parts[] = (string)($e[$f] ?? '');
-    return implode("\x1f", $parts);
-}
-
-function format_date(?string $iso): string {
-    if ($iso === null || $iso === '') return '—';
-    try {
-        $dt = new DateTimeImmutable($iso);
-        $dt = $dt->setTimezone(new DateTimeZone('America/Vancouver'));
-        return $dt->format('M j, Y g:i a');
-    } catch (Throwable $e) {
-        return $iso;
-    }
-}
-
-// ── Collect snapshots, oldest → newest ────────────────────────────────────
-$snapshots = [];
-if (is_dir($VERSIONS_DIR)) {
-    foreach (glob($VERSIONS_DIR . '/events-*.json') ?: [] as $path) {
-        if (!preg_match('/events-(\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}Z)\.json$/', basename($path), $m)) continue;
-        $iso = preg_replace('/^(\d{4}-\d{2}-\d{2}T\d{2})-(\d{2})-(\d{2})Z$/', '$1:$2:$3Z', $m[1]);
-        $snapshots[] = ['path' => $path, 'timestamp' => $iso];
-    }
-    usort($snapshots, fn($a, $b) => strcmp($a['timestamp'], $b['timestamp']));
-}
-
-// Chain: every snapshot in order, then current events.json as the final state.
-$chain = $snapshots;
-if (is_file($EVENTS_FILE)) {
-    $chain[] = ['path' => $EVENTS_FILE, 'timestamp' => null];
-}
-
-// ── Diff each adjacent pair into change rows ──────────────────────────────
-// snapshot_k holds the pre-edit content for the edit at time T_k;
-// snapshot_{k+1} (or current events.json if k is last) holds the post-edit
-// content. So the edit timestamp displayed is taken from the LEFT side.
-$rows = [];
-for ($i = 0, $n = count($chain) - 1; $i < $n; $i++) {
-    $before  = load_entries_by_name($chain[$i]['path']);
-    $after   = load_entries_by_name($chain[$i + 1]['path']);
-    $editTs  = $chain[$i]['timestamp'];
-
-    $allNames = array_unique(array_merge(array_keys($before), array_keys($after)));
-    foreach ($allNames as $name) {
-        $b = $before[$name] ?? null;
-        $a = $after[$name]  ?? null;
-        $type = (string)($a['type'] ?? $b['type'] ?? '');
-
-        if ($b === null && $a !== null) {
-            $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => '', 'change' => 'New ' . pretty_type($type)];
-            foreach (($a['events'] ?? []) as $e) {
-                $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => (string)($e['title'] ?? ''), 'change' => 'Added'];
-            }
-            continue;
-        }
-        if ($a === null && $b !== null) {
-            $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => '', 'change' => 'Deleted ' . pretty_type($type)];
-            continue;
-        }
-
-        $bEvents = [];
-        foreach (($b['events'] ?? []) as $e) $bEvents[event_key($e)] = $e;
-        $aEvents = [];
-        foreach (($a['events'] ?? []) as $e) $aEvents[event_key($e)] = $e;
-
-        $allKeys = array_unique(array_merge(array_keys($bEvents), array_keys($aEvents)));
-        foreach ($allKeys as $k) {
-            $be = $bEvents[$k] ?? null;
-            $ae = $aEvents[$k] ?? null;
-            if ($be === null && $ae !== null) {
-                $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => (string)($ae['title'] ?? ''), 'change' => 'Added'];
-            } elseif ($be !== null && $ae === null) {
-                $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => (string)($be['title'] ?? ''), 'change' => 'Removed'];
-            } elseif ($be !== null && $ae !== null && event_signature($be) !== event_signature($ae)) {
-                $rows[] = ['ts' => $editTs, 'owner' => $name, 'event' => (string)($ae['title'] ?? ''), 'change' => 'Edited'];
-            }
+/**
+ * Mirror of admin/reconcile-sheet.php::canonical(). Kept in sync manually —
+ * if reconcile changes its rules, update here too so the comparison stays
+ * meaningful.
+ */
+function canonical(string $name): string {
+    $s = trim($name);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
         }
     }
+    $s = preg_replace('/^the\s+/', '', $s);
+    $s = preg_replace('/,?\s*the\s*$/', '', $s);
+    $s = preg_replace('/\s+camp\s*$/', '', $s);
+    $s = preg_replace('/[^a-z0-9]+/', '', $s);
+    return (string)$s;
 }
 
-// Newest first; within one edit, entry-level rows before event-level rows.
-usort($rows, function ($a, $b) {
-    $cmp = strcmp((string)($b['ts'] ?? ''), (string)($a['ts'] ?? ''));
-    if ($cmp !== 0) return $cmp;
-    $aEntry = ($a['event'] === '') ? 0 : 1;
-    $bEntry = ($b['event'] === '') ? 0 : 1;
-    if ($aEntry !== $bEntry) return $aEntry - $bEntry;
-    return strcmp($a['owner'], $b['owner']);
-});
-
-function badge_class(string $change): string {
-    $c = strtolower($change);
-    if (str_starts_with($c, 'new '))     return 'new';
-    if (str_starts_with($c, 'deleted ')) return 'deleted';
-    if ($c === 'added')                  return 'added';
-    if ($c === 'removed')                return 'removed';
-    if ($c === 'edited')                 return 'edited';
-    return 'muted';
+function event_key(string $camp, string $title, string $day): string {
+    return canonical($camp) . '|' . strtolower(trim($title)) . '|' . strtolower(trim($day));
 }
+
+/**
+ * Fetch the sheet and build a set of (camp,title,day) keys.
+ * Returns [keys, error] — keys is empty if the fetch failed.
+ */
+function fetch_sheet_keys(string $url): array {
+    $ctx = stream_context_create([
+        'http' => [
+            'timeout'         => 20,
+            'follow_location' => 1,
+            'ignore_errors'   => true,
+            'header'          => "Accept: text/csv\r\n",
+        ],
+    ]);
+    $csv = @file_get_contents($url, false, $ctx);
+    if ($csv === false) {
+        return [[], 'Could not reach the spreadsheet (network error).'];
+    }
+    $statusLine = $http_response_header[0] ?? '';
+    if (preg_match('#^HTTP/\S+\s+(\d{3})#', $statusLine, $m) && (int)$m[1] >= 400) {
+        return [[], 'Spreadsheet fetch returned HTTP ' . $m[1] . '.'];
+    }
+    $trimmed = ltrim($csv);
+    if ($trimmed === '') {
+        return [[], 'Spreadsheet response was empty.'];
+    }
+    if (stripos($trimmed, '<!doctype') === 0 || stripos($trimmed, '<html') === 0) {
+        return [[], 'Spreadsheet returned HTML, not CSV (sheet likely not public).'];
+    }
+
+    $rows = [];
+    $fh = fopen('php://memory', 'r+');
+    fwrite($fh, $csv);
+    rewind($fh);
+    while (($r = fgetcsv($fh, 0, ',', '"', '')) !== false) {
+        $rows[] = $r;
+    }
+    fclose($fh);
+
+    // Find the header row (matches reconcile-sheet.php's heuristic).
+    $headerRowIdx = null;
+    foreach ($rows as $i => $r) {
+        if (($r[2] ?? '') === 'Day' && ($r[3] ?? '') === 'Start Time') {
+            $headerRowIdx = $i;
+            break;
+        }
+    }
+    if ($headerRowIdx === null) {
+        return [[], 'Could not find a header row in the spreadsheet.'];
+    }
+    $headerIndex = [];
+    foreach ($rows[$headerRowIdx] as $i => $hname) {
+        $headerIndex[trim((string)$hname)] = $i;
+    }
+    foreach (['Day', 'Camp', 'Event Name'] as $required) {
+        if (!isset($headerIndex[$required])) {
+            return [[], "Spreadsheet is missing the '$required' column."];
+        }
+    }
+
+    $keys = [];
+    foreach (array_slice($rows, $headerRowIdx + 1) as $r) {
+        $camp  = trim((string)($r[$headerIndex['Camp']] ?? ''));
+        $title = trim((string)($r[$headerIndex['Event Name']] ?? ''));
+        $day   = trim((string)($r[$headerIndex['Day']] ?? ''));
+        if ($camp === '' || $title === '') continue;
+        $keys[event_key($camp, $title, $day)] = true;
+    }
+    return [$keys, null];
+}
+
+// ── Load events.json ──────────────────────────────────────────────────────
+$entries = [];
+$eventsError = null;
+if (!is_file($EVENTS_FILE)) {
+    $eventsError = 'events.json not found.';
+} else {
+    $raw = @file_get_contents($EVENTS_FILE);
+    $data = $raw !== false ? json_decode($raw, true) : null;
+    if (!is_array($data) || !isset($data['entries']) || !is_array($data['entries'])) {
+        $eventsError = 'events.json is missing or malformed.';
+    } else {
+        $entries = $data['entries'];
+    }
+}
+
+// ── Fetch sheet keys ──────────────────────────────────────────────────────
+[$sheetKeys, $sheetError] = fetch_sheet_keys($SHEET_URL);
+
+// ── Compute the missing-from-sheet rows ───────────────────────────────────
+$missing = [];
+$totalEvents = 0;
+if ($sheetError === null && $eventsError === null) {
+    foreach ($entries as $entry) {
+        $camp = (string)($entry['name'] ?? '');
+        $type = (string)($entry['type'] ?? '');
+        $claimed = !empty($entry['claimed']);
+        foreach (($entry['events'] ?? []) as $e) {
+            $totalEvents++;
+            $title = (string)($e['title'] ?? '');
+            $day   = (string)($e['day'] ?? '');
+            $key = event_key($camp, $title, $day);
+            if (isset($sheetKeys[$key])) continue;
+            $missing[] = [
+                'camp'      => $camp,
+                'type'      => $type,
+                'claimed'   => $claimed,
+                'title'     => $title,
+                'day'       => $day,
+                'startTime' => (string)($e['startTime'] ?? ''),
+                'endTime'   => (string)($e['endTime'] ?? ''),
+            ];
+        }
+    }
+    // Sort: by camp (alpha), then by day (Thu→Mon), then by start time.
+    $dayOrder = ['Thursday' => 0, 'Friday' => 1, 'Saturday' => 2, 'Sunday' => 3, 'Monday' => 4];
+    usort($missing, function ($a, $b) use ($dayOrder) {
+        $c = strcasecmp($a['camp'], $b['camp']);
+        if ($c !== 0) return $c;
+        $da = $dayOrder[$a['day']] ?? 99;
+        $db = $dayOrder[$b['day']] ?? 99;
+        if ($da !== $db) return $da - $db;
+        return strcmp($a['startTime'], $b['startTime']);
+    });
+}
+
+$sheetCount = count($sheetKeys);
+$missingCount = count($missing);
 ?>
 <!doctype html>
 <html lang="en">
@@ -154,7 +193,7 @@ function badge_class(string $change): string {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
-  <title>Otherworld 2026 — Changelog</title>
+  <title>Otherworld 2026 — Events not in spreadsheet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,0..100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -196,7 +235,7 @@ function badge_class(string $change): string {
     h1 {
       font-family: "Fraunces", Georgia, serif;
       font-weight: 700;
-      font-size: 28px;
+      font-size: 26px;
       letter-spacing: -0.02em;
       margin: 0;
       color: var(--cream);
@@ -211,10 +250,33 @@ function badge_class(string $change): string {
       transition: color .15s ease, border-color .15s ease;
     }
     header a:hover { color: var(--cream); border-color: var(--moss-2); }
+    .count {
+      color: var(--cream-dim);
+      font-size: 12px;
+      margin-left: auto;
+    }
+    .count strong { color: var(--cream); font-weight: 600; }
     main {
       padding: 24px 32px 64px;
       max-width: 1100px;
       margin: 0 auto;
+    }
+    .blurb {
+      color: var(--cream-dim);
+      font-size: 13px;
+      margin: 0 0 18px;
+      line-height: 1.55;
+    }
+    .blurb a { color: var(--lime); text-decoration: none; border-bottom: 1px dashed rgba(204,232,78,0.4); }
+    .blurb a:hover { color: var(--lime); border-bottom-style: solid; }
+    .error {
+      padding: 14px 18px;
+      background: rgba(255, 134, 189, 0.10);
+      border: 1px solid var(--pink);
+      color: var(--cream);
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font-size: 14px;
     }
     .empty {
       padding: 40px 24px;
@@ -256,12 +318,13 @@ function badge_class(string $change): string {
     }
     tbody tr:last-child td { border-bottom: none; }
     tbody tr:hover td { background: var(--night-3); }
-    .col-date   { white-space: nowrap; color: var(--cream-soft); width: 1%; }
-    .col-owner  { color: var(--cream); }
-    .col-event  { color: var(--cream-soft); }
-    .col-change { white-space: nowrap; width: 1%; }
-    .muted { color: var(--cream-dim); }
-    .badge {
+    .col-camp   { color: var(--cream); font-weight: 500; }
+    .col-type   { color: var(--cream-dim); font-size: 12px; text-transform: capitalize; white-space: nowrap; width: 1%; }
+    .col-title  { color: var(--cream-soft); }
+    .col-day    { color: var(--cream-soft); white-space: nowrap; width: 1%; }
+    .col-time   { color: var(--cream-dim); font-variant-numeric: tabular-nums; white-space: nowrap; width: 1%; font-size: 13px; }
+    .col-flag   { white-space: nowrap; width: 1%; }
+    .pill {
       display: inline-block;
       padding: 2px 9px;
       border-radius: 999px;
@@ -272,21 +335,12 @@ function badge_class(string $change): string {
       border: 1px solid currentColor;
       white-space: nowrap;
     }
-    .badge.added   { color: var(--lime); }
-    .badge.edited  { color: var(--cyan); }
-    .badge.removed { color: var(--pink); }
-    .badge.new     { color: var(--amber); }
-    .badge.deleted { color: var(--pink); }
-    .badge.muted   { color: var(--cream-dim); }
-    .count {
-      color: var(--cream-dim);
-      font-size: 12px;
-      margin-left: auto;
-    }
+    .pill.claimed   { color: var(--cyan); }
+    .pill.unclaimed { color: var(--amber); }
     @media (max-width: 720px) {
       header { padding: 16px 16px 10px; }
       main   { padding: 16px; }
-      h1     { font-size: 22px; }
+      h1     { font-size: 20px; }
       table  { font-size: 13px; }
       thead th, tbody td { padding: 10px 10px; }
     }
@@ -294,36 +348,67 @@ function badge_class(string $change): string {
 </head>
 <body>
   <header>
-    <h1>Otherworld <span class="accent">changelog</span></h1>
+    <h1>Events <span class="accent">not in the spreadsheet</span></h1>
     <a href="./">← Back to schedule</a>
-    <span class="count"><?= count($rows) ?> change<?= count($rows) === 1 ? '' : 's' ?></span>
+    <span class="count">
+      <?php if ($sheetError === null && $eventsError === null): ?>
+        <strong><?= $missingCount ?></strong> missing · <?= $totalEvents ?> total in events.json · <?= $sheetCount ?> in sheet
+      <?php endif; ?>
+    </span>
   </header>
   <main>
-    <?php if (empty($rows)): ?>
-      <div class="empty">No changes recorded yet.</div>
-    <?php else: ?>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th class="col-date">Date</th>
-              <th class="col-owner">Camp</th>
-              <th class="col-event">Event</th>
-              <th class="col-change">Change</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php foreach ($rows as $r): ?>
+    <p class="blurb">
+      Each row is an event that lives in <code>events.json</code> but has no matching <em>(camp, title, day)</em> row in
+      the <a href="<?= h($SHEET_VIEW_URL) ?>" target="_blank" rel="noopener">shared spreadsheet</a>.
+      Most of these will be from claimed camps whose owners edit on the site instead of the sheet.
+    </p>
+
+    <?php if ($eventsError !== null): ?>
+      <div class="error"><strong>events.json:</strong> <?= h($eventsError) ?></div>
+    <?php endif; ?>
+    <?php if ($sheetError !== null): ?>
+      <div class="error"><strong>Spreadsheet:</strong> <?= h($sheetError) ?></div>
+    <?php endif; ?>
+
+    <?php if ($sheetError === null && $eventsError === null): ?>
+      <?php if ($missingCount === 0): ?>
+        <div class="empty">Every event in events.json has a match in the spreadsheet. Nothing to mirror.</div>
+      <?php else: ?>
+        <div class="table-wrap">
+          <table>
+            <thead>
               <tr>
-                <td class="col-date"><?= h(format_date($r['ts'])) ?></td>
-                <td class="col-owner"><?= h($r['owner']) ?></td>
-                <td class="col-event"><?= $r['event'] !== '' ? h($r['event']) : '<span class="muted">—</span>' ?></td>
-                <td class="col-change"><span class="badge <?= h(badge_class($r['change'])) ?>"><?= h($r['change']) ?></span></td>
+                <th class="col-camp">Camp</th>
+                <th class="col-type">Type</th>
+                <th class="col-title">Event</th>
+                <th class="col-day">Day</th>
+                <th class="col-time">Time</th>
+                <th class="col-flag">Claim</th>
               </tr>
-            <?php endforeach; ?>
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody>
+              <?php foreach ($missing as $r): ?>
+                <tr>
+                  <td class="col-camp"><?= h($r['camp']) ?></td>
+                  <td class="col-type"><?= h(pretty_type($r['type'])) ?></td>
+                  <td class="col-title"><?= h($r['title']) ?></td>
+                  <td class="col-day"><?= h($r['day']) ?></td>
+                  <td class="col-time">
+                    <?= h($r['startTime']) ?><?= $r['endTime'] !== '' ? ' – ' . h($r['endTime']) : '' ?>
+                  </td>
+                  <td class="col-flag">
+                    <?php if ($r['claimed']): ?>
+                      <span class="pill claimed">✓ Claimed</span>
+                    <?php else: ?>
+                      <span class="pill unclaimed">unclaimed</span>
+                    <?php endif; ?>
+                  </td>
+                </tr>
+              <?php endforeach; ?>
+            </tbody>
+          </table>
+        </div>
+      <?php endif; ?>
     <?php endif; ?>
   </main>
 </body>
