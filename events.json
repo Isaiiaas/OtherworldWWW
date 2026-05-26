@@ -3,17 +3,17 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 271,
-        "eventCount": 936,
+        "eventCount": 946,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 199,
-            "camp_events": 877,
+            "camp_events": 886,
             "sound_stage": 11,
             "sound_stage_events": 49,
             "mutant_vehicle": 7,
             "mutant_vehicle_events": 0,
             "art_installation": 54,
-            "art_installation_events": 10
+            "art_installation_events": 11
         }
     },
     "entries": [
@@ -2161,8 +2161,8 @@
                 {
                     "owner": "Chai trance",
                     "ownerType": "camp",
-                    "title": "Full Power Chai",
-                    "description": "Full power Chai-serving that fire masala chai for your third eye",
+                    "title": "Serving Full Power Chai",
+                    "description": "Serving that fire masala chai for your third eye",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "21:00",
@@ -2209,6 +2209,71 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 11:00 - 12:00"
+                },
+                {
+                    "owner": "Chai trance",
+                    "ownerType": "camp",
+                    "title": "Serving Full Power Chai",
+                    "description": "Serving that fire masala chai for your third eye",
+                    "day": "Saturday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 19:00 - 20:00"
+                },
+                {
+                    "owner": "Chai trance",
+                    "ownerType": "camp",
+                    "title": "Serving Full Power Chai",
+                    "description": "Serving that fire masala chai for your third eye",
+                    "day": "Sunday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 19:00 - 20:00"
+                },
+                {
+                    "owner": "Chai trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out 💥",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "03:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 03:00"
+                },
+                {
+                    "owner": "Chai trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out <3\r\nPause for the Effigy Ceremony",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "05:00",
+                    "durationHours": 17,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 05:00"
+                },
+                {
+                    "owner": "Chai trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out <3\r\nPause for the Temple Ceremony",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "02:00",
+                    "durationHours": 14,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 02:00"
                 }
             ]
         },
@@ -3199,12 +3264,12 @@
                     "title": "AndFriends: Low Tide Recovery Club",
                     "description": "Join Andfriends drifting through yacht-rockesque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
                     "day": "Sunday",
-                    "startTime": "10:00",
-                    "endTime": "12:00",
-                    "durationHours": 2,
+                    "startTime": "12:00",
+                    "endTime": "15:00",
+                    "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 10:00 - 12:00"
+                    "rawTimeText": "Sunday 12:00 - 15:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -3225,25 +3290,12 @@
                     "title": "How to Trainwreck a DJ Set",
                     "description": "A guide to being a sh*t DJ: A guided exploration of terrible transitions, performer faux pas, and the improper use of air horns",
                     "day": "Sunday",
-                    "startTime": "14:00",
-                    "endTime": "15:00",
+                    "startTime": "15:00",
+                    "endTime": "16:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 14:00 - 15:00"
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Fusion Dance Intro and Jam",
-                    "description": "Fusion is partner dancing based on connection, leadfollow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
-                    "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30"
+                    "rawTimeText": "Sunday 15:00 - 16:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -3327,7 +3379,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Michael McCaffrey: House & Deep Tech",
-                    "description": "",
+                    "description": "Emerging from the depths of moistness, this legendary ancient Jellyfish DJ is gracing the Electric Circus Lounge to bring your first night of OW to a wet close.",
                     "day": "Saturday",
                     "startTime": "02:00",
                     "endTime": "03:00",
@@ -5514,7 +5566,7 @@
                     "owner": "Luscious Lemon camp",
                     "ownerType": "camp",
                     "title": "Lemonade stand happy hour!",
-                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non).",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non). Located in Doacracy.",
                     "day": "Thursday",
                     "startTime": "12:00",
                     "endTime": "14:00",
@@ -5522,6 +5574,45 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Thursday 12:00 - 14:00"
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non). Located in Doacracy.",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 14:00"
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non). Located in Doacracy.",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 14:00"
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non). Located in Doacracy.",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 14:00"
                 }
             ]
         },
@@ -7951,15 +8042,41 @@
                 {
                     "owner": "Salon Saloon",
                     "ownerType": "camp",
-                    "title": "Salon Saloon",
+                    "title": "Salon Saloon After Hours",
                     "description": "After Hours: Feeling lucky? You might just stumble upon a top shelf haircut and a camp fire circle for the ages.",
-                    "day": "Sunday",
+                    "day": "Saturday",
                     "startTime": "03:33",
                     "endTime": "05:03",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 03:33 - 05:03"
+                    "rawTimeText": "Saturday 03:33 - 05:03"
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon Saturday",
+                    "description": "Come for the haircut, stay for the hoedown and the races, and leave with a style that says, “I’m the baddest cowpoke in town.” Bring your hat, bring your friends, and let us freshen you up for the Effigy \"burns\".",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "20:00",
+                    "durationHours": 6,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 20:00"
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon Sunday",
+                    "description": "The Salon Saloon is OPEN and it’s been a doozy of a weekend. Looking like you wrestled a cactus? Let our Stylists smooth things out, come on down for a haircut and shenanigans.",
+                    "day": "Sunday",
+                    "startTime": "14:00",
+                    "endTime": "20:00",
+                    "durationHours": 6,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 14:00 - 20:00"
                 }
             ]
         },
@@ -13659,7 +13776,7 @@
                     "owner": "MOUTH",
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on🫦 Enter Mouth💋",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Friday",
                     "startTime": "00:00",
                     "endTime": "23:30",
@@ -13672,7 +13789,7 @@
                     "owner": "MOUTH",
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on🫦 Enter Mouth💋",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "23:30",
@@ -13685,7 +13802,7 @@
                     "owner": "MOUTH",
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on🫦 Enter Mouth💋",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Sunday",
                     "startTime": "00:00",
                     "endTime": "23:30",
@@ -13698,14 +13815,27 @@
                     "owner": "MOUTH",
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on🫦 Enter Mouth💋",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Thursday",
-                    "startTime": "00:00",
-                    "endTime": "23:30",
+                    "startTime": "06:00",
+                    "endTime": "05:30",
                     "durationHours": 23.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 06:00 - 05:30"
+                },
+                {
+                    "owner": "MOUTH",
+                    "ownerType": "art_installation",
+                    "title": "A shoes on PLounge by Picnic Party",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
+                    "day": "Monday",
+                    "startTime": "00:00",
+                    "endTime": "09:00",
+                    "durationHours": 9,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 00:00 - 23:30"
+                    "rawTimeText": "Monday 00:00 - 09:00"
                 }
             ]
         },
