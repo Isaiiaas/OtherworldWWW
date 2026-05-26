@@ -326,10 +326,10 @@ function canonical(string $name): string {
     if (function_exists('transliterator_transliterate')) {
         $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
         if (is_string($t)) $s = $t;
-        else $s = mb_strtolower($s);
+        else $s = strtolower($s);
     } else {
         // Best-effort fallback if intl isn't available.
-        $s = mb_strtolower($s);
+        $s = strtolower($s);
         if (function_exists('iconv')) {
             $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
             if (is_string($t) && $t !== '') $s = $t;
@@ -532,7 +532,7 @@ function build_changes_log(array $beforeEntries, array $afterEntries, array $cla
  * order so adding a new occurrence reads as 'added', not as 'modified'.
  */
 function diff_events(array $before, array $after): array {
-    $key = static fn(array $e) => mb_strtolower(trim((string)($e['title'] ?? ''))) . '|' . mb_strtolower(trim((string)($e['day'] ?? '')));
+    $key = static fn(array $e) => strtolower(trim((string)($e['title'] ?? ''))) . '|' . strtolower(trim((string)($e['day'] ?? '')));
 
     $beforeQ = []; $afterQ = [];
     foreach ($before as $e) $beforeQ[$key($e)][] = $e;
