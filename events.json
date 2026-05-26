@@ -2,12 +2,12 @@
     "metadata": {
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
-        "entryCount": 356,
-        "eventCount": 1371,
+        "entryCount": 376,
+        "eventCount": 1504,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 284,
-            "camp_events": 1316,
+            "camp": 304,
+            "camp_events": 1449,
             "sound_stage": 11,
             "sound_stage_events": 44,
             "mutant_vehicle": 7,
@@ -15,7 +15,7 @@
             "art_installation": 54,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-26T22:02:02+00:00",
+        "lastReconciledAt": "2026-05-26T23:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1793,7 +1793,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 12:00 - 13:00",
                     "tags": [
-                        "Workshop / Class"
+                        "Workshop / Class",
+                        "Interactive / Crafts"
                     ]
                 },
                 {
@@ -1893,15 +1894,14 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 18:00 - 19:00",
                     "tags": [
-                        "Game / Activity",
-                        "Alcohol Involved"
+                        "Game / Activity"
                     ]
                 },
                 {
                     "owner": "Camp Who Says Ni",
                     "ownerType": "camp",
                     "title": "Soup Stockade",
-                    "description": "Soup Stockade: Hot soup from a cauldron to warm your weary soul",
+                    "description": "Hot soup from a cauldron to warm your weary soul",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "20:00",
@@ -1917,7 +1917,7 @@
                     "owner": "Camp Who Says Ni",
                     "ownerType": "camp",
                     "title": "Alchemy 101",
-                    "description": "Alchemy 101: Uncover the secret to transforming lead into gold, or childhood trauma into a dark sense of humor! Learn from our most qualified masters of medieval pseudoscience.",
+                    "description": "Uncover the secret to transforming lead into gold, or childhood trauma into a dark sense of humor! Learn from our most qualified masters of medieval pseudoscience.",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "20:00",
@@ -5052,8 +5052,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Thursday 14:00 - 18:00",
                     "tags": [
-                        "Game / Activity",
-                        "Alcohol Involved"
+                        "Game / Activity"
                     ]
                 },
                 {
@@ -5136,6 +5135,24 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 14:30 - 16:30",
                     "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Fix-it Station",
+                    "ownerType": "camp",
+                    "title": "Hide your shame / hide your stains",
+                    "description": "mooped some grease on your favourite shirt? burned a hole in your hoodie? Maybe you just want to sew cute patches on your clothes? Come see us! We have the hookup to give your garment new life!",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 13:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Interactive / Crafts",
                         "Game / Activity"
                     ]
                 },
@@ -8701,7 +8718,7 @@
                     "owner": "OTHER Red Tent",
                     "ownerType": "camp",
                     "title": "Matrilineal Womb Healing Ceremony",
-                    "description": "Matrilineal Womb Healing Ceremony: Honour the wisdom of your maternal ancestral lineage by connecting with your energetic womb space through guided meditation and embodied movement. *Please note: This ceremony is open to all women (cis & trans), non-binary & gender fluid folks.",
+                    "description": "Honour the wisdom of your maternal ancestral lineage by connecting with your energetic womb space through guided meditation and embodied movement. *Please note: This ceremony is open to all women (cis & trans), non-binary & gender fluid folks.",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "20:00",
@@ -8710,7 +8727,9 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 19:00 - 20:00",
                     "tags": [
-                        "Wellness / Yoga"
+                        "Wellness / Yoga",
+                        "Refuge / Introspective",
+                        "Music / Dance"
                     ]
                 },
                 {
@@ -10937,6 +10956,7 @@
                     "rawTimeText": "Friday 17:30 - 18:30",
                     "tags": [
                         "Performance / Show",
+                        "Game / Activity",
                         "19+"
                     ]
                 },
@@ -10970,6 +10990,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 14:00 - 15:00",
                     "tags": [
+                        "Interactive / Crafts",
                         "Game / Activity"
                     ]
                 },
@@ -10994,7 +11015,7 @@
                     "owner": "Smut Café",
                     "ownerType": "camp",
                     "title": "Butty Smuttons",
-                    "description": "Butty Smuttons: Come get yer butt- on with us! Browse our selection of top-tier smut and use your favourite images to make yourself a button.",
+                    "description": "Come get yer butt- on with us! Browse our selection of top-tier smut and use your favourite images to make yourself a button.",
                     "day": "Saturday",
                     "startTime": "15:00",
                     "endTime": "16:00",
@@ -11003,6 +11024,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 15:00 - 16:00",
                     "tags": [
+                        "Interactive / Crafts",
                         "Game / Activity",
                         "19+"
                     ]
@@ -11021,8 +11043,7 @@
                     "rawTimeText": "Sunday 13:00 - 14:00",
                     "tags": [
                         "Game / Activity",
-                        "19+",
-                        "Alcohol Involved"
+                        "19+"
                     ]
                 },
                 {
@@ -11038,6 +11059,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 14:00 - 15:00",
                     "tags": [
+                        "Interactive / Crafts",
                         "Game / Activity",
                         "19+"
                     ]
@@ -11569,7 +11591,7 @@
                     "owner": "The Abyss",
                     "ownerType": "camp",
                     "title": "PartyWolf’s Marquee Metal Montage",
-                    "description": "PartyWolf’s Marquee Metal Montage: Sidle on up to our speaker-wall bar, crush a cold one and bang your head along to the finest selection of metal music OW has to offer while fiddling with some vintage audio gear or literally staring into The (infinity mirror table) Abyss.",
+                    "description": "Sidle on up to our speaker-wall bar, crush a cold one and bang your head along to the finest selection of metal music OW has to offer while fiddling with some vintage audio gear or literally staring into The (infinity mirror table) Abyss.",
                     "day": "Friday",
                     "startTime": "18:30",
                     "endTime": "00:30",
@@ -13022,7 +13044,9 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 19:00 - 20:00",
-                    "tags": []
+                    "tags": [
+                        "Music / Dance"
+                    ]
                 },
                 {
                     "owner": "the Playground",
@@ -14719,7 +14743,7 @@
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
                     "title": "Ironic Spin Crew Showcase",
-                    "description": "Ironic Spin Crew Showcase: THE SICKEST BEATS THE DEADEST DROPS AND THE MOST SELF- INDULGENT SETS. JK- we have a good time and so will you",
+                    "description": "THE SICKEST BEATS THE DEADEST DROPS AND THE MOST SELF- INDULGENT SETS. JK- we have a good time and so will you",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "02:00",
@@ -17832,7 +17856,7 @@
                     "owner": "Electric Circus / Tabula Rasa",
                     "ownerType": "camp",
                     "title": "The Feeling Map",
-                    "description": "The Feeling Map: Collaborative string art project. Each colour holds a feeling. Choose one that feels closest to you, then attach it to the daily map, 3 feeling maps created over 3 days. Return at dusk for the glow.",
+                    "description": "Collaborative string art project. Each colour holds a feeling. Choose one that feels closest to you, then attach it to the daily map, 3 feeling maps created over 3 days. Return at dusk for the glow.",
                     "day": "Friday",
                     "startTime": "14:00",
                     "endTime": "16:00",
@@ -17848,7 +17872,7 @@
                     "owner": "Electric Circus / Tabula Rasa",
                     "ownerType": "camp",
                     "title": "The Feeling Map",
-                    "description": "The Feeling Map: Collaborative string art project. Each colour holds a feeling. Choose one that feels closest to you, then attach it to the daily map, 3 feeling maps created over 3 days. Return at dusk for the glow.",
+                    "description": "Collaborative string art project. Each colour holds a feeling. Choose one that feels closest to you, then attach it to the daily map, 3 feeling maps created over 3 days. Return at dusk for the glow.",
                     "day": "Saturday",
                     "startTime": "14:00",
                     "endTime": "16:00",
@@ -24395,6 +24419,2310 @@
                     "ownerType": "camp",
                     "title": "Full Power Chai",
                     "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Friday",
+                    "startTime": "19:00",
+                    "endTime": "21:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 19:00 - 21:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Acroyoga and standing acroyoga intro workshop",
+                    "description": "Acroyoga and standing acroyoga intro workshop: Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "22:00",
+                    "durationHours": 12,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 22:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Wellness / Yoga",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "05:00",
+                    "durationHours": 17,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 05:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Saturday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 19:00 - 20:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Community Fire Jam",
+                    "description": "Community Fire Jam: Bring your own props - come spin with us, fuel and safeties provided!",
+                    "day": "Saturday",
+                    "startTime": "23:55",
+                    "endTime": "01:25",
+                    "durationHours": 1.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 23:55 - 01:25",
+                    "tags": [
+                        "Workshop / Class",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Vocal soundbath",
+                    "description": "A vocal sound bath that is a journey into the mystery as well as a Soundhealing journey with my looping pedal and vocal effects mic’s. Sink into your spirit & integrate your journey this far and those to come. Sacred sound",
+                    "day": "Sunday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 11:00 - 12:00",
+                    "tags": [
+                        "Wellness / Yoga",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "02:00",
+                    "durationHours": 14,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 02:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Sunday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 19:00 - 20:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                }
+            ],
+            "neighbourhood": "MOOP"
+        },
+        {
+            "name": "Harmonious Haberdashery",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Harmonious Haberdashery",
+                    "ownerType": "camp",
+                    "title": "Social Experiments",
+                    "description": "YOU are the lab rats. Part social petri dish, part tea-fueled craft circle, we’re dissecting connection with precision. Grab a cuppa tea (chilled if it’s hot out) and engage in the social experiment activities",
+                    "day": "Friday",
+                    "startTime": "15:00",
+                    "endTime": "17:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:00 - 17:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Harmonious Haberdashery",
+                    "ownerType": "camp",
+                    "title": "Gin and Tonic Blackout Poetry",
+                    "description": "You bring the gin, we bring everything else! Join us to distill and share sonnets and soliloquies from seducing romance novels. Cozy spots to sit, no experience required.",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "18:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 18:30",
+                    "tags": [
+                        "Food / Drink",
+                        "Performance / Show",
+                        "Refuge / Introspective",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Harmonious Haberdashery",
+                    "ownerType": "camp",
+                    "title": "Pheromone Speed Dating",
+                    "description": "Let your nose lead the way! It’s been a couple days now - bring something that smells authentically you and see if you’re drawn to a mysteriously alluring item from a stranger... and maybe a new connection? Inclusive + facilitated. Come get scentual!",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Harmonious Haberdashery",
+                    "ownerType": "camp",
+                    "title": "Social Experiments",
+                    "description": "YOU are the lab rats. Part social petri dish, part tea-fueled craft circle, we’re dissecting connection with precision. Grab a cuppa tea (chilled if it’s hot out) and engage in the social experiment activities",
+                    "day": "Saturday",
+                    "startTime": "15:00",
+                    "endTime": "17:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:00 - 17:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "PRECIPITATION"
+        },
+        {
+            "name": "Flamingo camp",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "The Mandatory Tinfoil Hat Making Workshop",
+                    "description": "Block the “Big Dust” mind-beams! Join us to craft high- fashion cranium shields. Learn Crinkle Theory, avoid “Brain-Boil,” and look like a stylish baked potato. 100% signal privacy for the truly paranoid.",
+                    "day": "Friday",
+                    "startTime": "15:33",
+                    "endTime": "16:44",
+                    "durationHours": 1.18,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:33 - 16:44",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Spill the Tea",
+                    "description": "Write down the gossip, confession, or secret you’ve always wanted to say out loud and place it in the lockbox — all entries remain anonymous and burned at a later date. Sip on Sweet tea (bourbon optional) while we laugh, release, and let the drama go!",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:00",
+                    "tags": []
+                }
+            ],
+            "neighbourhood": "DOACRACY"
+        },
+        {
+            "name": "Cosmic Kev The Dreamidifier®",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Cosmic Kev The Dreamidifier®",
+                    "ownerType": "camp",
+                    "title": "Are your dreams feeling dry and parched?",
+                    "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 14:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Salon Saloon",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Save-a-Flailmingo",
+                    "description": "A flamboyance of ‘Flailmingos’ have escaped across the plains of Otherworld. Find a Flailmingo, complete the task and return them to safety to earn your Flailmingo Wrangler badge.",
+                    "day": "Thursday",
+                    "startTime": "00:00",
+                    "endTime": "00:00",
+                    "durationHours": 24,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 00:00 - 00:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "The Coffee Corral",
+                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
+                    "day": "Thursday",
+                    "startTime": "09:00",
+                    "endTime": "12:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 09:00 - 12:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon’s Newbie Night",
+                    "description": "Step on up to Salon Saloon’s Opening Night! It’s newbie night! We promise no hair will be left behind during our Junior Stylist training. Get fresh, stay fresh.",
+                    "day": "Thursday",
+                    "startTime": "19:00",
+                    "endTime": "23:20",
+                    "durationHours": 4.33,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 19:00 - 23:20",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Giddyup Craftacular Tassel Town Salon",
+                    "description": "Visit our DIY tack shop and craft up a beaded/tassled bandana or shop the free boutique to rustle up some new duds!",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "13:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 13:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon Friday",
+                    "description": "We don’t just offer haircuts, we tame the wildest manes. Come on down! Step right up for a haircut that’ll make you feel like the sheriff of style.",
+                    "day": "Friday",
+                    "startTime": "19:00",
+                    "endTime": "23:20",
+                    "durationHours": 4.33,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 19:00 - 23:20",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon Saturday",
+                    "description": "Come for the haircut, stay for the hoedown and the races, and leave with a style that says, “I’m the baddest cowpoke in town.” Bring your hat, bring your friends, and let us freshen you up for the Effigy “burns”.",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "11:59",
+                    "durationHours": 21.98,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 11:59",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Kneeslappin’ Dangle",
+                    "description": "Kneeslappin’ Dangle: What constitutes a proper knee slap? This interactive seminar will bring out the best knee slaps in everyone. Learn lifelong skills, long term health benefits, and ongoing support with others in the kneeslapping community.",
+                    "day": "Saturday",
+                    "startTime": "15:00",
+                    "endTime": "15:30",
+                    "durationHours": 0.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:00 - 15:30",
+                    "tags": [
+                        "Workshop / Class"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Hobby Horse Races",
+                    "description": "Hobby Horse Races: Off to the races! Bring your speed, your grit, and your legs. We will be racing hobby horses with a prize for the best in the west!",
+                    "day": "Saturday",
+                    "startTime": "16:20",
+                    "endTime": "17:20",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 16:20 - 17:20",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon",
+                    "description": "After Hours: Feeling lucky? You might just stumble upon a top shelf haircut and a camp fire circle for the ages.",
+                    "day": "Sunday",
+                    "startTime": "03:33",
+                    "endTime": "05:03",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 03:33 - 05:03",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "Salon Saloon Sunday",
+                    "description": "The Salon Saloon is OPEN and it’s been a doozy of a weekend. Looking like you wrestled a cactus? Let our Stylists smooth things out, come on down for a haircut and shenanigans.",
+                    "day": "Sunday",
+                    "startTime": "14:00",
+                    "endTime": "11:59",
+                    "durationHours": 21.98,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 14:00 - 11:59",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                }
+            ],
+            "neighbourhood": "SMOLDER"
+        },
+        {
+            "name": "Yarnia",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "24hr community knitting and crochet circle",
+                    "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
+                    "day": "Thursday",
+                    "startTime": "00:01",
+                    "endTime": "11:59",
+                    "durationHours": 11.97,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 00:01 - 11:59",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "24hr community knitting and crochet circle",
+                    "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
+                    "day": "Friday",
+                    "startTime": "00:01",
+                    "endTime": "11:59",
+                    "durationHours": 11.97,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 00:01 - 11:59",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Granny Squares 101",
+                    "description": "Learn to crochet the quintessential granny square, then add your creations to our collective quiltestry!",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Interactive / Crafts"
+                    ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "24hr community knitting and crochet circle",
+                    "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
+                    "day": "Saturday",
+                    "startTime": "00:01",
+                    "endTime": "11:59",
+                    "durationHours": 11.97,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 00:01 - 11:59",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "24hr community knitting and crochet circle",
+                    "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
+                    "day": "Sunday",
+                    "startTime": "00:01",
+                    "endTime": "11:59",
+                    "durationHours": 11.97,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 00:01 - 11:59",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Web of Life Listening Party",
+                    "description": "Come chill with us as we weave in circle and listen to Akira the Don's meaningwave album ft. Alan Watt's words of wisdom about the interconnectedness of life.",
+                    "day": "Sunday",
+                    "startTime": "23:00",
+                    "endTime": "00:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 23:00 - 00:30",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Refuge / Introspective"
+                    ]
+                }
+            ],
+            "neighbourhood": "TINKER"
+        },
+        {
+            "name": "Luscious Lemon camp",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non).",
+                    "day": "Thursday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 12:00 - 14:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non).",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 14:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non).",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 14:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Luscious Lemon camp",
+                    "ownerType": "camp",
+                    "title": "Lemonade stand happy hour!",
+                    "description": "Your neighbourhood lemonade bar & lounge, serving up fabulously moist libations (boozy + non).",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 14:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Alcohol Involved"
+                    ]
+                }
+            ],
+            "neighbourhood": "DOACRACY"
+        },
+        {
+            "name": "Picnic Party",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "Casino of Many Things",
+                    "description": "Bring your best bartering items to the Casino, test your mind, body and spirit against the house, winner takes all! No item? No problem, tasks can build credit at the Casino. Come on by and try your luck!",
+                    "day": "Thursday",
+                    "startTime": "16:00",
+                    "endTime": "18:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 16:00 - 18:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "Soft Tacos: but make it Hard",
+                    "description": "The Avocado is friendly but Chipotle smells your fear. Is the Salsa twerking to Darude? The Cheese fell asleep in the sun again. Oh well, it’s a pre-party Picnic. Your mission is to make the taco of your dreams; if you can find it…",
+                    "day": "Thursday",
+                    "startTime": "18:00",
+                    "endTime": "19:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 18:00 - 19:30",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Food / Drink",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "Glizzy Gala",
+                    "description": "Start pressing your jorts for solid food and SHOT DOGS to fill every void. Lose your dignity at the Casino of Many Things, peruse D*Arts. Admission free for raccoons in trench coats. Is that soup?",
+                    "day": "Friday",
+                    "startTime": "05:00",
+                    "endTime": "07:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 05:00 - 07:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "Casino of Many Things",
+                    "description": "Bring your best bartering items to the Casino, test your mind, body and spirit against the house, winner takes all! No item? No problem, tasks can build credit at the Casino. Come on by and try your luck!",
+                    "day": "Friday",
+                    "startTime": "16:00",
+                    "endTime": "18:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 16:00 - 18:00",
+                    "tags": [
+                        "Game / Activity",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Picnic Party",
+                    "ownerType": "camp",
+                    "title": "Mykl maff",
+                    "description": "Calling all mykls, identifying as and aspiring mykls Come learn and expand your mykl math knowledge. Inspired by the lost boys brought to you by uncle Bree",
+                    "day": "Friday",
+                    "startTime": "18:09",
+                    "endTime": "15:09",
+                    "durationHours": 21,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 18:09 - 15:09",
+                    "tags": [
+                        "Workshop / Class"
+                    ]
+                }
+            ],
+            "neighbourhood": "SCORCH"
+        },
+        {
+            "name": "NERRRRRDS",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "NERD INK",
+                    "description": "hey nerdlinger! opening of the NERD INK temporary tattoo station- nothign compliments a pocket protector better than a hastily applied lower back tattoo. available all weekend, but come early for best choice of designs and help with application",
+                    "day": "Thursday",
+                    "startTime": "18:00",
+                    "endTime": "19:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 18:00 - 19:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Plant Identification and Foraging Walk",
+                    "description": "Ever wanted to forage but scared of poisoning yourself? Or just want to know your plants better? Come explore the local flora on the trails and learn identification tricks and safe, ethical, legal foraging",
+                    "day": "Friday",
+                    "startTime": "11:30",
+                    "endTime": "13:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:30 - 13:00",
+                    "tags": [
+                        "Workshop / Class"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Shaft Shack",
+                    "description": "Come enjoy the finest cocktail you’ll ever have and get shafted. Stay for the greatest game show; Can You Lick It?",
+                    "day": "Friday",
+                    "startTime": "15:30",
+                    "endTime": "16:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:30 - 16:30",
+                    "tags": [
+                        "Food / Drink",
+                        "Performance / Show",
+                        "Game / Activity",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Can You Lick It?",
+                    "description": "…and how moist is it?! Team up & spin the wheel, or watch & cheer on the chaos. 16+ game",
+                    "day": "Friday",
+                    "startTime": "16:00",
+                    "endTime": "18:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 16:00 - 18:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Science Theatre",
+                    "description": "Science Theatre: Get your NERD on in our comfy lounge and enlarge your gray matter as your mind is blown by our classic science picks and flicks! Be there and be square!",
+                    "day": "Friday",
+                    "startTime": "23:00",
+                    "endTime": "02:00",
+                    "durationHours": 3,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 23:00 - 02:00",
+                    "tags": [
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "NERD X",
+                    "description": "Come talk Nerdy to Us! Open Mic for any topic you’re passionate about (3min) age 12+. With refreshments!",
+                    "day": "Saturday",
+                    "startTime": "15:30",
+                    "endTime": "16:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:30 - 16:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Burning Birds of Prey",
+                    "description": "Burning Birds of Prey: WING IT with a professional falconer for this EGG- STRA special workshop on the birds of prey coasting above us! Learn to identify our feathered friends from sight and sound, see some OWL- STANDING specimens up close, and then finish with a hawk walk!",
+                    "day": "Saturday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 17:00 - 18:00",
+                    "tags": [
+                        "Workshop / Class"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Science Theatre",
+                    "description": "Science Theatre: Get your NERD on in our comfy lounge and enlarge your gray matter as your mind is blown by our classic science picks and flicks! Be there and be square!",
+                    "day": "Saturday",
+                    "startTime": "23:00",
+                    "endTime": "02:00",
+                    "durationHours": 3,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 23:00 - 02:00",
+                    "tags": [
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "NERD X",
+                    "description": "Get Nerdy with us! Open mic for any topic you’re passionate about. Hot Takes with facts. 12+",
+                    "day": "Sunday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 17:00 - 18:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "NERRRRRDS",
+                    "ownerType": "camp",
+                    "title": "Science Theatre",
+                    "description": "Get your NERD on in our comfy lounge and enlarge your gray matter as your mind is blown by our classic science picks and flicks! Be there and be square!",
+                    "day": "Sunday",
+                    "startTime": "23:00",
+                    "endTime": "02:00",
+                    "durationHours": 3,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 23:00 - 02:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Performance / Show"
+                    ]
+                }
+            ],
+            "neighbourhood": "YES...AND?"
+        },
+        {
+            "name": "The Den",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Sapphic Tea Party",
+                    "description": "The second annual Sapphic mixer! Bring your crafts in progress and get ready to enjoy some iced tea, chill pud vibes, and flirty sapphic cuties!",
+                    "day": "Thursday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 19:00 - 20:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Crafty Breakfast Club",
+                    "description": "Start the day with a hearty breakfast and a good cranking of your units. Tuck in dangly bits, strengthen bonds, and crank those nuts - we’ve got a wobbly road ahead! We’ll have pancakes, coffee, cranks, bits, and lace - bring your units! Oh, and Jam.",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 12:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Filmmaker Club",
+                    "description": "Make 16mm film loops to be played at night AND make a 16mm film using Bolex Rex cameras",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 14:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Unhinged: A Nature Documentary Narrated By You!",
+                    "description": "Unhinged: Nature Docs Narrated by YOU: An improv comedy game where the audience narrates a short nature clip according to a theme picked out of a hat. Be your own attenborough! Come to participate, or just to lounge and laugh in the pud with your friends.",
+                    "day": "Friday",
+                    "startTime": "22:30",
+                    "endTime": "00:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 22:30 - 00:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Expanded Cinema + Sound",
+                    "description": "Expanded Cinema + Sound: Analog film performance by Andream + melty beats by Transient",
+                    "day": "Saturday",
+                    "startTime": "00:00",
+                    "endTime": "01:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 00:00 - 01:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Cuddles and Conversations by Consent",
+                    "description": "Cuddles and Conversations by Consent: Under facilitation we have decided to create this experimental space where we can, together get closer, feel deeply, in order to ease ourselves into more touch and intimacy, while honouring the conditioning we have and our real and important fears.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "15:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 15:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Poetry Open Mic",
+                    "description": "Poetry Open Mic: Come bare your heart or bear witness. Share a poem about your journey, your passion - or read a limerick about butts lol",
+                    "day": "Saturday",
+                    "startTime": "16:00",
+                    "endTime": "17:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 16:00 - 17:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Refuge / Introspective"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "The Hot Toddies",
+                    "description": "Marie & Carl host a classic temple day event where they tell stories, read poems & play music",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "15:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 15:00",
+                    "tags": [
+                        "Music / Dance",
+                        "Game / Activity",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "The Den",
+                    "ownerType": "camp",
+                    "title": "Soft Landing",
+                    "description": "Close out gently. Heartspace ambient music for whatever you’re carrying.",
+                    "day": "Sunday",
+                    "startTime": "23:00",
+                    "endTime": "00:00",
+                    "durationHours": 1,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 23:00 - 00:00",
+                    "tags": [
+                        "Refuge / Introspective",
+                        "Music / Dance"
+                    ]
+                }
+            ],
+            "neighbourhood": "DOACRACY"
+        },
+        {
+            "name": "Garden Cósmico",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "Garden Story Time",
+                    "description": "Join us for tales of The Hungry Caterpillar, Bradley Magog and more! Puppets included.",
+                    "day": "Thursday",
+                    "startTime": "20:00",
+                    "endTime": "21:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 20:00 - 21:00",
+                    "tags": [
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "Bloom & Bowl Ritual",
+                    "description": "Ease into the day with singing bowl vibrations and warm Moroccan tea",
+                    "day": "Friday",
+                    "startTime": "10:30",
+                    "endTime": "11:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:30 - 11:30",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "Movement & Mind Restoration",
+                    "description": "Movement & Mind Restoration: Feeling a bit in the mud? Restore with a yoga session for sore muscles, finishing with a reflective Alan Watts meditation to clear the mind.",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:00",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                }
+            ],
+            "neighbourhood": "YES...AND?"
+        },
+        {
+            "name": "Camp UMAMI",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. Sundown to sunup all weekend. No ramen, unless you’re lucky.",
+                    "day": "Thursday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 21:00 - 04:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Dim Sum, Drinks and DJs!",
+                    "description": "Dim Sum, Drinks and DJs!: Step into Cathartic Cantina for our soul- feeding camp experience with small bites for your belly and big releases for your soul. All served with spicy tunes, cool drinks and interactive art.",
+                    "day": "Friday",
+                    "startTime": "00:00",
+                    "endTime": "02:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 00:00 - 02:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Music / Dance",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Shark Tank",
+                    "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree.",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "17:30",
+                    "durationHours": 0.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 17:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. Sundown to sunup all weekend. No ramen, unless you’re lucky.",
+                    "day": "Friday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 21:00 - 04:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Late Night Vegan Mushroom Miso Ramen",
+                    "description": "Late Night Vegan Mushroom Miso Ramen: Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel & fork/ chopsticks. Have your ramen tarot read, embody a human noodle in the plounge, or commune with the interactive Celestial Ramen Bowl while you slurrrrp away your problems.",
+                    "day": "Saturday",
+                    "startTime": "00:00",
+                    "endTime": "02:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 00:00 - 02:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. Sundown to sunup all weekend. No ramen, unless you’re lucky.",
+                    "day": "Saturday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 21:00 - 04:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Dommy U-MAMI’s Nood Takeover",
+                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy U-MAMI crew will be present to add some optional spice to your ramen experience. 19+!",
+                    "day": "Sunday",
+                    "startTime": "00:00",
+                    "endTime": "02:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 00:00 - 02:00",
+                    "tags": [
+                        "Food / Drink",
+                        "19+"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Noods and Noods Life Drawing",
+                    "description": "Join us in Camp Umami's noodle lounge for a life drawing event. Materials provided",
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "Dim Sum Brunch",
+                    "description": "Nothing describes Sunday morning camping experience better than dim sum brunch with your friends at Cathartic Cantina. Come eat, drink and vibe until we run out.",
+                    "day": "Sunday",
+                    "startTime": "12:30",
+                    "endTime": "14:20",
+                    "durationHours": 1.83,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:30 - 14:20",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Camp UMAMI",
+                    "ownerType": "camp",
+                    "title": "The Celestial Ramen Bowl Plounge",
+                    "description": "Stop by and embody a human noodle in our UMAMI-themed plounge. Commune with the Celestial Ramen Bowl to reveal your ramen fortune. Sundown to sunup all weekend. No ramen, unless you’re lucky.",
+                    "day": "Sunday",
+                    "startTime": "21:00",
+                    "endTime": "02:00",
+                    "durationHours": 5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 21:00 - 02:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                }
+            ],
+            "neighbourhood": "SIDEQUEST"
+        },
+        {
+            "name": "Electric Circus",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Spectral Projection",
+                    "description": "Spectral Projection: An interactive television set where the viewer not only creates video art, but is the art.",
+                    "day": "Friday",
+                    "startTime": "00:01",
+                    "endTime": "11:59",
+                    "durationHours": 11.97,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 00:01 - 11:59",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Signs of the Revolution!",
+                    "description": "Signs of the Revolution!: Signs, signs, everywhere a sign! Join us in spreading joy, humour, and compassion by painting a SIGN for your camp and/or the Otherworld community at large. All materials provided. All ages welcome!",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "13:30",
+                    "durationHours": 2.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 13:30",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "ellisdeejay: Get on the Good Foot",
+                    "description": "Somewhere between a dance and a daydream. Kick off your Otherworld with a soulful mix of funky house with a psychedelic twist.",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "14:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Rave Scouts Jamboree",
+                    "description": "Come join the Rave Scouts of the Salish Sea for hippie watching, sporbs, and hilarious scouts fuckery. Bring your best scouting outfit to join the cult *ahem* scout troupe and receive a bonus something-or-other. Also bring a cup for the bar!",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "17:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 17:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Flying Fuck: Slomo Nu Disco",
+                    "description": "Slomo Nu Disco",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 18:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Poolside Dad Bod Speedo Disco",
+                    "description": "Poolside Dad Bod Speedo Disco: Bring your armbands, floaties, swimsuits and Speedos for a strictly moist, uplifting chuggy disco house poolside party with dance music veteran lifeguard CRAIGISON (9000ears). * There will be no qualified lifeguards on duty ** There will be no pool",
+                    "day": "Friday",
+                    "startTime": "18:00",
+                    "endTime": "19:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 18:00 - 19:30",
+                    "tags": [
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Electric Circus Nights",
+                    "description": "Electric Circus Nights: Liquid-light psychedelia, cosmic projection mapping and kaleidoscopic textures ripple across the tent canopy, transforming the space into a glowing immersive dreamscape all night to fantasticly curated DJs",
+                    "day": "Friday",
+                    "startTime": "21:00",
+                    "endTime": "04:00",
+                    "durationHours": 7,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 21:00 - 04:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Moonbean",
+                    "description": "Moonbean: Live Acid Sunset: Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synth-punk and psychedelic dancefloor energy.",
+                    "day": "Friday",
+                    "startTime": "22:00",
+                    "endTime": "23:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 22:00 - 23:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Andfriends",
+                    "description": "Andfriends: Desert Disco Service: Cosmic House Music that sounds touched by human hands — live basslines, guitar solos, piano stabs & dub-soaked disco",
+                    "day": "Friday",
+                    "startTime": "23:00",
+                    "endTime": "00:05",
+                    "durationHours": 1.08,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 23:00 - 00:05",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Electric Circus 3",
+                    "description": "Electric Circus 3: Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 15:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Moonbean",
+                    "description": "Moonbean: Live Acid Sunset: Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synth-punk and psychedelic dancefloor energy.",
+                    "day": "Saturday",
+                    "startTime": "18:00",
+                    "endTime": "19:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 18:00 - 19:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Electric Circus Nights",
+                    "description": "Electric Circus Nights: Liquid-light psychedelia, cosmic projection mapping and kaleidoscopic textures ripple across the tent canopy, transforming the space into a glowing immersive dreamscape all night to fantasticly curated DJs",
+                    "day": "Saturday",
+                    "startTime": "23:00",
+                    "endTime": "04:00",
+                    "durationHours": 5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 23:00 - 04:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Balearic Brunch",
+                    "description": "Balearic Brunch: Low Tide Recovery Club: Join Andfriends drifting through yacht-rock-esque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
+                    "day": "Sunday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 10:00 - 12:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Trainwrecking",
+                    "description": "A guide to being a sh*t DJ: A guided exploration of terrible transitions, performer faux pas, and the improper use of air horns",
+                    "day": "Sunday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 14:00 - 15:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Fusion Dance Intro and Jam",
+                    "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30",
+                    "tags": [
+                        "Music / Dance",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "R|V^H Closing Set @ Electric Circus",
+                    "description": "Expect deep and delicious Dub Techno and associated soundscapes as R|V^H provides a closing set to our weekend experience. Co-lead of the Ironic Spin Sound Camp, R|V^H is stoked to have been invited to provide a soundtrack to close Electric Circus!",
+                    "day": "Monday",
+                    "startTime": "02:00",
+                    "endTime": "03:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Monday 02:00 - 03:00",
+                    "tags": [
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                }
+            ],
+            "neighbourhood": "MIDDLE EARTH"
+        },
+        {
+            "name": "Camp phat glASSes",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Camp phat glASSes",
+                    "ownerType": "camp",
+                    "title": "Keep those peepers on your face, in fashion.",
+                    "description": "Keep those peepers on your face, in fashion.: Make sunglass chains in front of our giant pair of glasses! Clean your glasses, shake your asses!",
+                    "day": "Friday",
+                    "startTime": "04:00",
+                    "endTime": "05:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 04:00 - 05:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Camp phat glASSes",
+                    "ownerType": "camp",
+                    "title": "Clean Spectacle’s",
+                    "description": "Clean Spectacle’s: Giant glasses cleaning station, keep your regular sized glasses clean at our not regular sized cleaning station.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "13:00",
+                    "durationHours": 24,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 13:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "CONDENSATION"
+        },
+        {
+            "name": "Camp Wet Landing",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Scramble of Scandal",
+                    "description": "Climb the dicks, find the clit - if you can. Touch it just right and the whole thing lights up! Burner hours- if lights are on, come climb! (19+ or with supervision to climb the wall, please)",
+                    "day": "Friday",
+                    "startTime": "09:00",
+                    "endTime": "00:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 09:00 - 00:00",
+                    "tags": [
+                        "Game / Activity",
+                        "19+"
+                    ]
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "In the Sh*t-Mixer",
+                    "description": "The cocktail hour nobody asked for. A curated mix of the sh*ttiest non-hits and guilty pleasure bangers, paired with drinks that’ll make you say “why, though?” 19+, bring your cup!",
+                    "day": "Friday",
+                    "startTime": "14:30",
+                    "endTime": "15:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:30 - 15:30",
+                    "tags": [
+                        "Food / Drink",
+                        "19+",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Scramble of Scandal",
+                    "description": "Scramble of Scandal: Climb the dicks, find the clit - if you can. Touch it just right and the whole thing lights up! Burner hours- if lights are on, come climb! (19+ or with supervision to climb the wall, please)",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "00:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 09:00 - 00:00",
+                    "tags": [
+                        "Game / Activity",
+                        "19+"
+                    ]
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Scramble of Scandal",
+                    "description": "Scramble of Scandal: Climb the dicks, find the clit - if you can. Touch it just right and the whole thing lights up! Burner hours- if lights are on, come climb! (19+ or with supervision to climb the wall, please)",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "00:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 00:00",
+                    "tags": [
+                        "Game / Activity",
+                        "19+"
+                    ]
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "The Scandal-navian Spa Experience",
+                    "description": "Have you ever been so pampered that you forgot about all your worries? This is entirely not that experience. Let us treat you to a reckless, perfectly ill-conceived spa treatment with scandalously bad, imitation, amateur spa “professionals”.",
+                    "day": "Sunday",
+                    "startTime": "12:30",
+                    "endTime": "13:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:30 - 13:30",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                }
+            ],
+            "neighbourhood": "EVAPORATION"
+        },
+        {
+            "name": "Curiouser & Curiouser Café",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Curiouser & Curiouser Café",
+                    "ownerType": "camp",
+                    "title": "Espresso Bar & Home-baked Cookies",
+                    "description": "Come celebrate your very merry unbirthday with a flat white and a cookie",
+                    "day": "Friday",
+                    "startTime": "09:00",
+                    "endTime": "11:30",
+                    "durationHours": 2.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 09:00 - 11:30",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Curiouser & Curiouser Café",
+                    "ownerType": "camp",
+                    "title": "Espresso Bar & Home-baked Cookies",
+                    "description": "Espresso Bar & Home-baked Cookies: Come celebrate your very merry unbirthday with a flat white and a cookie",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "11:30",
+                    "durationHours": 2.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 09:00 - 11:30",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Curiouser & Curiouser Café",
+                    "ownerType": "camp",
+                    "title": "Espresso Bar & Home-baked Cookies",
+                    "description": "Espresso Bar & Home-baked Cookies: Come celebrate your very merry unbirthday with a flat white and a cookie",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "11:30",
+                    "durationHours": 2.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 11:30",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                }
+            ],
+            "neighbourhood": "CONDENSATION"
+        },
+        {
+            "name": "Little Big",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Pink Pony Café",
+                    "description": "Sip a little, sparkle a lot! An unapologetically pink coffee experience, just for you <3",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "13:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 13:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Placenta Pancakes Breakfast",
+                    "description": "Placenta Pancakes Breakfast: Come fuel up for the day with some delicious Placenta Pancakes in the Living Womb. Get rebirthed before noon and rock your day renewed!",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 12:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Sacred Freaks: A Liberation Lab",
+                    "description": "An improvisational dance and embodiment workshop focused on self-expression, presence, and connection. With guided exercises, you’ll become more physically & relationally expressive — less about how it looks, more about what it feels like to be you!",
+                    "day": "Friday",
+                    "startTime": "12:30",
+                    "endTime": "14:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:30 - 14:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Clown Church",
+                    "description": "Time to unleash your inner fool! Come get silly and unhinged through beginner-friendly clowning and improv games.",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 15:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "What Could Go Wrong",
+                    "description": "An Otherworld UnTalent Show: A celebration of mediocrity, almost- skills, and unfinished passions. Share something you’re not that good at (but love anyway) and be judged on sincerity, emotional overinvestment, and commitment to almostness. Low effort welcome.",
+                    "day": "Friday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 19:00 - 20:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Human Jukebox",
+                    "description": "Human Jukebox: Come and shout song requests and see if he can pull em off!",
+                    "day": "Friday",
+                    "startTime": "20:00",
+                    "endTime": "21:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:00 - 21:00",
+                    "tags": [
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Glowing Balloon Jizz Crafting and Parade Guided Parade",
+                    "description": "Glowing Balloon Jizz Crafting and Parade Guided Parade: We will help you craft your very own 3 foot long light up jizz balloon, then take a guided walk/military style ridiculous march around the festival with your lovely/demanding host Alex the Ovum. Show up @ 8:30, march leaves around 9:15.",
+                    "day": "Friday",
+                    "startTime": "20:30",
+                    "endTime": "22:30",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:30 - 22:30",
+                    "tags": [
+                        "Performance / Show",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Tea & Grounding meditation with Julia",
+                    "description": "Tea & Grounding meditation with Julia: Come sip some hibiscus or rooibos, then flop into whatever position feels like home — womb- mode encouraged. Drift into a little meditation - breathe, shift around, the occasional cheeky toot. BYO cup and pillow.",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:30",
+                    "tags": [
+                        "Food / Drink",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Clown Church",
+                    "description": "Clown Church: Time to unleash your inner fool! Come get silly and unhinged through beginner-friendly clowning and improv games.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Get in der’ - Jizz Crafting and Race for Your Life",
+                    "description": "Get in der’ - Jizz Crafting and Race for Your Life: Come craft your own personalized balloon sperm or ovum at the Womb and then race it to win a chance at existence! Free rebirthing while you wait.",
+                    "day": "Saturday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:00 - 16:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Most Restorative Womb yoga EVER",
+                    "description": "Most Restorative Womb yoga EVER: Come restore your body back to your fluid fetus self. Let your nervous system be held in our amniotic space. Gentle movement to gestate yourself back to feeling newer than when you were first born! Bring a yoga mat and a placenta if you have one.",
+                    "day": "Sunday",
+                    "startTime": "10:30",
+                    "endTime": "12:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 10:30 - 12:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Little Big",
+                    "ownerType": "camp",
+                    "title": "Colouring in the Womb with Julia",
+                    "description": "Come colour with Julia in the womb just like the good ol’ days! Crayons and paper provided, just bring your beautifully wandering monkey mind and let it land, one color at a time.",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30",
+                    "tags": [
+                        "Refuge / Introspective",
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "SMOLDER"
+        },
+        {
+            "name": "Wild Things Camp",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Skin Decoration Station",
+                    "description": "DIY Face/ Body Paint/ Tattoos. Kids! Come decorate yourself, your parent, your friend or sibling. Adults, come be a kid again!",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 11:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Poi Spinning - Play space & Workshop",
+                    "description": "Swing, twirl, and whirl as you find your flow playing and learning poi at this kid friendly workshop.",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "15:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 15:30",
+                    "tags": [
+                        "Workshop / Class",
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Robot Making Workshop",
+                    "description": "Beep boop... beep beep boop. Build your own robot! Mix, match and create your robot buddy - then bring it to life! By kids, for kids!",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 15:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Skin Decoration Station",
+                    "description": "DIY Face/ Body Paint/ Tattoos. Kids! Come decorate yourself, your parent, your friend or sibling. Adults, come be a kid again!",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Hobby Wild Things!",
+                    "description": "Neeeiiigghhhh phhh... Come craft your very own hobby horse or wild thing! Complete with Obstacle Course to put your creature through it’s paces and show off your skills..",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "16:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 16:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Hobby Wild Thing Stampede",
+                    "description": "Join our Wild Thing Stampede. All creatures wellcome! Walk, stomp, clomp or ride your hobby creature along the lanes of OW while we delight, surprise and confuse our neighbors.",
+                    "day": "Saturday",
+                    "startTime": "16:00",
+                    "endTime": "17:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 16:00 - 17:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Wild Thing Circus!",
+                    "description": "Step right up and enjoy the circus! Snacks, wonders, games and more. Bring your wildest animal to tame. Puuurfect for young wonders and ringleaders.",
+                    "day": "Sunday",
+                    "startTime": "14:00",
+                    "endTime": "17:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 14:00 - 17:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Kitty Cat Karaoke",
+                    "description": "Our Kitty Karaoke station is the purr-fect place to meow it out. Grab a mic, channel your inner feline and belt out your favourite tunes, cat style.",
+                    "day": "Sunday",
+                    "startTime": "14:00",
+                    "endTime": "17:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 14:00 - 17:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Performance / Show",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Wild Things Camp",
+                    "ownerType": "camp",
+                    "title": "Pinata!",
+                    "description": "Got a little one needing to unleash their inner “Wild Thing”. We’ve got just the thing... our pinata is ready for a swing",
+                    "day": "Sunday",
+                    "startTime": "17:00",
+                    "endTime": "17:30",
+                    "durationHours": 0.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 17:00 - 17:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "COLLECTION"
+        },
+        {
+            "name": "Cozy Corner",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Get Nailed and Stamped",
+                    "description": "Nail painting glory hole & temporary tatoos",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Origami",
+                    "description": "Origami crafts",
+                    "day": "Friday",
+                    "startTime": "12:30",
+                    "endTime": "14:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:30 - 14:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Get Nailed & Stamped",
+                    "description": "Nail painting glory hole & temporary tatoos",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Rogue Twister",
+                    "description": "Twister with a twist. You become part of the board.",
+                    "day": "Saturday",
+                    "startTime": "12:30",
+                    "endTime": "14:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:30 - 14:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Cuddling Workshop",
+                    "description": "The art of cuddling",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "15:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 15:30",
+                    "tags": [
+                        "Workshop / Class",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Cozy Corner",
+                    "ownerType": "camp",
+                    "title": "Colouring Time",
+                    "description": "Channel your inner child and grab a crayon.",
+                    "day": "Sunday",
+                    "startTime": "12:30",
+                    "endTime": "14:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:30 - 14:00",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "SMOLDER"
+        },
+        {
+            "name": "Portal Lounge",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Festival Friending: Speed Connecting & Conscious Convos",
+                    "description": "Meet inspiring humans through fun, thought-provoking connection exercises and small-group discussions. We blend music, movement and meaningful conversation to help you make new friends and deepen bonds. Minimal cringe & maximum fun!",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:30",
+                    "tags": []
+                },
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Nadia’s Birthday Bash!",
+                    "description": "Did your last birthday suck? Come experience the birthday you wish you had & celebrate our favourite campmate with an OW-birthday. Cupcakes, treats, raunchy beats, pin-the-tail- on-the-raver, pinatas, magic? Who the fuck knows…come party, leave happy.",
+                    "day": "Friday",
+                    "startTime": "15:00",
+                    "endTime": "17:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:00 - 17:00",
+                    "tags": [
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Lying on the Floor: Yin + Sound Bath",
+                    "description": "Come lie on the floor with us! This Yin and sound bath session will ground you and then energize you for the night ahead. The facilitator has a special gift for the first 5 attendees - space is limited, so come early!",
+                    "day": "Friday",
+                    "startTime": "21:30",
+                    "endTime": "23:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 21:30 - 23:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Blob Race & Nail Pooping",
+                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB! And who will we crown chamption of the Dutch tradition of nail pooping? It’s as fun as it sounds.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:30",
+                    "tags": []
+                },
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Music Hour for little Tots",
+                    "description": "Bring your littles on by to enjoy sing-alongs and explore musical treasures together! Best suited for ages 3 and under with caregivers",
+                    "day": "Sunday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 11:00 - 12:00",
+                    "tags": [
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Portal Lounge",
+                    "ownerType": "camp",
+                    "title": "Elemental tantric yoga for women with Samantha Hope",
+                    "description": "Awaken your body, ignite your energy, and move as the elements— through breath, movement and conscious touch, connecting deeply with yourself and others in this embodied tantric journey for women",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 14:30",
+                    "tags": []
+                }
+            ],
+            "neighbourhood": "EVAPORATION"
+        },
+        {
+            "name": "Chai Trance",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Music - Live DJ's & Dancing",
+                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "03:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 03:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full power Chai- serving that fire masala chai for your third eye",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "21:00",
