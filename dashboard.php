@@ -134,6 +134,17 @@ function load_alias_map(): array {
  * matching claim key (the original string the hash is stored under), or
  * null if no claim covers this camp.
  */
+/**
+ * If $camp is a known typo / alternate spelling, returns its canonical
+ * display name from the alias map. Otherwise returns the input unchanged.
+ * Used to normalise form input so $_SESSION['camp'] always matches the
+ * entry name as it appears in events.json after dedup.
+ */
+function resolve_alias_name(string $camp, array $aliasMap): string {
+    $c = canonical($camp);
+    return $aliasMap[$c] ?? $camp;
+}
+
 function find_claim_key(array $claims, string $camp, array $aliasMap): ?string {
     if (isset($claims[$camp])) return $camp;
     $canon = canonical($camp);
@@ -425,6 +436,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $data    = load_events();
 
         $aliasMap = load_alias_map();
+        $camp     = resolve_alias_name($camp, $aliasMap);
         if (get_entry_index($data, $camp) === null) {
             flash('err', 'Camp not found.');
         } elseif (find_claim_key($claims, $camp, $aliasMap) !== null) {
@@ -449,6 +461,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $pass     = (string)($_POST['passphrase'] ?? '');
         $claims   = load_claims();
         $aliasMap = load_alias_map();
+        $camp     = resolve_alias_name($camp, $aliasMap);
         $key      = find_claim_key($claims, $camp, $aliasMap);
 
         if ($key === null) {
