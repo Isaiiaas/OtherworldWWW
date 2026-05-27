@@ -256,8 +256,8 @@
         {
             "name": "Centre Camp",
             "type": "camp",
-            "x": 0.163,
-            "y": 0.3871,
+            "x": 0.5277,
+            "y": 0.7427,
             "confirmed": true,
             "verified": true
         },
@@ -845,14 +845,9 @@
         {
             "name": "Miffy’s Mimosa Cart MISO MOIST",
             "type": "camp",
-            "x": 0.7787,
-            "y": 0.4629,
+            "x": 0.7808,
+            "y": 0.4633,
             "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "Teardrop bubble labeled 'MIFFYS MIMOSA CART' in upper portion of tile near SCORCH",
-            "source": "agent:r1_c3",
-            "qaVerdict": "adjust",
-            "qaEvidence": "Teardrop labeled 'MIFFYS MIMOSA CART' upper-left near SCORCH district; expected far right empty area. MISO MOIST teardrop not separately visible",
             "verified": true
         },
         {
