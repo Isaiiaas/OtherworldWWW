@@ -14987,36 +14987,6 @@
                 {
                     "owner": "Yarnia",
                     "ownerType": "camp",
-                    "title": "24hr community knitting and crochet circle. Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
-                    "description": "",
-                    "day": "Thursday",
-                    "startTime": "04:00",
-                    "endTime": "11:00",
-                    "durationHours": 7,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [
-                        "end_before_start_within_festival_day"
-                    ],
-                    "rawTimeText": "Thursday 04:00 - 11:00"
-                },
-                {
-                    "owner": "Yarnia",
-                    "ownerType": "camp",
-                    "title": "24hr community knitting and crochet circle. Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
-                    "description": "",
-                    "day": "Friday",
-                    "startTime": "01:00",
-                    "endTime": "01:00",
-                    "durationHours": 0,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [
-                        "zero_duration"
-                    ],
-                    "rawTimeText": "Friday 01:00 - 01:00"
-                },
-                {
-                    "owner": "Yarnia",
-                    "ownerType": "camp",
                     "title": "Granny Squares 101",
                     "description": "Learn to crochet the quintessential granny square, then add your creations to our collective quiltestry!",
                     "day": "Friday",
@@ -15026,36 +14996,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 11:00 - 12:00"
-                },
-                {
-                    "owner": "Yarnia",
-                    "ownerType": "camp",
-                    "title": "24hr community knitting and crochet circle. Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
-                    "description": "",
-                    "day": "Saturday",
-                    "startTime": "12:00",
-                    "endTime": "12:00",
-                    "durationHours": 0,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [
-                        "zero_duration"
-                    ],
-                    "rawTimeText": "Sat - Sun 12:00 - 12:00"
-                },
-                {
-                    "owner": "Yarnia",
-                    "ownerType": "camp",
-                    "title": "24hr community knitting and crochet circle. Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
-                    "description": "",
-                    "day": "Sunday",
-                    "startTime": "12:00",
-                    "endTime": "12:00",
-                    "durationHours": 0,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [
-                        "zero_duration"
-                    ],
-                    "rawTimeText": "Sat - Sun 12:00 - 12:00"
                 },
                 {
                     "owner": "Yarnia",
@@ -15136,6 +15076,58 @@
                     "tags": [
                         "Game / Activity"
                     ]
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Longest Scarf Competition",
+                    "description": "Mr. Tumnus needs a new scarf and wants all the creatures of Yarnia to help him make the longest one. \r\n\r\nWho will win? Knitters or crocheters?",
+                    "day": "Thursday",
+                    "startTime": "12:00",
+                    "endTime": "23:30",
+                    "durationHours": 35.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 12:00 - 23:30"
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Longest Scarf Competition",
+                    "description": "Mr. Tumnus needs a new scarf and wants all the creatures of Yarnia to help him make the longest one. \r\n\r\nWho will win? Knitters or crocheters?",
+                    "day": "Friday",
+                    "startTime": "00:00",
+                    "endTime": "22:30",
+                    "durationHours": 46.5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 00:00 - 22:30"
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Longest Scarf Competition",
+                    "description": "Mr. Tumnus needs a new scarf and wants all the creatures of Yarnia to help him make the longest one. \r\n\r\nWho will win? Knitters or crocheters?",
+                    "day": "Saturday",
+                    "startTime": "00:00",
+                    "endTime": "23:00",
+                    "durationHours": 47,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 00:00 - 23:00"
+                },
+                {
+                    "owner": "Yarnia",
+                    "ownerType": "camp",
+                    "title": "Longest Scarf Competition",
+                    "description": "Mr. Tumnus needs a new scarf and wants all the creatures of Yarnia to help him make the longest one. \r\n\r\nWho will win? Knitters or crocheters?",
+                    "day": "Sunday",
+                    "startTime": "00:00",
+                    "endTime": "18:00",
+                    "durationHours": 18,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 00:00 - 18:00"
                 }
             ],
             "claimed": true
