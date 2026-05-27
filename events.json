@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T22:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T23:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -996,6 +996,22 @@
                     "rawTimeText": "Friday 13:00 - 19:00",
                     "tags": [
                         "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Boobs & Berries",
+                    "ownerType": "camp",
+                    "title": "Qi Gong",
+                    "description": "Qi Gong: “Calm Creative Mindful Movement”: Awaken connecting conscious movement with breath through guided meditation; conjuring colours through correlated Kundalini chakras to clear, charge, and catalyze your core self cocreating our Otherworld. *Barefoot optional* Come curious, leave clear.",
+                    "day": "Saturday",
+                    "startTime": "10:30",
+                    "endTime": "11:30",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:30 - 11:30",
+                    "tags": [
+                        "Wellness / Yoga"
                     ]
                 },
                 {
@@ -8047,22 +8063,6 @@
                     "tags": [
                         "Wellness / Yoga",
                         "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "camp",
-                    "title": "Qi Gong",
-                    "description": "Qi Gong: “Calm Creative Mindful Movement”: Awaken connecting conscious movement with breath through guided meditation; conjuring colours through correlated Kundalini chakras to clear, charge, and catalyze your core self cocreating our Otherworld. *Barefoot optional* Come curious, leave clear.",
-                    "day": "Saturday",
-                    "startTime": "10:30",
-                    "endTime": "11:30",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:30 - 11:30",
-                    "tags": [
-                        "Wellness / Yoga"
                     ]
                 },
                 {
