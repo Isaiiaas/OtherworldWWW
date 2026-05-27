@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 269,
-        "eventCount": 992,
+        "eventCount": 993,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 936,
+            "camp_events": 937,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T14:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T15:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -2454,6 +2454,7 @@
                     "rawTimeText": "Friday 13:00 - 22:00",
                     "tags": [
                         "Food / Drink",
+                        "Performance / Show",
                         "Game / Activity",
                         "Alcohol Involved"
                     ]
@@ -3775,11 +3776,11 @@
                     "description": "Come take part in our dyke scavenger hunt from Friday until Sunday at 12pm. Scavenger hunt cards due back at 12pm on Sunday. There may even be a prize.",
                     "day": "Friday",
                     "startTime": "12:00",
-                    "endTime": "13:00",
-                    "durationHours": 1,
+                    "endTime": "23:59",
+                    "durationHours": 11.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 12:00 - 13:00",
+                    "rawTimeText": "Friday 12:00 - 23:59",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -6735,16 +6736,32 @@
                     "owner": "Kiki at The Playground",
                     "ownerType": "camp",
                     "title": "Burlesque for Beginners",
-                    "description": "Burlesque for Beginners: A burlesque crash course for beginners. EveryBODY is welcome!",
-                    "day": "Friday",
+                    "description": "A burlesque crash course for beginners. EveryBODY is welcome!",
+                    "day": "Saturday",
                     "startTime": "18:00",
                     "endTime": "19:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 18:00 - 19:00",
+                    "rawTimeText": "Saturday 18:00 - 19:00",
                     "tags": [
                         "Workshop / Class",
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "Kiki at The Playground",
+                    "ownerType": "camp",
+                    "title": "Burlesque for Beginners",
+                    "description": "Student performance",
+                    "day": "Saturday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 19:00 - 20:00",
+                    "tags": [
                         "Performance / Show"
                     ]
                 }
@@ -11329,6 +11346,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 12:00 - 18:00",
                     "tags": [
+                        "Refuge / Introspective",
                         "Game / Activity",
                         "19+"
                     ]
@@ -14457,7 +14475,7 @@
                     "owner": "Welcome to Arcadia",
                     "ownerType": "camp",
                     "title": "Intro to Ropes with Fox!",
-                    "description": "",
+                    "description": "Come learn safety and foundational ties like a single column tie and basic chest harness, variants for diverse bodies. No previous experience needed. Some rope available, or bring your own. Bring a buddy, meet a buddy, or tie yourself in knots!",
                     "day": "Friday",
                     "startTime": "13:00",
                     "endTime": "14:00",
