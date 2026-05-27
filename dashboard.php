@@ -359,10 +359,27 @@ function render_time_select(string $name, string $current): string {
     return $out;
 }
 
+/**
+ * Derives the end day for an event from its stored fields. Events.json only
+ * stores `day` (the start day) and a `crossesMidnight` bool — so when
+ * crossesMidnight is true, the event ends on the day after `day` in DAY
+ * order. Used to prefill the edit form's "End day" dropdown.
+ */
+function event_end_day(string $day, bool $crosses, array $days): string {
+    if (!$crosses) return $day;
+    $i = array_search($day, $days, true);
+    if ($i === false || $i === count($days) - 1) return $day;
+    return $days[$i + 1];
+}
+
 function normalize_event(array $in, string $campType): array {
+    global $DAYS;
     $title       = trim((string)($in['title'] ?? ''));
     $description = trim((string)($in['description'] ?? ''));
-    $day         = trim((string)($in['day'] ?? ''));
+    // Accept the new explicit startDay/endDay fields; fall back to the
+    // legacy single `day` field so older form POSTs still work.
+    $startDay    = trim((string)($in['startDay'] ?? $in['day'] ?? ''));
+    $endDay      = trim((string)($in['endDay']   ?? $startDay));
     $startTime   = trim((string)($in['startTime'] ?? ''));
     $endTime     = trim((string)($in['endTime'] ?? ''));
 
@@ -373,7 +390,17 @@ function normalize_event(array $in, string $campType): array {
         [$eh, $em] = array_map('intval', explode(':', $endTime));
         $startMin = $sh * 60 + $sm;
         $endMin   = $eh * 60 + $em;
-        if ($endMin <= $startMin) { $endMin += 24 * 60; $crosses = true; }
+
+        // Days-apart from the explicit endDay dropdown (e.g., Friday → Saturday
+        // = +1 day). If endDay isn't in DAYS or precedes startDay, default to
+        // same-day. The legacy "end <= start so it must wrap" inference still
+        // applies when both days are the same — keeps old payloads working.
+        $si = array_search($startDay, $DAYS, true);
+        $ei = array_search($endDay,   $DAYS, true);
+        $daysApart = ($si !== false && $ei !== false && $ei >= $si) ? ($ei - $si) : 0;
+        if ($daysApart === 0 && $endMin <= $startMin) $daysApart = 1;
+        $endMin  += $daysApart * 24 * 60;
+        $crosses  = ($daysApart >= 1);
         $duration = round(($endMin - $startMin) / 60, 2);
     }
     return [
@@ -381,25 +408,31 @@ function normalize_event(array $in, string $campType): array {
         'ownerType'          => $campType,
         'title'              => $title,
         'description'        => $description,
-        'day'                => $day,
+        'day'                => $startDay,
         'startTime'          => $startTime,
         'endTime'            => $endTime,
         'durationHours'      => $duration,
         'crossesMidnight'    => $crosses,
         'normalizationFlags' => [],
-        'rawTimeText'        => trim($day . ' ' . $startTime . ' - ' . $endTime),
+        'rawTimeText'        => trim($startDay . ' ' . $startTime . ' - ' . $endTime),
     ];
 }
 
 function validate_event_input(array $in, array $days): ?string {
     $title     = trim((string)($in['title'] ?? ''));
-    $day       = trim((string)($in['day'] ?? ''));
+    $startDay  = trim((string)($in['startDay'] ?? $in['day'] ?? ''));
+    $endDay    = trim((string)($in['endDay']   ?? $startDay));
     $startTime = trim((string)($in['startTime'] ?? ''));
     $endTime   = trim((string)($in['endTime'] ?? ''));
-    if ($title === '')             return 'Title is required.';
-    if (!in_array($day, $days, true)) return 'Pick a valid day.';
-    if (!valid_time($startTime))   return 'Start time must be HH:MM (24h).';
-    if (!valid_time($endTime))     return 'End time must be HH:MM (24h).';
+    if ($title === '')                       return 'Title is required.';
+    if (!in_array($startDay, $days, true))   return 'Pick a valid start day.';
+    if (!in_array($endDay,   $days, true))   return 'Pick a valid end day.';
+    if (!valid_time($startTime))             return 'Start time must be HH:MM (24h).';
+    if (!valid_time($endTime))               return 'End time must be HH:MM (24h).';
+    $si = array_search($startDay, $days, true);
+    $ei = array_search($endDay,   $days, true);
+    if ($ei < $si)                           return 'End day must be the same as or after start day.';
+    if ($ei === $si && $startTime === $endTime) return 'Start and end time cannot be identical.';
     return null;
 }
 
@@ -746,8 +779,12 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
 
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    .row-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; }
+    @media (max-width: 900px) {
+      .row-4 { grid-template-columns: 1fr 1fr; }
+    }
     @media (max-width: 640px) {
-      .row, .row-3 { grid-template-columns: 1fr; }
+      .row, .row-3, .row-4 { grid-template-columns: 1fr; }
     }
 
     button, .btn {
@@ -1053,21 +1090,30 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
                   <input type="hidden" name="csrf" value="<?= h(csrf_token()) ?>">
                   <input type="hidden" name="action" value="edit_event">
                   <input type="hidden" name="event_index" value="<?= (int)$i ?>">
-                  <div class="row-3">
+                  <?php $endDay = event_end_day((string)$day, !empty($ev['crossesMidnight']), $DAYS); ?>
+                  <div class="row-4">
                     <div>
-                      <label class="field">Day</label>
-                      <select name="day" required>
+                      <label class="field">Start day</label>
+                      <select name="startDay" required>
                         <?php foreach ($DAYS as $d): ?>
                           <option value="<?= h($d) ?>" <?= $d === $day ? 'selected' : '' ?>><?= h($d) ?></option>
                         <?php endforeach; ?>
                       </select>
                     </div>
                     <div>
-                      <label class="field">Start</label>
+                      <label class="field">Start time</label>
                       <?= render_time_select('startTime', $st) ?>
                     </div>
                     <div>
-                      <label class="field">End</label>
+                      <label class="field">End day</label>
+                      <select name="endDay" required>
+                        <?php foreach ($DAYS as $d): ?>
+                          <option value="<?= h($d) ?>" <?= $d === $endDay ? 'selected' : '' ?>><?= h($d) ?></option>
+                        <?php endforeach; ?>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="field">End time</label>
                       <?= render_time_select('endTime', $et) ?>
                     </div>
                   </div>
@@ -1097,10 +1143,10 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
       <form method="post">
         <input type="hidden" name="csrf" value="<?= h(csrf_token()) ?>">
         <input type="hidden" name="action" value="add_event">
-        <div class="row-3">
+        <div class="row-4">
           <div>
-            <label class="field">Day</label>
-            <select name="day" required>
+            <label class="field">Start day</label>
+            <select name="startDay" required>
               <option value="">— pick a day —</option>
               <?php foreach ($DAYS as $d): ?>
                 <option value="<?= h($d) ?>"><?= h($d) ?></option>
@@ -1110,6 +1156,15 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
           <div>
             <label class="field">Start time</label>
             <?= render_time_select('startTime', '') ?>
+          </div>
+          <div>
+            <label class="field">End day</label>
+            <select name="endDay" required>
+              <option value="">— pick a day —</option>
+              <?php foreach ($DAYS as $d): ?>
+                <option value="<?= h($d) ?>"><?= h($d) ?></option>
+              <?php endforeach; ?>
+            </select>
           </div>
           <div>
             <label class="field">End time</label>

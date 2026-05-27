@@ -1560,6 +1560,16 @@
           <option value="mutant_vehicle">Mutant vehicles</option>
         </select>
       </label>
+      <label class="field">
+        When
+        <select id="period-filter">
+          <option value="all">All day</option>
+          <option value="morning">Morning (06:00–11:59)</option>
+          <option value="afternoon">Afternoon (12:00–16:59)</option>
+          <option value="evening">Evening (17:00–20:59)</option>
+          <option value="night">Night (21:00–05:59)</option>
+        </select>
+      </label>
     </div>
     <div class="tag-filter" id="tag-filter"></div>
     <div class="tabs mode-tabs" id="mode-tabs">
@@ -1797,6 +1807,7 @@
         day: discoverDefaultDay(),
         search: "",
         type: "all",
+        period: "all",
         tags: new Set(),
       };
 
@@ -1813,7 +1824,10 @@
 
       function discoverDefaultDay() {
         const counts = Object.fromEntries(DAY_ORDER.map(d => [d, 0]));
-        for (const e of ALL_EVENTS) if (counts[e.day] !== undefined) counts[e.day]++;
+        for (const e of ALL_EVENTS) {
+          const d = festivalDay(e.day, e.startTime);
+          if (counts[d] !== undefined) counts[d]++;
+        }
         const present = DAY_ORDER.filter(d => counts[d] > 0);
         return present[0] || DAY_ORDER[0];
       }
@@ -1823,6 +1837,19 @@
         const min = toMinutes(t);
         const start = FESTIVAL_START_HOUR * 60;
         return min >= start ? min - start : (HOURS_IN_DAY * 60 - start) + min;
+      }
+      // Map an event's clock-day + startTime to its FESTIVAL day. A festival
+      // day spans 06:00 → next-day 05:59, so events that start between 00:00
+      // and 05:59 belong to the previous calendar day's tab (Salon Saloon's
+      // 03:33 "After Hours" event has clock-day Saturday but belongs under
+      // the Friday tab). Returns the clock day as-is when no preceding day
+      // is known (i.e., Thursday early morning has no Wednesday in DAY_ORDER).
+      function festivalDay(clockDay, startTime) {
+        if (!startTime) return clockDay;
+        const h = Math.floor(toMinutes(startTime) / 60);
+        if (h >= FESTIVAL_START_HOUR) return clockDay;
+        const idx = DAY_ORDER.indexOf(clockDay);
+        return idx > 0 ? DAY_ORDER[idx - 1] : clockDay;
       }
       const HOUR_ORDER = (() => {
         const out = [];
@@ -1856,9 +1883,23 @@
         for (const t of evTags) if (state.tags.has(t)) return true;
         return false;
       }
+      function eventMatchesPeriod(ev) {
+        if (state.period === "all") return true;
+        if (!ev.startTime) return false;
+        const h = Math.floor(toMinutes(ev.startTime) / 60);
+        switch (state.period) {
+          case "morning":   return h >= 6  && h < 12;
+          case "afternoon": return h >= 12 && h < 17;
+          case "evening":   return h >= 17 && h < 21;
+          // Night wraps midnight: 21:00–05:59 inclusive.
+          case "night":     return h >= 21 || h < 6;
+        }
+        return true;
+      }
       function eventMatchesFilters(ev) {
         if (state.type !== "all" && ev.ownerType !== state.type) return false;
         if (!eventMatchesTags(ev)) return false;
+        if (!eventMatchesPeriod(ev)) return false;
         if (!state.search) return true;
         const q = state.search.toLowerCase();
         return (
@@ -1870,6 +1911,7 @@
       function entryMatchesFilters(entry) {
         if (state.type !== "all" && entry.type !== state.type) return false;
         if (state.tags.size > 0 && !entry.events.some(eventMatchesTags)) return false;
+        if (state.period !== "all" && !entry.events.some(eventMatchesPeriod)) return false;
         if (!state.search) return true;
         const q = state.search.toLowerCase();
         if ((entry.name || "").toLowerCase().includes(q)) return true;
@@ -1884,7 +1926,7 @@
         const view = document.getElementById("view");
         view.innerHTML = "";
 
-        const dayEvents = ALL_EVENTS.filter(e => e.day === state.day && eventMatchesFilters(e));
+        const dayEvents = ALL_EVENTS.filter(e => festivalDay(e.day, e.startTime) === state.day && eventMatchesFilters(e));
         if (dayEvents.length === 0) {
           view.innerHTML = `<div class="empty-state">No events match your filters on ${state.day}.</div>`;
           return;
@@ -2017,7 +2059,7 @@
 
           const byDay = new Map();
           for (const ev of events) {
-            const k = ev.day || "Unknown";
+            const k = festivalDay(ev.day, ev.startTime) || "Unknown";
             if (!byDay.has(k)) byDay.set(k, []);
             byDay.get(k).push(ev);
           }
@@ -2074,7 +2116,11 @@
         wrap.style.display = state.mode === "day" ? "" : "none";
         wrap.innerHTML = "";
         const counts = Object.fromEntries(DAY_ORDER.map(d => [d, 0]));
-        for (const e of ALL_EVENTS) if (eventMatchesFilters(e) && counts[e.day] !== undefined) counts[e.day]++;
+        for (const e of ALL_EVENTS) {
+          if (!eventMatchesFilters(e)) continue;
+          const d = festivalDay(e.day, e.startTime);
+          if (counts[d] !== undefined) counts[d]++;
+        }
         const present = DAY_ORDER.filter(d => counts[d] > 0);
         if (!present.length) {
           wrap.innerHTML = `<div style="color:var(--moss-3);padding:12px 0;font-size:13px;">No days match filters.</div>`;
@@ -2184,6 +2230,10 @@
           state.type = e.target.value;
           renderAll();
         });
+        document.getElementById("period-filter").addEventListener("change", e => {
+          state.period = e.target.value;
+          renderAll();
+        });
         document.getElementById("modal-backdrop").addEventListener("click", e => {
           if (e.target.id === "modal-backdrop") hideModal();
         });
@@ -2212,8 +2262,9 @@
         } else {
           const byDay = new Map();
           for (const ev of entry.events) {
-            if (!byDay.has(ev.day)) byDay.set(ev.day, []);
-            byDay.get(ev.day).push(ev);
+            const k = festivalDay(ev.day, ev.startTime);
+            if (!byDay.has(k)) byDay.set(k, []);
+            byDay.get(k).push(ev);
           }
           for (const day of DAY_ORDER) {
             if (!byDay.has(day)) continue;
@@ -2409,7 +2460,7 @@
           text = `${placed} / ${MAP.pins.length} pins shown · ${DATA.metadata.entryCount} entries`;
         } else {
           const visible = state.mode === "day"
-            ? ALL_EVENTS.filter(e => e.day === state.day && eventMatchesFilters(e)).length
+            ? ALL_EVENTS.filter(e => festivalDay(e.day, e.startTime) === state.day && eventMatchesFilters(e)).length
             : DATA.entries.filter(entryMatchesFilters).reduce((n, e) => n + e.events.length, 0);
           text = `${visible} / ${DATA.metadata.eventCount} events · ${DATA.metadata.entryCount} entries`;
         }
