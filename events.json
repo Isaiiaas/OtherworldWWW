@@ -4383,22 +4383,6 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Poolside Dad Bod Speedo Disco",
-                    "description": "Poolside Dad Bod Speedo Disco: Bring your armbands, floaties, swimsuits and Speedos for a strictly moist, uplifting chuggy disco house poolside party with dance music veteran lifeguard CRAIGISON (9000ears). * There will be no qualified lifeguards on duty ** There will be no pool",
-                    "day": "Friday",
-                    "startTime": "18:00",
-                    "endTime": "19:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 18:00 - 19:30",
-                    "tags": [
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
                     "title": "Electric Circus 3",
                     "description": "Electric Circus 3: Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
                     "day": "Saturday",
@@ -4449,16 +4433,25 @@
                     "title": "Fusion Dance Intro and Jam",
                     "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
                     "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
-                    "durationHours": 1.5,
+                    "startTime": "16:30",
+                    "endTime": "17:30",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30",
-                    "tags": [
-                        "Music / Dance",
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Sunday 16:30 - 17:30"
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Chris Bigelow & Late Nite Guest!",
+                    "description": "Join Electric Circus as we open up the Lounge with the sounds of Chris Bigelow (BNBT) & Late Nite Guest and the Electric Circus Stable of DJs!",
+                    "day": "Thursday",
+                    "startTime": "19:00",
+                    "endTime": "00:00",
+                    "durationHours": 5,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 19:00 - 00:00"
                 }
             ],
             "claimed": true
