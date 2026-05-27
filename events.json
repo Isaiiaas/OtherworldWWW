@@ -2,20 +2,20 @@
     "metadata": {
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
-        "entryCount": 288,
-        "eventCount": 997,
+        "entryCount": 267,
+        "eventCount": 989,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 216,
-            "camp_events": 943,
-            "sound_stage": 11,
-            "sound_stage_events": 43,
-            "mutant_vehicle": 7,
+            "camp": 201,
+            "camp_events": 934,
+            "sound_stage": 8,
+            "sound_stage_events": 44,
+            "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
-            "art_installation": 54,
+            "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-26T23:02:01+00:00",
+        "lastReconciledAt": "2026-05-27T03:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1185,11 +1185,27 @@
             "claimed": false
         },
         {
-            "name": "Camp Mystic Redneck",
+            "name": "Mystic Redneck",
             "type": "camp",
             "events": [
                 {
-                    "owner": "Camp Mystic Redneck",
+                    "owner": "Mystic Redneck",
+                    "ownerType": "camp",
+                    "title": "Kundalini Hoedown",
+                    "description": "Guided yoga & breath to enter into center, open to free flowing nectar of Love below & above. Give your day a key to open into the holy hallelujah within your sensuous heart (+ a lil line dancin’!) Let’s get that high from the inside. Yeehaw!",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:30",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Mystic Redneck",
                     "ownerType": "camp",
                     "title": "Mystic Redneck Super Serious Sillymony",
                     "description": "Where hyper new-age spirituality and profane foolery meet in an ancient Mystic Redneck ritual vortex of rip-roarin back-40 galactivation. Come for some dirty n’ offensive ascension, ol’ fashion cosmic absurdity, and let’s Make Atlantis Great Again!",
@@ -1203,6 +1219,39 @@
                     "tags": [
                         "Music / Dance",
                         "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Mystic Redneck",
+                    "ownerType": "camp",
+                    "title": "Boots Off, Roots Down Yoga",
+                    "description": "Easy does it now with this closing day practice. Let go of any residual butthole clenching in this nice n’ easy yoga class (beginner friendly). Here you can shake off the dust, surrender the characters, and drop yer roots deep into the good earth.",
+                    "day": "Sunday",
+                    "startTime": "11:00",
+                    "endTime": "12:15",
+                    "durationHours": 1.25,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 11:00 - 12:15",
+                    "tags": [
+                        "Workshop / Class",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Mystic Redneck",
+                    "ownerType": "camp",
+                    "title": "Highland Saining for Mystic Numpty Kin",
+                    "description": "Come get MOIST at our sacred yet ridiculous Scottish-style folk ritual of blessing, cleansing & purification.",
+                    "day": "Sunday",
+                    "startTime": "12:30",
+                    "endTime": "13:00",
+                    "durationHours": 0.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:30 - 13:00",
+                    "tags": [
+                        "Wellness / Yoga"
                     ]
                 }
             ],
@@ -1593,29 +1642,26 @@
                     "ownerType": "camp",
                     "title": "Late Night Vegan Mushroom Miso Ramen",
                     "description": "Late Night Vegan Mushroom Miso Ramen: Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel & fork/ chopsticks. Have your ramen tarot read, embody a human noodle in the plounge, or commune with the interactive Celestial Ramen Bowl while you slurrrrp away your problems.",
-                    "day": "Saturday",
+                    "day": "Friday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Friday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
                     "title": "Dommy UMAMI Nood Takeover",
                     "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional *spice* to your ramen experience. 19+!",
-                    "day": "Sunday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00"
+                    "rawTimeText": "Saturday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -1672,53 +1718,15 @@
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
-                    "title": "Dim Sum, Drinks and DJs!",
-                    "description": "Dim Sum, Drinks and DJs!: Step into Cathartic Cantina for our soul- feeding camp experience with small bites for your belly and big releases for your soul. All served with spicy tunes, cool drinks and interactive art.",
-                    "day": "Friday",
-                    "startTime": "00:00",
-                    "endTime": "02:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Music / Dance",
-                        "Alcohol Involved"
-                    ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
                     "title": "Dommy U-MAMI’s Nood Takeover",
                     "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy U-MAMI crew will be present to add some optional spice to your ramen experience. 19+!",
-                    "day": "Sunday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "19+"
-                    ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
-                    "title": "Dim Sum Brunch",
-                    "description": "Nothing describes Sunday morning camping experience better than dim sum brunch with your friends at Cathartic Cantina. Come eat, drink and vibe until we run out.",
-                    "day": "Sunday",
-                    "startTime": "12:30",
-                    "endTime": "14:20",
-                    "durationHours": 1.83,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:30 - 14:20",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 00:00 - 02:00"
                 }
             ],
             "claimed": true,
@@ -2122,8 +2130,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 14:00 - 15:00",
                     "tags": [
-                        "Food / Drink",
-                        "Music / Dance"
+                        "Food / Drink"
                     ]
                 },
                 {
@@ -2171,7 +2178,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 17:00 - 18:00",
                     "tags": [
-                        "Food / Drink"
+                        "Food / Drink",
+                        "Alcohol Involved"
                     ]
                 },
                 {
@@ -2251,7 +2259,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 11:00 - 12:00",
                     "tags": [
-                        "Workshop / Class"
+                        "Workshop / Class",
+                        "Interactive / Crafts"
                     ]
                 },
                 {
@@ -2267,6 +2276,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:00 - 13:00",
                     "tags": [
+                        "Performance / Show",
                         "Music / Dance"
                     ]
                 },
@@ -2298,7 +2308,9 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 13:00 - 14:00",
-                    "tags": []
+                    "tags": [
+                        "Performance / Show"
+                    ]
                 },
                 {
                     "owner": "Camp Who Says Ni",
@@ -2346,7 +2358,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 17:00 - 18:00",
                     "tags": [
-                        "Food / Drink"
+                        "Food / Drink",
+                        "Alcohol Involved"
                     ]
                 },
                 {
@@ -2393,7 +2406,9 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 19:00 - 20:00",
-                    "tags": []
+                    "tags": [
+                        "Food / Drink"
+                    ]
                 }
             ],
             "claimed": false,
@@ -2862,6 +2877,54 @@
                     "crossesMidnight": true,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:00 - 02:00"
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Friday",
+                    "startTime": "19:00",
+                    "endTime": "21:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 19:00 - 21:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Saturday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 19:00 - 20:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Chai Trance",
+                    "ownerType": "camp",
+                    "title": "Full Power Chai",
+                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
+                    "day": "Sunday",
+                    "startTime": "19:00",
+                    "endTime": "20:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 19:00 - 20:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
                 }
             ],
             "claimed": true
@@ -3310,24 +3373,7 @@
         {
             "name": "Cosmic Kev The Dreamidifier®",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Cosmic Kev The Dreamidifier®",
-                    "ownerType": "camp",
-                    "title": "Are your dreams feeling dry and parched?",
-                    "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
-                    "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "14:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 14:30",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                }
-            ],
+            "events": [],
             "claimed": true
         },
         {
@@ -3490,12 +3536,6 @@
             ],
             "claimed": false,
             "neighbourhood": "MOOP"
-        },
-        {
-            "name": "Crib Bar 2026: PUN GOES HERE",
-            "type": "camp",
-            "events": [],
-            "claimed": false
         },
         {
             "name": "Curiouser & Curiouser Café",
@@ -4852,15 +4892,52 @@
                 {
                     "owner": "Fafway Village",
                     "ownerType": "camp",
-                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
-                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Friday",
+                    "title": "Indugle Your Census",
+                    "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Thursday",
                     "startTime": "13:00",
-                    "endTime": "19:01",
-                    "durationHours": 6.02,
+                    "endTime": "19:06",
+                    "durationHours": 6.1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 19:01",
+                    "rawTimeText": "Thursday 13:00 - 19:06",
+                    "tags": [
+                        "Refuge / Introspective",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Fafway Village",
+                    "ownerType": "camp",
+                    "title": "The Fafffway Village",
+                    "description": "The Fafffway Village is a collection of camps providing service and entertainment to Otherworldians:Confession Concession, Indulge Your Census, Department Of Responsible Flailing (DORF), Pickle Fountain, Banana Ambassadors",
+                    "day": "Thursday",
+                    "startTime": "13:00",
+                    "endTime": "13:00",
+                    "durationHours": 24,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 13:00 - 13:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Interactive / Crafts",
+                        "Food / Drink",
+                        "Performance / Show",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Fafway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census",
+                    "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "19:06",
+                    "durationHours": 6.1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 19:06",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -4868,36 +4945,31 @@
                 {
                     "owner": "Fafway Village",
                     "ownerType": "camp",
-                    "title": "Formal Friday Block Party",
-                    "description": "Formal Friday Block Party with The Fafffway Village & Cult-de-sac. 5-7pm: see you in your Friday best on F Street for our Glizzy Gala, Pickle Fountain, Cat Tree Portraits, Confession Concession, Captain’s Cocktail Hour, Casino of Many Things & more!",
-                    "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "19:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 19:00",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Food / Drink",
-                        "Performance / Show",
-                        "Music / Dance",
-                        "Game / Activity",
-                        "Alcohol Involved"
-                    ]
-                },
-                {
-                    "owner": "Fafway Village",
-                    "ownerType": "camp",
                     "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
-                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Sunday",
+                    "description": "Indugle Your Census Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "19:01",
                     "durationHours": 6.02,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 19:01",
+                    "rawTimeText": "Saturday 13:00 - 19:01",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Fafway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census",
+                    "description": "Indugle Your Census: Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "19:06",
+                    "durationHours": 6.1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 19:06",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -5515,19 +5587,6 @@
                     "title": "Spill the Tea",
                     "description": "Write down the gossip, confession, or secret you’ve always wanted to say out loud and place it in the lockbox — all entries remain anonymous and burned at a later date. Sip on Sweet tea (bourbon optional) while we laugh, release, and let the drama go!",
                     "day": "Saturday",
-                    "startTime": "01:00",
-                    "endTime": "02:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 01:00 - 02:00"
-                },
-                {
-                    "owner": "Flamingo camp",
-                    "ownerType": "camp",
-                    "title": "Spill the Tea",
-                    "description": "Write down the gossip, confession, or secret you’ve always wanted to say out loud and place it in the lockbox — all entries remain anonymous and burned at a later date. Sip on Sweet tea (bourbon optional) while we laugh, release, and let the drama go!",
-                    "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:00",
                     "durationHours": 1,
@@ -5535,6 +5594,58 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 13:00 - 14:00",
                     "tags": []
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Thursday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown.",
+                    "day": "Friday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Saturday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Sunday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 08:00 - 22:00"
                 }
             ],
             "claimed": true
@@ -5867,6 +5978,19 @@
                     "tags": [
                         "Wellness / Yoga"
                     ]
+                },
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "The Dreamidifier®",
+                    "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30"
                 }
             ],
             "claimed": true,
@@ -6439,11 +6563,11 @@
             "claimed": false
         },
         {
-            "name": "Jellyfish Longue",
+            "name": "Jellyfish Lounge",
             "type": "camp",
             "events": [
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Immersion",
                     "description": "Sound, Mind, Body with Dawn & Craig: A unique yoga & sound experience; a visceral journey through sound, movement & stillness. Flow, into Yin, ending with Yoga Nidra techniques & a deep Savasana, while Craig mixes electronic music, natural sounds, delta waves, & binaural beats live.",
@@ -6460,7 +6584,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Morning Metta (Loving Kindness) Guided Meditation",
                     "description": "Morning Metta (Loving Kindness) Guided Meditation: Come join others in a guided meditation to open your heart and share loving kindness with yourself and all beings. A great start to your day and lead up to yoga session immediately following.",
@@ -6476,7 +6600,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Noon Reboot",
                     "description": "Noon Reboot: Yoga Flow + Live DJ: FEEL BETTER FAST! Breathe, move, and ride a live DJ Gano wave as RaRa guides you from slow to strong to soft. Shake off the fog, ease aches, and return to your center. Come messy. Leave clear, grounded, and glowing - back to your knowing.",
@@ -6493,7 +6617,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Bling Your Shades Workshop",
                     "description": "Bling Your Shades Workshop: Pick new shades or bring your own to decorate and make them yours with sparkling gems, bling, and funky with one-of-a-kind style. Your shades. Your vibe. Your sparkle.",
@@ -6509,7 +6633,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Jerk Church",
                     "description": "Come repent for your weekend of sinful behaviour. There’ll be rowdy singin’, drinkin’ and carryon’ on. Bring your voices, your instruments and some sacramental booze to share. Hallelujah!",
@@ -6527,7 +6651,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Discussion - Planning for Collapse",
                     "description": "Discussion about ways we can connect as a community outside of Otherworld to bring the 10 principles to life and create resilience in the face of Polycrisis",
@@ -7263,33 +7387,27 @@
                     "owner": "Magical Mystery (Bus) Cruise",
                     "ownerType": "camp",
                     "title": "Mouthmosas",
-                    "description": "Mouthmosas: It’s a sea day on the Magical Mystery Cruise as we sail towards the (Ant)arctic. Stroll the sun deck, admire an iceberg, feed the seals, and allow our lifeguards to pour OJ and bubbly directly into your facehole.",
+                    "description": "Mouthmosas: It’s a sea day on the Magical Mystery Cruise as we sail towards the (Ant)arctic. Stroll the sun deck, admire an iceberg, feed the seals, and allow our lifeguards to pour OJ and bubbly directly into your facehole. Leave No Trace, Use Your Face!",
                     "day": "Saturday",
                     "startTime": "12:00",
                     "endTime": "14:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 12:00 - 14:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 12:00 - 14:00"
                 },
                 {
                     "owner": "Magical Mystery (Bus) Cruise",
                     "ownerType": "camp",
                     "title": "Timeshare Presentation",
-                    "description": "Are you ready for the opportunity of a lifetime? Experience what Magical Mystery Cruise vacation ownership can offer you. Take a seat in the Salty Seal Lounge presentation will be starting soon. The longer you stay the more vacation points you earn!",
+                    "description": "Are you ready for the opportunity of a lifetime? Experience what Magical Mystery Cruise vacation ownership can offer you. Take a seat in the Salty Seal Lounge, the presentation will definitely be starting very soon. The longer you stay the more Neptune VIP points you earn!",
                     "day": "Sunday",
                     "startTime": "05:00",
                     "endTime": "10:32",
                     "durationHours": 5.53,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 05:00 - 10:32",
-                    "tags": [
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Sunday 05:00 - 10:32"
                 },
                 {
                     "owner": "Magical Mystery (Bus) Cruise",
@@ -7306,9 +7424,22 @@
                     "tags": [
                         "Game / Activity"
                     ]
+                },
+                {
+                    "owner": "Magical Mystery (Bus) Cruise",
+                    "ownerType": "camp",
+                    "title": "Hantavirus",
+                    "description": "It’s the final day of the cruise and you wake up feeling bleary. Mild headache. Achy neck. Must be a hangover. You roll out of the Neptune Suite to head to the breakfast buffet and you are greeted by the sound of vomiting echoing from behind multiple stateroom doors. It has begun.",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "23:30",
+                    "durationHours": 14.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 23:30"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SCORCH"
         },
         {
@@ -8099,63 +8230,6 @@
             ],
             "claimed": false,
             "neighbourhood": "KINDLE"
-        },
-        {
-            "name": "Mystic Redneck",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "Mystic Redneck",
-                    "ownerType": "camp",
-                    "title": "Kundalini Hoedown",
-                    "description": "Guided yoga & breath to enter into center, open to free flowing nectar of Love below & above. Give your day a key to open into the holy hallelujah within your sensuous heart (+ a lil line dancin’!) Let’s get that high from the inside. Yeehaw!",
-                    "day": "Friday",
-                    "startTime": "11:00",
-                    "endTime": "12:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 11:00 - 12:30",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Mystic Redneck",
-                    "ownerType": "camp",
-                    "title": "Boots Off, Roots Down Yoga",
-                    "description": "Easy does it now with this closing day practice. Let go of any residual butthole clenching in this nice n’ easy yoga class (beginner friendly). Here you can shake off the dust, surrender the characters, and drop yer roots deep into the good earth.",
-                    "day": "Sunday",
-                    "startTime": "11:00",
-                    "endTime": "12:15",
-                    "durationHours": 1.25,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 11:00 - 12:15",
-                    "tags": [
-                        "Workshop / Class",
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Mystic Redneck",
-                    "ownerType": "camp",
-                    "title": "Highland Saining for Mystic Numpty Kin",
-                    "description": "Come get MOIST at our sacred yet ridiculous Scottish-style folk ritual of blessing, cleansing & purification.",
-                    "day": "Sunday",
-                    "startTime": "12:30",
-                    "endTime": "13:00",
-                    "durationHours": 0.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:30 - 13:00",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                }
-            ],
-            "claimed": false,
-            "neighbourhood": "PRECIPITATION"
         },
         {
             "name": "Nano Donuts From The Future!",
@@ -9474,8 +9548,8 @@
                 {
                     "owner": "Portal Lounge",
                     "ownerType": "camp",
-                    "title": "Nadia’s Birthday Bash!",
-                    "description": "Did your last birthday suck? Come experience the birthday you wish you had & celebrate our favourite campmate with an OW-birthday. Cupcakes, treats, raunchy beats, pin-the-tail-on-the-raver, pinatas, magic? Who the fuck knows…come party, leave happy.",
+                    "title": "Nadia’s Birthday & High Tea",
+                    "description": "Did your last birthday suck? Come experience the birthday you wish you had & celebrate our favourite campmate with an OW-birthday. Cupcakes, tea, fancy hats, treats, raunchy beats, pin-the-tail-on-the-raver, pinatas, magic? Who the fuck knows…come party, leave happy.",
                     "day": "Friday",
                     "startTime": "15:00",
                     "endTime": "17:00",
@@ -9541,16 +9615,15 @@
                 {
                     "owner": "Portal Lounge",
                     "ownerType": "camp",
-                    "title": "Blob Race & Nail Pooping",
-                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB! And who will we crown chamption of the Dutch tradition of nail pooping? It’s as fun as it sounds.",
+                    "title": "Blob Race",
+                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB!  Sign your team up to race at the Portal Lounge!",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 14:30",
-                    "tags": []
+                    "rawTimeText": "Saturday 13:00 - 14:30"
                 },
                 {
                     "owner": "Portal Lounge",
@@ -9945,10 +10018,256 @@
             "neighbourhood": "EVAPORATION"
         },
         {
-            "name": "Reframing (Art Project/Camp)",
+            "name": "Reframing",
             "type": "camp",
-            "events": [],
-            "claimed": false
+            "events": [
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Reframing Art Project",
+                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
+                    "day": "Thursday",
+                    "startTime": "02:22",
+                    "endTime": "04:44",
+                    "durationHours": 2.37,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 02:22 - 04:44",
+                    "tags": [
+                        "Wellness / Yoga",
+                        "Refuge / Introspective"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box Re-Birth through the birth canal",
+                    "description": "Inner Child Post Box Re-Birth through the birth canal: Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
+                    "day": "Thursday",
+                    "startTime": "13:11",
+                    "endTime": "14:22",
+                    "durationHours": 1.18,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 13:11 - 14:22",
+                    "tags": [
+                        "Refuge / Introspective",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Treasure Box",
+                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
+                    "day": "Thursday",
+                    "startTime": "15:33",
+                    "endTime": "19:06",
+                    "durationHours": 3.55,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 15:33 - 19:06",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box",
+                    "description": "Inner Child Post Box: Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
+                    "day": "Thursday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 17:55 - 23:50",
+                    "tags": [
+                        "Refuge / Introspective",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Reframing Art Project",
+                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
+                    "day": "Friday",
+                    "startTime": "02:22",
+                    "endTime": "04:44",
+                    "durationHours": 2.37,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 02:22 - 04:44",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Treasure Box",
+                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
+                    "day": "Friday",
+                    "startTime": "15:33",
+                    "endTime": "19:06",
+                    "durationHours": 3.55,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:33 - 19:06",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box Re-Birth through the birth canal",
+                    "description": "Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
+                    "day": "Friday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:55 - 23:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box",
+                    "description": "Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
+                    "day": "Friday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:55 - 23:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Reframing Art Project",
+                    "description": "Reframing Art Project: The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
+                    "day": "Saturday",
+                    "startTime": "02:22",
+                    "endTime": "04:44",
+                    "durationHours": 2.37,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 02:22 - 04:44",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box Re-Birth through the birth canal",
+                    "description": "Inner Child Post Box Re-Birth through the birth canal: Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
+                    "day": "Saturday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 17:55 - 23:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box",
+                    "description": "Inner Child Post Box: Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
+                    "day": "Saturday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 17:55 - 23:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Reframing Art Project",
+                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
+                    "day": "Sunday",
+                    "startTime": "02:22",
+                    "endTime": "04:44",
+                    "durationHours": 2.37,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 02:22 - 04:44",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box Re-Birth through the birth canal",
+                    "description": "Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
+                    "day": "Sunday",
+                    "startTime": "05:55",
+                    "endTime": "11:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 05:55 - 11:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Treasure Box",
+                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
+                    "day": "Sunday",
+                    "startTime": "15:33",
+                    "endTime": "19:06",
+                    "durationHours": 3.55,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:33 - 19:06",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Reframing",
+                    "ownerType": "camp",
+                    "title": "Inner Child Post Box",
+                    "description": "Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
+                    "day": "Sunday",
+                    "startTime": "17:55",
+                    "endTime": "23:50",
+                    "durationHours": 5.92,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 17:55 - 23:50",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "claimed": false,
+            "neighbourhood": "SPARK"
         },
         {
             "name": "Resonant Frequency",
@@ -11695,12 +12014,6 @@
             "neighbourhood": "TINKER"
         },
         {
-            "name": "Steeped in Art: Jon and Ethan",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
             "name": "Stirring the Pot",
             "type": "camp",
             "events": [],
@@ -12062,12 +12375,6 @@
             ],
             "claimed": false,
             "neighbourhood": "CONDENSATION"
-        },
-        {
-            "name": "The Camp Who Says Ni",
-            "type": "camp",
-            "events": [],
-            "claimed": false
         },
         {
             "name": "The Cottage",
@@ -12786,105 +13093,6 @@
             "neighbourhood": "DOACRACY"
         },
         {
-            "name": "The Empress",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
-            "name": "The Fafffway Village",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
-                    "title": "Indugle Your Census",
-                    "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Thursday",
-                    "startTime": "13:00",
-                    "endTime": "19:06",
-                    "durationHours": 6.1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 13:00 - 19:06",
-                    "tags": [
-                        "Refuge / Introspective",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
-                    "title": "The Fafffway Village",
-                    "description": "The Fafffway Village is a collection of camps providing service and entertainment to Otherworldians:Confession Concession, Indulge Your Census, Department Of Responsible Flailing (DORF), Pickle Fountain, Banana Ambassadors",
-                    "day": "Thursday",
-                    "startTime": "13:00",
-                    "endTime": "13:00",
-                    "durationHours": 24,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 13:00 - 13:00",
-                    "tags": [
-                        "Workshop / Class",
-                        "Interactive / Crafts",
-                        "Food / Drink",
-                        "Performance / Show",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
-                    "title": "Indugle Your Census",
-                    "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Friday",
-                    "startTime": "13:00",
-                    "endTime": "19:06",
-                    "durationHours": 6.1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 19:06",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
-                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
-                    "description": "Indugle Your Census Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Saturday",
-                    "startTime": "13:00",
-                    "endTime": "19:01",
-                    "durationHours": 6.02,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 19:01",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
-                    "title": "Indugle Your Census",
-                    "description": "Indugle Your Census: Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Saturday",
-                    "startTime": "13:00",
-                    "endTime": "19:06",
-                    "durationHours": 6.1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 19:06",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                }
-            ],
-            "claimed": false,
-            "neighbourhood": "SMOLDER"
-        },
-        {
             "name": "The Fire Salon",
             "type": "camp",
             "events": [
@@ -13089,12 +13297,6 @@
             "neighbourhood": "BLACK ROCK"
         },
         {
-            "name": "The living room.",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
             "name": "The Low Bar",
             "type": "camp",
             "events": [
@@ -13253,25 +13455,7 @@
             "neighbourhood": "SCORCH"
         },
         {
-            "name": "The Magic Stick",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
             "name": "The Mary Poppins House: a Your Moms House Pop-Up",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
-            "name": "The Mollusk Nation",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
-            "name": "The Mother Tree",
             "type": "camp",
             "events": [],
             "claimed": false
@@ -13467,95 +13651,9 @@
             "neighbourhood": "ASHLAND"
         },
         {
-            "name": "The Portal Lounge",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "The Portal Lounge",
-                    "ownerType": "camp",
-                    "title": "Festival Friending",
-                    "description": "Speed Connecting & Conscious Convos: Meet inspiring humans through fun, thought-provoking connection exercises and small-group discussions. We blend music, movement and meaningful conversation to help you make new friends and deepen bonds. Minimal cringe & maximum fun!",
-                    "day": "Friday",
-                    "startTime": "11:00",
-                    "endTime": "12:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 11:00 - 12:30"
-                },
-                {
-                    "owner": "The Portal Lounge",
-                    "ownerType": "camp",
-                    "title": "Lying on the Floor",
-                    "description": "Yin + Sound Bath: Come lie on the floor with us! This Yin and sound bath session will ground you and then energize you for the night ahead. The facilitator has a special gift for the first 5 attendees - space is limited, so come early!",
-                    "day": "Friday",
-                    "startTime": "21:30",
-                    "endTime": "23:00",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 21:30 - 23:00"
-                },
-                {
-                    "owner": "The Portal Lounge",
-                    "ownerType": "camp",
-                    "title": "Blob Race & Nail Pooping",
-                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB! And who will we crown chamption of the Dutch tradition of nail pooping? It’s as fun as it sounds.",
-                    "day": "Saturday",
-                    "startTime": "13:00",
-                    "endTime": "14:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 14:30"
-                }
-            ],
-            "claimed": false
-        },
-        {
-            "name": "The Portal Lounge camp",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "The Portal Lounge camp",
-                    "ownerType": "camp",
-                    "title": "Elemental tantric yoga for women with Samantha Hope",
-                    "description": "Awaken your body, ignite your energy, and move as the elements— through breath, movement and conscious touch, connecting deeply with yourself and others in this embodied tantric journey for women.",
-                    "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "14:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 14:30"
-                }
-            ],
-            "claimed": false
-        },
-        {
             "name": "The Really Lost Penguins",
             "type": "camp",
             "events": [],
-            "claimed": false
-        },
-        {
-            "name": "The Saloon Saloon",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "The Saloon Saloon",
-                    "ownerType": "camp",
-                    "title": "The Coffee Corral",
-                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
-                    "day": "Thursday",
-                    "startTime": "09:00",
-                    "endTime": "12:00",
-                    "durationHours": 3,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 09:00 - 12:00"
-                }
-            ],
             "claimed": false
         },
         {
@@ -14709,12 +14807,6 @@
             "neighbourhood": "YES...AND?"
         },
         {
-            "name": "Welcome to the Resistance Camp",
-            "type": "camp",
-            "events": [],
-            "claimed": false
-        },
-        {
             "name": "When Life Gives You Lemons",
             "type": "camp",
             "events": [],
@@ -15087,12 +15179,6 @@
             "claimed": false
         },
         {
-            "name": "Electric Circus Lounge",
-            "type": "sound_stage",
-            "events": [],
-            "claimed": true
-        },
-        {
             "name": "Ironic Spin",
             "type": "sound_stage",
             "events": [
@@ -15294,6 +15380,23 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
+                    "title": "Partner Strething & Thai Massage",
+                    "description": "Partner Strething & Thai Massage: This class will blend partner-assisted stretching with gentle Thai massage. 90min class (45min per partner). This class is touch-based so come ready to communicate with clarity and listen with care <3",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:30",
+                    "tags": [
+                        "Workshop / Class",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Ironic Spin",
+                    "ownerType": "sound_stage",
                     "title": "Body Break w Jane-Dawnda!",
                     "description": "Body Break w Jane-Dawnda!: Get ready to werk-it out w Jane- Dawnda. 70s/80s workout —think Jamie Lee Curtis moves, big beats & lots of sass. Dress bold, shake dat booty & win prizes! Live DJ set. All the cool kids are doing it! Just do it. Xo",
                     "day": "Saturday",
@@ -15459,12 +15562,6 @@
             ],
             "claimed": false,
             "neighbourhood": "SANDSTORM"
-        },
-        {
-            "name": "Jellyfish Lounge",
-            "type": "sound_stage",
-            "events": [],
-            "claimed": false
         },
         {
             "name": "Ripple Effect",
@@ -15821,12 +15918,6 @@
             "claimed": false
         },
         {
-            "name": "The Cottage Theme & Sound Camp",
-            "type": "sound_stage",
-            "events": [],
-            "claimed": false
-        },
-        {
             "name": "Thirrrsty Barrr Tune Town Stage",
             "type": "sound_stage",
             "events": [],
@@ -15866,12 +15957,6 @@
         },
         {
             "name": "Limo Crew Gnar Bar",
-            "type": "mutant_vehicle",
-            "events": [],
-            "claimed": false
-        },
-        {
-            "name": "Orcar",
             "type": "mutant_vehicle",
             "events": [],
             "claimed": false
@@ -15952,13 +16037,7 @@
             "name": "CERN in the Forest",
             "type": "art_installation",
             "events": [],
-            "claimed": false
-        },
-        {
-            "name": "Chai Trance-Psytrance",
-            "type": "art_installation",
-            "events": [],
-            "claimed": false
+            "claimed": true
         },
         {
             "name": "Chairished moments: the sanctuary of sit",
@@ -16122,12 +16201,6 @@
         },
         {
             "name": "i/o Mimicry",
-            "type": "art_installation",
-            "events": [],
-            "claimed": false
-        },
-        {
-            "name": "In the (soft, warm) Belly of the Beast",
             "type": "art_installation",
             "events": [],
             "claimed": false
@@ -16400,258 +16473,6 @@
             "name": "Wondering Weavnig Wisdom",
             "type": "art_installation",
             "events": [],
-            "claimed": false
-        },
-        {
-            "name": "Reframing",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Reframing Art Project",
-                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
-                    "day": "Thursday",
-                    "startTime": "02:22",
-                    "endTime": "04:44",
-                    "durationHours": 2.37,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 02:22 - 04:44",
-                    "tags": [
-                        "Wellness / Yoga",
-                        "Refuge / Introspective"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box Re-Birth through the birth canal",
-                    "description": "Inner Child Post Box Re-Birth through the birth canal: Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
-                    "day": "Thursday",
-                    "startTime": "13:11",
-                    "endTime": "14:22",
-                    "durationHours": 1.18,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 13:11 - 14:22",
-                    "tags": [
-                        "Refuge / Introspective",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Treasure Box",
-                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
-                    "day": "Thursday",
-                    "startTime": "15:33",
-                    "endTime": "19:06",
-                    "durationHours": 3.55,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 15:33 - 19:06",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box",
-                    "description": "Inner Child Post Box: Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
-                    "day": "Thursday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Thursday 17:55 - 23:50",
-                    "tags": [
-                        "Refuge / Introspective",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Reframing Art Project",
-                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
-                    "day": "Friday",
-                    "startTime": "02:22",
-                    "endTime": "04:44",
-                    "durationHours": 2.37,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 02:22 - 04:44",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Treasure Box",
-                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
-                    "day": "Friday",
-                    "startTime": "15:33",
-                    "endTime": "19:06",
-                    "durationHours": 3.55,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 15:33 - 19:06",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box Re-Birth through the birth canal",
-                    "description": "Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
-                    "day": "Friday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:55 - 23:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box",
-                    "description": "Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
-                    "day": "Friday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:55 - 23:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Reframing Art Project",
-                    "description": "Reframing Art Project: The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
-                    "day": "Saturday",
-                    "startTime": "02:22",
-                    "endTime": "04:44",
-                    "durationHours": 2.37,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 02:22 - 04:44",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box Re-Birth through the birth canal",
-                    "description": "Inner Child Post Box Re-Birth through the birth canal: Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
-                    "day": "Saturday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 17:55 - 23:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box",
-                    "description": "Inner Child Post Box: Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
-                    "day": "Saturday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 17:55 - 23:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Reframing Art Project",
-                    "description": "The Reframing Art Project invites you to revisit your younger self, star gaze & offer healing word hugs to your inner little one (Open 9am-2am - come by anytime)",
-                    "day": "Sunday",
-                    "startTime": "02:22",
-                    "endTime": "04:44",
-                    "durationHours": 2.37,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 02:22 - 04:44",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box Re-Birth through the birth canal",
-                    "description": "Arrive at Reframing and transform as you enter the secret door, travel back through the birth canal and re- birth yourself through the vulva and into the Inner Child Post Box then write your inner child a post card. (Open 9am-2am - come by anytime)",
-                    "day": "Sunday",
-                    "startTime": "05:55",
-                    "endTime": "11:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 05:55 - 11:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Treasure Box",
-                    "description": "Come Hither all ye children and inner children to the Inner Child Post Box to find the box of old treasures. There’s one for everyone but leave the rest for your mates. Yarrr. (Open 9am-2am - come by anytime)",
-                    "day": "Sunday",
-                    "startTime": "15:33",
-                    "endTime": "19:06",
-                    "durationHours": 3.55,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:33 - 19:06",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Reframing",
-                    "ownerType": "camp",
-                    "title": "Inner Child Post Box",
-                    "description": "Saunter out of the Reframing Art Project filled with inspiration and carry forward to your inner child, a message from the future. We will mail your postcard to you in 9 months’ time (Open 9am- 2am - come by anytime)",
-                    "day": "Sunday",
-                    "startTime": "17:55",
-                    "endTime": "23:50",
-                    "durationHours": 5.92,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 17:55 - 23:50",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                }
-            ],
-            "neighbourhood": "SPARK",
             "claimed": false
         },
         {
@@ -17643,156 +17464,6 @@
             "claimed": false
         },
         {
-            "name": "Chai Trance",
-            "type": "camp",
-            "events": [
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Full Power Chai",
-                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
-                    "day": "Friday",
-                    "startTime": "19:00",
-                    "endTime": "21:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 19:00 - 21:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Acroyoga and standing acroyoga intro workshop",
-                    "description": "Acroyoga and standing acroyoga intro workshop: Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
-                    "day": "Saturday",
-                    "startTime": "10:00",
-                    "endTime": "22:00",
-                    "durationHours": 12,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 22:00",
-                    "tags": [
-                        "Workshop / Class",
-                        "Wellness / Yoga",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Community Fire Jam",
-                    "description": "Community Fire Jam: Bring your own props - come spin with us, fuel and safeties provided!",
-                    "day": "Saturday",
-                    "startTime": "23:55",
-                    "endTime": "01:25",
-                    "durationHours": 1.5,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 23:55 - 01:25",
-                    "tags": [
-                        "Workshop / Class",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Vocal soundbath",
-                    "description": "A vocal sound bath that is a journey into the mystery as well as a Soundhealing journey with my looping pedal and vocal effects mic’s. Sink into your spirit & integrate your journey this far and those to come. Sacred sound",
-                    "day": "Sunday",
-                    "startTime": "11:00",
-                    "endTime": "12:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 11:00 - 12:00",
-                    "tags": [
-                        "Wellness / Yoga",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Music - Live DJ's & Dancing",
-                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
-                    "day": "Friday",
-                    "startTime": "12:00",
-                    "endTime": "03:00",
-                    "durationHours": 15,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 12:00 - 03:00",
-                    "tags": []
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Music - Live DJ's & Dancing",
-                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
-                    "day": "Saturday",
-                    "startTime": "12:00",
-                    "endTime": "05:00",
-                    "durationHours": 17,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 12:00 - 05:00",
-                    "tags": []
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Full Power Chai",
-                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
-                    "day": "Saturday",
-                    "startTime": "19:00",
-                    "endTime": "20:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:00 - 20:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Music - Live DJ's & Dancing",
-                    "description": "Some of the hottest artists around bringing you a smorgasbord of auditory delights to dance your hearts out",
-                    "day": "Sunday",
-                    "startTime": "12:00",
-                    "endTime": "02:00",
-                    "durationHours": 14,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:00 - 02:00",
-                    "tags": []
-                },
-                {
-                    "owner": "Chai Trance",
-                    "ownerType": "camp",
-                    "title": "Full Power Chai",
-                    "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
-                    "day": "Sunday",
-                    "startTime": "19:00",
-                    "endTime": "20:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 19:00 - 20:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
-                }
-            ],
-            "neighbourhood": "MOOP",
-            "claimed": false
-        },
-        {
             "name": "Children’s Singing Parade: Sing and roam with us! Kid and adult friendly.",
             "type": "camp",
             "events": [
@@ -17958,6 +17629,67 @@
                 }
             ],
             "neighbourhood": "ROAMING",
+            "claimed": false
+        },
+        {
+            "name": "Faffway Village",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
+                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "19:01",
+                    "durationHours": 6.02,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 19:01",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Formal Friday Block Party",
+                    "description": "Formal Friday Block Party with The Fafffway Village & Cult-de-sac. 5-7pm: see you in your Friday best on F Street for our Glizzy Gala, Pickle Fountain, Cat Tree Portraits, Confession Concession, Captain’s Cocktail Hour, Casino of Many Things & more!",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "19:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 19:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Food / Drink",
+                        "Performance / Show",
+                        "Music / Dance",
+                        "Game / Activity",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
+                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "19:01",
+                    "durationHours": 6.02,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 19:01",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "SMOLDER",
             "claimed": false
         }
     ],
