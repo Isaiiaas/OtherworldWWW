@@ -73,10 +73,34 @@ function load_alias_map(string $path): array {
     return $out;
 }
 
+/**
+ * Like canonical() but tuned for free-text fields (event titles): lowercases,
+ * strips accents, removes ALL non-alphanumerics. Does NOT strip leading
+ * "The "/trailing " Camp" since those rules are camp-name-specific. Used
+ * so titles like "Dommy UMAMI Nood Takeover" and "Dommy U-MAMI's Nood
+ * Takeover" — same event, sheet vs dashboard punctuation drift — match.
+ */
+function canonical_text(string $s): string {
+    $s = trim($s);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    return (string)preg_replace('/[^a-z0-9]+/', '', $s);
+}
+
 function event_key(string $camp, string $title, string $day, array $aliasMap): string {
     $c = canonical($camp);
     if (isset($aliasMap[$c])) $c = canonical($aliasMap[$c]);
-    return $c . '|' . strtolower(trim($title)) . '|' . strtolower(trim($day));
+    return $c . '|' . canonical_text($title) . '|' . strtolower(trim($day));
 }
 
 /**
@@ -198,8 +222,8 @@ foreach ($groups as $list) {
     if (isset($aliasMap[$primaryCanon])) {
         $primary['name'] = $aliasMap[$primaryCanon];
     }
-    $evKey = static fn(array $e) => strtolower(trim((string)($e['title'] ?? '')))
-                                  . '|' . trim((string)($e['day'] ?? ''))
+    $evKey = static fn(array $e) => canonical_text((string)($e['title'] ?? ''))
+                                  . '|' . strtolower(trim((string)($e['day'] ?? '')))
                                   . '|' . trim((string)($e['startTime'] ?? ''));
     $events = is_array($primary['events'] ?? null) ? $primary['events'] : [];
     $seen = [];

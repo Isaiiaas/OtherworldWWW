@@ -45,9 +45,31 @@ function load_alias_map(string $path): array {
 }
 
 function event_key(array $e): string {
-    return strtolower(trim((string)($e['title'] ?? ''))) . '|'
-         . trim((string)($e['day'] ?? '')) . '|'
+    return canonical_text((string)($e['title'] ?? '')) . '|'
+         . strtolower(trim((string)($e['day'] ?? ''))) . '|'
          . trim((string)($e['startTime'] ?? ''));
+}
+
+/**
+ * Like canonical() but tuned for free-text fields: no "the"/"camp" stripping.
+ * Catches title drift like "Dommy UMAMI Nood Takeover" vs "Dommy U-MAMI's Nood
+ * Takeover" — same event, punctuation differs between sheet and dashboard.
+ */
+function canonical_text(string $s): string {
+    $s = trim($s);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    return (string)preg_replace('/[^a-z0-9]+/', '', $s);
 }
 
 /**

@@ -1656,8 +1656,13 @@
           const c = canonical(name);
           return aliasMap.get(c) || c;
         };
-        const evKey = e => (e.title || "").trim().toLowerCase()
-                         + "|" + (e.day || "").trim()
+        const canonicalText = s => {
+          if (!s) return "";
+          return String(s).normalize("NFKD").replace(/[̀-ͯ]/g, "")
+                          .toLowerCase().replace(/[^a-z0-9]+/g, "");
+        };
+        const evKey = e => canonicalText(e.title || "")
+                         + "|" + (e.day || "").trim().toLowerCase()
                          + "|" + (e.startTime || "").trim();
         const groups = new Map(); // canonicalKey -> array of {entry, index}
         data.entries.forEach((entry, index) => {
