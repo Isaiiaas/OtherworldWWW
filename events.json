@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 269,
-        "eventCount": 990,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 935,
+            "camp_events": 936,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T18:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T20:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -4345,7 +4345,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Earthninja: DnB",
-                    "description": "",
+                    "description": "An Ancient DJ of lore, decade+ long veteran radio host of Bigger than Bass on CHLY 101.7FM, comes out from the depths to share some deep DnB & Jungle for a Moody start to your Sunday night.",
                     "day": "Sunday",
                     "startTime": "23:00",
                     "endTime": "00:30",
@@ -4383,35 +4383,15 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Poolside Dad Bod Speedo Disco",
-                    "description": "Poolside Dad Bod Speedo Disco: Bring your armbands, floaties, swimsuits and Speedos for a strictly moist, uplifting chuggy disco house poolside party with dance music veteran lifeguard CRAIGISON (9000ears). * There will be no qualified lifeguards on duty ** There will be no pool",
-                    "day": "Friday",
-                    "startTime": "18:00",
-                    "endTime": "19:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 18:00 - 19:30",
-                    "tags": [
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Electric Circus 3",
-                    "description": "Electric Circus 3: Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
+                    "title": "Open Mic 3:33 Performance Hour",
+                    "description": "Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
                     "day": "Saturday",
                     "startTime": "14:00",
                     "endTime": "15:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:00 - 15:00",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Saturday 14:00 - 15:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4429,36 +4409,28 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Trainwrecking",
-                    "description": "A guide to being a sh*t DJ: A guided exploration of terrible transitions, performer faux pas, and the improper use of air horns",
+                    "title": "Fusion Dance Intro and Jam",
+                    "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
                     "day": "Sunday",
-                    "startTime": "14:00",
-                    "endTime": "15:00",
+                    "startTime": "16:30",
+                    "endTime": "17:30",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 14:00 - 15:00",
-                    "tags": [
-                        "Workshop / Class",
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Sunday 16:30 - 17:30"
                 },
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Fusion Dance Intro and Jam",
-                    "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
-                    "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
+                    "title": "Chris Bigelow & Late Nite Guest!",
+                    "description": "Join Electric Circus as we open up the Lounge with the sounds of Chris Bigelow (BNBT) & Late Nite Guest and the Electric Circus Stable of DJs!",
+                    "day": "Thursday",
+                    "startTime": "19:00",
+                    "endTime": "00:00",
+                    "durationHours": 5,
+                    "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30",
-                    "tags": [
-                        "Music / Dance",
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Thursday 19:00 - 00:00"
                 }
             ],
             "claimed": true
@@ -6235,7 +6207,7 @@
                     "owner": "Healing Kiss",
                     "ownerType": "camp",
                     "title": "Couples Somatic Coregulation with Tany",
-                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends",
+                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends.",
                     "day": "Friday",
                     "startTime": "13:00",
                     "endTime": "14:00",
@@ -6251,18 +6223,18 @@
                 {
                     "owner": "Healing Kiss",
                     "ownerType": "camp",
-                    "title": "Couples Somatic Coregulation with Tany",
-                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends.",
+                    "title": "Tantric Relating Playshop",
+                    "description": "A playful and embodied space to explore connection, intimacy, and authentic relating. Through guided partner exercises, movement, presence, and curiosity, we’ll slow down, step out of the mind, and explore new ways of meeting ourselves and others.",
                     "day": "Friday",
                     "startTime": "13:00",
-                    "endTime": "14:00",
-                    "durationHours": 1,
+                    "endTime": "15:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 14:00",
+                    "rawTimeText": "Friday 13:00 - 15:00",
                     "tags": [
                         "Workshop / Class",
-                        "Refuge / Introspective"
+                        "Wellness / Yoga"
                     ]
                 },
                 {
@@ -6644,9 +6616,35 @@
                     "tags": [
                         "Workshop / Class"
                     ]
+                },
+                {
+                    "owner": "Jellyfish Lounge",
+                    "ownerType": "camp",
+                    "title": "Jellyfish Making Workshop",
+                    "description": "Come make a glowing jellyfish for play or display.  Everything supplied.",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "16:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 16:00"
+                },
+                {
+                    "owner": "Jellyfish Lounge",
+                    "ownerType": "camp",
+                    "title": "Puppet RAVE!!",
+                    "description": "Bring your puppet companion to rip up the dance floor in Muppet Mayhem fashion!!!",
+                    "day": "Friday",
+                    "startTime": "20:00",
+                    "endTime": "21:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:00 - 21:00"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "BROOD"
         },
         {
