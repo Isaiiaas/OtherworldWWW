@@ -1161,6 +1161,37 @@
       padding: 20px;
     }
 
+    .map-preview .neighborhood-fallback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      text-align: center;
+      font-style: normal;
+    }
+    .map-preview .neighborhood-fallback .label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--moss-3);
+      font-weight: 600;
+    }
+    .map-preview .neighborhood-fallback .value {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-variation-settings: "opsz" 144, "SOFT" 0;
+      font-size: 22px;
+      line-height: 1.1;
+      color: var(--lime);
+      letter-spacing: -0.01em;
+    }
+    .map-preview .neighborhood-fallback .note {
+      font-size: 11px;
+      color: var(--moss-3);
+      font-style: italic;
+      margin-top: 2px;
+    }
+
     .map-preview img {
       position: absolute;
       inset: 0;
@@ -1252,6 +1283,28 @@
       aspect-ratio: 794 / 615;
       overflow: hidden;
       cursor: grab;
+    }
+
+    /* Map mode: break out of main's 1200px cap so the map fills the full
+       viewport width. The stage keeps its 794:615 aspect so on wide
+       screens the map is taller than the viewport — page scrolls
+       normally. The sticky header becomes fully opaque in this mode so
+       the map doesn't bleed through it as the user scrolls. */
+    body.mode-map main {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    body.mode-map .map-view {
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    /* Drop the sticky header in map mode so scrolling gives the full
+       viewport to the map. The header scrolls away normally with the
+       page; come back to the top to change filters/tabs. */
+    body.mode-map header {
+      position: static;
     }
 
     .map-view .stage.panning {
@@ -1619,13 +1672,23 @@
     </div>
   </footer>
 
-  <script src="./map-data.js?v=1779772892"></script>
   <script>
     (async () => {
-      const [_eventsResp, _aliasResp] = await Promise.all([
+      // Pull map-data.js + events.json + camp-aliases.json fresh on every
+      // load. map-data.js is a plain `window.OTHERWORLD_MAP = {...}` script;
+      // we fetch it with no-store and `new Function()` it into the page so
+      // updates from save-pins.php / parse-map.js are visible immediately
+      // (the old <script src="...?v=hash"> only invalidated when the hash
+      // was bumped manually, and would be cached otherwise).
+      const [_mapResp, _eventsResp, _aliasResp] = await Promise.all([
+        fetch('./map-data.js',       { cache: 'no-store' }).catch(() => null),
         fetch('./events.json',       { cache: 'no-store' }),
         fetch('./camp-aliases.json', { cache: 'no-store' }).catch(() => null),
       ]);
+      if (_mapResp && _mapResp.ok) {
+        try { (new Function(await _mapResp.text()))(); }
+        catch (e) { console.warn('map-data.js failed to load:', e); }
+      }
       if (!_eventsResp.ok) throw new Error('Failed to load events.json: ' + _eventsResp.status);
       window.OTHERWORLD_DATA = await _eventsResp.json();
       const _aliasData = (_aliasResp && _aliasResp.ok) ? await _aliasResp.json().catch(() => null) : null;
@@ -2176,7 +2239,25 @@
         el.innerHTML = "";
         if (!pin) {
           el.classList.add("empty");
-          el.textContent = "Location not yet mapped for this camp.";
+          // Fall back to the neighborhood from the spreadsheet if the camp
+          // isn't pinned on the map yet.
+          if (entry.neighbourhood) {
+            const wrap = document.createElement("div");
+            wrap.className = "neighborhood-fallback";
+            const label = document.createElement("span");
+            label.className = "label";
+            label.textContent = "Neighborhood";
+            const value = document.createElement("span");
+            value.className = "value";
+            value.textContent = entry.neighbourhood;
+            const note = document.createElement("span");
+            note.className = "note";
+            note.textContent = "No map pin yet for this camp.";
+            wrap.append(label, value, note);
+            el.appendChild(wrap);
+          } else {
+            el.textContent = "Location not yet mapped for this camp.";
+          }
           el.onclick = null;
           return;
         }
@@ -2215,6 +2296,9 @@
         for (const b of document.querySelectorAll("#mode-tabs .tab")) {
           b.classList.toggle("active", b.dataset.mode === mode);
         }
+        // Map mode breaks out of main's 1200px cap and locks to the
+        // viewport so the sticky header never overlaps it.
+        document.body.classList.toggle("mode-map", mode === "map");
         renderAll();
       }
 
@@ -2399,7 +2483,7 @@
         }
 
         function setZoom(z, clientX, clientY) {
-          z = Math.max(0.3, Math.min(8, z));
+          z = Math.max(0.1, Math.min(8, z));
           const rect = stage.getBoundingClientRect();
           const ax = (clientX ?? rect.left + rect.width / 2) - rect.left;
           const ay = (clientY ?? rect.top + rect.height / 2) - rect.top;
@@ -2411,21 +2495,35 @@
           applyTransform();
         }
 
+        // Scale-to-fit: pin canvas size to the image's natural pixel
+        // dimensions (so pin %-positions land on the correct image pixel),
+        // then compute zoom so the canvas fits inside whatever rectangle
+        // the stage currently is, and center it via pan.
         function fit() {
-          zoom = 1;
-          pan = { x: 0, y: 0 };
+          if (!stage || !canvas) return;
+          const img = canvas.querySelector("img");
+          if (!img || !img.naturalWidth) { zoom = 1; pan = {x:0, y:0}; applyTransform(); return; }
+          canvas.style.width  = img.naturalWidth  + "px";
+          canvas.style.height = img.naturalHeight + "px";
+          img.style.width     = img.naturalWidth  + "px";
+          img.style.height    = img.naturalHeight + "px";
+          const rect = stage.getBoundingClientRect();
+          zoom = Math.min(rect.width / img.naturalWidth, rect.height / img.naturalHeight);
+          if (!isFinite(zoom) || zoom <= 0) zoom = 1;
+          pan.x = (rect.width  - img.naturalWidth  * zoom) / 2;
+          pan.y = (rect.height - img.naturalHeight * zoom) / 2;
           applyTransform();
         }
 
         function focusOn(pin) {
           if (!stage) { pendingFocus = pin; return; }
+          const img = canvas?.querySelector("img");
+          if (!img || !img.naturalWidth) { pendingFocus = pin; return; }
           const rect = stage.getBoundingClientRect();
           zoom = Math.min(3, Math.max(zoom, 2));
-          // Pin is at (pin.x * stageWidth * zoom, pin.y * stageHeight * zoom)
-          // after scale (canvas starts at 100% of stage width).
-          const px = pin.x * rect.width * zoom;
-          const py = pin.y * rect.height * zoom;
-          pan.x = rect.width / 2 - px;
+          const px = pin.x * img.naturalWidth  * zoom;
+          const py = pin.y * img.naturalHeight * zoom;
+          pan.x = rect.width  / 2 - px;
           pan.y = rect.height / 2 - py;
           applyTransform();
         }
@@ -2440,6 +2538,7 @@
             ensureNode();
             focusOn(pin);
           },
+          refit: fit,
           refreshDim: renderPins,
         };
       })();
@@ -2448,7 +2547,14 @@
         const view = document.getElementById("view");
         view.innerHTML = "";
         mapView.mount(view);
+        // Stage size depends on viewport width (aspect-ratio derived) —
+        // refit so the image scales to the new stage rect.
+        if (mapView && mapView.refit) mapView.refit();
       }
+
+      window.addEventListener("resize", () => {
+        if (state.mode === "map" && mapView && mapView.refit) mapView.refit();
+      });
 
       function renderStats() {
         let text;
