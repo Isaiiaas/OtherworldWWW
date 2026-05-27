@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 267,
-        "eventCount": 991,
+        "eventCount": 989,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 201,
-            "camp_events": 936,
+            "camp_events": 934,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -3373,24 +3373,7 @@
         {
             "name": "Cosmic Kev The Dreamidifier®",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Cosmic Kev The Dreamidifier®",
-                    "ownerType": "camp",
-                    "title": "Are your dreams feeling dry and parched?",
-                    "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
-                    "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "14:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 14:30",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                }
-            ],
+            "events": [],
             "claimed": true
         },
         {
@@ -5995,6 +5978,19 @@
                     "tags": [
                         "Wellness / Yoga"
                     ]
+                },
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "The Dreamidifier®",
+                    "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30"
                 }
             ],
             "claimed": true,
@@ -9552,8 +9548,8 @@
                 {
                     "owner": "Portal Lounge",
                     "ownerType": "camp",
-                    "title": "Nadia’s Birthday Bash!",
-                    "description": "Did your last birthday suck? Come experience the birthday you wish you had & celebrate our favourite campmate with an OW-birthday. Cupcakes, treats, raunchy beats, pin-the-tail-on-the-raver, pinatas, magic? Who the fuck knows…come party, leave happy.",
+                    "title": "Nadia’s Birthday & High Tea",
+                    "description": "Did your last birthday suck? Come experience the birthday you wish you had & celebrate our favourite campmate with an OW-birthday. Cupcakes, tea, fancy hats, treats, raunchy beats, pin-the-tail-on-the-raver, pinatas, magic? Who the fuck knows…come party, leave happy.",
                     "day": "Friday",
                     "startTime": "15:00",
                     "endTime": "17:00",
@@ -9619,16 +9615,15 @@
                 {
                     "owner": "Portal Lounge",
                     "ownerType": "camp",
-                    "title": "Blob Race & Nail Pooping",
-                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB! And who will we crown chamption of the Dutch tradition of nail pooping? It’s as fun as it sounds.",
+                    "title": "Blob Race",
+                    "description": "Channel your inner amoeba! Race in teams of 4+ inside our famous stretchy amorphous BLOB!  Sign your team up to race at the Portal Lounge!",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 14:30",
-                    "tags": []
+                    "rawTimeText": "Saturday 13:00 - 14:30"
                 },
                 {
                     "owner": "Portal Lounge",
@@ -9643,32 +9638,6 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 13:00 - 14:30",
                     "tags": []
-                },
-                {
-                    "owner": "The Portal Lounge",
-                    "ownerType": "camp",
-                    "title": "Festival Friending",
-                    "description": "Speed Connecting & Conscious Convos: Meet inspiring humans through fun, thought-provoking connection exercises and small-group discussions. We blend music, movement and meaningful conversation to help you make new friends and deepen bonds. Minimal cringe & maximum fun!",
-                    "day": "Friday",
-                    "startTime": "11:00",
-                    "endTime": "12:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 11:00 - 12:30"
-                },
-                {
-                    "owner": "The Portal Lounge",
-                    "ownerType": "camp",
-                    "title": "Lying on the Floor",
-                    "description": "Yin + Sound Bath: Come lie on the floor with us! This Yin and sound bath session will ground you and then energize you for the night ahead. The facilitator has a special gift for the first 5 attendees - space is limited, so come early!",
-                    "day": "Friday",
-                    "startTime": "21:30",
-                    "endTime": "23:00",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 21:30 - 23:00"
                 }
             ],
             "claimed": true
