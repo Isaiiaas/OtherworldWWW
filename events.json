@@ -7,15 +7,15 @@
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 934,
+            "camp_events": 935,
             "sound_stage": 8,
-            "sound_stage_events": 45,
+            "sound_stage_events": 44,
             "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T17:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T18:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -4163,7 +4163,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Fruit Stand: Booty House",
-                    "description": "",
+                    "description": "She'll bring the Fruity Beats, you bring the Booty Sweets!",
                     "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "01:00",
@@ -4228,7 +4228,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Matty Reed: Funky House",
-                    "description": "",
+                    "description": "Host of B-Side Radio's Funkin' Brunch People is bringing Funky House to the Electric Circus Lounge!",
                     "day": "Saturday",
                     "startTime": "17:00",
                     "endTime": "18:00",
@@ -4254,7 +4254,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Nix: Heavy Curated Funk",
-                    "description": "",
+                    "description": "Whatever that means....",
                     "day": "Saturday",
                     "startTime": "19:00",
                     "endTime": "19:30",
@@ -4347,12 +4347,12 @@
                     "title": "Earthninja: DnB",
                     "description": "",
                     "day": "Sunday",
-                    "startTime": "23:30",
+                    "startTime": "23:00",
                     "endTime": "00:30",
-                    "durationHours": 1,
+                    "durationHours": 1.5,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 23:30 - 00:30"
+                    "rawTimeText": "Sunday 23:00 - 00:30"
                 },
                 {
                     "owner": "Electric Circus",
@@ -10504,32 +10504,39 @@
                     "ownerType": "camp",
                     "title": "The Coffee Corral",
                     "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
-                    "day": "Thursday",
+                    "day": "Friday",
                     "startTime": "09:00",
                     "endTime": "12:00",
                     "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 09:00 - 12:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Friday 09:00 - 12:00"
                 },
                 {
                     "owner": "Salon Saloon",
                     "ownerType": "camp",
-                    "title": "Salon Saloon",
-                    "description": "After Hours: Feeling lucky? You might just stumble upon a top shelf haircut and a camp fire circle for the ages.",
-                    "day": "Sunday",
-                    "startTime": "03:33",
-                    "endTime": "05:03",
-                    "durationHours": 1.5,
+                    "title": "The Coffee Corral",
+                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "12:00",
+                    "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 03:33 - 05:03",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 09:00 - 12:00"
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "The Coffee Corral",
+                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "12:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 12:00"
                 }
             ],
             "claimed": true
@@ -15275,23 +15282,6 @@
                     "rawTimeText": "Saturday 00:00 - 01:00",
                     "tags": [
                         "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Ironic Spin",
-                    "ownerType": "sound_stage",
-                    "title": "Partner Strething & Thai Massage",
-                    "description": "Partner Strething & Thai Massage: This class will blend partner-assisted stretching with gentle Thai massage. 90min class (45min per partner). This class is touch-based so come ready to communicate with clarity and listen with care <3",
-                    "day": "Saturday",
-                    "startTime": "10:00",
-                    "endTime": "11:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 11:30",
-                    "tags": [
-                        "Workshop / Class",
-                        "Wellness / Yoga"
                     ]
                 },
                 {
