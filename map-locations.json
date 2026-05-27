@@ -89,6 +89,13 @@
             "verified": true
         },
         {
+            "name": "Blorb!",
+            "type": "camp",
+            "x": 0.6392,
+            "y": 0.7101,
+            "confirmed": true
+        },
+        {
             "name": "Board Game Camp",
             "type": "camp",
             "x": 0.8143,
@@ -310,9 +317,10 @@
         {
             "name": "Cocky Creations Concious Connections Camp",
             "type": "camp",
-            "x": 0.8466,
-            "y": 0.536,
-            "confirmed": true
+            "x": 0.6701,
+            "y": 0.5209,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Compliment Camp",
@@ -487,6 +495,20 @@
             "verified": true
         },
         {
+            "name": "Ewe-Turn",
+            "type": "camp",
+            "x": 0.715,
+            "y": 0.5244,
+            "confirmed": true
+        },
+        {
+            "name": "Faffway Village",
+            "type": "camp",
+            "x": 0.3696,
+            "y": 0.34,
+            "confirmed": true
+        },
+        {
             "name": "Fairytale BookHub Café & Trash Fence Kid’s Play Area",
             "type": "camp",
             "x": 0.8757,
@@ -648,6 +670,13 @@
             "verified": true
         },
         {
+            "name": "HorseCakes",
+            "type": "camp",
+            "x": 0.7214,
+            "y": 0.7933,
+            "confirmed": true
+        },
+        {
             "name": "human cat tree",
             "type": "camp",
             "x": 0.7819,
@@ -684,16 +713,15 @@
         {
             "name": "Inkfish Village Kokomojo",
             "type": "camp",
-            "x": 0.7057,
-            "y": 0.8745,
-            "confirmed": true,
-            "verified": true
+            "x": 0.7044,
+            "y": 0.4955,
+            "confirmed": true
         },
         {
             "name": "Jellyfish Lounge",
             "type": "camp",
             "x": 0.3704,
-            "y": 0.267,
+            "y": 0.2563,
             "confirmed": true,
             "confidence": 1,
             "matchedText": "jellyfishlounge",
@@ -704,8 +732,8 @@
         {
             "name": "Large Snacks and Ladders",
             "type": "camp",
-            "x": 0.2396,
-            "y": 0.5152,
+            "x": 0.2371,
+            "y": 0.493,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "label reads LARGE SNAKES & LADDERS (Snacks/Snakes pun) beside Thirrrsty Bar",
@@ -726,6 +754,13 @@
             "qaVerdict": "adjust",
             "qaEvidence": "Teardrop labeled 'LEVEL UP' at very bottom; expected far right empty area",
             "verified": true
+        },
+        {
+            "name": "Little Big",
+            "type": "camp",
+            "x": 0.6434,
+            "y": 0.6412,
+            "confirmed": true
         },
         {
             "name": "Living Womb Rebirthing Lounge @ Motherworld",
@@ -865,8 +900,8 @@
         {
             "name": "Mother Tree",
             "type": "camp",
-            "x": 0.1024,
-            "y": 0.3252,
+            "x": 0.0985,
+            "y": 0.2874,
             "confirmed": true,
             "confidence": 0.7,
             "matchedText": "Same 'THE MOTHER TREE' label, alternative listing",
@@ -966,6 +1001,13 @@
             "verified": true
         },
         {
+            "name": "Orcar Camp",
+            "type": "camp",
+            "x": 0.643,
+            "y": 0.7803,
+            "confirmed": true
+        },
+        {
             "name": "OTHER Red Tent",
             "type": "camp",
             "x": 0.8645,
@@ -1051,6 +1093,13 @@
             "y": 0.5325,
             "confirmed": true,
             "verified": true
+        },
+        {
+            "name": "Rule zERO",
+            "type": "camp",
+            "x": 0.6722,
+            "y": 0.4779,
+            "confirmed": true
         },
         {
             "name": "Salon Saloon",
@@ -1924,6 +1973,13 @@
             "qaVerdict": "correct",
             "qaEvidence": "NO ASSOCIATED BUSINESS label visible around (0.32, 0.88), within ~2% of expected (0.32, 0.86)",
             "verified": true
+        },
+        {
+            "name": "Rat Town",
+            "type": "art_installation",
+            "x": 0.6493,
+            "y": 0.684,
+            "confirmed": true
         },
         {
             "name": "resonic harmonic Project HissBark",
