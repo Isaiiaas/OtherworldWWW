@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T19:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T20:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -6207,7 +6207,7 @@
                     "owner": "Healing Kiss",
                     "ownerType": "camp",
                     "title": "Couples Somatic Coregulation with Tany",
-                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends",
+                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends.",
                     "day": "Friday",
                     "startTime": "13:00",
                     "endTime": "14:00",
@@ -6223,18 +6223,18 @@
                 {
                     "owner": "Healing Kiss",
                     "ownerType": "camp",
-                    "title": "Couples Somatic Coregulation with Tany",
-                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends.",
+                    "title": "Tantric Relating Playshop",
+                    "description": "A playful and embodied space to explore connection, intimacy, and authentic relating. Through guided partner exercises, movement, presence, and curiosity, we’ll slow down, step out of the mind, and explore new ways of meeting ourselves and others.",
                     "day": "Friday",
                     "startTime": "13:00",
-                    "endTime": "14:00",
-                    "durationHours": 1,
+                    "endTime": "15:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 14:00",
+                    "rawTimeText": "Friday 13:00 - 15:00",
                     "tags": [
                         "Workshop / Class",
-                        "Refuge / Introspective"
+                        "Wellness / Yoga"
                     ]
                 },
                 {
