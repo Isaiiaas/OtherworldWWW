@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 267,
-        "eventCount": 988,
+        "eventCount": 990,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 201,
-            "camp_events": 933,
+            "camp_events": 935,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -1642,29 +1642,26 @@
                     "ownerType": "camp",
                     "title": "Late Night Vegan Mushroom Miso Ramen",
                     "description": "Late Night Vegan Mushroom Miso Ramen: Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel & fork/ chopsticks. Have your ramen tarot read, embody a human noodle in the plounge, or commune with the interactive Celestial Ramen Bowl while you slurrrrp away your problems.",
-                    "day": "Saturday",
+                    "day": "Friday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Friday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
                     "title": "Dommy UMAMI Nood Takeover",
                     "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional *spice* to your ramen experience. 19+!",
-                    "day": "Sunday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00"
+                    "rawTimeText": "Saturday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -1721,53 +1718,15 @@
                 {
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
-                    "title": "Dim Sum, Drinks and DJs!",
-                    "description": "Dim Sum, Drinks and DJs!: Step into Cathartic Cantina for our soul- feeding camp experience with small bites for your belly and big releases for your soul. All served with spicy tunes, cool drinks and interactive art.",
-                    "day": "Friday",
-                    "startTime": "00:00",
-                    "endTime": "02:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Music / Dance",
-                        "Alcohol Involved"
-                    ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
                     "title": "Dommy U-MAMI’s Nood Takeover",
                     "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy U-MAMI crew will be present to add some optional spice to your ramen experience. 19+!",
-                    "day": "Sunday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00",
-                    "tags": [
-                        "Food / Drink",
-                        "19+"
-                    ]
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
-                    "title": "Dim Sum Brunch",
-                    "description": "Nothing describes Sunday morning camping experience better than dim sum brunch with your friends at Cathartic Cantina. Come eat, drink and vibe until we run out.",
-                    "day": "Sunday",
-                    "startTime": "12:30",
-                    "endTime": "14:20",
-                    "durationHours": 1.83,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:30 - 14:20",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 00:00 - 02:00"
                 }
             ],
             "claimed": true,
@@ -5645,6 +5604,58 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 13:00 - 14:00",
                     "tags": []
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Thursday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown.",
+                    "day": "Friday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Saturday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 08:00 - 22:00"
+                },
+                {
+                    "owner": "Flamingo camp",
+                    "ownerType": "camp",
+                    "title": "Fancy Feather Boutique",
+                    "description": "Come shake a tail feather and leave with a brand new outfit. Open daily from sun up to sundown",
+                    "day": "Sunday",
+                    "startTime": "08:00",
+                    "endTime": "22:00",
+                    "durationHours": 14,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 08:00 - 22:00"
                 }
             ],
             "claimed": true
