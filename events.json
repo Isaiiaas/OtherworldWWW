@@ -11594,18 +11594,14 @@
                     "owner": "Slut Camp",
                     "ownerType": "camp",
                     "title": "Spank Jousting",
-                    "description": "Backwards butt slap jousting on hobby horsesback",
-                    "day": "Sunday",
-                    "startTime": "16:00",
-                    "endTime": "17:00",
+                    "description": "Backwards butt slap jousting on hobby horses!",
+                    "day": "Friday",
+                    "startTime": "15:00",
+                    "endTime": "16:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 16:00 - 17:00",
-                    "tags": [
-                        "Game / Activity",
-                        "19+"
-                    ]
+                    "rawTimeText": "Friday 15:00 - 16:00"
                 },
                 {
                     "owner": "Slut Camp",
@@ -11642,7 +11638,7 @@
                     ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SIDEQUEST"
         },
         {
@@ -12860,7 +12856,7 @@
                     ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "DOACRACY"
         },
         {
