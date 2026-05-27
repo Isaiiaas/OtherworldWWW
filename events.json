@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 269,
-        "eventCount": 990,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 935,
+            "camp_events": 936,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -4345,7 +4345,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Earthninja: DnB",
-                    "description": "",
+                    "description": "An Ancient DJ of lore, decade+ long veteran radio host of Bigger than Bass on CHLY 101.7FM, comes out from the depths to share some deep DnB & Jungle for a Moody start to your Sunday night.",
                     "day": "Sunday",
                     "startTime": "23:00",
                     "endTime": "00:30",
@@ -4383,19 +4383,15 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Electric Circus 3",
-                    "description": "Electric Circus 3: Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
+                    "title": "Open Mic 3:33 Performance Hour",
+                    "description": "Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
                     "day": "Saturday",
                     "startTime": "14:00",
                     "endTime": "15:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:00 - 15:00",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Saturday 14:00 - 15:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4409,23 +4405,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 10:00 - 12:00"
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Trainwrecking",
-                    "description": "A guide to being a sh*t DJ: A guided exploration of terrible transitions, performer faux pas, and the improper use of air horns",
-                    "day": "Sunday",
-                    "startTime": "14:00",
-                    "endTime": "15:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 14:00 - 15:00",
-                    "tags": [
-                        "Workshop / Class",
-                        "Music / Dance"
-                    ]
                 },
                 {
                     "owner": "Electric Circus",
@@ -6637,9 +6616,35 @@
                     "tags": [
                         "Workshop / Class"
                     ]
+                },
+                {
+                    "owner": "Jellyfish Lounge",
+                    "ownerType": "camp",
+                    "title": "Jellyfish Making Workshop",
+                    "description": "Come make a glowing jellyfish for play or display.  Everything supplied.",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "16:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 16:00"
+                },
+                {
+                    "owner": "Jellyfish Lounge",
+                    "ownerType": "camp",
+                    "title": "Puppet RAVE!!",
+                    "description": "Bring your puppet companion to rip up the dance floor in Muppet Mayhem fashion!!!",
+                    "day": "Friday",
+                    "startTime": "20:00",
+                    "endTime": "21:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:00 - 21:00"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "BROOD"
         },
         {
