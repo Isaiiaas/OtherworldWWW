@@ -2,20 +2,20 @@
     "metadata": {
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
-        "entryCount": 267,
-        "eventCount": 989,
+        "entryCount": 269,
+        "eventCount": 997,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 201,
-            "camp_events": 934,
+            "camp": 203,
+            "camp_events": 941,
             "sound_stage": 8,
-            "sound_stage_events": 44,
+            "sound_stage_events": 45,
             "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T05:02:01+00:00",
+        "lastReconciledAt": "2026-05-27T06:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -926,12 +926,12 @@
                     "title": "Blorb!",
                     "description": "Play i-spy with a 10ft tall eyeball monster and his vibrant entourage the Playblorb Blorbies",
                     "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "20:00",
+                    "startTime": "15:00",
+                    "endTime": "18:00",
                     "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 20:00",
+                    "rawTimeText": "Friday 15:00 - 18:00",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -6282,6 +6282,23 @@
                     "rawTimeText": "Friday 10:00 - 13:00",
                     "tags": [
                         "Wellness / Yoga",
+                        "Refuge / Introspective"
+                    ]
+                },
+                {
+                    "owner": "Healing Kiss",
+                    "ownerType": "camp",
+                    "title": "Couples Somatic Coregulation with Tany",
+                    "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 14:00",
+                    "tags": [
+                        "Workshop / Class",
                         "Refuge / Introspective"
                     ]
                 },
@@ -12045,42 +12062,7 @@
         {
             "name": "Sugar High",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Sugar High",
-                    "ownerType": "camp",
-                    "title": "Epic Cupcakes",
-                    "description": "Epic Cupcakes: Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
-                    "day": "Saturday",
-                    "startTime": "14:30",
-                    "endTime": "16:00",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:30 - 16:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Sugar High",
-                    "ownerType": "camp",
-                    "title": "Epic Cupcakes",
-                    "description": "Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
-                    "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30",
-                    "tags": [
-                        "Food / Drink",
-                        "Game / Activity"
-                    ]
-                }
-            ],
+            "events": [],
             "claimed": false,
             "neighbourhood": "ROAMING"
         },
@@ -12335,24 +12317,6 @@
             "name": "The Brunch Bunch Camp",
             "type": "camp",
             "events": [
-                {
-                    "owner": "The Brunch Bunch Camp",
-                    "ownerType": "camp",
-                    "title": "Brunch Bunch Bass Boogie Bash",
-                    "description": "Brunch Bunch Bass Boogie Bash: The brunch bunch are returning with more tasty beats and delicious eats. We’ll be serving the scrumptious sounds of the Hardy Boys with a delectable brunch and mimosas to start your day off right. Saturday and Sunday!",
-                    "day": "Saturday",
-                    "startTime": "11:00",
-                    "endTime": "13:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 11:00 - 13:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Music / Dance",
-                        "Alcohol Involved"
-                    ]
-                },
                 {
                     "owner": "The Brunch Bunch Camp",
                     "ownerType": "camp",
@@ -14494,7 +14458,7 @@
                     "owner": "Welcome to Arcadia",
                     "ownerType": "camp",
                     "title": "Intro to Ropes with Fox!",
-                    "description": "Want to be tied to the train tracks? Does Shibari make you MOIST? Come learn the basics of bondage - best learned with a partner and your own rope, but we will have some to lend out.",
+                    "description": "",
                     "day": "Friday",
                     "startTime": "13:00",
                     "endTime": "14:00",
@@ -15667,6 +15631,23 @@
                 {
                     "owner": "Ripple Effect",
                     "ownerType": "sound_stage",
+                    "title": "Festival Friending: Speed Connecting & Conscious Convos",
+                    "description": "Meet inspiring humans through fun, thought-provoking connection exercises and small-group discussions. We blend music, movement and meaningful conversation to help you make new friends and deepen bonds. Minimal cringe & maximum fun! Hosted by Konscious Kitties",
+                    "day": "Saturday",
+                    "startTime": "13:30",
+                    "endTime": "15:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:30 - 15:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Refuge / Introspective"
+                    ]
+                },
+                {
+                    "owner": "Ripple Effect",
+                    "ownerType": "sound_stage",
                     "title": "Orcar at Ripple Effect",
                     "description": "Orcar at Ripple Effect: Orcar makes a daytime splash at Ripple Effect. Join us with our wettest friends while Orcar Pod Energy takes over the decks..",
                     "day": "Saturday",
@@ -16721,6 +16702,22 @@
                 {
                     "owner": "Living Womb Rebirthing Lounge @ Motherworld",
                     "ownerType": "camp",
+                    "title": "Placenta Pancakes Breakfast",
+                    "description": "Placenta Pancakes Breakfast: Come fuel up for the day with some delicious Placenta Pancakes in the Living Womb. Get rebirthed before noon and rock your day renewed!",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 12:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
                     "title": "Gestate, Lounge and Rebirth",
                     "description": "Immerse yourself in a uterine universe. Embibe amniotic pink drinks, strap on your umbilical cord, rejuvenate. Choose your rebirth style off our menu and be reborn via our glorious vagina slide! And so much more!",
                     "day": "Friday",
@@ -16733,6 +16730,40 @@
                     "tags": [
                         "Food / Drink",
                         "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
+                    "title": "Glowing Balloon Jizz Crafting and Parade Guided Parade",
+                    "description": "Glowing Balloon Jizz Crafting and Parade Guided Parade: We will help you craft your very own 3 foot long light up jizz balloon, then take a guided walk/military style ridiculous march around the festival with your lovely/demanding host Alex the Ovum. Show up @ 8:30, march leaves around 9:15.",
+                    "day": "Friday",
+                    "startTime": "20:30",
+                    "endTime": "22:30",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:30 - 22:30",
+                    "tags": [
+                        "Performance / Show",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
+                    "title": "Tea & Grounding meditation with Julia",
+                    "description": "Tea & Grounding meditation with Julia: Come sip some hibiscus or rooibos, then flop into whatever position feels like home — womb- mode encouraged. Drift into a little meditation - breathe, shift around, the occasional cheeky toot. BYO cup and pillow.",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:30",
+                    "tags": [
+                        "Food / Drink",
+                        "Wellness / Yoga"
                     ]
                 },
                 {
@@ -16755,6 +16786,39 @@
                 {
                     "owner": "Living Womb Rebirthing Lounge @ Motherworld",
                     "ownerType": "camp",
+                    "title": "Get in der’ - Jizz Crafting and Race for Your Life",
+                    "description": "Get in der’ - Jizz Crafting and Race for Your Life: Come craft your own personalized balloon sperm or ovum at the Womb and then race it to win a chance at existence! Free rebirthing while you wait.",
+                    "day": "Saturday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:00 - 16:30",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
+                    "title": "Most Restorative Womb yoga EVER",
+                    "description": "Most Restorative Womb yoga EVER: Come restore your body back to your fluid fetus self. Let your nervous system be held in our amniotic space. Gentle movement to gestate yourself back to feeling newer than when you were first born! Bring a yoga mat and a placenta if you have one.",
+                    "day": "Sunday",
+                    "startTime": "10:30",
+                    "endTime": "12:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 10:30 - 12:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
                     "title": "Gestate, Lounge and Rebirth",
                     "description": "Immerse yourself in a uterine universe. Embibe amniotic pink drinks, strap on your umbilical cord, rejuvenate. Choose your rebirth style off our menu and be reborn via our glorious vagina slide! And so much more!",
                     "day": "Sunday",
@@ -16766,6 +16830,23 @@
                     "rawTimeText": "Sunday 12:00 - 02:00",
                     "tags": [
                         "Food / Drink",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Living Womb Rebirthing Lounge @ Motherworld",
+                    "ownerType": "camp",
+                    "title": "Colouring in the Womb with Julia",
+                    "description": "Come colour with Julia in the womb just like the good ol’ days! Crayons and paper provided, just bring your beautifully wandering monkey mind and let it land, one color at a time.",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30",
+                    "tags": [
+                        "Refuge / Introspective",
                         "Game / Activity"
                     ]
                 }
@@ -16877,18 +16958,19 @@
                 {
                     "owner": "Bass House Brunch Bunch",
                     "ownerType": "camp",
-                    "title": "Moonlit Tales",
-                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
-                    "day": "Friday",
-                    "startTime": "20:45",
-                    "endTime": "22:00",
-                    "durationHours": 1.25,
+                    "title": "Brunch Bunch Bass Boogie Bash",
+                    "description": "Brunch Bunch Bass Boogie Bash: The brunch bunch are returning with more tasty beats and delicious eats. We’ll be serving the scrumptious sounds of the Hardy Boys with a delectable brunch and mimosas to start your day off right. Saturday and Sunday!",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "13:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 20:45 - 22:00",
+                    "rawTimeText": "Saturday 11:00 - 13:00",
                     "tags": [
                         "Food / Drink",
-                        "Performance / Show"
+                        "Music / Dance",
+                        "Alcohol Involved"
                     ]
                 },
                 {
@@ -16911,32 +16993,15 @@
                 {
                     "owner": "Bass House Brunch Bunch",
                     "ownerType": "camp",
-                    "title": "Moonlit Tales",
-                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
-                    "day": "Saturday",
-                    "startTime": "20:45",
-                    "endTime": "22:00",
-                    "durationHours": 1.25,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 20:45 - 22:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Performance / Show"
-                    ]
-                },
-                {
-                    "owner": "Bass House Brunch Bunch",
-                    "ownerType": "camp",
                     "title": "Serving breakfast sandwiches with a side of BASSY BEATS",
                     "description": "Swizzle it all down into your tum tum with a North Island Mimosa. Yum yum!",
                     "day": "Sunday",
                     "startTime": "11:00",
-                    "endTime": "14:00",
-                    "durationHours": 3,
+                    "endTime": "13:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 11:00 - 14:00",
+                    "rawTimeText": "Sunday 11:00 - 13:00",
                     "tags": [
                         "Food / Drink",
                         "Music / Dance",
@@ -17465,24 +17530,7 @@
         {
             "name": "Children’s Singing Parade: Sing and roam with us! Kid and adult friendly.",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Children’s Singing Parade: Sing and roam with us! Kid and adult friendly.",
-                    "ownerType": "camp",
-                    "title": "Children’s Singing Parade",
-                    "description": "Children’s Singing Parade: Sing and roam with us! Kid and adult friendly.: Sing and roam with us! Kid and adult friendly.",
-                    "day": "Saturday",
-                    "startTime": "10:00",
-                    "endTime": "11:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 11:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
-                }
-            ],
+            "events": [],
             "neighbourhood": "ROAMING",
             "claimed": false
         },
@@ -17589,6 +17637,23 @@
                 {
                     "owner": "Roaming",
                     "ownerType": "camp",
+                    "title": "Children’s Singing Parade",
+                    "description": "Children’s Singing Parade: Sing and roam with us! Kid and adult friendly.: Sing and roam with us! Kid and adult friendly.",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Roaming",
+                    "ownerType": "camp",
                     "title": "Thai Green Curry Not In A Hurry",
                     "description": "A roaming wagon with vegan Thai green curry n rice served by maid’s you probably woudn’t hire",
                     "day": "Sunday",
@@ -17690,6 +17755,89 @@
             ],
             "neighbourhood": "SMOLDER",
             "claimed": false
+        },
+        {
+            "name": "Moonlit Tales",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Moonlit Tales",
+                    "ownerType": "camp",
+                    "title": "Moonlit Tales",
+                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
+                    "day": "Friday",
+                    "startTime": "20:45",
+                    "endTime": "22:00",
+                    "durationHours": 1.25,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:45 - 22:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Performance / Show"
+                    ]
+                },
+                {
+                    "owner": "Moonlit Tales",
+                    "ownerType": "camp",
+                    "title": "Moonlit Tales",
+                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
+                    "day": "Saturday",
+                    "startTime": "20:45",
+                    "endTime": "22:00",
+                    "durationHours": 1.25,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 20:45 - 22:00",
+                    "tags": [
+                        "Food / Drink",
+                        "Performance / Show"
+                    ]
+                }
+            ],
+            "neighbourhood": "COLLECTION"
+        },
+        {
+            "name": "HorseCakes",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "HorseCakes",
+                    "ownerType": "camp",
+                    "title": "Sugar High: Epic Cupcakes",
+                    "description": "Epic Cupcakes: Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
+                    "day": "Saturday",
+                    "startTime": "14:30",
+                    "endTime": "16:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:30 - 16:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Food / Drink",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "HorseCakes",
+                    "ownerType": "camp",
+                    "title": "Sugar High: Epic Cupcakes",
+                    "description": "Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:30",
+                    "tags": [
+                        "Food / Drink",
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "ROAMING"
         }
     ],
     "unassignedEvents": []
