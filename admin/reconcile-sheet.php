@@ -209,6 +209,13 @@ $summary = [
     'added'              => [],
     'fuzzy_matches'      => [], // surface these so a human can sanity-check merges
     'within_camp_dedupes'=> [], // sheet had >1 row that collapsed to the same event_key()
+    // Phase 4: claimed-camp timing sync. The sheet is authoritative for
+    // day/startTime/endTime when a confident match exists; title/description
+    // stay owner-controlled. See sync_claimed_camp_timing().
+    'timing_synced'           => [],
+    'timing_ambiguous'        => [],
+    'timing_unchanged_match'  => 0,
+    'timing_no_match'         => 0,
 ];
 
 // First pass: exact-canonical matches between entries and sheet groups. We do
@@ -246,12 +253,29 @@ foreach ($events['entries'] as $i => $entry) {
         // Consume the sheet group for this claimed camp so the leftover-sheet
         // loop at the bottom doesn't re-append it as a "new" entry every
         // reconcile run — that was creating one fresh duplicate per hour.
+        // Capture the group first so Phase 4 can sync its timing onto the
+        // already-existing claimed-camp events without otherwise touching them.
+        $claimedSheetGroup = null;
         if (isset($bySheet[$entryKey])) {
+            $claimedSheetGroup = $bySheet[$entryKey];
             unset($bySheet[$entryKey]);
         } else {
             $sheetMatch = fuzzy_find($entryKey, $bySheet);
-            if ($sheetMatch !== null) unset($bySheet[$sheetMatch]);
+            if ($sheetMatch !== null) {
+                $claimedSheetGroup = $bySheet[$sheetMatch];
+                unset($bySheet[$sheetMatch]);
+            }
         }
+        // Phase 4: timing sync. The sheet is authoritative for
+        // day/startTime/endTime; title/description stay with the owner.
+        // If no sheet group exists for this claimed camp, count every event
+        // as timing_no_match and move on (function handles that case too).
+        sync_claimed_camp_timing(
+            $events['entries'][$i],
+            $claimedSheetGroup,
+            $headerIndex,
+            $summary
+        );
         continue;
     }
 
@@ -531,6 +555,209 @@ function apply_sheet_group(array &$entry, array $group, array $headerIndex, arra
         'old_event_count' => $oldCount,
         'new_event_count' => count($entry['events']),
     ];
+}
+
+/**
+ * Phase 4: for a claimed camp, sync timing fields (day, startTime, endTime)
+ * from the sheet onto already-existing events.json events when a confident
+ * match exists. Title, description, tags, etc. are intentionally left alone
+ * so owner edits survive.
+ *
+ * Matching is three-tier, first hit wins. All tiers are scoped to the sheet
+ * rows for *this* camp only (no cross-camp matching) and require uniqueness
+ * — ambiguous matches are recorded but never rewritten.
+ *
+ * Tiers, in priority order:
+ *   1. Exact: same canonical title + same canonical day.
+ *   2. Substring: same canonical day, one canonical title contains the other,
+ *      with the shorter side ≥ 6 chars (mirrors changelog.php's floor).
+ *   3. Description: same canonical day, canonical_text(description) equal on
+ *      both sides, both non-empty, and ≥ 12 chars (so two short or empty
+ *      descriptions can't collapse unrelated events together).
+ *
+ * Levenshtein fuzz and cross-camp guest matching are deliberately excluded —
+ * they're fine for the human-reviewed "Possible renames" report but too weak
+ * to authorize silent timing overwrites.
+ *
+ * Counts and detail records are accumulated on $summary. The function
+ * mutates $entry in place (matching the existing apply_sheet_group pattern,
+ * which also mutates regardless of dry-run / apply — the file write itself
+ * is the only thing gated on $apply at the call site).
+ *
+ * Returns the number of events whose timing was actually changed.
+ */
+function sync_claimed_camp_timing(array &$entry, ?array $sheetGroup, array $headerIndex, array &$summary): int {
+    $events = $entry['events'] ?? [];
+    if (!is_array($events) || empty($events)) {
+        return 0;
+    }
+    $campName = (string)($entry['name'] ?? '');
+
+    // If the claimed camp has no sheet group at all, every event is
+    // unmatched — record that and bail without touching anything.
+    if ($sheetGroup === null || empty($sheetGroup['rows'])) {
+        $summary['timing_no_match'] += count($events);
+        return 0;
+    }
+
+    // Build a candidate index over the sheet rows, keyed by canonical day.
+    // Each candidate carries the canonical title/description plus the raw
+    // timing fields we'd copy onto the matched event.
+    $get = static function (array $row, string $key) use ($headerIndex): string {
+        $i = $headerIndex[$key] ?? null;
+        return $i !== null ? (string)($row[$i] ?? '') : '';
+    };
+    $candidatesByDay = [];
+    foreach ($sheetGroup['rows'] as $r) {
+        $rawTitle = trim($get($r, 'Event Name'));
+        $rawDay   = trim($get($r, 'Day'));
+        $cand = [
+            'rawTitle'  => $rawTitle,
+            'canonTitle'=> canonical_text($rawTitle),
+            'canonDesc' => canonical_text(trim($get($r, 'Description of Event'))),
+            'day'       => $rawDay,
+            'startTime' => normalize_time($get($r, 'Start Time')),
+            'endTime'   => normalize_time($get($r, 'End Time')),
+        ];
+        $candidatesByDay[canonical_day($rawDay)][] = $cand;
+    }
+
+    $changed = 0;
+    foreach ($entry['events'] as $idx => $e) {
+        $eTitle = (string)($e['title'] ?? '');
+        $eDay   = (string)($e['day']   ?? '');
+        $eDesc  = (string)($e['description'] ?? '');
+        $cTitle = canonical_text($eTitle);
+        $cDay   = canonical_day($eDay);
+        $cDesc  = canonical_text($eDesc);
+
+        $sameDay = $candidatesByDay[$cDay] ?? [];
+        if (empty($sameDay)) {
+            $summary['timing_no_match']++;
+            continue;
+        }
+
+        // Tier 1: exact (canon_title, canon_day).
+        $tier1 = [];
+        if ($cTitle !== '') {
+            foreach ($sameDay as $cand) {
+                if ($cand['canonTitle'] === $cTitle) $tier1[] = $cand;
+            }
+        }
+        $matched = null;
+        $reason  = '';
+        if (count($tier1) === 1) {
+            $matched = $tier1[0];
+            $reason  = 'exact';
+        } elseif (count($tier1) > 1) {
+            // Ambiguous at the strongest tier — refuse to rewrite, log it.
+            $summary['timing_ambiguous'][] = [
+                'camp'       => $campName,
+                'title'      => $eTitle,
+                'tier'       => 'exact',
+                'candidates' => array_values(array_map(static fn($c) => $c['rawTitle'], $tier1)),
+            ];
+            continue;
+        }
+
+        // Tier 2: substring containment, same day, shorter side ≥ 6 chars.
+        if ($matched === null && $cTitle !== '') {
+            $tier2 = [];
+            $la = strlen($cTitle);
+            foreach ($sameDay as $cand) {
+                $b  = $cand['canonTitle'];
+                $lb = strlen($b);
+                if ($b === '' || $la === 0) continue;
+                if ($b === $cTitle) continue; // would have been tier-1
+                $shorter = min($la, $lb);
+                if ($shorter < 6) continue;
+                if (strpos($cTitle, $b) !== false || strpos($b, $cTitle) !== false) {
+                    $tier2[] = $cand;
+                }
+            }
+            if (count($tier2) === 1) {
+                $matched = $tier2[0];
+                $reason  = 'substring';
+            } elseif (count($tier2) > 1) {
+                $summary['timing_ambiguous'][] = [
+                    'camp'       => $campName,
+                    'title'      => $eTitle,
+                    'tier'       => 'substring',
+                    'candidates' => array_values(array_map(static fn($c) => $c['rawTitle'], $tier2)),
+                ];
+                continue;
+            }
+        }
+
+        // Tier 3: description match, same day, both ≥ 12 chars and equal.
+        if ($matched === null && $cDesc !== '' && strlen($cDesc) >= 12) {
+            $tier3 = [];
+            foreach ($sameDay as $cand) {
+                if ($cand['canonDesc'] === '' || strlen($cand['canonDesc']) < 12) continue;
+                if ($cand['canonDesc'] === $cDesc) $tier3[] = $cand;
+            }
+            if (count($tier3) === 1) {
+                $matched = $tier3[0];
+                $reason  = 'description';
+            } elseif (count($tier3) > 1) {
+                $summary['timing_ambiguous'][] = [
+                    'camp'       => $campName,
+                    'title'      => $eTitle,
+                    'tier'       => 'description',
+                    'candidates' => array_values(array_map(static fn($c) => $c['rawTitle'], $tier3)),
+                ];
+                continue;
+            }
+        }
+
+        if ($matched === null) {
+            $summary['timing_no_match']++;
+            continue;
+        }
+
+        // We have a confident match. Compare timing; if identical, log as
+        // unchanged and move on. Otherwise overwrite only the fields that
+        // actually differ.
+        $beforeTiming = [
+            'day'       => (string)($e['day']       ?? ''),
+            'startTime' => (string)($e['startTime'] ?? ''),
+            'endTime'   => (string)($e['endTime']   ?? ''),
+        ];
+        $afterTiming = [
+            'day'       => $matched['day'],
+            'startTime' => $matched['startTime'],
+            'endTime'   => $matched['endTime'],
+        ];
+        if ($beforeTiming === $afterTiming) {
+            $summary['timing_unchanged_match']++;
+            continue;
+        }
+        foreach (['day','startTime','endTime'] as $f) {
+            if ($beforeTiming[$f] !== $afterTiming[$f]) {
+                $entry['events'][$idx][$f] = $afterTiming[$f];
+            }
+        }
+        // Keep rawTimeText loosely in sync so the dashboard's "as entered"
+        // string doesn't lie about the new timing. Derived fields like
+        // durationHours / crossesMidnight are not recomputed here — they get
+        // recomputed on the next dashboard save and aren't load-bearing for
+        // the cron output the QA agent will inspect.
+        $entry['events'][$idx]['rawTimeText'] = trim(
+            $afterTiming['day'] . ' ' . $afterTiming['startTime'] . ' - ' . $afterTiming['endTime']
+        );
+
+        $summary['timing_synced'][] = [
+            'camp'        => $campName,
+            'title'       => $eTitle,
+            'before'      => $beforeTiming,
+            'after'       => $afterTiming,
+            'matched_via' => $reason,
+            'sheet_title' => $matched['rawTitle'],
+        ];
+        $changed++;
+    }
+
+    return $changed;
 }
 
 /**

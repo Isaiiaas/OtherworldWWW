@@ -860,6 +860,20 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
       box-shadow: 0 18px 50px rgba(0,0,0,0.45);
     }
     .panel + .panel { margin-top: 22px; }
+    .sheet-link-banner {
+      padding: 12px 18px;
+      margin-bottom: 18px;
+      font-size: 13.5px;
+      color: var(--cream-dim);
+      background: var(--night-3, var(--night-2));
+      border-color: var(--moss-1, var(--moss-2));
+    }
+    .sheet-link-banner a {
+      color: var(--lime, #ccdb4f);
+      text-decoration: none;
+      border-bottom: 1px dashed currentColor;
+    }
+    .sheet-link-banner a:hover { border-bottom-style: solid; }
     .panel h2 {
       font-family: var(--font-display);
       font-weight: 500;
@@ -1065,6 +1079,13 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
 </header>
 
 <main>
+
+  <div class="panel sheet-link-banner">
+    You can also add events to the
+    <a href="https://docs.google.com/spreadsheets/d/1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc/edit?gid=1785212198#gid=1785212198"
+       target="_blank" rel="noopener">shared community spreadsheet ↗</a>.
+    Timing is taken from the spreadsheet when an event appears on both — the dashboard owns the title and description.
+  </div>
 
   <?php foreach ($flashes as $f): ?>
     <div class="flash <?= h($f['type']) ?>">

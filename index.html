@@ -2364,8 +2364,11 @@
               const h3 = document.createElement("h3");
               h3.textContent = day;
               sec.appendChild(h3);
+              // Sort by FESTIVAL minutes (6am = 0, ..., 5:59am = 1439) so an
+               // event at 1am — which belongs to the previous festival day —
+               // appears at the END of that day's section, not the start.
               const dayEvs = byDay.get(day).slice().sort(
-                (a, b) => toMinutes(a.startTime || "00:00") - toMinutes(b.startTime || "00:00")
+                (a, b) => festivalMinutes(a.startTime || "00:00") - festivalMinutes(b.startTime || "00:00")
               );
               for (const ev of dayEvs) {
                 const row = document.createElement("div");
@@ -2412,7 +2415,12 @@
       function showModal(ev) {
         document.getElementById("m-title").textContent = ev.title || "(untitled)";
         document.getElementById("m-owner").textContent = `${ev._entry.name} · ${typeLabel(ev.ownerType)}`;
-        document.getElementById("m-day").textContent = ev.day || "?";
+        // Show the FESTIVAL day, not the calendar day — matches the tab
+        // / camp section the user clicked the event from. A 1am Friday
+        // event lives under the Thursday tab, so the modal should say
+        // "Thursday" too (not "Friday") for consistency.
+        document.getElementById("m-day").textContent =
+          festivalDay(ev.day, ev.startTime) || ev.day || "?";
         document.getElementById("m-time").textContent =
           `${ev.startTime || "?"}–${ev.endTime || "?"}${ev.crossesMidnight ? " (→ next day)" : ""}`;
         document.getElementById("m-desc").textContent = ev.description || "";
@@ -2627,7 +2635,12 @@
           }
           for (const day of DAY_ORDER) {
             if (!byDay.has(day)) continue;
-            for (const ev of byDay.get(day)) {
+            // Sort by FESTIVAL minutes so 1am events land at the end of
+            // their festival-day section, not the top.
+            const dayEvs = byDay.get(day).slice().sort(
+              (a, b) => festivalMinutes(a.startTime || "00:00") - festivalMinutes(b.startTime || "00:00")
+            );
+            for (const ev of dayEvs) {
               const row = document.createElement("div");
               row.className = "event-row";
               const cross = ev.crossesMidnight ? " →" : "";
