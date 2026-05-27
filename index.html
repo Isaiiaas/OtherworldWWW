@@ -2193,18 +2193,22 @@
         `;
           block.querySelector(".name").textContent = entry.name;
 
-          // Location pill: clickable "Mapped" if this camp has a pin (jumps
-          // to the Map tab focused on it), or a read-only neighborhood pill
-          // if the spreadsheet has one. Inserted before the event count so
-          // it sits next to the type/verified pills.
+          // Location info pills (next to the type/verified pills, before the
+          // event count). Two independent pills:
+          //   1. "Mapped" — clickable, present when this camp has a map pin.
+          //      Jumps to the Map tab focused on the pin.
+          //   2. Neighborhood — read-only, present whenever the spreadsheet
+          //      has a neighborhood for this camp. Shown alongside "Mapped"
+          //      when both are known, so the user gets the textual area
+          //      name even when the pin is placed.
           const _entryPin = PIN_BY_NAME.get(entry.name);
           if (_entryPin || entry.neighbourhood) {
             const summary = block.querySelector("summary");
             const countEl = summary.querySelector(".count");
-            const pill = document.createElement(_entryPin ? "button" : "span");
-            pill.className = "location-pill";
             if (_entryPin) {
+              const pill = document.createElement("button");
               pill.type = "button";
+              pill.className = "location-pill";
               pill.dataset.kind = "mapped";
               pill.title = "Show on map";
               pill.innerHTML = `<span class="pin-icon">📍</span><span>Mapped</span>`;
@@ -2212,16 +2216,19 @@
                 e.preventDefault();
                 e.stopPropagation();
                 switchMode("map");
-                // Focus runs after the map view mounts in renderAll().
                 setTimeout(() => mapView.focusOn(_entryPin), 0);
               });
-            } else {
+              summary.insertBefore(pill, countEl);
+            }
+            if (entry.neighbourhood) {
+              const pill = document.createElement("span");
+              pill.className = "location-pill";
               pill.dataset.kind = "neighborhood";
               pill.title = "Neighborhood from spreadsheet";
-              pill.innerHTML = `<span class="pin-icon">📍</span><span></span>`;
+              pill.innerHTML = `<span class="pin-icon">🏘</span><span></span>`;
               pill.querySelector("span:last-child").textContent = entry.neighbourhood;
+              summary.insertBefore(pill, countEl);
             }
-            summary.insertBefore(pill, countEl);
           }
 
           const body = block.querySelector(".body");
