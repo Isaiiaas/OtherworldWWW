@@ -3,19 +3,19 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 269,
-        "eventCount": 993,
+        "eventCount": 990,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 937,
+            "camp_events": 935,
             "sound_stage": 8,
-            "sound_stage_events": 45,
+            "sound_stage_events": 44,
             "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T17:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T18:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -3954,8 +3954,8 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Rave Scouts Jamboree",
-                    "description": "Come join the Rave Scouts of the Salish Sea for hippie watching, sporbs, and hilarious scouts fuckery. Bring your best scouting outfit to join the cult *ahem* scout troupe and receive a bonus something-or-other. Also bring a cup for the bar!",
+                    "title": "Rave Scouts of the Salish Sea Jamboree",
+                    "description": "Come join the Rave Scouts of the Salish Sea for hippie watching, sporbs, and hilarious scouts fuckery. Bring your best scouting outfit to join the cult *ahem* scout troupe and receive a bonus something-or-other. Also bring a cup for the bar! Disclaimer: Electric Circus cannot guarantee continuity of musical programming during the Jamboree due to potential disagreements over whether it is becoming a hootenay.",
                     "day": "Friday",
                     "startTime": "14:00",
                     "endTime": "17:00",
@@ -4071,7 +4071,7 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "AndFriends: Low Tide Recovery Club",
+                    "title": "Balearic Brunch Presents - AndFriends: Low Tide Recovery Club",
                     "description": "Join Andfriends drifting through yacht-rockesque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
                     "day": "Sunday",
                     "startTime": "12:00",
@@ -4123,7 +4123,7 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "ellisdeejay: Get on the Good Foot",
+                    "title": "Balearic Brunch Presents - ellisdeejay: Get on the Good Foot",
                     "description": "Somewhere between a dance and a daydream. Kick off your Otherworld with a soulful mix of funky house with a psychedelic twist.",
                     "day": "Friday",
                     "startTime": "12:00",
@@ -4163,7 +4163,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Fruit Stand: Booty House",
-                    "description": "",
+                    "description": "She'll bring the Fruity Beats, you bring the Booty Sweets!",
                     "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "01:00",
@@ -4176,7 +4176,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Daddy Dylan: Deep House",
-                    "description": "",
+                    "description": "Daddy Dylan is out on the town tonight and he's gonna give it to you Deep",
                     "day": "Saturday",
                     "startTime": "01:00",
                     "endTime": "02:00",
@@ -4188,7 +4188,7 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Michael McCaffrey: House & Deep Tech",
+                    "title": "Michael McCaffery: Jellyfish DJ",
                     "description": "Emerging from the depths of moistness, this legendary ancient Jellyfish DJ is gracing the Electric Circus Lounge to bring your first night of OW to a wet close.",
                     "day": "Saturday",
                     "startTime": "02:00",
@@ -4201,7 +4201,7 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Jetane: Floating Points of Light",
+                    "title": "Balearic Brunch Presents - Jetane: Floating Points of Light",
                     "description": "Beautiful Balearic downtempo, warm sunrise grooves and emotional coastal rhythms for a slow Saturday start..",
                     "day": "Saturday",
                     "startTime": "12:00",
@@ -4215,7 +4215,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Electric Circus DJ Power Hour",
-                    "description": "",
+                    "description": "Anything goes with the stable of Electric Circus DJs jockeying on the 1's and 2's - make a request and see what happens!",
                     "day": "Saturday",
                     "startTime": "15:00",
                     "endTime": "17:00",
@@ -4228,7 +4228,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Matty Reed: Funky House",
-                    "description": "",
+                    "description": "Host of B-Side Radio's Funkin' Brunch People is bringing Funky House to the Electric Circus Lounge!",
                     "day": "Saturday",
                     "startTime": "17:00",
                     "endTime": "18:00",
@@ -4254,7 +4254,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Nix: Heavy Curated Funk",
-                    "description": "",
+                    "description": "Whatever that means....",
                     "day": "Saturday",
                     "startTime": "19:00",
                     "endTime": "19:30",
@@ -4267,7 +4267,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Marc Gerrard: Deep House/Techno",
-                    "description": "",
+                    "description": "Marc Gerrard is the guy sneaking warm, wobbly dance music into your bloodstream one track at a time. Originally from England and now based on Vancouver Island, he’s spent years building dancefloors, late-night parties, and immersive music spaces through Abstract Audio, DE Radio, and curating the electronic music stage at the Woodstove Festival. His sets lean deep, playful, and patiently hypnotic — the kind that start with head nods and somehow end with strangers becoming best friends at 4am. Come for the groove, stay for the accidental spiritual experience.",
                     "day": "Saturday",
                     "startTime": "23:00",
                     "endTime": "00:30",
@@ -4280,7 +4280,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Jetane: Deep & Cosmic Balearic Electronica",
-                    "description": "",
+                    "description": "Electric Circus Lounge's Vision Director & Chief Builder - Both DJ & VJ for Electric Circus, join Jetane as he carrys us through the night with a cosmic soundtrack to dance underside the tent with curated visuals.",
                     "day": "Sunday",
                     "startTime": "00:30",
                     "endTime": "02:00",
@@ -4309,11 +4309,11 @@
                     "description": "",
                     "day": "Sunday",
                     "startTime": "16:00",
-                    "endTime": "17:30",
-                    "durationHours": 1.5,
+                    "endTime": "17:00",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 16:00 - 17:30"
+                    "rawTimeText": "Sunday 16:00 - 17:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4322,11 +4322,11 @@
                     "description": "A real life band of humans playing musical instruments live!",
                     "day": "Sunday",
                     "startTime": "17:30",
-                    "endTime": "19:00",
-                    "durationHours": 1.5,
+                    "endTime": "18:30",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 17:30 - 19:00"
+                    "rawTimeText": "Sunday 17:30 - 18:30"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4347,18 +4347,18 @@
                     "title": "Earthninja: DnB",
                     "description": "",
                     "day": "Sunday",
-                    "startTime": "23:30",
+                    "startTime": "23:00",
                     "endTime": "00:30",
-                    "durationHours": 1,
+                    "durationHours": 1.5,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 23:30 - 00:30"
+                    "rawTimeText": "Sunday 23:00 - 00:30"
                 },
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Onlychild: Garage",
-                    "description": "",
+                    "description": "OnlyChild moves through silky garage rhythms, urban soul and sleek midnight club energy.",
                     "day": "Monday",
                     "startTime": "00:30",
                     "endTime": "02:00",
@@ -4371,7 +4371,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Jetane: Uplifting House",
-                    "description": "",
+                    "description": "Electric Circus Lounge's Vision Director & Chief Builder steps up to provide a soundtrack as we enjoy the last rays of sunlight and head towards the night.",
                     "day": "Friday",
                     "startTime": "20:30",
                     "endTime": "22:00",
@@ -4399,40 +4399,6 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Moonbean",
-                    "description": "Moonbean: Live Acid Sunset: Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synth-punk and psychedelic dancefloor energy.",
-                    "day": "Friday",
-                    "startTime": "22:00",
-                    "endTime": "23:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 22:00 - 23:00",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Andfriends",
-                    "description": "Andfriends: Desert Disco Service: Cosmic House Music that sounds touched by human hands — live basslines, guitar solos, piano stabs & dub-soaked disco",
-                    "day": "Friday",
-                    "startTime": "23:00",
-                    "endTime": "00:05",
-                    "durationHours": 1.08,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 23:00 - 00:05",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
                     "title": "Electric Circus 3",
                     "description": "Electric Circus 3: Open Mic style, bring your 3:33-minutes of dance, song, comedy, puppetry, striptease, burlesque, performance art - as long as it’s live! Time limit strictly enforced with spankings. Oh and we have a pole",
                     "day": "Saturday",
@@ -4450,36 +4416,15 @@
                 {
                     "owner": "Electric Circus",
                     "ownerType": "camp",
-                    "title": "Moonbean",
-                    "description": "Moonbean: Live Acid Sunset: Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synth-punk and psychedelic dancefloor energy.",
-                    "day": "Saturday",
-                    "startTime": "18:00",
-                    "endTime": "19:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 18:00 - 19:00",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Balearic Brunch",
-                    "description": "Balearic Brunch: Low Tide Recovery Club: Join Andfriends drifting through yacht-rock-esque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
+                    "title": "Balearic Brunch: Low Tide Recovery Club",
+                    "description": "Join Andfriends drifting through yacht-rock-esque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
                     "day": "Sunday",
                     "startTime": "10:00",
                     "endTime": "12:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 10:00 - 12:00",
-                    "tags": [
-                        "Performance / Show",
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Sunday 10:00 - 12:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -10559,32 +10504,39 @@
                     "ownerType": "camp",
                     "title": "The Coffee Corral",
                     "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
-                    "day": "Thursday",
+                    "day": "Friday",
                     "startTime": "09:00",
                     "endTime": "12:00",
                     "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 09:00 - 12:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Friday 09:00 - 12:00"
                 },
                 {
                     "owner": "Salon Saloon",
                     "ownerType": "camp",
-                    "title": "Salon Saloon",
-                    "description": "After Hours: Feeling lucky? You might just stumble upon a top shelf haircut and a camp fire circle for the ages.",
-                    "day": "Sunday",
-                    "startTime": "03:33",
-                    "endTime": "05:03",
-                    "durationHours": 1.5,
+                    "title": "The Coffee Corral",
+                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "12:00",
+                    "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 03:33 - 05:03",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 09:00 - 12:00"
+                },
+                {
+                    "owner": "Salon Saloon",
+                    "ownerType": "camp",
+                    "title": "The Coffee Corral",
+                    "description": "Giddy up and get going with real espresso. Shots poured not fired, attending cowpeople will be required to partake in games, BYO milk. No Refunds, No Guarantees!",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "12:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 12:00"
                 }
             ],
             "claimed": true
@@ -15352,23 +15304,6 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "Partner Strething & Thai Massage",
-                    "description": "Partner Strething & Thai Massage: This class will blend partner-assisted stretching with gentle Thai massage. 90min class (45min per partner). This class is touch-based so come ready to communicate with clarity and listen with care <3",
-                    "day": "Saturday",
-                    "startTime": "10:00",
-                    "endTime": "11:30",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 11:30",
-                    "tags": [
-                        "Workshop / Class",
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Ironic Spin",
-                    "ownerType": "sound_stage",
                     "title": "Body Break w Jane-Dawnda!",
                     "description": "Body Break w Jane-Dawnda!: Get ready to werk-it out w Jane- Dawnda. 70s/80s workout —think Jamie Lee Curtis moves, big beats & lots of sass. Dress bold, shake dat booty & win prizes! Live DJ set. All the cool kids are doing it! Just do it. Xo",
                     "day": "Saturday",
@@ -16251,19 +16186,6 @@
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
-                    "day": "Friday",
-                    "startTime": "06:00",
-                    "endTime": "06:00",
-                    "durationHours": 24,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 06:00 - 06:00"
-                },
-                {
-                    "owner": "MOUTH",
-                    "ownerType": "art_installation",
-                    "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Saturday",
                     "startTime": "06:00",
                     "endTime": "06:00",
@@ -16310,6 +16232,19 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Monday 06:00 - 09:00"
+                },
+                {
+                    "owner": "MOUTH",
+                    "ownerType": "art_installation",
+                    "title": "A Shoes on PLounge by Picnic Party",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
+                    "day": "Friday",
+                    "startTime": "06:00",
+                    "endTime": "06:00",
+                    "durationHours": 24,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 06:00 - 06:00"
                 }
             ],
             "claimed": true
