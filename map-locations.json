@@ -349,6 +349,13 @@
             "verified": true
         },
         {
+            "name": "Cosmic communication station",
+            "type": "camp",
+            "x": 0.291,
+            "y": 0.2657,
+            "confirmed": true
+        },
+        {
             "name": "Cosmic Flow Camp",
             "type": "camp",
             "x": 0.2152,
@@ -449,12 +456,26 @@
             "verified": true
         },
         {
+            "name": "Effigy",
+            "type": "camp",
+            "x": 0.1825,
+            "y": 0.345,
+            "confirmed": true
+        },
+        {
             "name": "EFFIGY AND FIRE PERFORMANCE",
             "type": "camp",
             "x": 0.1825,
             "y": 0.3619,
             "confirmed": true,
             "verified": true
+        },
+        {
+            "name": "EFFIGY SHOW",
+            "type": "camp",
+            "x": 0.1848,
+            "y": 0.3754,
+            "confirmed": true
         },
         {
             "name": "Electric Circus",
@@ -900,15 +921,9 @@
         {
             "name": "Mother Tree",
             "type": "camp",
-            "x": 0.0985,
-            "y": 0.2874,
-            "confirmed": true,
-            "confidence": 0.7,
-            "matchedText": "Same 'THE MOTHER TREE' label, alternative listing",
-            "source": "agent:r1_c0",
-            "qaVerdict": "adjust",
-            "qaEvidence": "Large UNDER THE MOTHER TREE sound-stage label is around (0.40, 0.83); expected (0.35, 0.884) is on the edge between labels but not on the drop center",
-            "verified": true
+            "x": 0.1006,
+            "y": 0.3244,
+            "confirmed": true
         },
         {
             "name": "Mystic Redneck",
@@ -1073,6 +1088,27 @@
             "qaVerdict": "adjust",
             "qaEvidence": "RAVEFOREST CAFE droplet on the far left at ~(0.15, 0.30), expected (0.40, 0.26) lands in road/empty area.",
             "verified": true
+        },
+        {
+            "name": "Really Lost Hot Chocolate",
+            "type": "camp",
+            "x": 0.7716,
+            "y": 0.8369,
+            "confirmed": true
+        },
+        {
+            "name": "Really Lost Penguins: Wandering Yum-Yum Cart",
+            "type": "camp",
+            "x": 0.7843,
+            "y": 0.8279,
+            "confirmed": true
+        },
+        {
+            "name": "Really Lost Snow Cones",
+            "type": "camp",
+            "x": 0.7875,
+            "y": 0.8411,
+            "confirmed": true
         },
         {
             "name": "Recovery House",
