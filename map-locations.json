@@ -1,14 +1,14 @@
 {
     "pageWidth": 794.578125,
     "pageHeight": 615.341553,
-    "version": "f149d4409ea7",
+    "version": "e42b81c5b351",
     "imagePath": "map.png",
     "pins": [
         {
             "name": "Abrabrabra",
             "type": "camp",
-            "x": 0.3482,
-            "y": 0.3184,
+            "x": 0.35,
+            "y": 0.3089,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled ABRABRABRA near top center-right",
@@ -20,8 +20,8 @@
         {
             "name": "Absurditea",
             "type": "camp",
-            "x": 0.2356,
-            "y": 0.2356,
+            "x": 0.2342,
+            "y": 0.2207,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "label 'ABSURDITEA CORNIVAL' in a teardrop",
@@ -33,8 +33,8 @@
         {
             "name": "Babylon",
             "type": "camp",
-            "x": 0.4245,
-            "y": 0.4382,
+            "x": 0.4237,
+            "y": 0.4271,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled BABYLON",
@@ -46,8 +46,8 @@
         {
             "name": "Badgers Hideout",
             "type": "camp",
-            "x": 0.0999,
-            "y": 0.3731,
+            "x": 0.1015,
+            "y": 0.3857,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "BADGERSHIDEOUTLeYth&FFPTEMEPORTSUPIGmy",
@@ -58,8 +58,8 @@
         {
             "name": "Banana Embassy, part of The Fafffway Village Bass House Brunch Bunch",
             "type": "camp",
-            "x": 0.7727,
-            "y": 0.5675,
+            "x": 0.7685,
+            "y": 0.556,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Bubble labeled 'BANANA EMBASSY'",
@@ -78,8 +78,8 @@
         {
             "name": "Big Top Rouge",
             "type": "camp",
-            "x": 0.6146,
-            "y": 0.8628,
+            "x": 0.6151,
+            "y": 0.8437,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'BIGTOP ROUGE' label clearly visible on large teardrop in left-middle area.",
@@ -91,8 +91,8 @@
         {
             "name": "Board Game Camp",
             "type": "camp",
-            "x": 0.8111,
-            "y": 0.7908,
+            "x": 0.8143,
+            "y": 0.7804,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Yellow label 'BOARD GAME CAMP' inside teardrop blob on HAT REGISTRATION ST column",
@@ -104,8 +104,8 @@
         {
             "name": "Boobs & Berries",
             "type": "camp",
-            "x": 0.677,
-            "y": 0.8665,
+            "x": 0.6836,
+            "y": 0.8632,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'BOOBS & BERRIES' label clearly visible on large teardrop in middle-lower area.",
@@ -117,15 +117,16 @@
         {
             "name": "Bubbly Bar",
             "type": "camp",
-            "x": 0.5276,
-            "y": 0.5395,
-            "confirmed": true
+            "x": 0.5238,
+            "y": 0.5297,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Burning Glam!",
             "type": "camp",
-            "x": 0.8111,
-            "y": 0.6616,
+            "x": 0.8115,
+            "y": 0.6508,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'BURNING GLAM!'",
@@ -137,8 +138,8 @@
         {
             "name": "Camp Camp (But Is It Camp?!)",
             "type": "camp",
-            "x": 0.8081,
-            "y": 0.5013,
+            "x": 0.8146,
+            "y": 0.4816,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Bubble labeled 'CAMP CAMP (BUT IS IT CAMP?!)'",
@@ -150,16 +151,17 @@
         {
             "name": "Camp Otherbo’r’d",
             "type": "camp",
-            "x": 0.5145,
-            "y": 0.5649,
-            "confirmed": true
+            "x": 0.5118,
+            "y": 0.55,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Camp phat glASSes",
             "type": "camp",
-            "x": 0.7119,
-            "y": 0.8442,
-            "confirmed": false,
+            "x": 0.7228,
+            "y": 0.8435,
+            "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'PHAT GLASSES' label visible on teardrop in Elementality St area.",
             "source": "agent:r2_c2",
@@ -170,8 +172,8 @@
         {
             "name": "Camp Sense of Space",
             "type": "camp",
-            "x": 0.8449,
-            "y": 0.7682,
+            "x": 0.8436,
+            "y": 0.7707,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "xdegrsieescampofbaconsenseofspace",
@@ -182,8 +184,8 @@
         {
             "name": "Camp Squirrel",
             "type": "camp",
-            "x": 0.6887,
-            "y": 0.4589,
+            "x": 0.6922,
+            "y": 0.4509,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Blue teardrop labeled 'CAMP SQUIRREL' in the upper Smolder area.",
@@ -195,8 +197,8 @@
         {
             "name": "Camp UMAMI",
             "type": "camp",
-            "x": 0.4059,
-            "y": 0.5183,
+            "x": 0.405,
+            "y": 0.5053,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled CAMP UMAMI",
@@ -208,9 +210,9 @@
         {
             "name": "Camp Wet Landing",
             "type": "camp",
-            "x": 0.673,
-            "y": 0.681,
-            "confirmed": false,
+            "x": 0.6824,
+            "y": 0.6773,
+            "confirmed": true,
             "confidence": 0.9,
             "matchedText": "mpcawetglandinGNRAHOUMASEDSDISCOVAMPIREST",
             "qaVerdict": "adjust",
@@ -220,15 +222,8 @@
         {
             "name": "Camp Who Says Ni",
             "type": "camp",
-            "x": 0.3363,
-            "y": 0.3729,
-            "confirmed": true
-        },
-        {
-            "name": "Camp: space between | art: unspeakable world Carnal Carnival",
-            "type": "camp",
-            "x": 0.8419,
-            "y": 0.5553,
+            "x": 0.3378,
+            "y": 0.3599,
             "confirmed": true,
             "verified": true
         },
@@ -243,8 +238,8 @@
         {
             "name": "Cathartic Cantina",
             "type": "camp",
-            "x": 0.6406,
-            "y": 0.6118,
+            "x": 0.6413,
+            "y": 0.6214,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Teardrop labeled 'THE CATHARTIC CANTINA' on BITF RD.",
@@ -264,8 +259,8 @@
         {
             "name": "Chai trance",
             "type": "camp",
-            "x": 0.3629,
-            "y": 0.8278,
+            "x": 0.3651,
+            "y": 0.8165,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Large orange 'CHAI TRANCE' label in water drop below CERN; may also match the Chai Trance-Psytrance art installation",
@@ -277,8 +272,8 @@
         {
             "name": "Chill Pudding Camp",
             "type": "camp",
-            "x": 0.8394,
-            "y": 0.8535,
+            "x": 0.8379,
+            "y": 0.8413,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "chillpuddingcamp",
@@ -289,8 +284,8 @@
         {
             "name": "Circus Camp",
             "type": "camp",
-            "x": 0.6447,
-            "y": 0.864,
+            "x": 0.6445,
+            "y": 0.853,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'CIRCUS CAMP' label clearly visible on teardrop in left-middle area.",
@@ -302,8 +297,8 @@
         {
             "name": "CLuG",
             "type": "camp",
-            "x": 0.2607,
-            "y": 0.7172,
+            "x": 0.2608,
+            "y": 0.7085,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Clear 'CLUG' label in blue water drop, upper-left area of tile near CLuG enclosure",
@@ -315,16 +310,15 @@
         {
             "name": "Cocky Creations Concious Connections Camp",
             "type": "camp",
-            "x": 0.6764,
-            "y": 0.4827,
-            "confirmed": true,
-            "verified": true
+            "x": 0.8466,
+            "y": 0.536,
+            "confirmed": true
         },
         {
             "name": "Compliment Camp",
             "type": "camp",
-            "x": 0.7086,
-            "y": 0.7757,
+            "x": 0.7035,
+            "y": 0.7658,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'COMPLIMENT CAMP' label visible on teardrop along Disco Vampire St.",
@@ -336,8 +330,8 @@
         {
             "name": "Confession Concession",
             "type": "camp",
-            "x": 0.7738,
-            "y": 0.6171,
+            "x": 0.774,
+            "y": 0.608,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'CONFESSION CONCESSION'",
@@ -347,38 +341,25 @@
             "verified": true
         },
         {
-            "name": "Conscious Connections",
-            "type": "camp",
-            "x": 0.8402,
-            "y": 0.4839,
-            "confirmed": true
-        },
-        {
             "name": "Cosmic Flow Camp",
             "type": "camp",
-            "x": 0.216,
-            "y": 0.2526,
-            "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "label 'COSMIC FLOW' in a teardrop",
-            "source": "agent:r0_c0",
-            "qaVerdict": "adjust",
-            "qaEvidence": "COSMIC FLOW label visible around (0.72, 0.70); expected (0.71, 0.65) is ~5% off vertically",
-            "verified": true
+            "x": 0.2152,
+            "y": 0.2431,
+            "confirmed": true
         },
         {
             "name": "Cozy Corner",
             "type": "camp",
-            "x": 0.7148,
-            "y": 0.6093,
+            "x": 0.7058,
+            "y": 0.6181,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Crib Bar",
             "type": "camp",
-            "x": 0.3404,
-            "y": 0.7984,
+            "x": 0.3376,
+            "y": 0.7892,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear yellow water drop labeled 'CRIB BAR' near the MOOP cluster",
@@ -390,8 +371,8 @@
         {
             "name": "Curiouser & Curiouser Café",
             "type": "camp",
-            "x": 0.7121,
-            "y": 0.6455,
+            "x": 0.7124,
+            "y": 0.6332,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "Yellow text 'CURIOUSER & CURIOUSER CAFE' in lower right.",
@@ -403,8 +384,8 @@
         {
             "name": "Data Vining",
             "type": "camp",
-            "x": 0.7166,
-            "y": 0.7529,
+            "x": 0.7206,
+            "y": 0.7438,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "DATAVININGNETPMCOMCAMPLIHCAOKRSEES",
@@ -415,15 +396,16 @@
         {
             "name": "Department Of Responsible Flailing",
             "type": "camp",
-            "x": 0.7726,
-            "y": 0.5178,
-            "confirmed": true
+            "x": 0.768,
+            "y": 0.5079,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Disco Loco",
             "type": "camp",
-            "x": 0.8115,
-            "y": 0.7303,
+            "x": 0.8148,
+            "y": 0.719,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Yellow label 'DISCO LOCO' inside teardrop blob on HAT REGISTRATION ST column",
@@ -435,8 +417,8 @@
         {
             "name": "Dragon Jerky - Crew Quarters",
             "type": "camp",
-            "x": 0.2268,
-            "y": 0.1861,
+            "x": 0.2291,
+            "y": 0.177,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "label 'DRAGON JERKY' in a teardrop in upper-right Cottage cluster",
@@ -448,8 +430,8 @@
         {
             "name": "Dyke Chilling Park",
             "type": "camp",
-            "x": 0.7221,
-            "y": 0.8183,
+            "x": 0.724,
+            "y": 0.8096,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'DYKE CHILLING PARK' label visible on teardrop in Elementality St.",
@@ -459,23 +441,18 @@
             "verified": true
         },
         {
-            "name": "Earth & Sky Potion Parlour",
+            "name": "EFFIGY AND FIRE PERFORMANCE",
             "type": "camp",
-            "x": 0.8076,
-            "y": 0.8268,
+            "x": 0.1825,
+            "y": 0.3619,
             "confirmed": true,
-            "confidence": 0.95,
-            "matchedText": "Yellow label 'EARTH & SKY POTION PARLOUR' inside teardrop blob on HAT REGISTRATION ST column",
-            "source": "agent:r2_c3",
-            "qaVerdict": "correct",
-            "qaEvidence": "Expected lands on the Earth & Sky Potion Parlour drop in Gary St column. X diff 0.011, Y diff ~0.03 (borderline within tolerance).",
             "verified": true
         },
         {
             "name": "Electric Circus",
             "type": "camp",
-            "x": 0.15,
-            "y": 0.659,
+            "x": 0.1487,
+            "y": 0.6427,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'ELECTRIC CIRCUS' in droplet pin",
@@ -487,8 +464,8 @@
         {
             "name": "Empowerment Camp",
             "type": "camp",
-            "x": 0.1031,
-            "y": 0.4706,
+            "x": 0.1012,
+            "y": 0.4794,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'EMPOWERMENT' below RaveForest Cafe",
@@ -500,8 +477,8 @@
         {
             "name": "Empress Camp",
             "type": "camp",
-            "x": 0.2693,
-            "y": 0.2185,
+            "x": 0.2692,
+            "y": 0.2296,
             "confirmed": true,
             "confidence": 0.75,
             "matchedText": "INEUSCOUSTHEEMOTRACEMPRESSENOTEATELEAVAMOCAMOOSFLMMCMCSUNCIIPOS4TATIATIOONNAPPAUSE",
@@ -510,22 +487,10 @@
             "verified": true
         },
         {
-            "name": "Ewe-Turn",
-            "type": "camp",
-            "x": 0.6764,
-            "y": 0.518,
-            "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "eweturn",
-            "qaVerdict": "adjust",
-            "qaEvidence": "EWE TURN drop at ~(0.65,0.58); pin at (0.67,0.548) is slightly off but close",
-            "verified": true
-        },
-        {
             "name": "Fairytale BookHub Café & Trash Fence Kid’s Play Area",
             "type": "camp",
-            "x": 0.8768,
-            "y": 0.7187,
+            "x": 0.8757,
+            "y": 0.7248,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Yellow label 'FAIRYTALE BOOKHUB CAFE' inside teardrop blob in JARGON ST column area",
@@ -537,8 +502,8 @@
         {
             "name": "Fever Dream",
             "type": "camp",
-            "x": 0.1955,
-            "y": 0.2641,
+            "x": 0.1911,
+            "y": 0.2541,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "label 'FEVER DREAM' in a teardrop",
@@ -550,8 +515,8 @@
         {
             "name": "Fix-it Station",
             "type": "camp",
-            "x": 0.6768,
-            "y": 0.579,
+            "x": 0.6735,
+            "y": 0.5717,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Teardrop labeled 'FIX IT STATION' below Reframing.",
@@ -563,15 +528,16 @@
         {
             "name": "Flamingo camp",
             "type": "camp",
-            "x": 0.3184,
-            "y": 0.2352,
-            "confirmed": true
+            "x": 0.323,
+            "y": 0.2242,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Flower Bower",
             "type": "camp",
-            "x": 0.7125,
-            "y": 0.7036,
+            "x": 0.7114,
+            "y": 0.6924,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'FLOWER BOWER' label clearly visible on teardrop in Elementality St area.",
@@ -583,8 +549,8 @@
         {
             "name": "Flying Pancakes",
             "type": "camp",
-            "x": 0.7478,
-            "y": 0.686,
+            "x": 0.7509,
+            "y": 0.695,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Teardrop labeled 'FLYING PANCAKES' at bottom right edge.",
@@ -596,9 +562,10 @@
         {
             "name": "FurTail Alley",
             "type": "camp",
-            "x": 0.7076,
-            "y": 0.4728,
-            "confirmed": true
+            "x": 0.713,
+            "y": 0.464,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Garden Cósmico",
@@ -610,8 +577,8 @@
         {
             "name": "Garden of Eatin",
             "type": "camp",
-            "x": 0.6737,
-            "y": 0.6091,
+            "x": 0.6691,
+            "y": 0.5982,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Teardrop labeled 'GARDEN OF EATIN' on Cowbois in Space Rd column.",
@@ -623,8 +590,8 @@
         {
             "name": "Grandma’s House",
             "type": "camp",
-            "x": 0.6788,
-            "y": 0.7124,
+            "x": 0.6799,
+            "y": 0.7001,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'GRANDMAS HOUSE' label clearly visible on teardrop, upper-middle of tile.",
@@ -636,8 +603,8 @@
         {
             "name": "Graveyard Camp",
             "type": "camp",
-            "x": 0.3095,
-            "y": 0.3184,
+            "x": 0.3108,
+            "y": 0.3266,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled 'THE GRAVEYARD' near top of tile; closest unplaced match is 'Graveyard Camp'",
@@ -649,8 +616,8 @@
         {
             "name": "Harmonious Haberdashery",
             "type": "camp",
-            "x": 0.8131,
-            "y": 0.6952,
+            "x": 0.8105,
+            "y": 0.6823,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Yellow label 'HARMONIOUS HABERDASHERY' inside teardrop blob on HAT REGISTRATION ST column",
@@ -662,15 +629,16 @@
         {
             "name": "Healing Kiss",
             "type": "camp",
-            "x": 0.4245,
-            "y": 0.2209,
-            "confirmed": true
+            "x": 0.421,
+            "y": 0.2104,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "HELLYEAHBROTHER WORLD",
             "type": "camp",
-            "x": 0.8413,
-            "y": 0.6734,
+            "x": 0.8389,
+            "y": 0.6556,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'HELL YEAH BROTHER WORLD'",
@@ -682,8 +650,8 @@
         {
             "name": "human cat tree",
             "type": "camp",
-            "x": 0.7785,
-            "y": 0.5939,
+            "x": 0.7819,
+            "y": 0.5791,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Bubble labeled 'HUMAN CAT TREE'",
@@ -695,15 +663,16 @@
         {
             "name": "In the (soft,warm) Belly of the Beast",
             "type": "camp",
-            "x": 0.3858,
-            "y": 0.65,
-            "confirmed": true
+            "x": 0.3854,
+            "y": 0.6344,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Indulge Your Census",
             "type": "camp",
-            "x": 0.7792,
-            "y": 0.543,
+            "x": 0.7833,
+            "y": 0.5281,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Bubble labeled 'INDULGE YOUR CENSUS'",
@@ -715,8 +684,8 @@
         {
             "name": "Inkfish Village Kokomojo",
             "type": "camp",
-            "x": 0.6378,
-            "y": 0.6521,
+            "x": 0.7057,
+            "y": 0.8745,
             "confirmed": true,
             "verified": true
         },
@@ -735,8 +704,8 @@
         {
             "name": "Large Snacks and Ladders",
             "type": "camp",
-            "x": 0.2391,
-            "y": 0.5058,
+            "x": 0.2396,
+            "y": 0.5152,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "label reads LARGE SNAKES & LADDERS (Snacks/Snakes pun) beside Thirrrsty Bar",
@@ -748,8 +717,8 @@
         {
             "name": "Level Up+",
             "type": "camp",
-            "x": 0.775,
-            "y": 0.6869,
+            "x": 0.774,
+            "y": 0.6749,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'LEVEL UP'",
@@ -759,36 +728,26 @@
             "verified": true
         },
         {
-            "name": "Little Big",
-            "type": "camp",
-            "x": 0.7109,
-            "y": 0.5277,
-            "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "littlebig",
-            "qaVerdict": "adjust",
-            "qaEvidence": "LITTLE BIG drop at ~(0.78,0.62); pin at (0.788,0.575) is slightly high",
-            "verified": true
-        },
-        {
             "name": "Living Womb Rebirthing Lounge @ Motherworld",
             "type": "camp",
-            "x": 0.776,
-            "y": 0.719,
-            "confirmed": true
+            "x": 0.7668,
+            "y": 0.7039,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Looper Dome Camp",
             "type": "camp",
-            "x": 0.7683,
-            "y": 0.8147,
-            "confirmed": true
+            "x": 0.7653,
+            "y": 0.8042,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Lunar Moth Camp",
             "type": "camp",
-            "x": 0.4433,
-            "y": 0.1623,
+            "x": 0.4397,
+            "y": 0.1533,
             "confirmed": true,
             "confidence": 1,
             "matchedText": "lunarmoth",
@@ -799,15 +758,16 @@
         {
             "name": "Luscious Lemon camp",
             "type": "camp",
-            "x": 0.2938,
-            "y": 0.2062,
-            "confirmed": true
+            "x": 0.2924,
+            "y": 0.1962,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Magic Stick",
             "type": "camp",
-            "x": 0.1157,
-            "y": 0.4911,
+            "x": 0.1217,
+            "y": 0.4809,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Same 'THE MAGIC STICK' label, alternative listing",
@@ -819,8 +779,8 @@
         {
             "name": "Magical Mystery (Bus) Cruise",
             "type": "camp",
-            "x": 0.8099,
-            "y": 0.5717,
+            "x": 0.8105,
+            "y": 0.5571,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'MAGICAL MYSTERY BUS'",
@@ -832,8 +792,8 @@
         {
             "name": "Mahjong Camp",
             "type": "camp",
-            "x": 0.8092,
-            "y": 0.8612,
+            "x": 0.8086,
+            "y": 0.8493,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "Yellow label 'MAHJONG CAMP' inside teardrop blob at bottom of HAT REGISTRATION ST column",
@@ -845,16 +805,16 @@
         {
             "name": "Miffy’s Mimosa Cart MISO MOIST",
             "type": "camp",
-            "x": 0.7808,
-            "y": 0.4633,
+            "x": 0.7746,
+            "y": 0.4484,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Moistly Helpful Help Desk",
             "type": "camp",
-            "x": 0.1359,
-            "y": 0.4918,
+            "x": 0.136,
+            "y": 0.4816,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'MOISTLY HELPFUL HELP DESK' in droplet pin",
@@ -866,8 +826,8 @@
         {
             "name": "Moistly Mushrooms",
             "type": "camp",
-            "x": 0.6776,
-            "y": 0.7753,
+            "x": 0.6799,
+            "y": 0.7613,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'MOISTLY MUSHROOM' label (singular form) on teardrop in Cowbois in Space St.",
@@ -879,22 +839,16 @@
         {
             "name": "Mollusk Nation",
             "type": "camp",
-            "x": 0.269,
-            "y": 0.4136,
-            "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "teardrop labeled MOLLUSK NATION",
-            "source": "agent:r1_c1",
-            "qaVerdict": "adjust",
-            "qaEvidence": "Expected (0.2, 0.23) lands at top-left edge of Mollusk Nation drop, in light teal between Play Ground and Mollusk Nation. Drop center is at ~(0.185, 0.27).",
-            "verified": true
+            "x": 0.2525,
+            "y": 0.4069,
+            "confirmed": true
         },
         {
             "name": "Monster Arcade",
             "type": "camp",
-            "x": 0.842,
-            "y": 0.8137,
-            "confirmed": false,
+            "x": 0.8399,
+            "y": 0.806,
+            "confirmed": true,
             "confidence": 1,
             "matchedText": "monsterarcade",
             "qaVerdict": "correct",
@@ -902,10 +856,17 @@
             "verified": true
         },
         {
+            "name": "Moonlit Tales",
+            "type": "camp",
+            "x": 0.8816,
+            "y": 0.7772,
+            "confirmed": true
+        },
+        {
             "name": "Mother Tree",
             "type": "camp",
-            "x": 0.108,
-            "y": 0.3148,
+            "x": 0.1024,
+            "y": 0.3252,
             "confirmed": true,
             "confidence": 0.7,
             "matchedText": "Same 'THE MOTHER TREE' label, alternative listing",
@@ -917,8 +878,8 @@
         {
             "name": "Mystic Redneck",
             "type": "camp",
-            "x": 0.8073,
-            "y": 0.7626,
+            "x": 0.8118,
+            "y": 0.7496,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Yellow label 'MYSTIC REDNECK' inside teardrop blob on HAT REGISTRATION ST column",
@@ -930,8 +891,8 @@
         {
             "name": "Nano Donuts From The Future!",
             "type": "camp",
-            "x": 0.8808,
-            "y": 0.8306,
+            "x": 0.8834,
+            "y": 0.8455,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "otherredtentnanodofromnutsfuture!theYFILILAREAGV",
@@ -942,8 +903,8 @@
         {
             "name": "Nauti Norse",
             "type": "camp",
-            "x": 0.4126,
-            "y": 0.4735,
+            "x": 0.4124,
+            "y": 0.4612,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled NAUTI NORSE CLAN",
@@ -955,8 +916,8 @@
         {
             "name": "Neon Valhalla",
             "type": "camp",
-            "x": 0.6776,
-            "y": 0.7415,
+            "x": 0.6742,
+            "y": 0.7323,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'NEON VALHALLA' label on teardrop in Cowbois in Space St.",
@@ -968,9 +929,9 @@
         {
             "name": "NERRRRRDS",
             "type": "camp",
-            "x": 0.309,
-            "y": 0.394,
-            "confirmed": false,
+            "x": 0.3078,
+            "y": 0.4021,
+            "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled NERRRRRDS in middle area",
             "source": "agent:r1_c1",
@@ -981,8 +942,8 @@
         {
             "name": "Nom’s Nook On & On Cafe and Lounge",
             "type": "camp",
-            "x": 0.1681,
-            "y": 0.6314,
+            "x": 0.1675,
+            "y": 0.6213,
             "confirmed": true,
             "confidence": 0.75,
             "matchedText": "Label 'ON&ON CAFE' visible above Electric Circus matches 'On & On Cafe'",
@@ -994,8 +955,8 @@
         {
             "name": "Nontes",
             "type": "camp",
-            "x": 0.3901,
-            "y": 0.5455,
+            "x": 0.388,
+            "y": 0.5294,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled NONTES LATE NITE MARKET",
@@ -1005,17 +966,10 @@
             "verified": true
         },
         {
-            "name": "Orcar Camp",
-            "type": "camp",
-            "x": 0.6479,
-            "y": 0.7839,
-            "confirmed": true
-        },
-        {
             "name": "OTHER Red Tent",
             "type": "camp",
-            "x": 0.8654,
-            "y": 0.808,
+            "x": 0.8645,
+            "y": 0.7945,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Yellow label 'OTHER RED TENT' inside teardrop blob",
@@ -1027,29 +981,23 @@
         {
             "name": "Phantasmagoria",
             "type": "camp",
-            "x": 0.2911,
-            "y": 0.426,
-            "confirmed": false,
-            "confidence": 0.85,
-            "matchedText": "teardrop labeled PHANTAS MAGORIA (apostrophe-missing variant)",
-            "source": "agent:r1_c1",
-            "qaVerdict": "adjust",
-            "qaEvidence": "Expected (0.27, 0.27) lands on the dark blue road between Mollusk Nation and Phantasmagoria drops. Phantasmagoria drop is at ~(0.22, 0.315).",
-            "verified": true
+            "x": 0.2741,
+            "y": 0.3895,
+            "confirmed": true
         },
         {
             "name": "Picnic Party",
             "type": "camp",
-            "x": 0.8086,
-            "y": 0.532,
+            "x": 0.8115,
+            "y": 0.5225,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Pogs 4 Applause",
             "type": "camp",
-            "x": 0.2673,
-            "y": 0.2585,
+            "x": 0.2648,
+            "y": 0.2714,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "label 'POGS 4 APPLAUSE' in a teardrop",
@@ -1061,8 +1009,8 @@
         {
             "name": "Portal Lounge",
             "type": "camp",
-            "x": 0.6035,
-            "y": 0.6442,
+            "x": 0.6034,
+            "y": 0.6373,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Teardrop labeled 'PORTAL LOUNGE' lower-middle of tile.",
@@ -1074,8 +1022,8 @@
         {
             "name": "RaveForest Cafe",
             "type": "camp",
-            "x": 0.0931,
-            "y": 0.4474,
+            "x": 0.0942,
+            "y": 0.4344,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'RAVEFOREST CAFE' on left side",
@@ -1087,8 +1035,8 @@
         {
             "name": "Recovery House",
             "type": "camp",
-            "x": 0.6059,
-            "y": 0.8064,
+            "x": 0.6094,
+            "y": 0.8135,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "RecoveryHOUSEACCESSIBLECAMPING",
@@ -1099,27 +1047,16 @@
         {
             "name": "Reframing",
             "type": "camp",
-            "x": 0.6746,
-            "y": 0.5489,
-            "confirmed": true
-        },
-        {
-            "name": "Rule zERO",
-            "type": "camp",
-            "x": 0.7099,
-            "y": 0.4988,
+            "x": 0.6656,
+            "y": 0.5325,
             "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "rulezero",
-            "qaVerdict": "adjust",
-            "qaEvidence": "RULE ZERO drop at ~(0.78,0.55); pin at (0.779,0.503) is too high",
             "verified": true
         },
         {
             "name": "Salon Saloon",
             "type": "camp",
-            "x": 0.7419,
-            "y": 0.6108,
+            "x": 0.74,
+            "y": 0.5963,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'SALON SALOON'",
@@ -1131,8 +1068,8 @@
         {
             "name": "Sensuary Camp",
             "type": "camp",
-            "x": 0.4343,
-            "y": 0.3861,
+            "x": 0.4317,
+            "y": 0.3768,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled SENSUARY upper right area",
@@ -1144,23 +1081,24 @@
         {
             "name": "Shaman Dome",
             "type": "camp",
-            "x": 0.2922,
-            "y": 0.349,
+            "x": 0.2888,
+            "y": 0.3619,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Simple Pleasures (SPEC Reimagined) Soup & Songs Livingroom",
             "type": "camp",
-            "x": 0.3971,
-            "y": 0.1868,
-            "confirmed": true
+            "x": 0.3975,
+            "y": 0.174,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Six Degrees of Bacon",
             "type": "camp",
-            "x": 0.8693,
-            "y": 0.7549,
+            "x": 0.8665,
+            "y": 0.7509,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Yellow label 'SIX DEGREES OF BACON' inside teardrop blob in JARGON ST column area",
@@ -1172,8 +1110,8 @@
         {
             "name": "Sky Hummingbird Curios & Compliments Bar",
             "type": "camp",
-            "x": 0.7768,
-            "y": 0.4911,
+            "x": 0.774,
+            "y": 0.4798,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Bubble labeled 'SKY HUMMINGBIRDS CURIOS & COMPLIMENT BAR'",
@@ -1185,8 +1123,8 @@
         {
             "name": "Sloplandia",
             "type": "camp",
-            "x": 0.7119,
-            "y": 0.582,
+            "x": 0.7095,
+            "y": 0.5925,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "sloplandia",
@@ -1197,8 +1135,8 @@
         {
             "name": "Slushy Cats",
             "type": "camp",
-            "x": 0.7207,
-            "y": 0.8799,
+            "x": 0.7238,
+            "y": 0.8602,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'SLUSHY CATS CHILL LOUNGE' label visible on teardrop in lower-middle area.",
@@ -1210,8 +1148,8 @@
         {
             "name": "Slut Camp",
             "type": "camp",
-            "x": 0.3879,
-            "y": 0.4365,
+            "x": 0.3904,
+            "y": 0.4474,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled SLUT CAMP",
@@ -1223,8 +1161,8 @@
         {
             "name": "Smut Café",
             "type": "camp",
-            "x": 0.679,
-            "y": 0.8318,
+            "x": 0.6697,
+            "y": 0.8233,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'SMUT CAFE' label clearly visible on teardrop in middle area.",
@@ -1236,16 +1174,16 @@
         {
             "name": "Stardust Saloon",
             "type": "camp",
-            "x": 0.7443,
-            "y": 0.6517,
+            "x": 0.7403,
+            "y": 0.641,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Steeped in Art",
             "type": "camp",
-            "x": 0.1924,
-            "y": 0.5008,
+            "x": 0.1957,
+            "y": 0.5016,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "steepedHAUSEinERKUNSARAKES&cartSTOAERSRMBG",
@@ -1256,16 +1194,16 @@
         {
             "name": "Stirring the Pot",
             "type": "camp",
-            "x": 0.6383,
-            "y": 0.5297,
+            "x": 0.6397,
+            "y": 0.5419,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Taconoods",
             "type": "camp",
-            "x": 0.1924,
-            "y": 0.4654,
+            "x": 0.1972,
+            "y": 0.451,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "taconoods",
@@ -1274,10 +1212,17 @@
             "verified": true
         },
         {
+            "name": "TEMPLE CEREMONY",
+            "type": "camp",
+            "x": 0.1546,
+            "y": 0.401,
+            "confirmed": true
+        },
+        {
             "name": "Temple of Jeff",
             "type": "camp",
-            "x": 0.8017,
-            "y": 0.4696,
+            "x": 0.8007,
+            "y": 0.454,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Teardrop bubble labeled 'TEMPLE OF JEFF' upper-middle area",
@@ -1289,8 +1234,8 @@
         {
             "name": "The Abyss",
             "type": "camp",
-            "x": 0.7818,
-            "y": 0.794,
+            "x": 0.7843,
+            "y": 0.778,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "abyss",
@@ -1301,15 +1246,16 @@
         {
             "name": "The Agency",
             "type": "camp",
-            "x": 0.5162,
-            "y": 0.6234,
-            "confirmed": true
+            "x": 0.5238,
+            "y": 0.6239,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "The Cottage",
             "type": "camp",
-            "x": 0.2139,
-            "y": 0.2155,
+            "x": 0.2063,
+            "y": 0.2284,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "large label 'THE COTTAGE' over a cluster of teardrops",
@@ -1321,8 +1267,8 @@
         {
             "name": "The Den",
             "type": "camp",
-            "x": 0.2504,
-            "y": 0.2018,
+            "x": 0.2505,
+            "y": 0.1893,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "label 'THE DEN' in a teardrop right of The Cottage",
@@ -1334,8 +1280,8 @@
         {
             "name": "The Fizzy Familiar",
             "type": "camp",
-            "x": 0.3239,
-            "y": 0.3475,
+            "x": 0.3245,
+            "y": 0.3323,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled THE FIZZY FAMILIAR adjacent to Shaman Dome",
@@ -1347,23 +1293,24 @@
         {
             "name": "The Living Room",
             "type": "camp",
-            "x": 0.5056,
-            "y": 0.5936,
-            "confirmed": true
+            "x": 0.5049,
+            "y": 0.5814,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "The Low Bar",
             "type": "camp",
-            "x": 0.8438,
-            "y": 0.5907,
+            "x": 0.8382,
+            "y": 0.5735,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "The Mary Poppins House: a Your Moms House Pop-Up",
             "type": "camp",
-            "x": 0.7818,
-            "y": 0.7472,
+            "x": 0.7865,
+            "y": 0.7337,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Yellow label 'MARY POPPINS POP UP' inside teardrop blob on GARY ST column",
@@ -1375,8 +1322,8 @@
         {
             "name": "The Occult Library",
             "type": "camp",
-            "x": 0.3735,
-            "y": 0.4057,
+            "x": 0.3809,
+            "y": 0.3975,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled THE OCCULT LIBRARY",
@@ -1388,21 +1335,15 @@
         {
             "name": "the Playground",
             "type": "camp",
-            "x": 0.2452,
-            "y": 0.4046,
-            "confirmed": true,
-            "confidence": 0.9,
-            "matchedText": "Label 'THE PLAY GROUND' in droplet pin",
-            "source": "agent:r1_c0",
-            "qaVerdict": "correct",
-            "qaEvidence": "THE PLAY GROUND droplet at ~(0.88, 0.21), matches expected (0.89, 0.21).",
-            "verified": true
+            "x": 0.2493,
+            "y": 0.3692,
+            "confirmed": true
         },
         {
             "name": "The Really Lost Penguins",
             "type": "camp",
-            "x": 0.7807,
-            "y": 0.8434,
+            "x": 0.7874,
+            "y": 0.857,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Yellow label 'REALLY LOST PENGUINS CHILL CAVE' inside teardrop blob on GARY ST column",
@@ -1414,16 +1355,16 @@
         {
             "name": "The Really Lost Penguins Chill Cave",
             "type": "camp",
-            "x": 0.7743,
-            "y": 0.8405,
+            "x": 0.7681,
+            "y": 0.8525,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "The Sisterhood of Unsolicited Advice",
             "type": "camp",
-            "x": 0.1638,
-            "y": 0.4576,
+            "x": 0.151,
+            "y": 0.4658,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Clear label 'THE SISTERHOOD' in droplet pin",
@@ -1435,8 +1376,8 @@
         {
             "name": "Thirrrsty Barrr",
             "type": "camp",
-            "x": 0.2682,
-            "y": 0.489,
+            "x": 0.2791,
+            "y": 0.4922,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "large stylized label THIRRRSTY BAR (sound stage area) in lower-left",
@@ -1448,8 +1389,8 @@
         {
             "name": "Thirst Trap",
             "type": "camp",
-            "x": 0.4194,
-            "y": 0.1419,
+            "x": 0.418,
+            "y": 0.1318,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "DOROBthirsttrap",
@@ -1460,8 +1401,8 @@
         {
             "name": "Touch Temple",
             "type": "camp",
-            "x": 0.7452,
-            "y": 0.8622,
+            "x": 0.7409,
+            "y": 0.8534,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'TOUCH TEMPLE' label visible on teardrop in Floating World St area.",
@@ -1473,7 +1414,7 @@
         {
             "name": "True Love Temple",
             "type": "camp",
-            "x": 0.4103,
+            "x": 0.4222,
             "y": 0.2453,
             "confirmed": true,
             "confidence": 0.85,
@@ -1485,28 +1426,16 @@
         {
             "name": "Tune Town Stage",
             "type": "camp",
-            "x": 0.546,
-            "y": 0.5174,
-            "confirmed": true
-        },
-        {
-            "name": "Unstable Stables",
-            "type": "camp",
-            "x": 0.7437,
-            "y": 0.8118,
+            "x": 0.5418,
+            "y": 0.5052,
             "confirmed": true,
-            "confidence": 0.9,
-            "matchedText": "'UNSTABLES STABLES' label visible on teardrop in right side.",
-            "source": "agent:r2_c2",
-            "qaVerdict": "correct",
-            "qaEvidence": "Pin at (0.84, 0.462) lands on the 'UNSTABLES STABLES' droplet in Elementality column (center ~0.855, 0.47). Within ~3% tolerance.",
             "verified": true
         },
         {
             "name": "Usopotamus Oasis",
             "type": "camp",
-            "x": 0.8128,
-            "y": 0.6107,
+            "x": 0.8144,
+            "y": 0.595,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Bubble labeled 'THE USOPOTAMUS OASIS'",
@@ -1518,8 +1447,8 @@
         {
             "name": "Vic Drip",
             "type": "camp",
-            "x": 0.2137,
-            "y": 0.4028,
+            "x": 0.213,
+            "y": 0.3925,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'VICDRIP' (no apostrophe/space) in droplet pin",
@@ -1531,9 +1460,9 @@
         {
             "name": "Welcome to Arcadia",
             "type": "camp",
-            "x": 0.354,
-            "y": 0.394,
-            "confirmed": false,
+            "x": 0.3536,
+            "y": 0.3822,
+            "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled WELCOME TO ARCADIA",
             "source": "agent:r1_c1",
@@ -1544,8 +1473,8 @@
         {
             "name": "Welcome to the Resistance",
             "type": "camp",
-            "x": 0.3371,
-            "y": 0.4244,
+            "x": 0.3387,
+            "y": 0.4136,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "teardrop labeled WELCOME TO THE RESISTANCE",
@@ -1557,8 +1486,8 @@
         {
             "name": "When Life Gives You Lemons",
             "type": "camp",
-            "x": 0.8406,
-            "y": 0.7192,
+            "x": 0.852,
+            "y": 0.7146,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "whenlifegivesdloiscoHATREGISTRATIONSTyoucolemons",
@@ -1569,8 +1498,8 @@
         {
             "name": "White Lightning",
             "type": "camp",
-            "x": 0.2375,
-            "y": 0.4689,
+            "x": 0.244,
+            "y": 0.4612,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'WHITE LIGHTNING' in droplet pin",
@@ -1582,20 +1511,15 @@
         {
             "name": "Wild Things Camp",
             "type": "camp",
-            "x": 0.8729,
-            "y": 0.6853,
-            "confirmed": true,
-            "confidence": 0.85,
-            "matchedText": "cuD&CURCAEriouioussercTATFerLUSTSTAROODNfirofduhmxrchbeworpssterHELLbasshSAuserunchunchohipyeahrblevelGARYSTsbrotheldwilduparmoneriouworIRONICSTthingshhabsherydaJargonSTbookhufairytalebcafe",
-            "qaVerdict": "adjust",
-            "qaEvidence": "Wild Things drop sits at approximately (0.62, 0.11) in Jargon/Kangaroo column; expected X=0.580 is left of actual drop, landing between Hell Yeah Brother World and Wild Things.",
-            "verified": true
+            "x": 0.8806,
+            "y": 0.6973,
+            "confirmed": true
         },
         {
             "name": "Worst Camp Ever",
             "type": "camp",
-            "x": 0.8704,
-            "y": 0.6569,
+            "x": 0.888,
+            "y": 0.646,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "worstpcamever",
@@ -1606,8 +1530,8 @@
         {
             "name": "Yarnia",
             "type": "camp",
-            "x": 0.2181,
-            "y": 0.4622,
+            "x": 0.218,
+            "y": 0.4544,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "ASHLANyarniaWHTEILIGHTNING",
@@ -1618,8 +1542,8 @@
         {
             "name": "Zero Gravitas",
             "type": "camp",
-            "x": 0.2328,
-            "y": 0.3692,
+            "x": 0.2236,
+            "y": 0.3544,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'ZERO GRAVITAS' in droplet pin",
@@ -1631,8 +1555,8 @@
         {
             "name": "Ironic Spin",
             "type": "sound_stage",
-            "x": 0.2935,
-            "y": 0.7469,
+            "x": 0.2948,
+            "y": 0.7311,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear 'IRONIC SPIN' text inside a small grey drop bubble next to INTER-FACE 2.0, below UNDERWORLD AVE.",
@@ -1657,8 +1581,8 @@
         {
             "name": "Skybar",
             "type": "sound_stage",
-            "x": 0.2338,
-            "y": 0.6741,
+            "x": 0.2314,
+            "y": 0.6605,
             "confirmed": true,
             "confidence": 0.92,
             "matchedText": "Clear 'SKY BAR' text label inside a teal water-drop bubble next to GLOW DOME under 'AERIAL'.",
@@ -1670,8 +1594,8 @@
         {
             "name": "Sound Habitat",
             "type": "sound_stage",
-            "x": 0.6734,
-            "y": 0.6433,
+            "x": 0.6726,
+            "y": 0.6345,
             "confirmed": true,
             "confidence": 0.7,
             "matchedText": "Large orange text 'SOUND HABITAT' labeling a sound stage area in lower middle of tile.",
@@ -1683,8 +1607,8 @@
         {
             "name": "Soup & Songs Livingroom",
             "type": "sound_stage",
-            "x": 0.5721,
-            "y": 0.5143,
+            "x": 0.5715,
+            "y": 0.5015,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "Teardrop labeled 'SOUP & SONGS' top left, matches sound stage 'Soup & Songs Livingroom'.",
@@ -1709,15 +1633,16 @@
         {
             "name": "Aeolian",
             "type": "art_installation",
-            "x": 0.5308,
-            "y": 0.598,
-            "confirmed": true
+            "x": 0.5428,
+            "y": 0.59,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Alchemist’s Sketchbook",
             "type": "art_installation",
-            "x": 0.2415,
-            "y": 0.6111,
+            "x": 0.2429,
+            "y": 0.5994,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'ALCHEMISTS SKETCHBOOK' in droplet pin",
@@ -1729,8 +1654,8 @@
         {
             "name": "Authentication Required Coherence Ceremony",
             "type": "art_installation",
-            "x": 0.4362,
-            "y": 0.6922,
+            "x": 0.4332,
+            "y": 0.6812,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'AUTHENTICATION REQUIRED' label visible in water drop above Base Camp sign",
@@ -1742,15 +1667,16 @@
         {
             "name": "BedKnobs & BassKicks Held Together",
             "type": "art_installation",
-            "x": 0.357,
-            "y": 0.6351,
-            "confirmed": true
+            "x": 0.3582,
+            "y": 0.6237,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "between us",
             "type": "art_installation",
-            "x": 0.2383,
-            "y": 0.5336,
+            "x": 0.2417,
+            "y": 0.5462,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "betweenSELFKESusALDICSNARALITTESOMASLportals",
@@ -1761,8 +1687,8 @@
         {
             "name": "Beweave in Yourself",
             "type": "art_installation",
-            "x": 0.1657,
-            "y": 0.7085,
+            "x": 0.1675,
+            "y": 0.7198,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "Clear 'BEWEAVE IN YOURSELF' text inside a small grey/teal drop bubble above 'UNDERWORLD AVE'.",
@@ -1774,15 +1700,16 @@
         {
             "name": "Big Candle",
             "type": "art_installation",
-            "x": 0.4935,
-            "y": 0.5669,
-            "confirmed": true
+            "x": 0.4938,
+            "y": 0.5778,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Birthing Resistance",
             "type": "art_installation",
-            "x": 0.3604,
-            "y": 0.4936,
+            "x": 0.3625,
+            "y": 0.4857,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled BIRTHING RESISTANCE",
@@ -1794,8 +1721,8 @@
         {
             "name": "CERN in the Forest",
             "type": "art_installation",
-            "x": 0.3738,
-            "y": 0.7949,
+            "x": 0.373,
+            "y": 0.7845,
             "confirmed": true,
             "confidence": 0.95,
             "matchedText": "Clear 'CERN IN THE FOREST' label in water drop within MOOP area",
@@ -1807,16 +1734,16 @@
         {
             "name": "Chxrch of the Dumpster Fire Warship",
             "type": "art_installation",
-            "x": 0.7704,
-            "y": 0.6557,
+            "x": 0.7743,
+            "y": 0.6438,
             "confirmed": true,
             "verified": true
         },
         {
             "name": "Dommy Mommy Drinks",
             "type": "art_installation",
-            "x": 0.365,
-            "y": 0.5316,
+            "x": 0.3649,
+            "y": 0.5187,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled DOMMY MOMMY DRINKS",
@@ -1828,16 +1755,17 @@
         {
             "name": "FlameGame",
             "type": "art_installation",
-            "x": 0.7661,
-            "y": 0.8767,
-            "confirmed": true
+            "x": 0.7656,
+            "y": 0.8654,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Fluoropong",
             "type": "art_installation",
-            "x": 0.395,
-            "y": 0.8176,
-            "confirmed": false,
+            "x": 0.3959,
+            "y": 0.826,
+            "confirmed": true,
             "confidence": 1,
             "matchedText": "FLUOROPONG",
             "qaVerdict": "correct",
@@ -1847,8 +1775,8 @@
         {
             "name": "Glow Dome",
             "type": "art_installation",
-            "x": 0.2056,
-            "y": 0.6681,
+            "x": 0.2071,
+            "y": 0.6611,
             "confirmed": true,
             "confidence": 0.92,
             "matchedText": "Clear label 'GLOW DOME' in droplet pin",
@@ -1868,9 +1796,9 @@
         {
             "name": "i/o Mimicry",
             "type": "art_installation",
-            "x": 0.414,
-            "y": 0.7397,
-            "confirmed": false,
+            "x": 0.4148,
+            "y": 0.7269,
+            "confirmed": true,
             "confidence": 0.92,
             "matchedText": "'I/O MIMICRY' label visible in water drop near Authentication Required",
             "source": "agent:r2_c1",
@@ -1881,8 +1809,8 @@
         {
             "name": "INTER-FACE 2.0",
             "type": "art_installation",
-            "x": 0.1813,
-            "y": 0.7259,
+            "x": 0.1758,
+            "y": 0.7299,
             "confirmed": true,
             "confidence": 0.88,
             "matchedText": "INBEWEAEYOURSEVLFUninterde2.0faceironicspin",
@@ -1893,8 +1821,8 @@
         {
             "name": "Little Somas",
             "type": "art_installation",
-            "x": 0.2025,
-            "y": 0.5795,
+            "x": 0.2029,
+            "y": 0.5922,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'LITTLE SOMAS' in droplet pin",
@@ -1919,8 +1847,8 @@
         {
             "name": "Lucky Fucky Ducky",
             "type": "art_installation",
-            "x": 0.3855,
-            "y": 0.4976,
+            "x": 0.3863,
+            "y": 0.4865,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled LUCKY FUCKY DUCKY",
@@ -1932,15 +1860,16 @@
         {
             "name": "Midnight Burrito Next Level Camp",
             "type": "art_installation",
-            "x": 0.4356,
-            "y": 0.0925,
-            "confirmed": true
+            "x": 0.4355,
+            "y": 0.0846,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Mistycal Merkaboasis Deferrent Circles poeTree",
             "type": "art_installation",
-            "x": 0.1176,
-            "y": 0.338,
+            "x": 0.1284,
+            "y": 0.3385,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Label reads 'MISTYCAL MERKABOASIS' near top of tile",
@@ -1952,8 +1881,8 @@
         {
             "name": "MOTH BALL",
             "type": "art_installation",
-            "x": 0.7106,
-            "y": 0.5525,
+            "x": 0.7206,
+            "y": 0.5664,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "Gray dome labeled 'MOTH BALL' between Disco Vampire Rd and Elementality Rd; matches 'MOTH BALL' art install.",
@@ -1965,15 +1894,16 @@
         {
             "name": "Mushroom and Snail Drifting Freedoms",
             "type": "art_installation",
-            "x": 0.3381,
-            "y": 0.6102,
-            "confirmed": true
+            "x": 0.3394,
+            "y": 0.5982,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Nitrous Oxylophone",
             "type": "art_installation",
-            "x": 0.2847,
-            "y": 0.6331,
+            "x": 0.2833,
+            "y": 0.6468,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "label NITROUS OXYLOPHONE near bottom-center",
@@ -1985,8 +1915,8 @@
         {
             "name": "No associated business",
             "type": "art_installation",
-            "x": 0.0897,
-            "y": 0.3434,
+            "x": 0.0936,
+            "y": 0.3536,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "label 'NO ASSOCIATED BUSINESS' in a teardrop in the lower mid-left area",
@@ -1996,30 +1926,18 @@
             "verified": true
         },
         {
-            "name": "Rat Town",
-            "type": "art_installation",
-            "x": 0.6462,
-            "y": 0.6843,
-            "confirmed": true,
-            "confidence": 0.3,
-            "matchedText": "Teardrop labeled 'RATTOWN SUPPORT' near bottom right; matches 'Rat Town' art installation.",
-            "source": "agent:r1_c2",
-            "qaVerdict": "wrong",
-            "qaEvidence": "No RAT TOWN camp drop visible in this tile; pin is at far right edge area",
-            "verified": true
-        },
-        {
             "name": "resonic harmonic Project HissBark",
             "type": "art_installation",
-            "x": 0.6211,
-            "y": 0.7794,
-            "confirmed": true
+            "x": 0.6227,
+            "y": 0.7674,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "Samsara",
             "type": "art_installation",
-            "x": 0.5804,
-            "y": 0.6365,
+            "x": 0.5842,
+            "y": 0.6451,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "Small teardrop labeled 'SAMSARA' below the Black Rock area; matches 'Samsara' art installation.",
@@ -2031,8 +1949,8 @@
         {
             "name": "Secondhand Sorcery",
             "type": "art_installation",
-            "x": 0.6751,
-            "y": 0.8018,
+            "x": 0.6688,
+            "y": 0.787,
             "confirmed": true,
             "confidence": 0.85,
             "matchedText": "'SECOND HAND SORCERY' label visible on teardrop in Cowbois in Space St.",
@@ -2044,8 +1962,8 @@
         {
             "name": "Send It or Shred It!",
             "type": "art_installation",
-            "x": 0.4244,
-            "y": 0.7789,
+            "x": 0.424,
+            "y": 0.7661,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "'SEND IT OR SHRED IT' label clearly visible in water drop near WE'RE PROJECTING",
@@ -2070,9 +1988,9 @@
         {
             "name": "Solar Drift",
             "type": "art_installation",
-            "x": 0.321,
-            "y": 0.494,
-            "confirmed": false,
+            "x": 0.3215,
+            "y": 0.4823,
+            "confirmed": true,
             "confidence": 0.9,
             "matchedText": "teardrop labeled SOLAR DRIFT",
             "source": "agent:r1_c1",
@@ -2083,8 +2001,8 @@
         {
             "name": "Sonic Tapestry",
             "type": "art_installation",
-            "x": 0.1968,
-            "y": 0.5447,
+            "x": 0.1993,
+            "y": 0.5311,
             "confirmed": true,
             "confidence": 0.9,
             "matchedText": "Clear label 'SONIC TAPESTRY' in droplet pin",
@@ -2096,15 +2014,16 @@
         {
             "name": "The Alchemy of Earth Fairy Village",
             "type": "art_installation",
-            "x": 0.8663,
-            "y": 0.8529,
-            "confirmed": true
+            "x": 0.863,
+            "y": 0.8416,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "The Cosmic Womb",
             "type": "art_installation",
-            "x": 0.611,
-            "y": 0.677,
+            "x": 0.6148,
+            "y": 0.6663,
             "confirmed": true,
             "confidence": 0.8,
             "matchedText": "Teardrop labeled 'COSMIC WOMB' below Portal Lounge; matches 'The Cosmic Womb' art install.",
@@ -2114,11 +2033,19 @@
             "verified": true
         },
         {
+            "name": "The Dode Narnia Mission Machine",
+            "type": "art_installation",
+            "x": 0.8692,
+            "y": 0.6684,
+            "confirmed": true
+        },
+        {
             "name": "The Feeling Map",
             "type": "art_installation",
-            "x": 0.2898,
-            "y": 0.5799,
-            "confirmed": true
+            "x": 0.2925,
+            "y": 0.5649,
+            "confirmed": true,
+            "verified": true
         },
         {
             "name": "The Soggy Sovereignty of the Shroom Queen",
@@ -2134,24 +2061,11 @@
             "verified": true
         },
         {
-            "name": "Voyage of the Dawn",
-            "type": "art_installation",
-            "x": 0.1743,
-            "y": 0.2617,
-            "confirmed": true,
-            "confidence": 0.95,
-            "matchedText": "label 'VOYAGE OF THE DAWN' in a teardrop",
-            "source": "agent:r0_c0",
-            "qaVerdict": "correct",
-            "qaEvidence": "VOYAGE OF THE DAWN label visible around (0.58, 0.68), within ~1% of expected (0.575, 0.67)",
-            "verified": true
-        },
-        {
             "name": "We’re Projecting Honeycomb Highdoubt",
             "type": "art_installation",
-            "x": 0.393,
-            "y": 0.78,
-            "confirmed": false,
+            "x": 0.395,
+            "y": 0.7649,
+            "confirmed": true,
             "confidence": 0.92,
             "matchedText": "'WE'RE PROJECTING' label visible in water drop in MOOP area",
             "source": "agent:r2_c1",

@@ -734,13 +734,34 @@ function renderList() {
   }
 }
 
-function selectEntry(name) {
+function selectEntry(name, opts) {
+  opts = opts || {};
   state.selectedName = name;
   els.main.classList.toggle('no-selection', !name);
+
+  // When the click came from the map, drop the sidebar down to just this
+  // entry by stuffing its name into the search box and clearing the type
+  // / pin filters. That way the user always sees exactly one row — the
+  // one they clicked — and the `×` / Del shortcut are right there.
+  if (name && opts.fromMap) {
+    els.filter.value    = name;
+    els.pinFilter.value = 'all';
+    els.typeFilter.value = 'all';
+  }
+
   renderList();
   const p = state.pins.get(name);
   if (p) centerOn(p.x, p.y);
   renderPins();
+
+  // Center the freshly selected row in the sidebar viewport. We use
+  // 'center' (not 'nearest') and 'instant' (not 'smooth') so the click
+  // gives immediate, unambiguous visual feedback — the user never has
+  // to scroll-hunt for the row they just clicked.
+  if (name) {
+    const row = els.list.querySelector('.sb-item.selected');
+    if (row) row.scrollIntoView({ block: 'center', behavior: 'instant' });
+  }
 }
 
 function escapeHtml(s) { return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
@@ -764,7 +785,7 @@ function renderPins() {
     pin.style.top = (p.y * state.img.h) + 'px';
     pin.addEventListener('mousedown', e => startPinDrag(e, name));
     pin.addEventListener('contextmenu', e => { e.preventDefault(); deletePin(name); });
-    pin.addEventListener('click', e => { e.stopPropagation(); selectEntry(name); });
+    pin.addEventListener('click', e => { e.stopPropagation(); selectEntry(name, { fromMap: true }); });
     pin.addEventListener('mouseenter', () => showPinTooltip(name, pin));
     pin.addEventListener('mouseleave', hidePinTooltip);
     els.canvas.appendChild(pin);
