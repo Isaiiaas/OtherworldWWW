@@ -17763,39 +17763,32 @@
                 {
                     "owner": "Moonlit Tales",
                     "ownerType": "camp",
-                    "title": "Moonlit Tales",
-                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
+                    "title": "Moonlit Tales Storytime",
+                    "description": "Where kids and kids at heart drift off into dreamland with interactive storytimes and tea. Located between Jargon & Ironic Street.",
                     "day": "Friday",
                     "startTime": "20:45",
                     "endTime": "22:00",
                     "durationHours": 1.25,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 20:45 - 22:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Performance / Show"
-                    ]
+                    "rawTimeText": "Friday 20:45 - 22:00"
                 },
                 {
                     "owner": "Moonlit Tales",
                     "ownerType": "camp",
-                    "title": "Moonlit Tales",
-                    "description": "Where kids and kids drift off into dreamland with interactive storytimes and tea.",
+                    "title": "Moonlit Tales Storytime",
+                    "description": "Where kids and kids at heart drift off into dreamland with interactive storytimes and tea. Located between Jargon & Ironic Street.",
                     "day": "Saturday",
                     "startTime": "20:45",
                     "endTime": "22:00",
                     "durationHours": 1.25,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 20:45 - 22:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Performance / Show"
-                    ]
+                    "rawTimeText": "Saturday 20:45 - 22:00"
                 }
             ],
-            "neighbourhood": "COLLECTION"
+            "neighbourhood": "COLLECTION",
+            "claimed": true
         },
         {
             "name": "HorseCakes",
@@ -17837,7 +17830,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "ROAMING"
+            "neighbourhood": "ROAMING",
+            "claimed": false
         }
     ],
     "unassignedEvents": []
