@@ -1919,9 +1919,11 @@
 
         for (const h of HOUR_ORDER) {
           const bucket = byHour.get(h);
-          const isEmpty = bucket.starting.length === 0 && bucket.ongoing.length === 0;
+          // Skip hours with no starting and no ongoing events so the grid
+          // doesn't show empty rows (e.g., Thursday 7am).
+          if (bucket.starting.length === 0 && bucket.ongoing.length === 0) continue;
           const row = document.createElement("div");
-          row.className = "hour-row" + (isEmpty ? " empty" : "");
+          row.className = "hour-row";
           row.innerHTML = `
           <div class="hour-label">
             <div class="time">${fmtHour(h)}</div>
