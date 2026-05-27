@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 267,
-        "eventCount": 990,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 201,
-            "camp_events": 935,
+            "camp_events": 936,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -7391,33 +7391,27 @@
                     "owner": "Magical Mystery (Bus) Cruise",
                     "ownerType": "camp",
                     "title": "Mouthmosas",
-                    "description": "Mouthmosas: It’s a sea day on the Magical Mystery Cruise as we sail towards the (Ant)arctic. Stroll the sun deck, admire an iceberg, feed the seals, and allow our lifeguards to pour OJ and bubbly directly into your facehole.",
+                    "description": "Mouthmosas: It’s a sea day on the Magical Mystery Cruise as we sail towards the (Ant)arctic. Stroll the sun deck, admire an iceberg, feed the seals, and allow our lifeguards to pour OJ and bubbly directly into your facehole. Leave No Trace, Use Your Face!",
                     "day": "Saturday",
                     "startTime": "12:00",
                     "endTime": "14:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 12:00 - 14:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Saturday 12:00 - 14:00"
                 },
                 {
                     "owner": "Magical Mystery (Bus) Cruise",
                     "ownerType": "camp",
                     "title": "Timeshare Presentation",
-                    "description": "Are you ready for the opportunity of a lifetime? Experience what Magical Mystery Cruise vacation ownership can offer you. Take a seat in the Salty Seal Lounge presentation will be starting soon. The longer you stay the more vacation points you earn!",
+                    "description": "Are you ready for the opportunity of a lifetime? Experience what Magical Mystery Cruise vacation ownership can offer you. Take a seat in the Salty Seal Lounge, the presentation will definitely be starting very soon. The longer you stay the more Neptune VIP points you earn!",
                     "day": "Sunday",
                     "startTime": "05:00",
                     "endTime": "10:32",
                     "durationHours": 5.53,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 05:00 - 10:32",
-                    "tags": [
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Sunday 05:00 - 10:32"
                 },
                 {
                     "owner": "Magical Mystery (Bus) Cruise",
@@ -7434,9 +7428,22 @@
                     "tags": [
                         "Game / Activity"
                     ]
+                },
+                {
+                    "owner": "Magical Mystery (Bus) Cruise",
+                    "ownerType": "camp",
+                    "title": "Hantavirus",
+                    "description": "It’s the final day of the cruise and you wake up feeling bleary. Mild headache. Achy neck. Must be a hangover. You roll out of the Neptune Suite to head to the breakfast buffet and you are greeted by the sound of vomiting echoing from behind multiple stateroom doors. It has begun.",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "23:30",
+                    "durationHours": 14.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 23:30"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SCORCH"
         },
         {
