@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T04:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T05:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -5586,14 +5586,13 @@
                     "ownerType": "camp",
                     "title": "Spill the Tea",
                     "description": "Write down the gossip, confession, or secret you’ve always wanted to say out loud and place it in the lockbox — all entries remain anonymous and burned at a later date. Sip on Sweet tea (bourbon optional) while we laugh, release, and let the drama go!",
-                    "day": "Saturday",
+                    "day": "Sunday",
                     "startTime": "13:00",
                     "endTime": "14:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 13:00 - 14:00",
-                    "tags": []
+                    "rawTimeText": "Sunday 13:00 - 14:00"
                 },
                 {
                     "owner": "Flamingo camp",
@@ -5603,8 +5602,8 @@
                     "day": "Thursday",
                     "startTime": "08:00",
                     "endTime": "22:00",
-                    "durationHours": 14,
-                    "crossesMidnight": false,
+                    "durationHours": 86,
+                    "crossesMidnight": true,
                     "normalizationFlags": [],
                     "rawTimeText": "Thursday 08:00 - 22:00"
                 },
