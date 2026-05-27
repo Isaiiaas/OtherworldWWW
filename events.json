@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T21:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T22:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1502,12 +1502,12 @@
                     "title": "Keep those peepers on your face, in fashion.",
                     "description": "Make sunglass chains in front of our giant pair of glasses! Clean your glasses, shake your asses!",
                     "day": "Friday",
-                    "startTime": "16:00",
-                    "endTime": "17:00",
+                    "startTime": "04:00",
+                    "endTime": "05:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 16:00 - 17:00"
+                    "rawTimeText": "Friday 04:00 - 05:00"
                 },
                 {
                     "owner": "Camp phat glASSes",
@@ -1631,11 +1631,11 @@
                     "description": "A pitch competition where players (min. 2) draw shark cards from a deck, read the species facts aloud for the group, and must convince everyone else which shark is the best. You do not need to pitch the shark you drew but everyone does need to agree. Game ends once everyone agrees on the most superior shark",
                     "day": "Friday",
                     "startTime": "17:00",
-                    "endTime": "18:00",
+                    "endTime": "17:30",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 18:00"
+                    "rawTimeText": "Friday 17:00 - 17:30"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -2782,11 +2782,11 @@
                     "description": "Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
                     "day": "Saturday",
                     "startTime": "10:00",
-                    "endTime": "11:30",
+                    "endTime": "22:00",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 11:30"
+                    "rawTimeText": "Saturday 10:00 - 22:00"
                 },
                 {
                     "owner": "Chai trance",
@@ -2821,11 +2821,11 @@
                     "description": "Serving that fire masala chai for your third eye",
                     "day": "Saturday",
                     "startTime": "19:00",
-                    "endTime": "20:00",
+                    "endTime": "21:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:00 - 20:00"
+                    "rawTimeText": "Saturday 19:00 - 21:00"
                 },
                 {
                     "owner": "Chai trance",
@@ -2834,11 +2834,11 @@
                     "description": "Serving that fire masala chai for your third eye",
                     "day": "Sunday",
                     "startTime": "19:00",
-                    "endTime": "20:00",
+                    "endTime": "21:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 19:00 - 20:00"
+                    "rawTimeText": "Sunday 19:00 - 21:00"
                 },
                 {
                     "owner": "Chai trance",
@@ -2902,11 +2902,11 @@
                     "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
                     "day": "Saturday",
                     "startTime": "19:00",
-                    "endTime": "20:00",
+                    "endTime": "21:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:00 - 20:00",
+                    "rawTimeText": "Saturday 19:00 - 21:00",
                     "tags": [
                         "Food / Drink"
                     ]
@@ -2918,11 +2918,11 @@
                     "description": "Full Power Chai: Full power Chai- serving that fire masala chai for your third eye",
                     "day": "Sunday",
                     "startTime": "19:00",
-                    "endTime": "20:00",
+                    "endTime": "21:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 19:00 - 20:00",
+                    "rawTimeText": "Sunday 19:00 - 21:00",
                     "tags": [
                         "Food / Drink"
                     ]
@@ -3465,12 +3465,12 @@
                     "title": "Get Nailed & Tatted",
                     "description": "Get Nailed & Tated: Nail painting glory hole & temporary tatoos",
                     "day": "Saturday",
-                    "startTime": "11:30",
-                    "endTime": "13:00",
+                    "startTime": "11:00",
+                    "endTime": "12:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 11:30 - 13:00",
+                    "rawTimeText": "Saturday 11:00 - 12:30",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -3917,13 +3917,13 @@
                     "description": "An interactive television set where the viewer not only creates video art, but is the art.",
                     "day": "Friday",
                     "startTime": "00:01",
-                    "endTime": "00:01",
+                    "endTime": "11:59",
                     "durationHours": 0,
                     "crossesMidnight": false,
                     "normalizationFlags": [
                         "zero_duration"
                     ],
-                    "rawTimeText": "Friday 00:01 - 00:01"
+                    "rawTimeText": "Friday 00:01 - 11:59"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4048,12 +4048,12 @@
                     "title": "Moonbean: Psychedelic Synth-Punk Electronica",
                     "description": "Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synthpunk and psychedelic dancefloor energy.",
                     "day": "Saturday",
-                    "startTime": "19:30",
-                    "endTime": "20:30",
+                    "startTime": "18:00",
+                    "endTime": "19:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:30 - 20:30"
+                    "rawTimeText": "Saturday 18:00 - 19:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4100,12 +4100,12 @@
                     "title": "How to Trainwreck a DJ Set",
                     "description": "A guide to being a sh*t DJ: A guided exploration of terrible transitions, performer faux pas, and the improper use of air horns",
                     "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:00",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:00"
+                    "rawTimeText": "Sunday 14:00 - 15:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4322,11 +4322,11 @@
                     "description": "A real life band of humans playing musical instruments live!",
                     "day": "Sunday",
                     "startTime": "17:30",
-                    "endTime": "18:30",
+                    "endTime": "19:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 17:30 - 18:30"
+                    "rawTimeText": "Sunday 17:30 - 19:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4347,12 +4347,12 @@
                     "title": "Earthninja: DnB",
                     "description": "An Ancient DJ of lore, decade+ long veteran radio host of Bigger than Bass on CHLY 101.7FM, comes out from the depths to share some deep DnB & Jungle for a Moody start to your Sunday night.",
                     "day": "Sunday",
-                    "startTime": "23:00",
+                    "startTime": "23:30",
                     "endTime": "00:30",
                     "durationHours": 1.5,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 23:00 - 00:30"
+                    "rawTimeText": "Sunday 23:30 - 00:30"
                 },
                 {
                     "owner": "Electric Circus",
@@ -4412,12 +4412,12 @@
                     "title": "Fusion Dance Intro and Jam",
                     "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
                     "day": "Sunday",
-                    "startTime": "16:30",
-                    "endTime": "17:30",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 16:30 - 17:30"
+                    "rawTimeText": "Sunday 15:00 - 16:30"
                 },
                 {
                     "owner": "Electric Circus",
@@ -5902,12 +5902,12 @@
                     "title": "The Dreamidifier®",
                     "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
                     "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30"
+                    "rawTimeText": "Sunday 13:00 - 14:30"
                 }
             ],
             "claimed": true,
@@ -8750,12 +8750,12 @@
                     "title": "Can You Lick It?",
                     "description": "…and how moist is it?! Team up & spin the wheel, or watch & cheer on the chaos. 16+ game",
                     "day": "Friday",
-                    "startTime": "16:30",
+                    "startTime": "16:00",
                     "endTime": "18:00",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 16:30 - 18:00"
+                    "rawTimeText": "Friday 16:00 - 18:00"
                 },
                 {
                     "owner": "NERRRRRDS",
@@ -9269,12 +9269,12 @@
                     "title": "Glizzy Gala",
                     "description": "Start pressing your jorts for solid food and SHOT DOGS to fill every void. Lose your dignity at the Casino of Many Things, peruse D*Arts. Admission free for raccoons in trench coats. Is that soup? An elevated hotdog offering like no other, The Glizzy Gala is part of the CULT-DE-SAC block party!",
                     "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "19:00",
+                    "startTime": "05:00",
+                    "endTime": "07:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 19:00"
+                    "rawTimeText": "Friday 05:00 - 07:00"
                 },
                 {
                     "owner": "Picnic Party",
@@ -10478,11 +10478,11 @@
                     "description": "Come for the haircut, stay for the hoedown and the races, and leave with a style that says, “I’m the baddest cowpoke in town.” Bring your hat, bring your friends, and let us freshen you up for the Effigy \"burns\".",
                     "day": "Saturday",
                     "startTime": "14:00",
-                    "endTime": "20:00",
+                    "endTime": "11:59",
                     "durationHours": 6,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:00 - 20:00"
+                    "rawTimeText": "Saturday 14:00 - 11:59"
                 },
                 {
                     "owner": "Salon Saloon",
@@ -10491,11 +10491,11 @@
                     "description": "The Salon Saloon is OPEN and it’s been a doozy of a weekend. Looking like you wrestled a cactus? Let our Stylists smooth things out, come on down for a haircut and shenanigans.",
                     "day": "Sunday",
                     "startTime": "14:00",
-                    "endTime": "20:00",
+                    "endTime": "11:59",
                     "durationHours": 6,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 14:00 - 20:00"
+                    "rawTimeText": "Sunday 14:00 - 11:59"
                 },
                 {
                     "owner": "Salon Saloon",
@@ -16186,11 +16186,11 @@
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Saturday",
                     "startTime": "06:00",
-                    "endTime": "06:00",
+                    "endTime": "18:00",
                     "durationHours": 24,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 06:00 - 06:00"
+                    "rawTimeText": "Saturday 06:00 - 18:00"
                 },
                 {
                     "owner": "MOUTH",
@@ -16199,11 +16199,11 @@
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Sunday",
                     "startTime": "06:00",
-                    "endTime": "06:00",
+                    "endTime": "18:00",
                     "durationHours": 24,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 06:00 - 06:00"
+                    "rawTimeText": "Sunday 06:00 - 18:00"
                 },
                 {
                     "owner": "MOUTH",
@@ -16212,11 +16212,11 @@
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Thursday",
                     "startTime": "06:00",
-                    "endTime": "06:00",
+                    "endTime": "18:00",
                     "durationHours": 24,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 06:00 - 06:00"
+                    "rawTimeText": "Thursday 06:00 - 18:00"
                 },
                 {
                     "owner": "MOUTH",
@@ -16225,11 +16225,11 @@
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Monday",
                     "startTime": "06:00",
-                    "endTime": "09:00",
+                    "endTime": "12:00",
                     "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Monday 06:00 - 09:00"
+                    "rawTimeText": "Monday 06:00 - 12:00"
                 },
                 {
                     "owner": "MOUTH",
@@ -16238,11 +16238,11 @@
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Friday",
                     "startTime": "06:00",
-                    "endTime": "06:00",
+                    "endTime": "18:00",
                     "durationHours": 24,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 06:00 - 06:00"
+                    "rawTimeText": "Friday 06:00 - 18:00"
                 }
             ],
             "claimed": true
