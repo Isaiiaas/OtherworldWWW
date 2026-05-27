@@ -2,20 +2,20 @@
     "metadata": {
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
-        "entryCount": 266,
-        "eventCount": 988,
+        "entryCount": 267,
+        "eventCount": 989,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 200,
+            "camp": 201,
             "camp_events": 934,
             "sound_stage": 8,
-            "sound_stage_events": 43,
+            "sound_stage_events": 44,
             "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-26T23:02:01+00:00",
+        "lastReconciledAt": "2026-05-27T00:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1189,23 +1189,6 @@
             "type": "camp",
             "events": [
                 {
-                    "owner": "Camp Mystic Redneck",
-                    "ownerType": "camp",
-                    "title": "Mystic Redneck Super Serious Sillymony",
-                    "description": "Where hyper new-age spirituality and profane foolery meet in an ancient Mystic Redneck ritual vortex of rip-roarin back-40 galactivation. Come for some dirty n’ offensive ascension, ol’ fashion cosmic absurdity, and let’s Make Atlantis Great Again!",
-                    "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "18:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 18:00",
-                    "tags": [
-                        "Music / Dance",
-                        "Game / Activity"
-                    ]
-                },
-                {
                     "owner": "Mystic Redneck",
                     "ownerType": "camp",
                     "title": "Kundalini Hoedown",
@@ -1219,6 +1202,23 @@
                     "rawTimeText": "Friday 11:00 - 12:30",
                     "tags": [
                         "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Mystic Redneck",
+                    "ownerType": "camp",
+                    "title": "Mystic Redneck Super Serious Sillymony",
+                    "description": "Where hyper new-age spirituality and profane foolery meet in an ancient Mystic Redneck ritual vortex of rip-roarin back-40 galactivation. Come for some dirty n’ offensive ascension, ol’ fashion cosmic absurdity, and let’s Make Atlantis Great Again!",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 18:00",
+                    "tags": [
+                        "Music / Dance",
+                        "Game / Activity"
                     ]
                 },
                 {
@@ -4943,59 +4943,6 @@
                 {
                     "owner": "Fafway Village",
                     "ownerType": "camp",
-                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
-                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Friday",
-                    "startTime": "13:00",
-                    "endTime": "19:01",
-                    "durationHours": 6.02,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 19:01",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Fafway Village",
-                    "ownerType": "camp",
-                    "title": "Formal Friday Block Party",
-                    "description": "Formal Friday Block Party with The Fafffway Village & Cult-de-sac. 5-7pm: see you in your Friday best on F Street for our Glizzy Gala, Pickle Fountain, Cat Tree Portraits, Confession Concession, Captain’s Cocktail Hour, Casino of Many Things & more!",
-                    "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "19:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 19:00",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Food / Drink",
-                        "Performance / Show",
-                        "Music / Dance",
-                        "Game / Activity",
-                        "Alcohol Involved"
-                    ]
-                },
-                {
-                    "owner": "Fafway Village",
-                    "ownerType": "camp",
-                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
-                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
-                    "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "19:01",
-                    "durationHours": 6.02,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 19:01",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "The Fafffway Village",
-                    "ownerType": "camp",
                     "title": "Indugle Your Census",
                     "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
                     "day": "Thursday",
@@ -5011,7 +4958,7 @@
                     ]
                 },
                 {
-                    "owner": "The Fafffway Village",
+                    "owner": "Fafway Village",
                     "ownerType": "camp",
                     "title": "The Fafffway Village",
                     "description": "The Fafffway Village is a collection of camps providing service and entertainment to Otherworldians:Confession Concession, Indulge Your Census, Department Of Responsible Flailing (DORF), Pickle Fountain, Banana Ambassadors",
@@ -5031,7 +4978,7 @@
                     ]
                 },
                 {
-                    "owner": "The Fafffway Village",
+                    "owner": "Fafway Village",
                     "ownerType": "camp",
                     "title": "Indugle Your Census",
                     "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
@@ -5047,7 +4994,7 @@
                     ]
                 },
                 {
-                    "owner": "The Fafffway Village",
+                    "owner": "Fafway Village",
                     "ownerType": "camp",
                     "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
                     "description": "Indugle Your Census Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
@@ -5063,7 +5010,7 @@
                     ]
                 },
                 {
-                    "owner": "The Fafffway Village",
+                    "owner": "Fafway Village",
                     "ownerType": "camp",
                     "title": "Indugle Your Census",
                     "description": "Indugle Your Census: Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
@@ -6619,7 +6566,7 @@
             "type": "camp",
             "events": [
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Immersion",
                     "description": "Sound, Mind, Body with Dawn & Craig: A unique yoga & sound experience; a visceral journey through sound, movement & stillness. Flow, into Yin, ending with Yoga Nidra techniques & a deep Savasana, while Craig mixes electronic music, natural sounds, delta waves, & binaural beats live.",
@@ -6636,7 +6583,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Morning Metta (Loving Kindness) Guided Meditation",
                     "description": "Morning Metta (Loving Kindness) Guided Meditation: Come join others in a guided meditation to open your heart and share loving kindness with yourself and all beings. A great start to your day and lead up to yoga session immediately following.",
@@ -6652,7 +6599,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Noon Reboot",
                     "description": "Noon Reboot: Yoga Flow + Live DJ: FEEL BETTER FAST! Breathe, move, and ride a live DJ Gano wave as RaRa guides you from slow to strong to soft. Shake off the fog, ease aches, and return to your center. Come messy. Leave clear, grounded, and glowing - back to your knowing.",
@@ -6669,7 +6616,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Bling Your Shades Workshop",
                     "description": "Bling Your Shades Workshop: Pick new shades or bring your own to decorate and make them yours with sparkling gems, bling, and funky with one-of-a-kind style. Your shades. Your vibe. Your sparkle.",
@@ -6685,7 +6632,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Jerk Church",
                     "description": "Come repent for your weekend of sinful behaviour. There’ll be rowdy singin’, drinkin’ and carryon’ on. Bring your voices, your instruments and some sacramental booze to share. Hallelujah!",
@@ -6703,7 +6650,7 @@
                     ]
                 },
                 {
-                    "owner": "Jellyfish Longue",
+                    "owner": "Jellyfish Lounge",
                     "ownerType": "camp",
                     "title": "Discussion - Planning for Collapse",
                     "description": "Discussion about ways we can connect as a community outside of Otherworld to bring the 10 principles to life and create resilience in the face of Polycrisis",
@@ -10338,7 +10285,8 @@
                     ]
                 }
             ],
-            "claimed": false
+            "claimed": false,
+            "neighbourhood": "SPARK"
         },
         {
             "name": "Resonant Frequency",
@@ -15451,6 +15399,23 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
+                    "title": "Partner Strething & Thai Massage",
+                    "description": "Partner Strething & Thai Massage: This class will blend partner-assisted stretching with gentle Thai massage. 90min class (45min per partner). This class is touch-based so come ready to communicate with clarity and listen with care <3",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:30",
+                    "tags": [
+                        "Workshop / Class",
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Ironic Spin",
+                    "ownerType": "sound_stage",
                     "title": "Body Break w Jane-Dawnda!",
                     "description": "Body Break w Jane-Dawnda!: Get ready to werk-it out w Jane- Dawnda. 70s/80s workout —think Jamie Lee Curtis moves, big beats & lots of sass. Dress bold, shake dat booty & win prizes! Live DJ set. All the cool kids are doing it! Just do it. Xo",
                     "day": "Saturday",
@@ -17684,6 +17649,66 @@
             ],
             "neighbourhood": "ROAMING",
             "claimed": false
+        },
+        {
+            "name": "Faffway Village",
+            "type": "camp",
+            "events": [
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
+                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "19:01",
+                    "durationHours": 6.02,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 19:01",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Formal Friday Block Party",
+                    "description": "Formal Friday Block Party with The Fafffway Village & Cult-de-sac. 5-7pm: see you in your Friday best on F Street for our Glizzy Gala, Pickle Fountain, Cat Tree Portraits, Confession Concession, Captain’s Cocktail Hour, Casino of Many Things & more!",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "19:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 19:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Food / Drink",
+                        "Performance / Show",
+                        "Music / Dance",
+                        "Game / Activity",
+                        "Alcohol Involved"
+                    ]
+                },
+                {
+                    "owner": "Faffway Village",
+                    "ownerType": "camp",
+                    "title": "Indugle Your Census Thought- provoking questions, daily Oral Administration",
+                    "description": "form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "19:01",
+                    "durationHours": 6.02,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 19:01",
+                    "tags": [
+                        "Game / Activity"
+                    ]
+                }
+            ],
+            "neighbourhood": "SMOLDER"
         }
     ],
     "unassignedEvents": []
