@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 267,
-        "eventCount": 989,
+        "eventCount": 988,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 201,
-            "camp_events": 934,
+            "camp_events": 933,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -5631,19 +5631,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 15:33 - 16:44"
-                },
-                {
-                    "owner": "Flamingo camp",
-                    "ownerType": "camp",
-                    "title": "Spill the Tea",
-                    "description": "Write down the gossip, confession, or secret you’ve always wanted to say out loud and place it in the lockbox — all entries remain anonymous and burned at a later date. Sip on Sweet tea (bourbon optional) while we laugh, release, and let the drama go!",
-                    "day": "Saturday",
-                    "startTime": "01:00",
-                    "endTime": "02:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 01:00 - 02:00"
                 },
                 {
                     "owner": "Flamingo camp",
@@ -16056,7 +16043,7 @@
             "name": "CERN in the Forest",
             "type": "art_installation",
             "events": [],
-            "claimed": false
+            "claimed": true
         },
         {
             "name": "Chairished moments: the sanctuary of sit",
@@ -17708,7 +17695,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SMOLDER"
+            "neighbourhood": "SMOLDER",
+            "claimed": false
         }
     ],
     "unassignedEvents": []
