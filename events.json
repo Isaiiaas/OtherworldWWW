@@ -4280,7 +4280,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Jetane: Deep & Cosmic Balearic Electronica",
-                    "description": "",
+                    "description": "Electric Circus Lounge's Vision Director & Chief Builder - Both DJ & VJ for Electric Circus, join Jetane as he carrys us through the night with a cosmic soundtrack to dance underside the tent with curated visuals.",
                     "day": "Sunday",
                     "startTime": "00:30",
                     "endTime": "02:00",
@@ -4371,7 +4371,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Jetane: Uplifting House",
-                    "description": "",
+                    "description": "Electric Circus Lounge's Vision Director & Chief Builder steps up to provide a soundtrack as we enjoy the last rays of sunlight and head towards the night.",
                     "day": "Friday",
                     "startTime": "20:30",
                     "endTime": "22:00",
@@ -16186,19 +16186,6 @@
                     "ownerType": "art_installation",
                     "title": "A shoes on PLounge by Picnic Party",
                     "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
-                    "day": "Friday",
-                    "startTime": "06:00",
-                    "endTime": "06:00",
-                    "durationHours": 24,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 06:00 - 06:00"
-                },
-                {
-                    "owner": "MOUTH",
-                    "ownerType": "art_installation",
-                    "title": "A shoes on PLounge by Picnic Party",
-                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
                     "day": "Saturday",
                     "startTime": "06:00",
                     "endTime": "06:00",
@@ -16245,6 +16232,19 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Monday 06:00 - 09:00"
+                },
+                {
+                    "owner": "MOUTH",
+                    "ownerType": "art_installation",
+                    "title": "A Shoes on PLounge by Picnic Party",
+                    "description": "Find Mouth👄 Keep your shoes on👄 Enter Mouth💋",
+                    "day": "Friday",
+                    "startTime": "06:00",
+                    "endTime": "06:00",
+                    "durationHours": 24,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 06:00 - 06:00"
                 }
             ],
             "claimed": true
