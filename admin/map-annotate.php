@@ -9,6 +9,8 @@
  */
 declare(strict_types=1);
 
+require __DIR__ . '/require-local.php';
+
 $rootDir       = dirname(__DIR__);
 $eventsPath    = $rootDir . '/events.json';
 $locationsPath = $rootDir . '/map-locations.json';
@@ -72,7 +74,7 @@ $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES;
       color: var(--ink);
       overflow: hidden;
     }
-    .app { display: grid; grid-template-columns: 320px 1fr; height: 100vh; }
+    .app { display: grid; grid-template-columns: 320px 1fr; grid-template-rows: 100vh; height: 100vh; }
 
     /* Sidebar */
     aside {
@@ -205,13 +207,32 @@ $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES;
     .sb-admin .log.ok { color: var(--ok); border-color: rgba(108, 223, 142, 0.35); }
     .sb-item {
       display: grid;
-      grid-template-columns: 14px 1fr auto;
+      grid-template-columns: 14px 1fr auto auto;
       gap: 8px;
       align-items: center;
       padding: 6px 14px;
       cursor: pointer;
       font-size: 12.5px;
       border-left: 3px solid transparent;
+    }
+    .sb-item .rm-pin {
+      background: transparent;
+      color: var(--ink-dim);
+      border: 0;
+      font-size: 15px;
+      line-height: 1;
+      padding: 2px 6px;
+      cursor: pointer;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.12s, background 0.12s, color 0.12s;
+    }
+    .sb-item:hover .rm-pin,
+    .sb-item.selected .rm-pin { opacity: 0.7; }
+    .sb-item .rm-pin:hover {
+      opacity: 1;
+      background: rgba(227, 93, 106, 0.18);
+      color: var(--danger);
     }
     .sb-item:hover { background: var(--panel-2); }
     .sb-item.selected {
@@ -309,6 +330,46 @@ $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES;
       max-width: 200px;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    /* Pin hover tooltip (positioned in `main`, not `.canvas`, so it isn't
+       scaled by the zoom transform). */
+    .pin-tooltip {
+      position: absolute;
+      z-index: 20;
+      background: rgba(15, 26, 31, 0.96);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 9px;
+      font-size: 12px;
+      color: var(--ink);
+      pointer-events: none;
+      max-width: 280px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+      opacity: 0;
+      transform: translateY(2px);
+      transition: opacity 0.12s, transform 0.12s;
+      display: none;
+    }
+    .pin-tooltip.show { opacity: 1; transform: translateY(0); }
+    .pin-tooltip[data-status="confirmed"] { border-color: var(--ok); }
+    .pin-tooltip[data-status="verified"]  { border-color: var(--ok); }
+    .pin-tooltip[data-status="qa-wrong"]  { border-color: var(--danger); }
+    .pin-tooltip .tt-name { font-weight: 600; margin-bottom: 2px; }
+    .pin-tooltip .tt-meta {
+      font-size: 10.5px;
+      color: var(--ink-dim);
+      font-family: ui-monospace, Menlo, monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .pin-tooltip .tt-evidence {
+      margin-top: 5px;
+      padding-top: 5px;
+      border-top: 1px solid var(--line);
+      font-size: 11px;
+      color: var(--ink-mid);
+      line-height: 1.35;
     }
 
     /* Toolbar */
@@ -418,9 +479,12 @@ $jsonFlags = JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES;
     <div class="canvas" id="canvas">
       <img id="mapImg" alt="map" src="<?= htmlspecialchars($mapImgUrl, ENT_QUOTES) ?>">
     </div>
+    <div class="pin-tooltip" id="pinTooltip" role="tooltip"></div>
     <div class="help">
       Click a sidebar entry, then click on the map to drop a pin. Drag pins to refine.
-      Right-click a pin to delete. <kbd>Esc</kbd> deselect. <kbd>Space</kbd>+drag to pan, scroll to zoom.
+      Delete pins by right-clicking, the <kbd>×</kbd> in the sidebar, or <kbd>Del</kbd> when selected.
+      <kbd>Esc</kbd> deselect. <kbd>Space</kbd>+drag to pan, scroll to zoom.
+      <kbd>⌘Z</kbd>/<kbd>Ctrl+Z</kbd> undoes the last place/move/delete.
       Auto-saves every 8s when there are unsaved changes; <kbd>⌘S</kbd> saves now.
     </div>
   </main>
@@ -436,6 +500,7 @@ window.INITIAL = {
 <script>
 const SAVE_URL = 'save-pins.php';
 const AUTOSAVE_MS = 8000;
+const UNDO_MAX = 50;
 
 const state = {
   pageWidth: INITIAL.locations.pageWidth || 1,
@@ -455,6 +520,7 @@ const state = {
   saving: false,
   lastSavedAt: null,
   saveTimer: null,
+  undoStack: [],
 };
 
 const els = {
@@ -481,6 +547,7 @@ const els = {
   resetBtn: document.getElementById('resetBtn'),
   deleteMapBtn: document.getElementById('deleteMapBtn'),
   adminLog: document.getElementById('adminLog'),
+  pinTooltip: document.getElementById('pinTooltip'),
 };
 
 const WANTED_TYPES = new Set(['camp', 'sound_stage', 'art_installation']);
@@ -531,6 +598,41 @@ function onImageReady() {
 function markDirty() {
   state.dirty = true;
   updateSaveStatus();
+}
+
+// ---------- undo ----------
+// Snapshot-based: before each mutation (place / move / delete) we copy
+// the full pin map onto a stack. Cmd/Ctrl+Z pops and restores.
+
+function pushUndo() {
+  const snap = [];
+  for (const [name, p] of state.pins) snap.push([name, { ...p }]);
+  state.undoStack.push(snap);
+  if (state.undoStack.length > UNDO_MAX) state.undoStack.shift();
+}
+
+function undo() {
+  if (!state.undoStack.length) {
+    flashSaveStatus('nothing to undo');
+    return;
+  }
+  const snap = state.undoStack.pop();
+  state.pins = new Map(snap);
+  // If the currently-selected entry's pin no longer exists, leave the
+  // selection alone — user might want to re-place it.
+  markDirty();
+  renderList();
+  renderPins();
+  updateStats();
+  flashSaveStatus(state.undoStack.length
+    ? `undid (${state.undoStack.length} more)`
+    : 'undid');
+}
+
+function flashSaveStatus(text) {
+  updateSaveStatus({ kind: 'dirty', text });
+  // Restore the standard label shortly after.
+  setTimeout(updateSaveStatus, 1200);
 }
 
 function updateStats() {
@@ -614,12 +716,20 @@ function renderList() {
     if (p && p.verified) row.classList.add('verified');
     if (p && p.qaWrong) row.classList.add('qa-wrong');
     if (e.name === state.selectedName) row.classList.add('selected');
+    const hasPin = !!p;
     row.innerHTML = `
       <div class="dot"></div>
       <div class="name" title="${escapeAttr(e.name)}">${escapeHtml(e.name)}</div>
       <div class="type-tag">${TYPE_LABEL[e.type]}</div>
+      ${hasPin ? `<button class="rm-pin" title="Delete pin (Del)" aria-label="Delete pin for ${escapeAttr(e.name)}">×</button>` : ''}
     `;
     row.addEventListener('click', () => selectEntry(e.name));
+    if (hasPin) {
+      row.querySelector('.rm-pin').addEventListener('click', ev => {
+        ev.stopPropagation();
+        deletePin(e.name);
+      });
+    }
     els.list.appendChild(row);
   }
 }
@@ -652,18 +762,83 @@ function renderPins() {
     pin.dataset.type = p.type;
     pin.style.left = (p.x * state.img.w) + 'px';
     pin.style.top = (p.y * state.img.h) + 'px';
-    const tags = [];
-    if (p.confirmed) tags.push('confirmed');
-    else if (p.qaWrong) tags.push('QA flagged WRONG');
-    else if (p.verified) tags.push('QA verified');
-    else tags.push('suggested');
-    if (p.confidence != null) tags.push('conf ' + (p.confidence).toFixed(2));
-    pin.title = name + ' — ' + tags.join(' · ') + (p.qaEvidence ? `\nQA: ${p.qaEvidence}` : '');
     pin.addEventListener('mousedown', e => startPinDrag(e, name));
     pin.addEventListener('contextmenu', e => { e.preventDefault(); deletePin(name); });
     pin.addEventListener('click', e => { e.stopPropagation(); selectEntry(name); });
+    pin.addEventListener('mouseenter', () => showPinTooltip(name, pin));
+    pin.addEventListener('mouseleave', hidePinTooltip);
     els.canvas.appendChild(pin);
   }
+}
+
+function showPinTooltip(name, pinEl) {
+  const p = state.pins.get(name);
+  if (!p) return;
+  const t = els.pinTooltip;
+
+  let status, statusLabel;
+  if (p.qaWrong)        { status = 'qa-wrong';  statusLabel = 'QA flagged wrong'; }
+  else if (p.confirmed) { status = 'confirmed'; statusLabel = 'Confirmed'; }
+  else if (p.verified)  { status = 'verified';  statusLabel = 'QA verified'; }
+  else                  { status = 'suggested'; statusLabel = 'Suggested'; }
+
+  const meta = [TYPE_LABEL[p.type] || p.type, statusLabel];
+  if (p.confidence != null) meta.push('conf ' + p.confidence.toFixed(2));
+
+  const evidence = p.qaEvidence
+    ? 'QA: ' + p.qaEvidence
+    : (p.matchedText || '');
+
+  t.dataset.status = status;
+  t.innerHTML = '';
+  const nameEl = document.createElement('div');
+  nameEl.className = 'tt-name';
+  nameEl.textContent = name;
+  t.appendChild(nameEl);
+  const metaEl = document.createElement('div');
+  metaEl.className = 'tt-meta';
+  metaEl.textContent = meta.join(' · ');
+  t.appendChild(metaEl);
+  if (evidence) {
+    const evEl = document.createElement('div');
+    evEl.className = 'tt-evidence';
+    evEl.textContent = evidence;
+    t.appendChild(evEl);
+  }
+
+  // Make it measurable, then position it relative to the main pane (the
+  // tooltip is a sibling of .canvas, so use pin's screen coords and offset).
+  t.style.display = 'block';
+  const pinRect  = pinEl.getBoundingClientRect();
+  const mainRect = els.main.getBoundingClientRect();
+  const ttRect   = t.getBoundingClientRect();
+
+  let left = pinRect.left - mainRect.left + pinRect.width / 2 - ttRect.width / 2;
+  let top  = pinRect.top  - mainRect.top  - ttRect.height - 10;
+
+  // Clamp horizontally.
+  const margin = 6;
+  if (left < margin) left = margin;
+  if (left + ttRect.width > mainRect.width - margin) {
+    left = mainRect.width - margin - ttRect.width;
+  }
+  // Flip below the pin if there isn't room above.
+  if (top < margin) top = pinRect.bottom - mainRect.top + 10;
+
+  t.style.left = left + 'px';
+  t.style.top  = top  + 'px';
+  // Next frame so transition fires.
+  requestAnimationFrame(() => t.classList.add('show'));
+}
+
+function hidePinTooltip() {
+  const t = els.pinTooltip;
+  t.classList.remove('show');
+  // Wait for fade-out, then take it out of layout so it doesn't affect
+  // future measurements at a stale position.
+  setTimeout(() => {
+    if (!t.classList.contains('show')) t.style.display = 'none';
+  }, 140);
 }
 
 function renderLabels() {
@@ -721,8 +896,10 @@ function centerOn(normX, normY) {
 function startPinDrag(e, name) {
   e.preventDefault();
   e.stopPropagation();
+  pushUndo();
   state.draggingPin = name;
   state.selectedName = name;
+  hidePinTooltip();
   els.main.classList.add('dragging');
   renderList();
   renderPins();
@@ -730,6 +907,7 @@ function startPinDrag(e, name) {
 
 function deletePin(name) {
   if (!confirm(`Delete pin for "${name}"?`)) return;
+  pushUndo();
   state.pins.delete(name);
   markDirty();
   renderList();
@@ -749,6 +927,7 @@ function placePinAt(clientX, clientY) {
   if (nx < 0 || nx > 1 || ny < 0 || ny > 1) return;
   const entry = state.entries.find(e => e.name === state.selectedName);
   if (!entry) return;
+  pushUndo();
   state.pins.set(state.selectedName, {
     x: round(nx), y: round(ny),
     type: entry.type, confirmed: true,
@@ -791,6 +970,9 @@ function bindEvents() {
     if (e.target.closest('.pin')) return;
     if (e.target.closest('.toolbar')) return;
     if (e.target.closest('.help')) return;
+    // Don't drop a pin if the user was panning (held Space, or middle-mouse
+    // pan); the click is the tail of a pan gesture, not a placement.
+    if (state.spaceDown || state.justPanned) return;
     placePinAt(e.clientX, e.clientY);
   });
 
@@ -823,9 +1005,16 @@ function bindEvents() {
       updateStats();
       renderList();
     }
+    if (state.panning) {
+      // The browser fires a 'click' after mouseup; mark it so the click
+      // handler can skip placePinAt (covers the case where Space was
+      // released between mousedown and mouseup).
+      state.justPanned = true;
+    }
     state.panning = false;
   });
   els.main.addEventListener('mousedown', e => {
+    state.justPanned = false;
     if (e.target.closest('.pin')) return;
     if (e.button === 1 || state.spaceDown) {
       e.preventDefault();
@@ -852,9 +1041,19 @@ function bindEvents() {
       renderList();
       renderPins();
     }
+    if ((e.key === 'Delete' || e.key === 'Backspace') && !inField && state.selectedName) {
+      if (state.pins.has(state.selectedName)) {
+        e.preventDefault();
+        deletePin(state.selectedName);
+      }
+    }
     if ((e.key === 's' || e.key === 'S') && (e.metaKey || e.ctrlKey)) {
       e.preventDefault();
       if (state.dirty && !state.saving) saveToServer();
+    }
+    if ((e.key === 'z' || e.key === 'Z') && (e.metaKey || e.ctrlKey) && !e.shiftKey && !inField) {
+      e.preventDefault();
+      undo();
     }
   });
   window.addEventListener('keyup', e => {
