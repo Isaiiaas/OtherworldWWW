@@ -201,13 +201,14 @@ foreach ($claims as $name => $_) {
 
 // ── Reconcile ─────────────────────────────────────────────────────────────
 $summary = [
-    'sheet_rows_seen'   => count($dataRows),
-    'skipped'           => $skipped,
-    'unclaimed_updated' => [],
-    'unclaimed_cleared' => [],
-    'claimed_preserved' => [],
-    'added'             => [],
-    'fuzzy_matches'     => [], // surface these so a human can sanity-check merges
+    'sheet_rows_seen'    => count($dataRows),
+    'skipped'            => $skipped,
+    'unclaimed_updated'  => [],
+    'unclaimed_cleared'  => [],
+    'claimed_preserved'  => [],
+    'added'              => [],
+    'fuzzy_matches'      => [], // surface these so a human can sanity-check merges
+    'within_camp_dedupes'=> [], // sheet had >1 row that collapsed to the same event_key()
 ];
 
 // First pass: exact-canonical matches between entries and sheet groups. We do
@@ -294,6 +295,15 @@ foreach ($bySheet as $key => $group) {
     }
     foreach ($group['rows'] as $r) {
         $newEntry['events'][] = build_event($r, $headerIndex, $TAG_COLUMNS, $group['displayName'], 'camp');
+    }
+    // Same within-camp dedup as apply_sheet_group(), for brand-new entries
+    // coming straight from the sheet.
+    $dropped = dedup_events_in_place($newEntry['events']);
+    if ($dropped > 0) {
+        $summary['within_camp_dedupes'][] = [
+            'name'    => $newEntry['name'],
+            'dropped' => $dropped,
+        ];
     }
     $events['entries'][] = $newEntry;
     $summary['added'][] = ['name' => $group['displayName'], 'event_count' => count($newEntry['events'])];
@@ -391,6 +401,54 @@ function canonical(string $name): string {
 }
 
 /**
+ * Like canonical() but tuned for free-text fields (event titles): no
+ * "the"/"camp" stripping. Folds `&` <-> `and` and possessive `'s` so
+ * "Get Nailed & Stamped" / "Get Nailed and Stamped" and
+ * "Dommy UMAMI Nood Takeover" / "Dommy U-MAMI's Nood Takeover" hash equal.
+ * Kept in sync with changelog.php and scripts/dedupe-events.php.
+ */
+function canonical_text(string $s): string {
+    $s = trim($s);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    // Order matters: expand `&` to ` and ` first, drop possessive `'s` next,
+    // then drop the bare conjunction `and` (which now eats both originals
+    // and conversions).
+    $s = str_replace('&', ' and ', $s);
+    $s = preg_replace("/'s\b/", '', $s);
+    $s = preg_replace('/\band\b/', '', $s);
+    return (string)preg_replace('/[^a-z0-9]+/', '', $s);
+}
+
+/**
+ * Normalise day-of-week so "Mon"/"Monday"/"mon" all hash equal. Leaves
+ * unrecognised / empty values as the lowercased-trimmed input.
+ */
+function canonical_day(string $d): string {
+    $d = strtolower(trim($d));
+    static $map = [
+        'mon' => 'monday',    'monday'    => 'monday',
+        'tue' => 'tuesday',   'tues'      => 'tuesday',  'tuesday'   => 'tuesday',
+        'wed' => 'wednesday', 'weds'      => 'wednesday','wednesday' => 'wednesday',
+        'thu' => 'thursday',  'thur'      => 'thursday', 'thurs'     => 'thursday', 'thursday' => 'thursday',
+        'fri' => 'friday',    'friday'    => 'friday',
+        'sat' => 'saturday',  'saturday'  => 'saturday',
+        'sun' => 'sunday',    'sunday'    => 'sunday',
+    ];
+    return $map[$d] ?? $d;
+}
+
+/**
  * Returns the closest key in $haystack to $needle within an edit-distance
  * threshold scaled by length, or null if no candidate is close enough. Both
  * sides should already be canonicalised by {@see canonical()}.
@@ -452,14 +510,57 @@ function apply_sheet_group(array &$entry, array $group, array $headerIndex, arra
     }
     $oldCount = count($entry['events'] ?? []);
     $entry['events'] = $newEvents;
+
+    // Within-camp dedup: if the sheet itself has duplicates that share
+    // (canonical title, canonical day, startTime), keep only the first row.
+    // The sheet is the source of truth for unclaimed camps — if it has
+    // dupes they were going to render badly anyway. Phase 3 safety net.
+    $dropped = dedup_events_in_place($entry['events']);
+    if ($dropped > 0) {
+        $summary['within_camp_dedupes'][] = [
+            'name'    => $entry['name'],
+            'dropped' => $dropped,
+        ];
+    }
+
     if ($group['neighbourhood'] !== '') {
         $entry['neighbourhood'] = $group['neighbourhood'];
     }
     $summary['unclaimed_updated'][] = [
         'name'            => $entry['name'],
         'old_event_count' => $oldCount,
-        'new_event_count' => count($newEvents),
+        'new_event_count' => count($entry['events']),
     ];
+}
+
+/**
+ * Collapse duplicate events inside a single camp by event_key(). Modifies
+ * the array in place (preserving the first occurrence per key) and returns
+ * the number of rows dropped.
+ */
+function dedup_events_in_place(array &$events): int {
+    $seen = [];
+    $kept = [];
+    $dropped = 0;
+    foreach ($events as $ev) {
+        $k = canonical_text((string)($ev['title'] ?? '')) . '|'
+           . canonical_day((string)($ev['day'] ?? '')) . '|'
+           . trim((string)($ev['startTime'] ?? ''));
+        // Skip dedup when the candidate key is degenerate (no title) so a
+        // batch of empty-title rows doesn't all collapse into one.
+        if (strncmp($k, '|', 1) === 0) {
+            $kept[] = $ev;
+            continue;
+        }
+        if (isset($seen[$k])) {
+            $dropped++;
+            continue;
+        }
+        $seen[$k] = true;
+        $kept[] = $ev;
+    }
+    $events = $kept;
+    return $dropped;
 }
 
 function build_event(array $row, array $headerIndex, array $tagColumns, string $owner, string $ownerType): array {
@@ -576,7 +677,7 @@ function build_changes_log(array $beforeEntries, array $afterEntries, array $cla
  * order so adding a new occurrence reads as 'added', not as 'modified'.
  */
 function diff_events(array $before, array $after): array {
-    $key = static fn(array $e) => strtolower(trim((string)($e['title'] ?? ''))) . '|' . strtolower(trim((string)($e['day'] ?? '')));
+    $key = static fn(array $e) => canonical_text((string)($e['title'] ?? '')) . '|' . canonical_day((string)($e['day'] ?? ''));
 
     $beforeQ = []; $afterQ = [];
     foreach ($before as $e) $beforeQ[$key($e)][] = $e;

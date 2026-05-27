@@ -46,7 +46,7 @@ function load_alias_map(string $path): array {
 
 function event_key(array $e): string {
     return canonical_text((string)($e['title'] ?? '')) . '|'
-         . strtolower(trim((string)($e['day'] ?? ''))) . '|'
+         . canonical_day((string)($e['day'] ?? '')) . '|'
          . trim((string)($e['startTime'] ?? ''));
 }
 
@@ -69,7 +69,32 @@ function canonical_text(string $s): string {
             if (is_string($t) && $t !== '') $s = $t;
         }
     }
+    // Fold `&` <-> `and` and possessive `'s` so "Get Nailed & Stamped" /
+    // "Get Nailed and Stamped" hash equal. Order matters: expand `&` to
+    // ` and ` first, drop possessive `'s` next, then drop the bare
+    // conjunction `and` (which now eats both originals and conversions).
+    $s = str_replace('&', ' and ', $s);
+    $s = preg_replace("/'s\b/", '', $s);
+    $s = preg_replace('/\band\b/', '', $s);
     return (string)preg_replace('/[^a-z0-9]+/', '', $s);
+}
+
+/**
+ * Normalise day-of-week so "Mon"/"Monday"/"mon" all hash equal. Leaves
+ * unrecognised / empty values as the lowercased-trimmed input.
+ */
+function canonical_day(string $d): string {
+    $d = strtolower(trim($d));
+    static $map = [
+        'mon' => 'monday',    'monday'    => 'monday',
+        'tue' => 'tuesday',   'tues'      => 'tuesday',  'tuesday'   => 'tuesday',
+        'wed' => 'wednesday', 'weds'      => 'wednesday','wednesday' => 'wednesday',
+        'thu' => 'thursday',  'thur'      => 'thursday', 'thurs'     => 'thursday', 'thursday' => 'thursday',
+        'fri' => 'friday',    'friday'    => 'friday',
+        'sat' => 'saturday',  'saturday'  => 'saturday',
+        'sun' => 'sunday',    'sunday'    => 'sunday',
+    ];
+    return $map[$d] ?? $d;
 }
 
 /**

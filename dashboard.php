@@ -80,6 +80,116 @@ function save_claims(array $claims): void {
 }
 
 /**
+ * Like canonical() but tuned for free-text fields (event titles): no
+ * "the"/"camp" stripping. Folds `&` <-> `and` and possessive `'s` so
+ * "Get Nailed & Stamped" / "Get Nailed and Stamped" hash equal. Kept in
+ * sync with admin/reconcile-sheet.php, changelog.php, and
+ * scripts/dedupe-events.php — update all four if the rules change.
+ */
+function canonical_text(string $s): string {
+    $s = trim($s);
+    if ($s === '') return '';
+    if (function_exists('transliterator_transliterate')) {
+        $t = @transliterator_transliterate('Any-Latin; Latin-ASCII; Lower()', $s);
+        if (is_string($t)) $s = $t;
+        else $s = strtolower($s);
+    } else {
+        $s = strtolower($s);
+        if (function_exists('iconv')) {
+            $t = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $s);
+            if (is_string($t) && $t !== '') $s = $t;
+        }
+    }
+    // Order matters: expand `&` to ` and ` first, drop possessive `'s` next,
+    // then drop the bare conjunction `and` (which now eats both originals
+    // and conversions).
+    $s = str_replace('&', ' and ', $s);
+    $s = preg_replace("/'s\b/", '', $s);
+    $s = preg_replace('/\band\b/', '', $s);
+    return (string)preg_replace('/[^a-z0-9]+/', '', $s);
+}
+
+/**
+ * Normalise day-of-week so "Mon"/"Monday"/"mon" all hash equal. Kept in
+ * sync with admin/reconcile-sheet.php and scripts/dedupe-events.php.
+ */
+function canonical_day(string $d): string {
+    $d = strtolower(trim($d));
+    static $map = [
+        'mon' => 'monday',    'monday'    => 'monday',
+        'tue' => 'tuesday',   'tues'      => 'tuesday',  'tuesday'   => 'tuesday',
+        'wed' => 'wednesday', 'weds'      => 'wednesday','wednesday' => 'wednesday',
+        'thu' => 'thursday',  'thur'      => 'thursday', 'thurs'     => 'thursday', 'thursday' => 'thursday',
+        'fri' => 'friday',    'friday'    => 'friday',
+        'sat' => 'saturday',  'saturday'  => 'saturday',
+        'sun' => 'sunday',    'sunday'    => 'sunday',
+    ];
+    return $map[$d] ?? $d;
+}
+
+/**
+ * Within-camp dedup key for an event. Mirrors scripts/dedupe-events.php so a
+ * dashboard add/edit collides on the same key the cleanup script would have
+ * used. (title, day, startTime) — endTime intentionally excluded so a typo
+ * in end time doesn't let an obvious duplicate slip through.
+ */
+function event_key(array $e): string {
+    return canonical_text((string)($e['title'] ?? '')) . '|'
+         . canonical_day((string)($e['day'] ?? '')) . '|'
+         . trim((string)($e['startTime'] ?? ''));
+}
+
+/**
+ * Search $existing for an event whose event_key() matches $candidate. Returns
+ * the colliding event (with its index added as `_idx`) or null if none. If
+ * $skipIdx is non-null, that index is excluded (used by edit_event so a row
+ * doesn't self-collide).
+ */
+function find_duplicate_event(array $existing, array $candidate, ?int $skipIdx): ?array {
+    $target = event_key($candidate);
+    // Skip when the candidate has no canonical title (e.g. punctuation-only)
+    // so we don't collide against existing rows that also canonicalise empty.
+    if (strncmp($target, '|', 1) === 0) return null;
+    foreach ($existing as $i => $ev) {
+        if ($skipIdx !== null && $i === $skipIdx) continue;
+        if (event_key((array)$ev) === $target) {
+            $hit = (array)$ev;
+            $hit['_idx'] = $i;
+            return $hit;
+        }
+    }
+    return null;
+}
+
+/**
+ * Flash an "error with retry button" message. We stash the submitted form
+ * values in the session so the rendering layer can build a hidden re-submit
+ * form with `force_duplicate=1` — letting the camp owner say "yes I really
+ * do want two events with the same title/day/start-time".
+ */
+function flash_duplicate_warning(array $dupe, array $post): void {
+    $existingTitle = (string)($dupe['title'] ?? '(untitled)');
+    $day           = (string)($dupe['day'] ?? '');
+    $startTime     = (string)($dupe['startTime'] ?? '');
+    $msg = 'Looks like a duplicate of an existing event: "'
+         . $existingTitle . '" on ' . $day . ' at ' . $startTime
+         . '. Submit again with the "Allow duplicate" button if this is intentional.';
+    // Stash the form payload so the page can offer a one-click re-submit.
+    // We only keep known event fields — never the CSRF token or arbitrary
+    // extras — and the next request consumes/clears it via read_flashes().
+    $retry = [];
+    foreach (['action', 'event_index', 'title', 'description',
+              'startDay', 'endDay', 'startTime', 'endTime'] as $k) {
+        if (isset($post[$k])) $retry[$k] = (string)$post[$k];
+    }
+    $_SESSION['flash'][] = [
+        'type'  => 'err',
+        'msg'   => $msg,
+        'retry' => $retry,
+    ];
+}
+
+/**
  * Mirror of admin/reconcile-sheet.php::canonical(). Used for claim lookups
  * via the alias map so that a claim made under a typo'd name (e.g.,
  * "Electric Circus Lounge") still unlocks the canonical entry ("Electric
@@ -526,12 +636,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif ($msg = validate_event_input($_POST, $DAYS)) {
             flash('err', $msg);
         } else {
-            $type = $data['entries'][$idx]['type'] ?? 'camp';
-            $ev   = normalize_event($_POST, $type);
+            $type  = $data['entries'][$idx]['type'] ?? 'camp';
+            $ev    = normalize_event($_POST, $type);
             $ev['owner'] = $camp;
-            $data['entries'][$idx]['events'][] = $ev;
-            save_events($data);
-            flash('ok', 'Event added.');
+            $force = !empty($_POST['force_duplicate']) || !empty($_GET['force_duplicate']);
+            $dupe  = $force ? null : find_duplicate_event($data['entries'][$idx]['events'] ?? [], $ev, null);
+            if ($dupe !== null) {
+                flash_duplicate_warning($dupe, $_POST);
+            } else {
+                $data['entries'][$idx]['events'][] = $ev;
+                save_events($data);
+                flash('ok', 'Event added.');
+            }
         }
         redirect_self();
     }
@@ -547,12 +663,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif ($msg = validate_event_input($_POST, $DAYS)) {
             flash('err', $msg);
         } else {
-            $type = $data['entries'][$idx]['type'] ?? 'camp';
-            $ev   = normalize_event($_POST, $type);
+            $type  = $data['entries'][$idx]['type'] ?? 'camp';
+            $ev    = normalize_event($_POST, $type);
             $ev['owner'] = $camp;
-            $data['entries'][$idx]['events'][$eventIdx] = $ev;
-            save_events($data);
-            flash('ok', 'Event updated.');
+            $force = !empty($_POST['force_duplicate']) || !empty($_GET['force_duplicate']);
+            // Exclude the row being edited so a no-op title change doesn't
+            // self-collide.
+            $dupe  = $force ? null : find_duplicate_event($data['entries'][$idx]['events'] ?? [], $ev, (int)$eventIdx);
+            if ($dupe !== null) {
+                flash_duplicate_warning($dupe, $_POST);
+            } else {
+                $data['entries'][$idx]['events'][$eventIdx] = $ev;
+                save_events($data);
+                flash('ok', 'Event updated.');
+            }
         }
         redirect_self();
     }
@@ -943,7 +1067,19 @@ $claimCooldownTxt = $claimCooldown > 0 ? format_remaining($claimCooldown) : '';
 <main>
 
   <?php foreach ($flashes as $f): ?>
-    <div class="flash <?= h($f['type']) ?>"><?= h($f['msg']) ?></div>
+    <div class="flash <?= h($f['type']) ?>">
+      <?= h($f['msg']) ?>
+      <?php if (!empty($f['retry']) && is_array($f['retry'])): ?>
+        <form method="post" style="margin-top:10px;">
+          <input type="hidden" name="csrf" value="<?= h(csrf_token()) ?>">
+          <input type="hidden" name="force_duplicate" value="1">
+          <?php foreach ($f['retry'] as $k => $v): ?>
+            <input type="hidden" name="<?= h((string)$k) ?>" value="<?= h((string)$v) ?>">
+          <?php endforeach; ?>
+          <button type="submit" class="primary">Submit anyway (allow duplicate)</button>
+        </form>
+      <?php endif; ?>
+    </div>
   <?php endforeach; ?>
 
   <?php if (!$authedCamp): ?>

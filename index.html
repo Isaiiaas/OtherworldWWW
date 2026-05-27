@@ -1815,13 +1815,41 @@
           const c = canonical(name);
           return aliasMap.get(c) || c;
         };
+        // Fold `&` <-> `and` and possessive `'s` so "Get Nailed & Stamped" /
+        // "Get Nailed and Stamped" and "Dommy UMAMI Nood Takeover" /
+        // "Dommy U-MAMI's Nood Takeover" produce the same key. Order
+        // matters: expand `&` to " and " first, drop possessive `'s` next,
+        // then drop the bare conjunction `and` (which now eats both
+        // originals and conversions).
         const canonicalText = s => {
           if (!s) return "";
-          return String(s).normalize("NFKD").replace(/[̀-ͯ]/g, "")
-                          .toLowerCase().replace(/[^a-z0-9]+/g, "");
+          let t = String(s).normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+          // Fold curly/typographic apostrophes to ASCII so titles like
+          // "Dommy U-MAMI’s Nood Takeover" (U+2019) match PHP's
+          // transliterator_transliterate output. Covers U+2018, U+2019, U+02BC.
+          t = t.replace(/[‘’ʼ]/g, "'");
+          t = t.replace(/&/g, " and ");
+          t = t.replace(/'s\b/g, "");
+          t = t.replace(/\band\b/g, "");
+          return t.replace(/[^a-z0-9]+/g, "");
+        };
+        // Normalise day-of-week so "Mon"/"Monday" hash equal; unrecognised
+        // values pass through as the lowercased-trimmed input.
+        const canonicalDay = d => {
+          const x = String(d || "").trim().toLowerCase();
+          const map = {
+            mon: "monday",    monday:    "monday",
+            tue: "tuesday",   tues:      "tuesday",  tuesday:   "tuesday",
+            wed: "wednesday", weds:      "wednesday",wednesday: "wednesday",
+            thu: "thursday",  thur:      "thursday", thurs:     "thursday", thursday: "thursday",
+            fri: "friday",    friday:    "friday",
+            sat: "saturday",  saturday:  "saturday",
+            sun: "sunday",    sunday:    "sunday",
+          };
+          return map[x] || x;
         };
         const evKey = e => canonicalText(e.title || "")
-                         + "|" + (e.day || "").trim().toLowerCase()
+                         + "|" + canonicalDay(e.day || "")
                          + "|" + (e.startTime || "").trim();
         const groups = new Map(); // canonicalKey -> array of {entry, index}
         data.entries.forEach((entry, index) => {
