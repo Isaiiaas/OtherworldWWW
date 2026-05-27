@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-27T00:02:02+00:00",
+        "lastReconciledAt": "2026-05-27T01:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -2130,8 +2130,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 14:00 - 15:00",
                     "tags": [
-                        "Food / Drink",
-                        "Music / Dance"
+                        "Food / Drink"
                     ]
                 },
                 {
@@ -2179,7 +2178,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 17:00 - 18:00",
                     "tags": [
-                        "Food / Drink"
+                        "Food / Drink",
+                        "Alcohol Involved"
                     ]
                 },
                 {
@@ -2259,7 +2259,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 11:00 - 12:00",
                     "tags": [
-                        "Workshop / Class"
+                        "Workshop / Class",
+                        "Interactive / Crafts"
                     ]
                 },
                 {
@@ -2275,6 +2276,7 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:00 - 13:00",
                     "tags": [
+                        "Performance / Show",
                         "Music / Dance"
                     ]
                 },
@@ -2306,7 +2308,9 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 13:00 - 14:00",
-                    "tags": []
+                    "tags": [
+                        "Performance / Show"
+                    ]
                 },
                 {
                     "owner": "Camp Who Says Ni",
@@ -2354,7 +2358,8 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 17:00 - 18:00",
                     "tags": [
-                        "Food / Drink"
+                        "Food / Drink",
+                        "Alcohol Involved"
                     ]
                 },
                 {
@@ -2401,7 +2406,9 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 19:00 - 20:00",
-                    "tags": []
+                    "tags": [
+                        "Food / Drink"
+                    ]
                 }
             ],
             "claimed": false,
