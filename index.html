@@ -947,6 +947,52 @@
       font-family: var(--font-sans);
     }
 
+    /* Location pill in the by-camp summary. Clickable when the camp has a
+       map pin (jumps to the Map tab focused on it); read-only chip when
+       only the spreadsheet's neighbourhood is known. */
+    .location-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font: inherit;
+      font-family: var(--font-sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(116, 220, 232, 0.14);
+      color: var(--type-art);
+      border: 1px solid rgba(116, 220, 232, 0.45);
+      white-space: nowrap;
+      max-width: 220px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    button.location-pill {
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    button.location-pill:hover {
+      background: rgba(116, 220, 232, 0.26);
+      border-color: rgba(116, 220, 232, 0.75);
+    }
+    .location-pill[data-kind="neighborhood"] {
+      background: rgba(255, 174, 90, 0.14);
+      color: var(--type-vehicle);
+      border-color: rgba(255, 174, 90, 0.45);
+    }
+    .location-pill .pin-icon { font-size: 11px; line-height: 1; }
+
+    .camp-location {
+      margin: 12px 0 6px;
+    }
+    .camp-location .map-preview {
+      max-width: 420px;
+      margin: 0;
+    }
+
     .event-card .owner .verified-pill {
       font-size: 9px;
       padding: 1px 6px;
@@ -2103,7 +2149,12 @@
         const view = document.getElementById("view");
         view.innerHTML = "";
 
-        const entries = DATA.entries.filter(entryMatchesFilters);
+        // Hide camps that have no events at all — they're noise on this view.
+        // Other types (art / stage / vehicle) often legitimately have no
+        // scheduled events but still belong here as locations.
+        const entries = DATA.entries
+          .filter(entryMatchesFilters)
+          .filter(e => e.type !== "camp" || (e.events && e.events.length > 0));
         if (entries.length === 0) {
           view.innerHTML = `<div class="empty-state">No entries match your filters.</div>`;
           return;
@@ -2142,7 +2193,57 @@
         `;
           block.querySelector(".name").textContent = entry.name;
 
+          // Location pill: clickable "Mapped" if this camp has a pin (jumps
+          // to the Map tab focused on it), or a read-only neighborhood pill
+          // if the spreadsheet has one. Inserted before the event count so
+          // it sits next to the type/verified pills.
+          const _entryPin = PIN_BY_NAME.get(entry.name);
+          if (_entryPin || entry.neighbourhood) {
+            const summary = block.querySelector("summary");
+            const countEl = summary.querySelector(".count");
+            const pill = document.createElement(_entryPin ? "button" : "span");
+            pill.className = "location-pill";
+            if (_entryPin) {
+              pill.type = "button";
+              pill.dataset.kind = "mapped";
+              pill.title = "Show on map";
+              pill.innerHTML = `<span class="pin-icon">📍</span><span>Mapped</span>`;
+              pill.addEventListener("click", e => {
+                e.preventDefault();
+                e.stopPropagation();
+                switchMode("map");
+                // Focus runs after the map view mounts in renderAll().
+                setTimeout(() => mapView.focusOn(_entryPin), 0);
+              });
+            } else {
+              pill.dataset.kind = "neighborhood";
+              pill.title = "Neighborhood from spreadsheet";
+              pill.innerHTML = `<span class="pin-icon">📍</span><span></span>`;
+              pill.querySelector("span:last-child").textContent = entry.neighbourhood;
+            }
+            summary.insertBefore(pill, countEl);
+          }
+
           const body = block.querySelector(".body");
+
+          // Lazy-render the map preview the first time the user expands
+          // this camp. Rendering ~200 previews up front would balloon the
+          // DOM and force a synchronous image-decode for every entry.
+          let _previewRendered = false;
+          const _renderPreview = () => {
+            if (_previewRendered || !block.open) return;
+            _previewRendered = true;
+            if (!_entryPin && !entry.neighbourhood) return; // nothing to show
+            const wrap = document.createElement("div");
+            wrap.className = "camp-location";
+            const preview = document.createElement("div");
+            preview.className = "map-preview";
+            wrap.appendChild(preview);
+            body.insertBefore(wrap, body.firstChild);
+            renderMapPreview(preview, entry);
+          };
+          if (block.open) _renderPreview();
+          else block.addEventListener("toggle", _renderPreview);
           if (events.length === 0) {
             const note = document.createElement("div");
             note.className = "camp-empty";
@@ -2234,13 +2335,21 @@
       function hideModal() { document.getElementById("modal-backdrop").classList.remove("open"); }
 
       function renderModalMapPreview(entry) {
-        const el = document.getElementById("m-map-preview");
+        renderMapPreview(document.getElementById("m-map-preview"), entry, { onOpen: hideModal });
+      }
+
+      // Generic map-preview renderer used by the event modal and the
+      // by-camp page. Renders the map image with a marker for the camp's
+      // pin; falls back to a styled neighborhood block if no pin is set;
+      // falls back to a plain "not mapped" line if neither exists.
+      function renderMapPreview(el, entry, opts) {
+        if (!el) return;
+        opts = opts || {};
         const pin = PIN_BY_NAME.get(entry.name);
         el.innerHTML = "";
+        el.classList.remove("loading");
         if (!pin) {
           el.classList.add("empty");
-          // Fall back to the neighborhood from the spreadsheet if the camp
-          // isn't pinned on the map yet.
           if (entry.neighbourhood) {
             const wrap = document.createElement("div");
             wrap.className = "neighborhood-fallback";
@@ -2285,7 +2394,7 @@
         hint.textContent = "Open map";
         el.appendChild(hint);
         el.onclick = () => {
-          hideModal();
+          if (opts.onOpen) opts.onOpen();
           switchMode("map");
           mapView.focusOn(pin);
         };
