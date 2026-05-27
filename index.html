@@ -1238,6 +1238,43 @@
       margin-top: 2px;
     }
 
+    /* Neighborhood polygon overlay in the map preview. SVG fills the
+       preview at the same aspect as the map; viewBox 0..1 lets us use
+       the stored normalized coords directly. */
+    .map-preview .neighborhood-overlay {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .map-preview .neighborhood-poly {
+      fill: rgba(255, 174, 90, 0.32);
+      stroke: var(--amber, #ffae5a);
+      stroke-width: 3;
+      vector-effect: non-scaling-stroke;
+    }
+    .map-preview .neighborhood-overlay-label {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      padding: 3px 8px;
+      background: rgba(15, 26, 31, 0.86);
+      color: var(--amber, #ffae5a);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 174, 90, 0.55);
+      pointer-events: none;
+      white-space: nowrap;
+      max-width: calc(100% - 16px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+
     .map-preview img {
       position: absolute;
       inset: 0;
@@ -1726,10 +1763,11 @@
       // updates from save-pins.php / parse-map.js are visible immediately
       // (the old <script src="...?v=hash"> only invalidated when the hash
       // was bumped manually, and would be cached otherwise).
-      const [_mapResp, _eventsResp, _aliasResp] = await Promise.all([
-        fetch('./map-data.js',       { cache: 'no-store' }).catch(() => null),
-        fetch('./events.json',       { cache: 'no-store' }),
-        fetch('./camp-aliases.json', { cache: 'no-store' }).catch(() => null),
+      const [_mapResp, _eventsResp, _aliasResp, _neighbResp] = await Promise.all([
+        fetch('./map-data.js',            { cache: 'no-store' }).catch(() => null),
+        fetch('./events.json',            { cache: 'no-store' }),
+        fetch('./camp-aliases.json',      { cache: 'no-store' }).catch(() => null),
+        fetch('./map-neighbourhoods.json',{ cache: 'no-store' }).catch(() => null),
       ]);
       if (_mapResp && _mapResp.ok) {
         try { (new Function(await _mapResp.text()))(); }
@@ -1738,6 +1776,8 @@
       if (!_eventsResp.ok) throw new Error('Failed to load events.json: ' + _eventsResp.status);
       window.OTHERWORLD_DATA = await _eventsResp.json();
       const _aliasData = (_aliasResp && _aliasResp.ok) ? await _aliasResp.json().catch(() => null) : null;
+      window.OTHERWORLD_NEIGHBOURHOODS =
+        (_neighbResp && _neighbResp.ok) ? await _neighbResp.json().catch(() => null) : null;
 
       // Defensive dedupe: collapse entries whose names canonicalize to the
       // same key (so "Orcar" and "Orcar Camp" / "Magic Stick" and "The Magic
@@ -1831,6 +1871,18 @@
       const MAP = window.OTHERWORLD_MAP || { pins: [] };
       const PIN_BY_NAME = new Map(
         (MAP.pins || []).filter(p => p && p.name).map(p => [p.name, p])
+      );
+
+      // Neighborhood polygons, keyed by the same name string the camp
+      // entries use in `entry.neighbourhood`. Only polygons with >= 3
+      // points are usable (anything less can't form a region).
+      const NEIGHBOURHOODS = (window.OTHERWORLD_NEIGHBOURHOODS && Array.isArray(window.OTHERWORLD_NEIGHBOURHOODS.neighbourhoods))
+        ? window.OTHERWORLD_NEIGHBOURHOODS.neighbourhoods
+        : [];
+      const NEIGHBOURHOOD_BY_NAME = new Map(
+        NEIGHBOURHOODS
+          .filter(n => n && n.name && Array.isArray(n.points) && n.points.length >= 3)
+          .map(n => [n.name, n])
       );
 
       // Lazy-load + localStorage cache the map image. The PNG is ~2.5 MB;
@@ -2193,16 +2245,21 @@
         `;
           block.querySelector(".name").textContent = entry.name;
 
-          // Location info pills (next to the type/verified pills, before the
-          // event count). Two independent pills:
-          //   1. "Mapped" — clickable, present when this camp has a map pin.
-          //      Jumps to the Map tab focused on the pin.
-          //   2. Neighborhood — read-only, present whenever the spreadsheet
-          //      has a neighborhood for this camp. Shown alongside "Mapped"
-          //      when both are known, so the user gets the textual area
-          //      name even when the pin is placed.
+          // Location info pills (next to the type/verified pills, before
+          // the event count). Three possible chips, in order:
+          //   1. "Mapped" — exact pin exists. Clickable; jumps to the
+          //      Map tab focused on the pin.
+          //   2. "Neighborhood" — no exact pin, but the camp's
+          //      neighborhood has a polygon defined in
+          //      map-neighbourhoods.json. Clickable; jumps to the Map
+          //      tab focused on the polygon's centroid.
+          //   3. The neighborhood name itself ("🏘 SPARK") — read-only
+          //      chip, present whenever the spreadsheet has a name. Lives
+          //      alongside #1 or #2 so the user always sees the area name.
           const _entryPin = PIN_BY_NAME.get(entry.name);
-          if (_entryPin || entry.neighbourhood) {
+          const _entryPoly = (!_entryPin && entry.neighbourhood)
+            ? NEIGHBOURHOOD_BY_NAME.get(entry.neighbourhood) : null;
+          if (_entryPin || _entryPoly || entry.neighbourhood) {
             const summary = block.querySelector("summary");
             const countEl = summary.querySelector(".count");
             if (_entryPin) {
@@ -2217,6 +2274,22 @@
                 e.stopPropagation();
                 switchMode("map");
                 setTimeout(() => mapView.focusOn(_entryPin), 0);
+              });
+              summary.insertBefore(pill, countEl);
+            } else if (_entryPoly) {
+              const cx = _entryPoly.points.reduce((s, p) => s + p.x, 0) / _entryPoly.points.length;
+              const cy = _entryPoly.points.reduce((s, p) => s + p.y, 0) / _entryPoly.points.length;
+              const pill = document.createElement("button");
+              pill.type = "button";
+              pill.className = "location-pill";
+              pill.dataset.kind = "mapped";
+              pill.title = "Show neighborhood on map";
+              pill.innerHTML = `<span class="pin-icon">📍</span><span>Neighborhood</span>`;
+              pill.addEventListener("click", e => {
+                e.preventDefault();
+                e.stopPropagation();
+                switchMode("map");
+                setTimeout(() => mapView.focusOn({ x: cx, y: cy }), 0);
               });
               summary.insertBefore(pill, countEl);
             }
@@ -2356,24 +2429,18 @@
         el.innerHTML = "";
         el.classList.remove("loading");
         if (!pin) {
-          el.classList.add("empty");
+          // No exact pin. If we know the camp's neighborhood, render the
+          // map as the backdrop with the neighborhood outlined when we
+          // have a polygon for it, or just labeled when we don't (e.g.
+          // "ROAMING" — there isn't a fixed area to outline). Only the
+          // no-neighborhood case falls through to the text-only line.
           if (entry.neighbourhood) {
-            const wrap = document.createElement("div");
-            wrap.className = "neighborhood-fallback";
-            const label = document.createElement("span");
-            label.className = "label";
-            label.textContent = "Neighborhood";
-            const value = document.createElement("span");
-            value.className = "value";
-            value.textContent = entry.neighbourhood;
-            const note = document.createElement("span");
-            note.className = "note";
-            note.textContent = "No map pin yet for this camp.";
-            wrap.append(label, value, note);
-            el.appendChild(wrap);
-          } else {
-            el.textContent = "Location not yet mapped for this camp.";
+            const poly = NEIGHBOURHOOD_BY_NAME.get(entry.neighbourhood);
+            renderNeighborhoodPreview(el, entry, poly, opts);
+            return;
           }
+          el.classList.add("empty");
+          el.textContent = "Location not yet mapped for this camp.";
           el.onclick = null;
           return;
         }
@@ -2404,6 +2471,70 @@
           if (opts.onOpen) opts.onOpen();
           switchMode("map");
           mapView.focusOn(pin);
+        };
+      }
+
+      // Renders the .map-preview box with the map image as backdrop
+      // and the camp's neighborhood overlaid on top. If the neighborhood
+      // has a defined polygon (map-neighbourhoods.json), the polygon is
+      // outlined; otherwise (e.g. "ROAMING" — no fixed area) the map is
+      // shown unmarked with only the neighborhood-name label.
+      function renderNeighborhoodPreview(el, entry, poly, opts) {
+        el.classList.remove("empty");
+        el.classList.add("with-neighborhood");
+        const img = document.createElement("img");
+        img.alt = "Map";
+        const sync = MapImage.syncSrc();
+        if (sync) {
+          img.src = sync;
+        } else {
+          el.classList.add("loading");
+          MapImage.get().then(src => {
+            img.src = src;
+            el.classList.remove("loading");
+          });
+        }
+        el.appendChild(img);
+
+        const hasPolygon = poly && Array.isArray(poly.points) && poly.points.length >= 3;
+        // Center the label on the polygon centroid when we have one,
+        // otherwise just on the map.
+        let cx = 0.5, cy = 0.5;
+
+        if (hasPolygon) {
+          // SVG polygon overlay. viewBox + preserveAspectRatio="none"
+          // makes 0..1 coords stretch to the preview box, which has the
+          // same aspect-ratio as map.png — so the polygon lines up
+          // exactly with the underlying image.
+          const SVG_NS = "http://www.w3.org/2000/svg";
+          const svg = document.createElementNS(SVG_NS, "svg");
+          svg.setAttribute("class", "neighborhood-overlay");
+          svg.setAttribute("viewBox", "0 0 1 1");
+          svg.setAttribute("preserveAspectRatio", "none");
+          const polyEl = document.createElementNS(SVG_NS, "polygon");
+          polyEl.setAttribute("points", poly.points.map(p => `${p.x},${p.y}`).join(" "));
+          polyEl.setAttribute("class", "neighborhood-poly");
+          svg.appendChild(polyEl);
+          el.appendChild(svg);
+          cx = poly.points.reduce((s, p) => s + p.x, 0) / poly.points.length;
+          cy = poly.points.reduce((s, p) => s + p.y, 0) / poly.points.length;
+        }
+
+        const label = document.createElement("div");
+        label.className = "neighborhood-overlay-label";
+        label.textContent = entry.neighbourhood;
+        label.style.left = (cx * 100) + "%";
+        label.style.top  = (cy * 100) + "%";
+        el.appendChild(label);
+
+        const hint = document.createElement("div");
+        hint.className = "open-hint";
+        hint.textContent = "Open map";
+        el.appendChild(hint);
+        el.onclick = () => {
+          if (opts.onOpen) opts.onOpen();
+          switchMode("map");
+          mapView.focusOn({ x: cx, y: cy });
         };
       }
 
