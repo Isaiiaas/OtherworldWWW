@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 990,
+        "eventCount": 992,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 935,
+            "camp_events": 937,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-28T17:02:02+00:00",
+        "lastReconciledAt": "2026-05-28T18:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -750,7 +750,7 @@
                     "owner": "Big Top Rouge",
                     "ownerType": "camp",
                     "title": "Partner Stretch Flow",
-                    "description": "Partner Stretch Flow: Give your tired dancing legs and back some love. Connect and move with new friends through playful partner stretches and accessible acroyoga-inspired poses. Come solo or with a buddy. Bring a yoga mat!",
+                    "description": "Give your tired dancing legs and back some love. Connect and move with new friends through playful partner stretches and accessible acroyoga-inspired poses. Come solo or with a buddy. Bring a yoga mat!",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:00",
@@ -15047,8 +15047,24 @@
         {
             "name": "Zero Gravitas",
             "type": "camp",
-            "events": [],
-            "claimed": false
+            "events": [
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Blind Date Acro",
+                    "description": "Together we’ll learn a beginner-friendly L-base sequence... with a twist! along the way expect unexpected challenges, partner swaps, games, sensory changes, and yes… moments of doing acro blindfolded! Prerequisites: Bird, Chair, Side Star, Shoulder stand with hands on base’s legs. Please bring: A yoga mat and water bottle.",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "15:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 15:30",
+                    "tags": []
+                }
+            ],
+            "claimed": false,
+            "neighbourhood": "DOACRACY"
         },
         {
             "name": "CLuG (Cyber Love Garden)",
@@ -16389,6 +16405,20 @@
                     "tags": [
                         "Interactive / Crafts"
                     ]
+                },
+                {
+                    "owner": "The Really Lost Penguins Chill Cave",
+                    "ownerType": "camp",
+                    "title": "Acroyoga Jam",
+                    "description": "Casual/chill acroyoga jam session. Not a formal class, but experienced people will be on hand to show some basics. Mats/blankets are helpful, but optional. No partner required.",
+                    "day": "Thursday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 17:00 - 18:00",
+                    "tags": []
                 },
                 {
                     "owner": "The Really Lost Penguins Chill Cave",
