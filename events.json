@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 992,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 937,
+            "camp_events": 936,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -14219,23 +14219,6 @@
                 {
                     "owner": "Vic Drip",
                     "ownerType": "camp",
-                    "title": "Camp Proud of You",
-                    "description": "Enjoy positive parenting with tea and scones. We offer nonjudgemental listening, loving support, advice (if you want it) and a wholesome mom and dad vibe. We are so glad you are here. We appreciate your unique presence",
-                    "day": "Friday",
-                    "startTime": "15:00",
-                    "endTime": "17:30",
-                    "durationHours": 2.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 15:00 - 17:30",
-                    "tags": [
-                        "Food / Drink",
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Vic Drip",
-                    "ownerType": "camp",
                     "title": "The Dart Knight Variety Hour",
                     "description": "Come for the smokes, stay for the smokin’ entartainment! This niche nicotine show enters its trilogy year with pufformances in burlesque, poetry, songs, and cigarette shenanigans. Join us for a dart and Smoke Em’ If You Gotham! (19+)",
                     "day": "Saturday",
@@ -14268,7 +14251,7 @@
                     ]
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "ASHLAND"
         },
         {
