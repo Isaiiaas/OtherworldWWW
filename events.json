@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-28T18:02:01+00:00",
+        "lastReconciledAt": "2026-05-28T19:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -6226,12 +6226,12 @@
                     "title": "Couples Somatic Coregulation with Tany",
                     "description": "Explore Tao and Tantra body-based practices to deepen intimacy, presence, and nervous system attunement. Leave with hands-on tools to nurture connection with yourself and your partner long after the festival ends.",
                     "day": "Friday",
-                    "startTime": "13:00",
-                    "endTime": "14:00",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 14:00",
+                    "rawTimeText": "Friday 10:00 - 11:00",
                     "tags": [
                         "Workshop / Class",
                         "Refuge / Introspective"
