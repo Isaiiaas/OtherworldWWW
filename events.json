@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 269,
-        "eventCount": 991,
+        "eventCount": 992,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 203,
-            "camp_events": 936,
+            "camp_events": 937,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -2763,9 +2763,22 @@
                         "Food / Drink",
                         "Music / Dance"
                     ]
+                },
+                {
+                    "owner": "Cathartic Cantina",
+                    "ownerType": "camp",
+                    "title": "Dim Sum Brunch",
+                    "description": "Start the Sunday right with some Dim Sum, drinks and amazing DJs.",
+                    "day": "Sunday",
+                    "startTime": "12:30",
+                    "endTime": "02:30",
+                    "durationHours": 14,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 12:30 - 02:30"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SPARK"
         },
         {
