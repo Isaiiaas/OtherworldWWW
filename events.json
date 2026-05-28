@@ -2755,11 +2755,11 @@
                     "owner": "Cathartic Cantina",
                     "ownerType": "camp",
                     "title": "Dim Sum Brunch",
-                    "description": "Start the Sunday right with some Dim Sum, drinks and amazing DJs.",
+                    "description": "Nothing says Sunday morning camping like a nice dim sum brunch with your friends at Cathartic Cantina. Come eat, drink and vibe until we run out.",
                     "day": "Sunday",
                     "startTime": "12:30",
                     "endTime": "14:20",
-                    "durationHours": 14,
+                    "durationHours": 25.83,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:30 - 14:20"
