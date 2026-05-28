@@ -14905,16 +14905,12 @@
                     "title": "24hr community knitting and crochet circle",
                     "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
                     "day": "Thursday",
-                    "startTime": "00:01",
+                    "startTime": "06:00",
                     "endTime": "11:59",
-                    "durationHours": 11.97,
+                    "durationHours": 5.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 00:01 - 11:59",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Thursday 06:00 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
@@ -14927,11 +14923,7 @@
                     "durationHours": 11.97,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:01 - 11:59",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Friday 00:01 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
@@ -14939,16 +14931,12 @@
                     "title": "24hr community knitting and crochet circle",
                     "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
                     "day": "Saturday",
-                    "startTime": "00:01",
+                    "startTime": "06:00",
                     "endTime": "11:59",
-                    "durationHours": 11.97,
+                    "durationHours": 5.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:01 - 11:59",
-                    "tags": [
-                        "Interactive / Crafts",
-                        "Game / Activity"
-                    ]
+                    "rawTimeText": "Saturday 06:00 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
@@ -14985,12 +14973,12 @@
                     "title": "Longest Scarf Competition",
                     "description": "Mr. Tumnus needs a new scarf and wants all the creatures of Yarnia to help him make the longest one. \r\n\r\nWho will win? Knitters or crocheters?",
                     "day": "Friday",
-                    "startTime": "00:00",
+                    "startTime": "06:00",
                     "endTime": "22:30",
-                    "durationHours": 46.5,
+                    "durationHours": 40.5,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 22:30"
+                    "rawTimeText": "Friday 06:00 - 22:30"
                 },
                 {
                     "owner": "Yarnia",
