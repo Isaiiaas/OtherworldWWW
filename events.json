@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-28T07:02:02+00:00",
+        "lastReconciledAt": "2026-05-28T08:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -324,6 +324,24 @@
                 {
                     "owner": "Babylon",
                     "ownerType": "camp",
+                    "title": "Cabaret Dances",
+                    "description": "Cabaret Dances: Start your evening with some sexy Burlesque and Drag entertainment in the Babylon tent. Get ready to make some noise as the clothes come off and the booties start shaking! (19+)",
+                    "day": "Friday",
+                    "startTime": "18:00",
+                    "endTime": "19:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 18:00 - 19:00",
+                    "tags": [
+                        "Workshop / Class",
+                        "Performance / Show",
+                        "19+"
+                    ]
+                },
+                {
+                    "owner": "Babylon",
+                    "ownerType": "camp",
                     "title": "Experience Babylon",
                     "description": "Experience Babylon: 19+ Sex On Premises: A space for connection, curiosity, and unapologetic pleasure— welcome to Babylon",
                     "day": "Friday",
@@ -387,24 +405,6 @@
                     "rawTimeText": "Saturday 15:00 - 16:00",
                     "tags": [
                         "Workshop / Class",
-                        "19+"
-                    ]
-                },
-                {
-                    "owner": "Babylon",
-                    "ownerType": "camp",
-                    "title": "Cabaret Dances",
-                    "description": "Cabaret Dances: Start your evening with some sexy Burlesque and Drag entertainment in the Babylon tent. Get ready to make some noise as the clothes come off and the booties start shaking! (19+)",
-                    "day": "Saturday",
-                    "startTime": "18:00",
-                    "endTime": "19:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 18:00 - 19:00",
-                    "tags": [
-                        "Workshop / Class",
-                        "Performance / Show",
                         "19+"
                     ]
                 },
