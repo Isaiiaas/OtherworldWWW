@@ -2,12 +2,12 @@
     "metadata": {
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
-        "entryCount": 269,
-        "eventCount": 992,
+        "entryCount": 270,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 203,
-            "camp_events": 937,
+            "camp": 204,
+            "camp_events": 936,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-28T05:02:02+00:00",
+        "lastReconciledAt": "2026-05-28T06:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -2771,11 +2771,11 @@
                     "description": "Start the Sunday right with some Dim Sum, drinks and amazing DJs.",
                     "day": "Sunday",
                     "startTime": "12:30",
-                    "endTime": "02:30",
+                    "endTime": "14:20",
                     "durationHours": 14,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 12:30 - 02:30"
+                    "rawTimeText": "Sunday 12:30 - 14:20"
                 }
             ],
             "claimed": true,
@@ -7153,24 +7153,7 @@
         {
             "name": "Lost Puppies Meetup!",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Lost Puppies Meetup!",
-                    "ownerType": "camp",
-                    "title": "Lost Puppies Meetup!",
-                    "description": "Lost Puppies Meetup!: Extrovert looking to adopt an introvert? Lost your friends? All of your friends imaginary? Join a roving gang of misfits as we travel the (Other) world. We will have quests and connection games. The real burn are the friends we made along the way @ Effigy",
-                    "day": "Friday",
-                    "startTime": "22:00",
-                    "endTime": "00:00",
-                    "durationHours": 2,
-                    "crossesMidnight": true,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 22:00 - 00:00",
-                    "tags": [
-                        "Game / Activity"
-                    ]
-                }
-            ],
+            "events": [],
             "claimed": false
         },
         {
@@ -10585,22 +10568,6 @@
                 {
                     "owner": "Sensuary Camp",
                     "ownerType": "camp",
-                    "title": "Vipassana Meditation",
-                    "description": "A one-hour Vipassana sit to arrive, breathe, and observe. A quiet landing into the Sensuary through stillness and awareness.",
-                    "day": "Friday",
-                    "startTime": "10:00",
-                    "endTime": "11:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 10:00 - 11:00",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Sensuary Camp",
-                    "ownerType": "camp",
                     "title": "Sensory Dispensary",
                     "description": "Wanna lick a stone? See a tune? Touch the unexpected? Explore a living collection of sensations inside the Sensuary.",
                     "day": "Friday",
@@ -13368,7 +13335,7 @@
                 {
                     "owner": "The Low Bar",
                     "ownerType": "camp",
-                    "title": "Dim Sum Brunch",
+                    "title": "The Low Bar Happy Hour",
                     "description": "The one and only Low Bar pours open daily from 12–4. Spin the wheel, grab a drink, and enjoy the antics of our legendary bartenders.",
                     "day": "Sunday",
                     "startTime": "12:00",
@@ -17402,6 +17369,23 @@
                 {
                     "owner": "Effigy",
                     "ownerType": "camp",
+                    "title": "Lost Puppies Meetup!",
+                    "description": "Lost Puppies Meetup!: Extrovert looking to adopt an introvert? Lost your friends? All of your friends imaginary? Join a roving gang of misfits as we travel the (Other) world. We will have quests and connection games. The real burn are the friends we made along the way @ Effigy",
+                    "day": "Friday",
+                    "startTime": "22:00",
+                    "endTime": "00:00",
+                    "durationHours": 2,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 22:00 - 00:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Effigy",
+                    "ownerType": "camp",
                     "title": "Into to slinging",
                     "description": "Into to slinging: Have a Goliath that needs slaying? Make your own sling and start practicing today. Tutorial, supplies, and marshmallows included @ effigy",
                     "day": "Saturday",
@@ -17654,9 +17638,16 @@
         {
             "name": "HorseCakes",
             "type": "camp",
+            "events": [],
+            "neighbourhood": "ROAMING",
+            "claimed": false
+        },
+        {
+            "name": "Sunnydaze Esplanade (Horse Cakes)",
+            "type": "camp",
             "events": [
                 {
-                    "owner": "HorseCakes",
+                    "owner": "Sunnydaze Esplanade (Horse Cakes)",
                     "ownerType": "camp",
                     "title": "Sugar High: Epic Cupcakes",
                     "description": "Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
@@ -17674,7 +17665,7 @@
                     ]
                 },
                 {
-                    "owner": "HorseCakes",
+                    "owner": "Sunnydaze Esplanade (Horse Cakes)",
                     "ownerType": "camp",
                     "title": "Sugar High: Epic Cupcakes",
                     "description": "Play “Truth or Dare Icing Breakers” + eat the most EPIC cupcake of your life.",
@@ -17691,8 +17682,7 @@
                     ]
                 }
             ],
-            "neighbourhood": "ROAMING",
-            "claimed": false
+            "neighbourhood": "ROAMING"
         }
     ],
     "unassignedEvents": []
