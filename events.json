@@ -1658,13 +1658,13 @@
                     "ownerType": "camp",
                     "title": "Late Night Vegan Mushroom Miso Ramen",
                     "description": "Late Night Vegan Mushroom Miso Ramen: Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel & fork/ chopsticks. Have your ramen tarot read, embody a human noodle in the plounge, or commune with the interactive Celestial Ramen Bowl while you slurrrrp away your problems.",
-                    "day": "Friday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 02:00"
+                    "rawTimeText": "Saturday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -1735,14 +1735,14 @@
                     "owner": "Camp UMAMI",
                     "ownerType": "camp",
                     "title": "Dommy U-MAMI’s Nood Takeover",
-                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy U-MAMI crew will be present to add some optional spice to your ramen experience. 19+!",
-                    "day": "Saturday",
+                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional spice to your ramen experience. 19+!",
+                    "day": "Sunday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 02:00"
+                    "rawTimeText": "Sunday 00:00 - 02:00"
                 }
             ],
             "claimed": true,
