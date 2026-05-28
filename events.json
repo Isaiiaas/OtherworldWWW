@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 991,
+        "eventCount": 990,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 936,
+            "camp_events": 935,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-28T16:02:01+00:00",
+        "lastReconciledAt": "2026-05-28T17:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1671,13 +1671,13 @@
                     "ownerType": "camp",
                     "title": "Dommy UMAMI Nood Takeover",
                     "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional *spice* to your ramen experience. 19+!",
-                    "day": "Saturday",
+                    "day": "Sunday",
                     "startTime": "00:00",
                     "endTime": "02:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 02:00"
+                    "rawTimeText": "Sunday 00:00 - 02:00"
                 },
                 {
                     "owner": "Camp UMAMI",
@@ -1730,19 +1730,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:00 - 14:00"
-                },
-                {
-                    "owner": "Camp UMAMI",
-                    "ownerType": "camp",
-                    "title": "Dommy U-MAMI’s Nood Takeover",
-                    "description": "Come for fresh noods in a creamy vegan mushroom miso broth. BYO vessel and fork/chopsticks. Our resident dommy UMAMI crew will be present to add some optional spice to your ramen experience. 19+!",
-                    "day": "Sunday",
-                    "startTime": "00:00",
-                    "endTime": "02:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 00:00 - 02:00"
                 }
             ],
             "claimed": true,
@@ -17682,7 +17669,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "ROAMING"
+            "neighbourhood": "ROAMING",
+            "claimed": false
         }
     ],
     "unassignedEvents": []
