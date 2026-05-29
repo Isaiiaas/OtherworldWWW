@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-29T01:02:02+00:00",
+        "lastReconciledAt": "2026-05-29T02:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -9253,12 +9253,12 @@
                     "title": "Glizzy Gala",
                     "description": "Start pressing your jorts for solid food and SHOT DOGS to fill every void. Lose your dignity at the Casino of Many Things, peruse D*Arts. Admission free for raccoons in trench coats. Is that soup? An elevated hotdog offering like no other, The Glizzy Gala is part of the CULT-DE-SAC block party!",
                     "day": "Friday",
-                    "startTime": "17:00",
-                    "endTime": "19:00",
+                    "startTime": "05:00",
+                    "endTime": "07:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 19:00"
+                    "rawTimeText": "Friday 05:00 - 07:00"
                 },
                 {
                     "owner": "Picnic Party",
