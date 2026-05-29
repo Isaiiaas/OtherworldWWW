@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 990,
+        "eventCount": 993,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 935,
+            "camp_events": 938,
             "sound_stage": 8,
             "sound_stage_events": 44,
             "mutant_vehicle": 6,
@@ -1803,6 +1803,45 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:30 - 13:30"
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Floppy Sea Chill Space",
+                    "description": "When was the last time you flopped onto a waterbed? Come recharge under the sea on our brand new waterbed, in our fur hottub or just stare at all the funky lights and listen to the calming oceanic soundscape.",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "00:00",
+                    "durationHours": 12,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 00:00"
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Floppy Sea Chill Space",
+                    "description": "When was the last time you flopped onto a waterbed? Come recharge under the sea on our brand new waterbed, in our fur hottub or just stare at all the funky lights and listen to the calming oceanic soundscape.",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "00:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 09:00 - 00:00"
+                },
+                {
+                    "owner": "Camp Wet Landing",
+                    "ownerType": "camp",
+                    "title": "Floppy Sea Chill Space",
+                    "description": "When was the last time you flopped onto a waterbed? Come recharge under the sea on our brand new waterbed, in our fur hottub or just stare at all the funky lights and listen to the calming oceanic soundscape.",
+                    "day": "Sunday",
+                    "startTime": "09:00",
+                    "endTime": "00:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 09:00 - 00:00"
                 }
             ],
             "claimed": true
