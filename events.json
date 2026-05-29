@@ -9253,12 +9253,12 @@
                     "title": "Glizzy Gala",
                     "description": "Start pressing your jorts for solid food and SHOT DOGS to fill every void. Lose your dignity at the Casino of Many Things, peruse D*Arts. Admission free for raccoons in trench coats. Is that soup? An elevated hotdog offering like no other, The Glizzy Gala is part of the CULT-DE-SAC block party!",
                     "day": "Friday",
-                    "startTime": "05:00",
-                    "endTime": "07:00",
+                    "startTime": "17:00",
+                    "endTime": "19:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 05:00 - 07:00"
+                    "rawTimeText": "Friday 17:00 - 19:00"
                 },
                 {
                     "owner": "Picnic Party",
@@ -9325,15 +9325,12 @@
                     "title": "Glizzy Gala",
                     "description": "Start pressing your jorts for solid food and SHOT DOGS to fill every void. Lose your dignity at the Casino of Many Things, peruse D*Arts. Admission free for raccoons in trench coats. Is that soup?",
                     "day": "Friday",
-                    "startTime": "05:00",
-                    "endTime": "07:00",
+                    "startTime": "17:00",
+                    "endTime": "19:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 05:00 - 07:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
+                    "rawTimeText": "Friday 17:00 - 19:00"
                 }
             ],
             "claimed": true,
