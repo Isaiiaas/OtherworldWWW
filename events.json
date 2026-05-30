@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-29T23:02:02+00:00",
+        "lastReconciledAt": "2026-05-30T00:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -4103,12 +4103,12 @@
                     "title": "Moonbean: Psychedelic Synth-Punk Electronica",
                     "description": "Rock stars from both the past and future — Moonbean are a live hardware duo channeling cosmic synthpunk and psychedelic dancefloor energy.",
                     "day": "Saturday",
-                    "startTime": "19:30",
-                    "endTime": "20:30",
+                    "startTime": "18:00",
+                    "endTime": "19:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:30 - 20:30"
+                    "rawTimeText": "Saturday 18:00 - 19:00"
                 },
                 {
                     "owner": "Electric Circus",
