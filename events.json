@@ -14970,18 +14970,15 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "Ironic Spin’s Big Kick Off Extravanganza",
-                    "description": "You know you want to start it off right at the 25-foot Boombox. It IS Right. It Does.",
+                    "title": "Ironic Spin kickoff: The Wet Sock Soirée",
+                    "description": "You know you want to start it off right at the 25-foot Boombox, with its all-new rainproof cozy tent and lounge space. It IS Right. It Does.",
                     "day": "Thursday",
                     "startTime": "18:30",
                     "endTime": "01:30",
                     "durationHours": 7,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 18:30 - 01:30",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Thursday 18:30 - 01:30"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15068,7 +15065,7 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "Friday Kick-off with Yours Truly",
+                    "title": "It rained on your wedding day but not in our tent: Friday lineup with Yours Truly",
                     "description": "Truly, this is yours.",
                     "day": "Friday",
                     "startTime": "17:00",
@@ -15076,26 +15073,20 @@
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 17:00 - 18:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Friday 17:00 - 18:00"
                 },
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
                     "title": "Ironic Spin Crew Showcase",
-                    "description": "THE SICKEST BEATS THE DEADEST DROPS AND THE MOST SELF- INDULGENT SETS. JK- we have a good time and so will you",
+                    "description": "THE SICKEST BEATS THE DEADEST DROPS AND THE MOST SELF- INDULGENT SETS. JK- we have a good time and so will you. Come get cozy. Take our lounge and teabar for a spin.",
                     "day": "Friday",
                     "startTime": "19:00",
                     "endTime": "02:00",
                     "durationHours": 7,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 19:00 - 02:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Friday 19:00 - 02:00"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15215,7 +15206,7 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "wubz take over Ironic Spin",
+                    "title": "wubz take over Ironic Spin: Moist Massive",
                     "description": "wubz take over Ironic Spin: you worried the wubz were gone? Cute. They’re back at Ironic Spin with filthy drops and bass-heavy mayhem. You bring the moves. We’ll handle the rattling.",
                     "day": "Saturday",
                     "startTime": "19:00",
@@ -15223,10 +15214,7 @@
                     "durationHours": 2.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 19:00 - 21:30",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Saturday 19:00 - 21:30"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15281,7 +15269,7 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "Sketchy Sunday All-Stars",
+                    "title": "Sketchy Sunday All-Stars: This Levee Ain’t Dry",
                     "description": "You want to dance? You want to move? You want to know where the brunch just happened but you missed it? THIS IS THE PLACE.",
                     "day": "Sunday",
                     "startTime": "15:00",
@@ -15289,10 +15277,7 @@
                     "durationHours": 6,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 21:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Sunday 15:00 - 21:00"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15330,7 +15315,7 @@
                 {
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
-                    "title": "And friends: Afternoon Italo Disco House",
+                    "title": "AndFriends: Afternoon Italo Disco House",
                     "description": "A time-honoured tradition continues as the Anxious AF Electric Circus Lounge Head Bureaucrat prances over to lay down the 3rd Annual Upbeat Afternoon set. Let’s Get Moist.",
                     "day": "Saturday",
                     "startTime": "14:00",
