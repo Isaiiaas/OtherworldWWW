@@ -3,13 +3,13 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 987,
+        "eventCount": 988,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
             "camp_events": 932,
             "sound_stage": 8,
-            "sound_stage_events": 44,
+            "sound_stage_events": 45,
             "mutant_vehicle": 6,
             "mutant_vehicle_events": 0,
             "art_installation": 52,
@@ -15326,6 +15326,19 @@
                     "tags": [
                         "Music / Dance"
                     ]
+                },
+                {
+                    "owner": "Ironic Spin",
+                    "ownerType": "sound_stage",
+                    "title": "And friends: Afternoon Italo Disco House",
+                    "description": "A time-honoured tradition continues as the Anxious AF Electric Circus Lounge Head Bureaucrat prances over to lay down the 3rd Annual Upbeat Afternoon set. Let’s Get Moist.",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "05:00",
+                    "durationHours": 15,
+                    "crossesMidnight": true,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 05:00"
                 }
             ],
             "claimed": true,
