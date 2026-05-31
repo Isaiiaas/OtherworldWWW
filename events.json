@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-05-31T20:02:02+00:00",
+        "lastReconciledAt": "2026-05-31T21:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -14865,11 +14865,11 @@
                     "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
                     "day": "Thursday",
                     "startTime": "00:01",
-                    "endTime": "06:00",
+                    "endTime": "11:59",
                     "durationHours": 5.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 00:01 - 06:00"
+                    "rawTimeText": "Thursday 00:01 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
@@ -14878,11 +14878,11 @@
                     "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
                     "day": "Friday",
                     "startTime": "00:01",
-                    "endTime": "06:00",
+                    "endTime": "11:59",
                     "durationHours": 5.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:01 - 06:00"
+                    "rawTimeText": "Friday 00:01 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
@@ -14890,12 +14890,12 @@
                     "title": "24hr community knitting and crochet circle",
                     "description": "Supplies provided. Work on own project or join Knitters vs Crocheters in longest scarf comp!",
                     "day": "Saturday",
-                    "startTime": "06:00",
+                    "startTime": "00:01",
                     "endTime": "11:59",
                     "durationHours": 5.98,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 06:00 - 11:59"
+                    "rawTimeText": "Saturday 00:01 - 11:59"
                 },
                 {
                     "owner": "Yarnia",
