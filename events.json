@@ -15040,17 +15040,13 @@
                     "ownerType": "sound_stage",
                     "title": "Midnight Soup @ Ironic Spin",
                     "description": "The Ironic Spinletts will be serving up some steaming hot soup to go along with some steaming hot trax.",
-                    "day": "Friday",
+                    "day": "Saturday",
                     "startTime": "00:00",
                     "endTime": "01:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 00:00 - 01:00",
-                    "tags": [
-                        "Food / Drink",
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Saturday 00:00 - 01:00"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15161,16 +15157,13 @@
                     "ownerType": "sound_stage",
                     "title": "Midnight Fried Rice @ Ironic Spin",
                     "description": "Midnight Fried Rice @ Ironic Spin: The Iroinic Spinletts will be serving up some crispy fried rice to go along with some salty tunes at Ironic Spin.",
-                    "day": "Saturday",
+                    "day": "Sunday",
                     "startTime": "00:00",
                     "endTime": "01:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 00:00 - 01:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Sunday 00:00 - 01:00"
                 },
                 {
                     "owner": "Ironic Spin",
