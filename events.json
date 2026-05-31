@@ -15147,17 +15147,14 @@
                     "owner": "Ironic Spin",
                     "ownerType": "sound_stage",
                     "title": "FFS- Fire, Flow, Spin",
-                    "description": "FFS- Fire, Flow, Spin: Do you like fire? Do you like when it’s twirled around whimsically to epic dance music? Seb and his crew have you sorted at Ironic Spin just after sunset on Friday.",
+                    "description": "FFS- Fire, Flow, Spin: Do you like fire? Do you like when it’s twirled around whimsically to epic dance music? Well we didn’t get our fire safety ticket so there will be amazing flow instead - just after sunset on Friday.",
                     "day": "Friday",
                     "startTime": "22:00",
                     "endTime": "23:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 22:00 - 23:00",
-                    "tags": [
-                        "Music / Dance"
-                    ]
+                    "rawTimeText": "Friday 22:00 - 23:00"
                 },
                 {
                     "owner": "Ironic Spin",
@@ -15358,11 +15355,11 @@
                     "description": "A time-honoured tradition continues as the Anxious AF Electric Circus Lounge Head Bureaucrat prances over to lay down the 3rd Annual Upbeat Afternoon set. Let’s Get Moist.",
                     "day": "Saturday",
                     "startTime": "14:00",
-                    "endTime": "05:00",
-                    "durationHours": 15,
-                    "crossesMidnight": true,
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:00 - 05:00"
+                    "rawTimeText": "Saturday 14:00 - 15:00"
                 }
             ],
             "claimed": true,
