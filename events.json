@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 988,
+        "eventCount": 991,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 932,
+            "camp_events": 935,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -4486,6 +4486,45 @@
                     "crossesMidnight": true,
                     "normalizationFlags": [],
                     "rawTimeText": "Thursday 19:00 - 00:00"
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Bowzone Lair",
+                    "description": "Bozos, Bows w/ foam tipped arrows. Don the clown if you're down, play pass, shoot your friends, games galore. Get on the leaderboard and try to win a bow!",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 12:00"
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Bowzone Lair",
+                    "description": "Bozos, Bows w/ foam tipped arrows. Don the clown if you're down, play pass, shoot your friends, games galore. Get on the leaderboard and try to win a bow!",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 12:00"
+                },
+                {
+                    "owner": "Electric Circus",
+                    "ownerType": "camp",
+                    "title": "Bowzone Lair",
+                    "description": "Bozos, Bows w/ foam tipped arrows. Don the clown if you're down, play pass, shoot your friends, games galore. Get on the leaderboard and try to win a bow!",
+                    "day": "Sunday",
+                    "startTime": "10:00",
+                    "endTime": "12:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 10:00 - 12:00"
                 }
             ],
             "claimed": true
