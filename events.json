@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1008,
+        "eventCount": 1009,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 952,
+            "camp_events": 953,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -15030,6 +15030,19 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 15:00 - 16:00"
+                },
+                {
+                    "owner": "Worst Camp Ever",
+                    "ownerType": "camp",
+                    "title": "Coffee Camp",
+                    "description": "This time, add instant coffee, coffee mate and blankets on the dirt for lounging.",
+                    "day": "Saturday",
+                    "startTime": "09:00",
+                    "endTime": "10:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 09:00 - 10:00"
                 }
             ],
             "claimed": true
