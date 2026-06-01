@@ -2836,12 +2836,12 @@
                     "title": "Acroyoga and standing acroyoga intro workshop",
                     "description": "Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
                     "day": "Saturday",
-                    "startTime": "10:00",
-                    "endTime": "22:00",
+                    "startTime": "10:30",
+                    "endTime": "12:00",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:00 - 22:00"
+                    "rawTimeText": "Saturday 10:30 - 12:00"
                 },
                 {
                     "owner": "Chai trance",
