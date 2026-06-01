@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-06-01T01:02:02+00:00",
+        "lastReconciledAt": "2026-06-01T02:02:01+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -2836,12 +2836,12 @@
                     "title": "Acroyoga and standing acroyoga intro workshop",
                     "description": "Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
                     "day": "Saturday",
-                    "startTime": "10:30",
-                    "endTime": "11:30",
+                    "startTime": "10:00",
+                    "endTime": "22:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:30 - 11:30"
+                    "rawTimeText": "Saturday 10:00 - 22:00"
                 },
                 {
                     "owner": "Chai trance",
