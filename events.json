@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 11
         },
-        "lastReconciledAt": "2026-06-01T16:02:02+00:00",
+        "lastReconciledAt": "2026-06-01T17:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1297,23 +1297,6 @@
                 {
                     "owner": "Camp Otherbo’r’d",
                     "ownerType": "camp",
-                    "title": "Board Speed Dating",
-                    "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
-                    "day": "Friday",
-                    "startTime": "03:00",
-                    "endTime": "04:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 03:00 - 04:00",
-                    "tags": [
-                        "Refuge / Introspective",
-                        "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Camp Otherbo’r’d",
-                    "ownerType": "camp",
                     "title": "Philosopher’s Café",
                     "description": "What is the nature of board?: Intellectuals, come discuss the ethics and epistemology of boardness, but please leave your metaphysics at home. Metaphysics was rightfully supplanted by science (natural science).",
                     "day": "Friday",
@@ -1340,6 +1323,23 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 12:00 - 12:30",
                     "tags": [
+                        "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Camp Otherbo’r’d",
+                    "ownerType": "camp",
+                    "title": "Board Speed Dating",
+                    "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
+                    "day": "Friday",
+                    "startTime": "1500",
+                    "endTime": "1600",
+                    "durationHours": null,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 1500 - 1600",
+                    "tags": [
+                        "Refuge / Introspective",
                         "Game / Activity"
                     ]
                 },
@@ -4454,12 +4454,12 @@
                     "title": "Balearic Brunch: Low Tide Recovery Club",
                     "description": "Join Andfriends drifting through yacht-rock-esque Balearic disco, synthy piano chords, coastal slow-burn grooves, sunrise soul and slow-motion Sunday recovery energy.",
                     "day": "Sunday",
-                    "startTime": "10:00",
-                    "endTime": "12:00",
+                    "startTime": "12:00",
+                    "endTime": "15:00",
                     "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 10:00 - 12:00"
+                    "rawTimeText": "Sunday 12:00 - 15:00"
                 },
                 {
                     "owner": "Electric Circus",
@@ -8011,23 +8011,6 @@
                 {
                     "owner": "Mother Tree",
                     "ownerType": "camp",
-                    "title": "World Tree Within - Alchemy Dance",
-                    "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
-                    "day": "Saturday",
-                    "startTime": "04:28",
-                    "endTime": "05:58",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 04:28 - 05:58",
-                    "tags": [
-                        "Wellness / Yoga",
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "camp",
                     "title": "Dance-formative Ecstatic Journey",
                     "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
                     "day": "Saturday",
@@ -8117,6 +8100,23 @@
                         "Workshop / Class",
                         "Music / Dance",
                         "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Mother Tree",
+                    "ownerType": "camp",
+                    "title": "World Tree Within - Alchemy Dance",
+                    "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                    "day": "Saturday",
+                    "startTime": "1630",
+                    "endTime": "1800",
+                    "durationHours": null,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 1630 - 1800",
+                    "tags": [
+                        "Wellness / Yoga",
+                        "Music / Dance"
                     ]
                 },
                 {
@@ -9565,24 +9565,7 @@
         {
             "name": "Really Lost Penguins: Wandering Yum-Yum Cart",
             "type": "camp",
-            "events": [
-                {
-                    "owner": "Really Lost Penguins: Wandering Yum-Yum Cart",
-                    "ownerType": "camp",
-                    "title": "Really Lost Snow Cones",
-                    "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
-                    "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "15:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 15:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
-                }
-            ],
+            "events": [],
             "claimed": false,
             "neighbourhood": "PRECIPITATION"
         },
@@ -12765,12 +12748,12 @@
                     "title": "Caldo y sudor",
                     "description": "The Cottage is getting steamy. Latin heat, house/ techno, and funk.",
                     "day": "Sunday",
-                    "startTime": "23:00",
-                    "endTime": "00:00",
+                    "startTime": "1800",
+                    "endTime": "1900",
                     "durationHours": 1,
                     "crossesMidnight": true,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 23:00 - 00:00",
+                    "rawTimeText": "Sunday 1800 - 1900",
                     "tags": [
                         "Music / Dance"
                     ]
@@ -16316,11 +16299,11 @@
                     "description": "Fancy yourself an artist? Come and play a game of Penguinary Air while you cool off in our shady chill space. It’s like Pictionary, but with Penguins. No drawing skills required!",
                     "day": "Thursday",
                     "startTime": "13:00",
-                    "endTime": "14:00",
-                    "durationHours": 1,
+                    "endTime": "15:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Thursday 13:00 - 14:00",
+                    "rawTimeText": "Thursday 13:00 - 15:00",
                     "tags": [
                         "Interactive / Crafts"
                     ]
@@ -16389,12 +16372,12 @@
                     "title": "Really Lost Hot Chocolate",
                     "description": "Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
                     "day": "Friday",
-                    "startTime": "13:00",
-                    "endTime": "15:00",
-                    "durationHours": 2,
+                    "startTime": "2100",
+                    "endTime": "0",
+                    "durationHours": null,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 15:00",
+                    "rawTimeText": "Friday 2100 - 0",
                     "tags": [
                         "Food / Drink"
                     ]
@@ -16497,12 +16480,12 @@
                     "title": "Sock It Two Me meets Mutant Critters",
                     "description": "Make a sock puppet and/or mutant stuffies",
                     "day": "Sunday",
-                    "startTime": "10:00",
-                    "endTime": "11:59",
-                    "durationHours": 1.98,
+                    "startTime": "900",
+                    "endTime": "1100",
+                    "durationHours": null,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 10:00 - 11:59",
+                    "rawTimeText": "Sunday 900 - 1100",
                     "tags": []
                 },
                 {
@@ -16517,7 +16500,25 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 11:00 - 12:00",
-                    "tags": []
+                    "tags": [
+                        "Interactive / Crafts"
+                    ]
+                },
+                {
+                    "owner": "The Really Lost Penguins Chill Cave",
+                    "ownerType": "camp",
+                    "title": "Really Lost Snow Cones",
+                    "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "15:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 15:00",
+                    "tags": [
+                        "Food / Drink"
+                    ]
                 }
             ],
             "neighbourhood": "CONDENSATION",

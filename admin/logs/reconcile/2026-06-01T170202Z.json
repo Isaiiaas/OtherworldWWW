@@ -1,0 +1,1059 @@
+{
+    "ranAt": "2026-06-01T17:02:02+00:00",
+    "sheetId": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc",
+    "summary": {
+        "sheet_rows_seen": 974,
+        "skipped": {
+            "no_camp": 1,
+            "no_title": 0,
+            "section_header": 5
+        },
+        "unclaimed_updated": [
+            {
+                "name": "A Sound Stage. oooooOOOOoooooo",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Abrabrabra",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Absurditea",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Badgers Hideout",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Big Top Rouge",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Blorb!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Boobs & Berries",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Bubbly Bar",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Burning Glam!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mystic Redneck",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Camp Otherbo’r’d",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Camp Squirrel",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Camp Who Says Ni",
+                "old_event_count": 37,
+                "new_event_count": 37
+            },
+            {
+                "name": "Campocalypse",
+                "old_event_count": 16,
+                "new_event_count": 16
+            },
+            {
+                "name": "Chill Pudding Camp",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Cinder-Fellas and the Playa Princesses",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "CLuG",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "Compliment Camp",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Confession Concession",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Cosmic Flow Camp",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Crib Bar",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Disco Loco",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Dyke Chilling Park",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Empowerment Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Empress Camp",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Everywhere I am is where the hugs will be. Look for the signs.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ewe-Turn",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Fafway Village",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Fairytale BookHub Café & Trash Fence Kid’s Play Area",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Fantasia",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "FDK’s Raveforest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Fix-it Station",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Flower Bower",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Flying Pancakes",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "FurTail Alley",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Garden of Eatin",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Graveyard Camp",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Gremlin Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Healing Kiss",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "HELLYEAHBROTHER WORLD",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "In the (soft,warm) Belly of the Beast",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ittakesa Village",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kids Village area",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Kiki at The Playground",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kitty Noir, The Gypsy Queen. Near the first gates at the very end of the road.",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Lalo & Team Compost Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Level Up+",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Looper Dome Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Lunar Moth Camp",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Magic Stick",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mahjong Camp",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Main road",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Michael Maloney",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Moistly Helpful Help Desk",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Mollusk Nation",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Mother Tree",
+                "old_event_count": 17,
+                "new_event_count": 17
+            },
+            {
+                "name": "Nano Donuts From The Future!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Nauti Norse",
+                "old_event_count": 20,
+                "new_event_count": 20
+            },
+            {
+                "name": "Neon Valhalla",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Nontes",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Orcar Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "OTHER Red Tent",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Phantasmagoria",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Pizza Party by Secret Slice Society",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Playing with the Elements",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Pogs 4 Applause",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "RaveForest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Recovery House",
+                "old_event_count": 19,
+                "new_event_count": 19
+            },
+            {
+                "name": "Reframing",
+                "old_event_count": 15,
+                "new_event_count": 15
+            },
+            {
+                "name": "Roving Coat Check Inc.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Rub-a-Dub-Dub A Song and a Scrub Crew",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Rule zERO",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Securititties Squad",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sensuary Camp",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Shaman Dome",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Six Degrees of Bacon",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Sky Hummingbird Curios & Compliments Bar",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Sloplandia",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Slushy Cats",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Smut Café",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "Songs of the Heart Circle",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Soul Shower",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Stardust Saloon",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Steeped in Art",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Stockpot Memorial Mobile Kitchen",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Taconoods",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Temple of Jeff",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "The Abyss",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fire Salon",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fizzy Familiar",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "The Living Room",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Low Bar",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "The Occult Library",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "the Playground",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "The Sisterhood of Unsolicited Advice",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Summoning",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Thirst Trap",
+                "old_event_count": 13,
+                "new_event_count": 13
+            },
+            {
+                "name": "Touch Temple",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Traveling Fairway Division of Sloplandia",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "True Love Temple",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Welcome to Arcadia",
+                "old_event_count": 21,
+                "new_event_count": 21
+            },
+            {
+                "name": "Welcome to the Resistance",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "White Lightning",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Zero Gravitas",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ripple Effect",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Skybar",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sound Habitat",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Under the Mother Tree",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Dommy Mommy Drinks",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Fluoropong",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Glow Dome",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "The Really Lost Penguins Chill Cave",
+                "old_event_count": 15,
+                "new_event_count": 16
+            },
+            {
+                "name": "Living Womb Rebirthing Lounge @ Motherworld",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "???",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Bass House Brunch Bunch",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Tune Town Stage",
+                "old_event_count": 28,
+                "new_event_count": 28
+            },
+            {
+                "name": "Base Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mary Poppin's Pop Up",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Effigy",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "EFFIGY SHOW",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "EFFIGY AND FIRE PERFORMANCE",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "TEMPLE CEREMONY",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Roaming",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The People’s Night Parade",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Faffway Village",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Sunnydaze Esplanade (Horse Cakes)",
+                "old_event_count": 2,
+                "new_event_count": 2
+            }
+        ],
+        "unclaimed_cleared": [
+            {
+                "name": "Really Lost Penguins: Wandering Yum-Yum Cart",
+                "removed": 1
+            }
+        ],
+        "claimed_preserved": [
+            "Babylon",
+            "Camp phat glASSes",
+            "Camp UMAMI",
+            "Camp Wet Landing",
+            "Cathartic Cantina",
+            "Chai trance",
+            "Cosmic Kev The Dreamidifier®",
+            "Cozy Corner",
+            "Curiouser & Curiouser Café",
+            "Electric Circus",
+            "Flamingo camp",
+            "Garden Cósmico",
+            "Harmonious Haberdashery",
+            "Jellyfish Lounge",
+            "Little Big",
+            "Luscious Lemon camp",
+            "Magical Mystery (Bus) Cruise",
+            "NERRRRRDS",
+            "Picnic Party",
+            "Portal Lounge",
+            "Salon Saloon",
+            "Slut Camp",
+            "The Cottage",
+            "The Den",
+            "Vic Drip",
+            "Wild Things Camp",
+            "Worst Camp Ever",
+            "Yarnia",
+            "Ironic Spin",
+            "Picnic party /MOUTH/Securitities",
+            "Alchemist’s Sketchbook",
+            "CERN in the Forest",
+            "MOUTH",
+            "Moonlit Tales"
+        ],
+        "added": [],
+        "fuzzy_matches": [],
+        "within_camp_dedupes": [],
+        "timing_synced": [
+            {
+                "camp": "Electric Circus",
+                "title": "Balearic Brunch: Low Tide Recovery Club",
+                "before": {
+                    "day": "Sunday",
+                    "startTime": "10:00",
+                    "endTime": "12:00"
+                },
+                "after": {
+                    "day": "Sunday",
+                    "startTime": "12:00",
+                    "endTime": "15:00"
+                },
+                "matched_via": "description",
+                "sheet_title": "AndFriends: Low Tide Recovery Club"
+            },
+            {
+                "camp": "The Cottage",
+                "title": "Caldo y sudor",
+                "before": {
+                    "day": "Sunday",
+                    "startTime": "23:00",
+                    "endTime": "00:00"
+                },
+                "after": {
+                    "day": "Sunday",
+                    "startTime": "1800",
+                    "endTime": "1900"
+                },
+                "matched_via": "exact",
+                "sheet_title": "Caldo y sudor"
+            }
+        ],
+        "timing_ambiguous": [
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Moonlit Tales",
+                "title": "Moonlit Tales Storytime",
+                "tier": "substring",
+                "candidates": [
+                    "Moonlit Tales",
+                    "Moonlit Tales"
+                ]
+            }
+        ],
+        "timing_unchanged_match": 267,
+        "timing_no_match": 28
+    },
+    "changes": [
+        {
+            "name": "Camp Otherbo’r’d",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 13,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Camp Otherbo’r’d",
+                            "ownerType": "camp",
+                            "title": "Board Speed Dating",
+                            "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
+                            "day": "Friday",
+                            "startTime": "03:00",
+                            "endTime": "04:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 03:00 - 04:00",
+                            "tags": [
+                                "Refuge / Introspective",
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Camp Otherbo’r’d",
+                            "ownerType": "camp",
+                            "title": "Board Speed Dating",
+                            "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
+                            "day": "Friday",
+                            "startTime": "1500",
+                            "endTime": "1600",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 1500 - 1600",
+                            "tags": [
+                                "Refuge / Introspective",
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 14,
+                "totalAfter": 14
+            },
+            "neighbourhood": {
+                "before": "BLACK ROCK",
+                "after": "BLACK ROCK"
+            }
+        },
+        {
+            "name": "Mother Tree",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 16,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Mother Tree",
+                            "ownerType": "camp",
+                            "title": "World Tree Within - Alchemy Dance",
+                            "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                            "day": "Saturday",
+                            "startTime": "04:28",
+                            "endTime": "05:58",
+                            "durationHours": 1.5,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 04:28 - 05:58",
+                            "tags": [
+                                "Wellness / Yoga",
+                                "Music / Dance"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Mother Tree",
+                            "ownerType": "camp",
+                            "title": "World Tree Within - Alchemy Dance",
+                            "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                            "day": "Saturday",
+                            "startTime": "1630",
+                            "endTime": "1800",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 1630 - 1800",
+                            "tags": [
+                                "Wellness / Yoga",
+                                "Music / Dance"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 17,
+                "totalAfter": 17
+            },
+            "neighbourhood": {
+                "before": "KINDLE",
+                "after": "KINDLE"
+            }
+        },
+        {
+            "name": "Really Lost Penguins: Wandering Yum-Yum Cart",
+            "action": "cleared",
+            "diff": {
+                "unchangedCount": 0,
+                "added": [],
+                "removed": [
+                    {
+                        "owner": "Really Lost Penguins: Wandering Yum-Yum Cart",
+                        "ownerType": "camp",
+                        "title": "Really Lost Snow Cones",
+                        "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
+                        "day": "Sunday",
+                        "startTime": "13:00",
+                        "endTime": "15:00",
+                        "durationHours": 2,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 13:00 - 15:00",
+                        "tags": [
+                            "Food / Drink"
+                        ]
+                    }
+                ],
+                "modified": [],
+                "totalBefore": 1,
+                "totalAfter": 0
+            },
+            "neighbourhood": {
+                "before": "PRECIPITATION",
+                "after": "PRECIPITATION"
+            }
+        },
+        {
+            "name": "The Really Lost Penguins Chill Cave",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 11,
+                "added": [
+                    {
+                        "owner": "The Really Lost Penguins Chill Cave",
+                        "ownerType": "camp",
+                        "title": "Really Lost Snow Cones",
+                        "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
+                        "day": "Sunday",
+                        "startTime": "13:00",
+                        "endTime": "15:00",
+                        "durationHours": 2,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 13:00 - 15:00",
+                        "tags": [
+                            "Food / Drink"
+                        ]
+                    }
+                ],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Penguinary Air",
+                            "description": "Fancy yourself an artist? Come and play a game of Penguinary Air while you cool off in our shady chill space. It’s like Pictionary, but with Penguins. No drawing skills required!",
+                            "day": "Thursday",
+                            "startTime": "13:00",
+                            "endTime": "14:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Thursday 13:00 - 14:00",
+                            "tags": [
+                                "Interactive / Crafts"
+                            ]
+                        },
+                        "after": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Penguinary Air",
+                            "description": "Fancy yourself an artist? Come and play a game of Penguinary Air while you cool off in our shady chill space. It’s like Pictionary, but with Penguins. No drawing skills required!",
+                            "day": "Thursday",
+                            "startTime": "13:00",
+                            "endTime": "15:00",
+                            "durationHours": 2,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Thursday 13:00 - 15:00",
+                            "tags": [
+                                "Interactive / Crafts"
+                            ]
+                        }
+                    },
+                    {
+                        "before": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Really Lost Hot Chocolate",
+                            "description": "Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
+                            "day": "Friday",
+                            "startTime": "13:00",
+                            "endTime": "15:00",
+                            "durationHours": 2,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 13:00 - 15:00",
+                            "tags": [
+                                "Food / Drink"
+                            ]
+                        },
+                        "after": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Really Lost Hot Chocolate",
+                            "description": "Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
+                            "day": "Friday",
+                            "startTime": "2100",
+                            "endTime": "0",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 2100 - 0",
+                            "tags": [
+                                "Food / Drink"
+                            ]
+                        }
+                    },
+                    {
+                        "before": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Sock It Two Me meets Mutant Critters",
+                            "description": "Make a sock puppet and/or mutant stuffies",
+                            "day": "Sunday",
+                            "startTime": "10:00",
+                            "endTime": "11:59",
+                            "durationHours": 1.98,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 10:00 - 11:59",
+                            "tags": []
+                        },
+                        "after": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Sock It Two Me meets Mutant Critters",
+                            "description": "Make a sock puppet and/or mutant stuffies",
+                            "day": "Sunday",
+                            "startTime": "900",
+                            "endTime": "1100",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 900 - 1100",
+                            "tags": []
+                        }
+                    },
+                    {
+                        "before": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "The Greatest Art Heist of All Time",
+                            "description": "Ever dreamed of pulling off the perfect heist? Now’s your chance. Sneak into the MOISTeum, claim a piece of art, and join the greatest art heist of all time. Just don’t let security catch you!",
+                            "day": "Sunday",
+                            "startTime": "11:00",
+                            "endTime": "12:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 11:00 - 12:00",
+                            "tags": []
+                        },
+                        "after": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "The Greatest Art Heist of All Time",
+                            "description": "Ever dreamed of pulling off the perfect heist? Now’s your chance. Sneak into the MOISTeum, claim a piece of art, and join the greatest art heist of all time. Just don’t let security catch you!",
+                            "day": "Sunday",
+                            "startTime": "11:00",
+                            "endTime": "12:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 11:00 - 12:00",
+                            "tags": [
+                                "Interactive / Crafts"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 15,
+                "totalAfter": 16
+            },
+            "neighbourhood": {
+                "before": "CONDENSATION",
+                "after": "CONDENSATION"
+            }
+        }
+    ]
+}
