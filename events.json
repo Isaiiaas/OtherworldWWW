@@ -2837,11 +2837,11 @@
                     "description": "Intro to standing acroyoga and acroyoga where you have 2 partners who learn to climb on eachother",
                     "day": "Saturday",
                     "startTime": "10:30",
-                    "endTime": "12:00",
-                    "durationHours": 1.5,
+                    "endTime": "11:30",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 10:30 - 12:00"
+                    "rawTimeText": "Saturday 10:30 - 11:30"
                 },
                 {
                     "owner": "Chai trance",
