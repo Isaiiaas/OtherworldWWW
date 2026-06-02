@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1014,
+        "eventCount": 1016,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 954,
+            "camp_events": 956,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 15
         },
-        "lastReconciledAt": "2026-06-02T19:02:02+00:00",
+        "lastReconciledAt": "2026-06-02T20:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1347,7 +1347,7 @@
                     "owner": "Camp Otherbo’r’d",
                     "ownerType": "camp",
                     "title": "Moisture Boarding",
-                    "description": "Moisture Boarding: Moisture on your face. Through a rag. You might think you’re drowning. This isn’t funny. We promise we’re not CIA…if we were, we’d have to tell you…",
+                    "description": "",
                     "day": "Saturday",
                     "startTime": "10:00",
                     "endTime": "16:00",
@@ -16735,6 +16735,23 @@
                 {
                     "owner": "The Really Lost Penguins Chill Cave",
                     "ownerType": "camp",
+                    "title": "Self Guided Meditation Lesson",
+                    "description": "Come learn how to guide yourself in meditation using self-hypnosis",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:00",
+                    "tags": [
+                        "Interactive / Crafts",
+                        "Refuge / Introspective"
+                    ]
+                },
+                {
+                    "owner": "The Really Lost Penguins Chill Cave",
+                    "ownerType": "camp",
                     "title": "Sock It Two Me meets Mutant Critters",
                     "description": "Make a sock puppet and/or mutant stuffies",
                     "day": "Saturday",
@@ -17622,6 +17639,22 @@
                     "tags": [
                         "Interactive / Crafts",
                         "Game / Activity"
+                    ]
+                },
+                {
+                    "owner": "Effigy",
+                    "ownerType": "camp",
+                    "title": "The Peoples Night Parade",
+                    "description": "After the Effigy Ceremony, join a celebration march of People Power and Art Resistance around Upstairs. Look for the red & yellow striped Art Parade banner somewhere near the Effigy!",
+                    "day": "Saturday",
+                    "startTime": "11:15",
+                    "endTime": "11:30",
+                    "durationHours": 0.25,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:15 - 11:30",
+                    "tags": [
+                        "Interactive / Crafts"
                     ]
                 },
                 {
