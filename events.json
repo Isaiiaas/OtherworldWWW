@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1008,
+        "eventCount": 1009,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 952,
+            "camp_events": 953,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -5990,6 +5990,19 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 13:00 - 14:30"
+                },
+                {
+                    "owner": "Garden Cósmico",
+                    "ownerType": "camp",
+                    "title": "Inner Garden",
+                    "description": "Lay down, close your eyes, and travel inwards with a musical journey including ambient, downtempo and melodic deep house.",
+                    "day": "Friday",
+                    "startTime": "20:00",
+                    "endTime": "21:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 20:00 - 21:30"
                 }
             ],
             "claimed": true,
