@@ -6,16 +6,16 @@
         "eventCount": 1016,
         "unassignedEventCount": 0,
         "countsByType": {
-            "camp": 204,
-            "camp_events": 956,
-            "sound_stage": 8,
-            "sound_stage_events": 45,
-            "mutant_vehicle": 6,
+            "camp": 191,
+            "camp_events": 805,
+            "sound_stage": 19,
+            "sound_stage_events": 178,
+            "mutant_vehicle": 5,
             "mutant_vehicle_events": 0,
-            "art_installation": 52,
-            "art_installation_events": 15
+            "art_installation": 55,
+            "art_installation_events": 33
         },
-        "lastReconciledAt": "2026-06-02T22:02:02+00:00",
+        "lastReconciledAt": "2026-06-02T23:02:03+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -482,11 +482,11 @@
         },
         {
             "name": "Badgers Hideout",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Badger AssASSins",
                     "description": "ClASSic AssASSin game...Badger Style! All are welcome! Please arrive promptly at 7pm to get your targets and sign up as all entrants will need to be there at the start to register!",
                     "day": "Thursday",
@@ -503,7 +503,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Free Lunch",
                     "description": "There is no free lunch.",
                     "day": "Friday",
@@ -519,7 +519,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Fun Never Sleeps",
                     "description": "Fun Never Sleeps: Snoozers are losers so join us for all night beats from your favourite DJs’ favourite DJs! Playing a range of 140, Breaks, UKG & more Wubz that you luvz! Don’t wake up tomorow to find out you snossed and lost.",
                     "day": "Friday",
@@ -535,7 +535,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Eat Miso",
                     "description": "Eat Miso: Can’t remember when you last ate? Feel kinda icky but also like you couldn’t possibly stomach anything right now? We have the solution.",
                     "day": "Saturday",
@@ -551,7 +551,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Dr. Octagon",
                     "description": "Dr. Octagon: ....",
                     "day": "Saturday",
@@ -565,7 +565,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Talent Show",
                     "description": "Talent Show: Bring your best and brightest talents, shine like a star! (show us what you got!). No sign up necessary, if you want on stage, you’ll get on stage, or you won’t, we’re not your parents.",
                     "day": "Saturday",
@@ -581,7 +581,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Fun Never Sleeps",
                     "description": "Fun Never Sleeps: Snoozers are losers so join us for all night beats from your favourite DJs’ favourite DJs! Playing a range of 140, Breaks, UKG & more Wubz that you luvz! Don’t wake up tomorow to find out you snossed and lost.",
                     "day": "Saturday",
@@ -597,7 +597,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Eat Miso",
                     "description": "Can’t remember when you last ate? Feel kinda icky but also like you couldn’t possibly stomach anything right now? We have the solution.",
                     "day": "Sunday",
@@ -613,7 +613,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Badger Cinema",
                     "description": "Badger Cinema: Movie Night! Badger Style! Popcorn included...or is it?",
                     "day": "Sunday",
@@ -629,7 +629,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Eat Miso",
                     "description": "Can’t remember when you last ate? Feel kinda icky but also like you couldn’t possibly stomach anything right now? We have the solution.",
                     "day": "Monday",
@@ -645,7 +645,7 @@
                 },
                 {
                     "owner": "Badgers Hideout",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Fun Never Sleeps",
                     "description": "It was better next year.",
                     "day": "Monday",
@@ -948,11 +948,11 @@
         },
         {
             "name": "Boobs & Berries",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Yoga-lates with KHold",
                     "description": "Shake your boobs and berries (Camp puns fully intended 🍓). Miss your workout? This yoga + Pilates fusion has you covered. Flow, sculpt, sweat, then melt into a Yin cooldown. Led by K-Hold, with optional hands-on assists.",
                     "day": "Friday",
@@ -968,7 +968,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Work it out",
                     "description": "Come get in shape and sweaty for the fun workout group class. Bring a water bottle and your best fitness outfit and let’s get stronger together",
                     "day": "Friday",
@@ -984,7 +984,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "B&B Day Party",
                     "description": "Shake your booty and hydrate with boozy fruity flavour! Our decks set sail with the slamming jams of the Babes & Beats DJ Collective! These sassy sirens rock our yacht from 1-7pm. Get funky and get frosty with our classic Whisky Lemonade 2-6pm!",
                     "day": "Friday",
@@ -1000,7 +1000,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Qi Gong",
                     "description": "Qi Gong: “Calm Creative Mindful Movement”: Awaken connecting conscious movement with breath through guided meditation; conjuring colours through correlated Kundalini chakras to clear, charge, and catalyze your core self cocreating our Otherworld. *Barefoot optional* Come curious, leave clear.",
                     "day": "Saturday",
@@ -1016,7 +1016,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Gentle Yoga for Tired Bodies with Kim Dee",
                     "description": "Gentle Yoga for Tired Bodies with Kim Dee: Been on the go since you got to Otherworld and feeling it in your body? Need a reason to slow down and be in a quiet(er) moment with yourself? All bodies and abilities welcome for this gentle, choice- based practice. Bring a mat/towel/ blanket.",
                     "day": "Saturday",
@@ -1033,7 +1033,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "The Official Dock of Questionably Moist Choices",
                     "description": "The Official Dock of Questionably Moist Choices: The yacht sank but spirits remain afloat. Join the Boobs crew for cheeky bartenders, ocean- themed nonsense, and friends you won’t remember. Get a little wet, a little weird and maybe a little wobbly on the dance floor. Hydrate irresponsibly 2-6 PM.",
                     "day": "Saturday",
@@ -1050,7 +1050,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Stay Moist",
                     "description": "Stretch, Sway & Slay: Start slow & sink into the vibe. Begin on the floor breathing, opening, & reconnecting, then rise into a playful retro dance party w/ 70s grooves, 90s bops, & early 2000s chaos. Moisturize your soul. Shake your assets. No experience required.",
                     "day": "Sunday",
@@ -1067,7 +1067,7 @@
                 },
                 {
                     "owner": "Boobs & Berries",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "B&B Sunday Service",
                     "description": "Swing on by BoobsnBerries for your Sunday Service special, Mimosas! These Moist libations will pair well with the fantastic tunes being thrown down by the day rave DJ’s! Come join us for a Bev and a Boogie Sailors!",
                     "day": "Sunday",
@@ -2464,11 +2464,11 @@
         },
         {
             "name": "Campocalypse",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Queer SciFi Book Club & Stargazing. Solarpunk Film Nightcap",
                     "description": "Re-vision shared futures with the camp that’s coaxing society back from the brink. Bring your favourite book or recommendation to swap. Stick around past bedtime to share night sky stories. Movie after 11.",
                     "day": "Thursday",
@@ -2484,7 +2484,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Fuck Off Friday!",
                     "description": "Campocalypse’s big blow out. This year featuring all day Chaotic hosted events, Open Bar, and closing it out with our classic Live sword combats at 9:30pm. Come by, get drunk, get rowdy, Get fucked up.",
                     "day": "Friday",
@@ -2503,7 +2503,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "HOT SAUCE YOGA",
                     "description": "MOVE with the burn. STRETCH into the heat. BREATH to survive.",
                     "day": "Friday",
@@ -2519,7 +2519,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Thighs vs Melons",
                     "description": "Thighs vs Melons: Fury of the Melons: Come test your mighty thighs against the power of the melon. Squish, hump, booty drop, people’s elbow you way to victory solo or in groups. Or come watch and eat. BYO-Melon",
                     "day": "Friday",
@@ -2535,7 +2535,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Polnik & Snook’s Polka and Snacks",
                     "description": "Partake in savory probiotic preserves picnic style, serenaded by satisfying polka",
                     "day": "Friday",
@@ -2552,7 +2552,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Second Annual Gary’s Chair Smashing Ceremony",
                     "description": "Second Annual Gary’s Chair Smashing Ceremony: Repent for sitting. Sign up to smash a chair inside the Thunderdome, accompanied by a song of your choice. Sledgehammer and safety gear provided. Praise Gary.",
                     "day": "Friday",
@@ -2568,7 +2568,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Live Sword Combat",
                     "description": "Live Sword Combat: Come bask in the glory of people hitting each other with real ass weapons, interspersed with the screaming of whatever random hippies we can sucker into joining in as well.",
                     "day": "Friday",
@@ -2584,7 +2584,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Muskrat Meadows",
                     "description": "Muskrat Meadows: Stoner Rock/ Metal Band Plays Campocalypse!",
                     "day": "Friday",
@@ -2600,7 +2600,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "SPIKE IT!",
                     "description": "SPIKE IT!: Add some spikes to your shit! BYOStuff, we have the spikes",
                     "day": "Saturday",
@@ -2616,7 +2616,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Campocalypse Taco Party",
                     "description": "Campocalypse Taco Party: Tasty tacos, inclusive as fuck. Vegan, gluten free, eat’m while we got em. Mealtime entertainment provided.",
                     "day": "Saturday",
@@ -2632,7 +2632,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Full Liquor Bar!",
                     "description": "Full Liquor Bar!: Come on by and drink our premium swill! We are serving favored classics like, whatever we fucking give you, and FREE HOT VERMOUTH!",
                     "day": "Saturday",
@@ -2649,7 +2649,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Campocalypse Yoga",
                     "description": "Normal hatha yoga session, but make it weird! Clothing optional! Bring your own mat/tarp!",
                     "day": "Sunday",
@@ -2665,7 +2665,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Less Full Liquor Bar!",
                     "description": "Come on by and drink what we have left... If we haven’t been raided",
                     "day": "Sunday",
@@ -2682,7 +2682,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Creative Mending and Can-apees",
                     "description": "Run out of snacks? Got a snag in your party pants? A little last- day coddling, Campocalypse style. Exotic canned goods encouraged.",
                     "day": "Sunday",
@@ -2699,7 +2699,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "fire show",
                     "description": "open jam style fire show. open to all safety’s and performers to join as long as you come to our safety meetting at 3pm on sunday june the7th",
                     "day": "Sunday",
@@ -2716,7 +2716,7 @@
                 },
                 {
                     "owner": "Campocalypse",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Just the dregs",
                     "description": "We are probably out of booze by this point, unless we have raided another camp! Come on by and drink what’s left.",
                     "day": "Sunday",
@@ -2815,7 +2815,7 @@
         },
         {
             "name": "Chai trance",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Chai trance",
@@ -3334,7 +3334,7 @@
         },
         {
             "name": "Cosmic communication station",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [],
             "claimed": false
         },
@@ -6522,11 +6522,11 @@
         },
         {
             "name": "In the (soft,warm) Belly of the Beast",
-            "type": "camp",
+            "type": "art_installation",
             "events": [
                 {
                     "owner": "In the (soft,warm) Belly of the Beast",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "In the (soft,warm) Belly of the Beast",
                     "description": "There is so much to explore at Otherworld, but sometimes you need a break - a moment of rest, to wait for something to call to you. Shelter in the (soft, warm) belly of the beast, swaddled, protected, and take a long breath.",
                     "day": "Friday",
@@ -6610,7 +6610,7 @@
         },
         {
             "name": "Jellyfish Lounge",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Jellyfish Lounge",
@@ -7911,11 +7911,11 @@
         },
         {
             "name": "Mother Tree",
-            "type": "camp",
+            "type": "art_installation",
             "events": [
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Heartivism",
                     "description": "Gathering to share new words and innovate more new words with possibility to make art currency and signs/ sigils for love based magic",
                     "day": "Friday",
@@ -7929,7 +7929,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Dancin’ Dan will facilitate at Under The Mother Tree Main Space",
                     "description": "Expressive Embodiment Shake Down!: Step out of the mind and into the body. Through playful movement, improvisational games, and connection with self and others, awaken creativity, presence, and authentic expression. Leave feeling alive, grounded, free, and connected.",
                     "day": "Friday",
@@ -7946,7 +7946,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Button IT!",
                     "description": "Make your very own custom button to take with you or trade to remember Other World 2026.",
                     "day": "Friday",
@@ -7962,7 +7962,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Healing Hugs from Shaark the Hug Dealer",
                     "description": "Healing Hugs from Shaark the Hug Dealer: Healing Hugs with a prescription for a refill.",
                     "day": "Friday",
@@ -7978,7 +7978,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Heartivism - love based culture and language cocreating",
                     "description": "Come share language play and make up new words for emergent culture and make art signs too",
                     "day": "Friday",
@@ -7992,7 +7992,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "ZenThai Shiatsu Partner Massage",
                     "description": "Root into presence, connection and touch beneath the canopy for a guided fusion of Thai massage, Zen Shiatsu & Osteothai. No exp needed. Arrive with clean feet, clothes on, and an open heart.",
                     "day": "Friday",
@@ -8010,7 +8010,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Dance-formative Ecstatic Journey",
                     "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
                     "day": "Saturday",
@@ -8026,7 +8026,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Journey through the Subconscious",
                     "description": "Journey through the Subconscious: Come join for a fun minds-eye visualization journey, decoding symbolism that can reveal insite within the deeper layers of your psyche. Bring a journal if you’d like to write it down to reflect on it later.",
                     "day": "Saturday",
@@ -8042,7 +8042,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Somatic Relational Grounding",
                     "description": "An opportunity to learn, embody and practice somatic regulation tools that support us to ground into our body and relational awareness. We will journey with our body temple and nervous system in a profound way that will continue to ripple out.",
                     "day": "Saturday",
@@ -8056,7 +8056,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Weaving the Relational Web",
                     "description": "Step into a playful space for real human connection. Expect laughter, curiosity, and just the right amount of emotional moisture to add a little extra magic to your festival.",
                     "day": "Saturday",
@@ -8070,7 +8070,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Temple Touch",
                     "description": "Temple Touch: Ritual of the Senses: Temple Touch is a guided healing ritual awakening the body through the five senses—touch, scent, sound, sight, and taste—inviting deeper connection with yourself while honoring another through the art of devotional giving and receiving.",
                     "day": "Saturday",
@@ -8086,7 +8086,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "The art of asking and receiving",
                     "description": "In groups of 4, each person gets 25 minutes to ask for what they want—touch, play, music, or stillness. Others respond with consent or adaptation. A practice in honest asking, boundaries, and meaningful connection.",
                     "day": "Saturday",
@@ -8104,7 +8104,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "World Tree Within - Alchemy Dance",
                     "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
                     "day": "Saturday",
@@ -8121,7 +8121,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Ecstatic Dance Heart Journey",
                     "description": "Arise & Awaken into your Heart with TranscendDance Hybrid-DJ Duo Power Couple offering diverse music genres/tempos to freely express through dance without words. An inner & outer journey of heart reverence for self, community, land & spirit.",
                     "day": "Sunday",
@@ -8135,7 +8135,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Ground & Shine ~ yoga, meditation & movement",
                     "description": "Sit, breathe and move gently in community. An intentional 60-minute practice to reconnect with yourself.",
                     "day": "Sunday",
@@ -8152,7 +8152,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Acoustic Jam",
                     "description": "Bring your instruments to Under the Mother Tree for a facilitated acoustic music jam, everyone gets a chance to lead!",
                     "day": "Sunday",
@@ -8166,7 +8166,7 @@
                 },
                 {
                     "owner": "Mother Tree",
-                    "ownerType": "camp",
+                    "ownerType": "art_installation",
                     "title": "Qi Gong",
                     "description": "“Calm Creative Mindful Movement”: Root, restore, and re- energize through calm, conscious movement, breath, and guided meditation—channeling color through correlated Kundalini chakras to clear, calm, and center your core. *Barefoot optional* Leave light, in flow.",
                     "day": "Sunday",
@@ -11828,11 +11828,11 @@
         },
         {
             "name": "Steeped in Art",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Steeped in Art",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Silk Fans workshop",
                     "description": "Discover the art of silk fan flow ✨This beginner- friendly workshop teaches graceful movements, smooth transitions, & simple choreography using silk fans. Some silk fans are provided (or bring your own). Come flow with us",
                     "day": "Friday",
@@ -11848,7 +11848,7 @@
                 },
                 {
                     "owner": "Steeped in Art",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Astrology Cafe Workshop",
                     "description": "Astrology is awesome. All the cool kids know. Come nerd out with us as we gaze upon the heavens above to find out what’s happening below. There’s a lot to make sense of in these crazy times. History doesn’t repeat itself but it sure does rhyme.",
                     "day": "Friday",
@@ -11864,7 +11864,7 @@
                 },
                 {
                     "owner": "Steeped in Art",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Make Moist Balls Moister",
                     "description": "Juggling at all Levels: Squeeze, roll, and fondle your way to perfectly plump, moisture-proof juggling balls. Then toss ’em around in lessons for all levels—get as moist as you want without a soggy flop. Slippery skills, cheeky fun!",
                     "day": "Friday",
@@ -11880,7 +11880,7 @@
                 },
                 {
                     "owner": "Steeped in Art",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Arting trippy things & sharing trippy stories",
                     "description": "Arting trippy things & sharing trippy stories: Bring your best conspiracy/ super natural story while we share over the art of zentangles and some side piece water colour technique",
                     "day": "Saturday",
@@ -11896,7 +11896,7 @@
                 },
                 {
                     "owner": "Steeped in Art",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Handstand Workshop w/ Shawn",
                     "description": "Getting upside down for all levels. Inversion/Handstand workshop.",
                     "day": "Sunday",
@@ -13560,7 +13560,7 @@
         },
         {
             "name": "Thirrrsty Barrr",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [],
             "claimed": false
         },
@@ -14157,7 +14157,7 @@
         },
         {
             "name": "Vic Drip",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Vic Drip",
@@ -16012,7 +16012,7 @@
         },
         {
             "name": "The PettyCab",
-            "type": "mutant_vehicle",
+            "type": "art_installation",
             "events": [],
             "claimed": false
         },
@@ -17100,11 +17100,11 @@
         },
         {
             "name": "Tune Town Stage",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Clowning / Improv",
                     "description": "Clowning / Improv",
                     "day": "Friday",
@@ -17121,7 +17121,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Classical hour with Markus and friends",
                     "description": "Any classical musicians feel free to come join in",
                     "day": "Friday",
@@ -17138,7 +17138,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Blood on the Clocktower",
                     "description": "Blood on the Clocktower (Murder Mystery Game)",
                     "day": "Friday",
@@ -17152,7 +17152,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Scout shorefox",
                     "description": "You probably seen the magic, you know, you love",
                     "day": "Friday",
@@ -17168,7 +17168,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Open Jams",
                     "description": "Come collaborate all skill levels welcome",
                     "day": "Friday",
@@ -17182,7 +17182,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "14 flamingos",
                     "description": "Long legged and glorious musical melodies to make sweet silly movement to",
                     "day": "Friday",
@@ -17198,7 +17198,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Infinite Atom",
                     "description": "I mean the name says it all this band is infinitely atomic",
                     "day": "Friday",
@@ -17214,7 +17214,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "The Phigs",
                     "description": "The Phigs are a fire roasted rhythm and harmony sandwich, where the meat is the groove which behooves you to move your booty and perfectly prove that NOBODY can snooze til the music is through.",
                     "day": "Friday",
@@ -17230,7 +17230,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Dance workshop Latin/zouk with adrian and nikki",
                     "description": "We love to share our passion for dance! We are primarily interested in Brazilian Zouk, but we also love Lambada, Salsa, Bachata and much more. We’d love to host a workshop and social dance!",
                     "day": "Saturday",
@@ -17247,7 +17247,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Tune Town Open Mic",
                     "description": "Hosted by everyone’s good friend Glenn come by camp during the open mic or before to sign up play a couple tunes and make some friends collaboration is encouraged",
                     "day": "Saturday",
@@ -17263,7 +17263,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Sock Wrestling",
                     "description": "wrestle a sock off your friend / challengers",
                     "day": "Saturday",
@@ -17279,7 +17279,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "ClownProv",
                     "description": "Experience the wacky and crazy interweaving of clowning and improv. Participate or watch people exploring play with a whimsical vigor.",
                     "day": "Saturday",
@@ -17295,7 +17295,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Variety hour",
                     "description": "What it sounds like variety style performance. Have a weird skill or performance that is less than 15 min come sign up while space is available",
                     "day": "Saturday",
@@ -17311,7 +17311,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Ms Magpie",
                     "description": "some tramps will play some sad music",
                     "day": "Saturday",
@@ -17327,7 +17327,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Variety Show",
                     "description": "Variety Show",
                     "day": "Saturday",
@@ -17341,7 +17341,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Marrow Lynn",
                     "description": "Original/cover songs lead by myself, open to musicians who’d wanna play and jam out",
                     "day": "Saturday",
@@ -17357,7 +17357,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Commie Bop Open Mic",
                     "description": "where the ridiculous and unruly celebrate our collective fire. This is a space to howl anti-capitalist anthems, share art that bites back, and honour past and future generations.",
                     "day": "Saturday",
@@ -17373,7 +17373,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "The earthly delights",
                     "description": "Beachside Roots-Rock to move your body and soul and leave you smiling",
                     "day": "Saturday",
@@ -17389,7 +17389,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Rhythm Demon",
                     "description": "Sexy, Jazz funk noise to trip out to",
                     "day": "Saturday",
@@ -17405,7 +17405,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Open jam",
                     "description": "come jam and collaborate with other musicians",
                     "day": "Sunday",
@@ -17421,7 +17421,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Adrian & Nikki Dance Workshop",
                     "description": "Adrian & Nikki Dance Workshop",
                     "day": "Sunday",
@@ -17435,7 +17435,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Open Mic",
                     "description": "Open Mic",
                     "day": "Sunday",
@@ -17449,7 +17449,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Stetson road Live loop workshop / performance",
                     "description": "Live looping workshop with guitars, bass, banjo, vocals and percussion. Bring your instrument and come play. There will be some small performances to showcase the looping techniques then an open stage for looping and jamming.",
                     "day": "Sunday",
@@ -17466,7 +17466,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Burlesque hour",
                     "description": "Stacked lineup of amazing performers ready to tease and titillate your senses",
                     "day": "Sunday",
@@ -17480,7 +17480,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Comedy Hour host Patti Savard",
                     "description": "Comedy Hour hosted by Patti Savard Get your giggles out with Patti and other great comedy humans! Check in at the camp earlier in the weekend if you’re interested in signing up—we may have a couple of open slots for comedians.",
                     "day": "Sunday",
@@ -17496,7 +17496,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Grief Release Ceremony",
                     "description": "Grief Briefly Breathed: Emo Electrically Expressed. A workshop to process grief through intention, live emo music, and somatic kundalini chord cutting. We write, witness, and offer it to the effigy for release and renewal. Grieve.exe",
                     "day": "Sunday",
@@ -17513,7 +17513,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Adrian the noise insect",
                     "description": "Noise set lets get weird",
                     "day": "Sunday",
@@ -17529,7 +17529,7 @@
                 },
                 {
                     "owner": "Tune Town Stage",
-                    "ownerType": "camp",
+                    "ownerType": "sound_stage",
                     "title": "Game Night / story time with isaac",
                     "description": "as we pack a bit up we will just chill and game and hear stories",
                     "day": "Monday",
