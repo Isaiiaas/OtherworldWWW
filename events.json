@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1013,
+        "eventCount": 1014,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 953,
+            "camp_events": 954,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -15,7 +15,7 @@
             "art_installation": 52,
             "art_installation_events": 15
         },
-        "lastReconciledAt": "2026-06-02T18:02:01+00:00",
+        "lastReconciledAt": "2026-06-02T19:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -16594,6 +16594,22 @@
                     "rawTimeText": "Thursday 13:00 - 15:00",
                     "tags": [
                         "Interactive / Crafts"
+                    ]
+                },
+                {
+                    "owner": "The Really Lost Penguins Chill Cave",
+                    "ownerType": "camp",
+                    "title": "Really Lost Snow Cones",
+                    "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
+                    "day": "Thursday",
+                    "startTime": "13:00",
+                    "endTime": "15:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Thursday 13:00 - 15:00",
+                    "tags": [
+                        "Food / Drink"
                     ]
                 },
                 {
