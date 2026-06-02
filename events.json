@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1009,
+        "eventCount": 1008,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 204,
-            "camp_events": 953,
+            "camp_events": 952,
             "sound_stage": 8,
             "sound_stage_events": 45,
             "mutant_vehicle": 6,
@@ -4460,19 +4460,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Sunday 12:00 - 15:00"
-                },
-                {
-                    "owner": "Electric Circus",
-                    "ownerType": "camp",
-                    "title": "Fusion Dance Intro and Jam",
-                    "description": "Fusion is partner dancing based on connection, lead-follow principles, consent, and a mix of styles. Short intro warmup followed by many amazing dances with amazing people. Come open-minded and willing to listen and move to the music and each other",
-                    "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30"
                 },
                 {
                     "owner": "Electric Circus",
