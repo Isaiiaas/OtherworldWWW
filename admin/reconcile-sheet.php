@@ -174,16 +174,15 @@ if ($projCsv === false || $projTrimmed === '') {
     }
 }
 
-// Resolve a name to a type slug from the Projects map (alias- and fuzzy-aware),
-// or null when it isn't listed there.
+// Resolve a name to a type slug from the Projects map, or null when it isn't
+// listed there. Exact canonical match only (after alias resolution) — no fuzzy,
+// so an unlisted entry's type can never be silently changed by a near-miss.
 $resolveType = static function (string $name) use ($typeByCanon, $aliasMap): ?string {
     if (empty($typeByCanon)) return null;
     $c = canonical($name);
     if ($c === '') return null;
     $key = isset($aliasMap[$c]) ? canonical($aliasMap[$c]) : $c;
-    if (isset($typeByCanon[$key])) return $typeByCanon[$key];
-    $m = fuzzy_find($key, $typeByCanon);
-    return $m !== null ? $typeByCanon[$m] : null;
+    return $typeByCanon[$key] ?? null;
 };
 
 // Group sheet rows by canonicalised camp name (after alias resolution).
