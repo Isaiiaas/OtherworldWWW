@@ -3950,7 +3950,7 @@
         },
         {
             "name": "Electric Circus",
-            "type": "camp",
+            "type": "sound_stage",
             "events": [
                 {
                     "owner": "Electric Circus",
