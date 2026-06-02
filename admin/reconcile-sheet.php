@@ -9,8 +9,13 @@ declare(strict_types=1);
  * Claimed camps are left untouched so their owners' dashboard edits survive.
  *
  * Camps that appear in the sheet but not in events.json are added as new
- * `type=camp` entries. Unclaimed camps that no longer appear in the sheet
- * have their events list cleared.
+ * entries (type taken from the Projects tab, else `camp`). Unclaimed camps that
+ * no longer appear in the sheet have their events list cleared.
+ *
+ * Entry venue type (camp / art_installation / sound_stage) is sourced from the
+ * separate "Projects" tab and overrides whatever events.json held, including
+ * PDF-derived mutant_vehicle types when an entry is listed there. Entries not
+ * on that tab keep their existing type. See build_project_type_map().
  *
  * CLI:   php admin/reconcile-sheet.php           # dry run (default)
  *        php admin/reconcile-sheet.php --apply   # write changes
@@ -30,6 +35,9 @@ $LOG_DIR      = __DIR__ . '/logs/reconcile';
 $SHEET_ID  = '1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc';
 $SHEET_GID = '1785212198';
 $SHEET_URL = "https://docs.google.com/spreadsheets/d/$SHEET_ID/export?format=csv&gid=$SHEET_GID";
+
+// The "Projects" tab carries the venue type; the events tab has no type column.
+$PROJECTS_GID = '539676334';
 
 // Boolean tag columns to lift onto each event. Stored verbatim so the labels
 // stay in sync with the spreadsheet without a mapping table.
@@ -146,6 +154,38 @@ $resolveCanon = static function (string $name) use ($aliasMap): string {
     return $aliasMap[$c] !== null && isset($aliasMap[$c]) ? canonical($aliasMap[$c]) : $c;
 };
 
+// ── Load entry types from the Projects tab ────────────────────────────────
+// Best-effort: a failure here must NOT abort the run (unlike the events sheet),
+// since the event sync is the critical path. An empty map makes $resolveType a
+// no-op, so every entry keeps its current type.
+$PROJECTS_URL = "https://docs.google.com/spreadsheets/d/$SHEET_ID/export?format=csv&gid=$PROJECTS_GID";
+$typeByCanon = [];
+$projectsWarning = null;
+$projCsv = @file_get_contents($PROJECTS_URL, false, $ctx);
+$projTrimmed = is_string($projCsv) ? ltrim($projCsv) : '';
+if ($projCsv === false || $projTrimmed === '') {
+    $projectsWarning = 'Could not fetch Projects tab (network/empty) — entry types left unchanged.';
+} elseif (stripos($projTrimmed, '<!doctype') === 0 || stripos($projTrimmed, '<html') === 0) {
+    $projectsWarning = 'Projects tab returned HTML, not CSV (sheet likely not public) — entry types left unchanged.';
+} else {
+    $typeByCanon = build_project_type_map($projCsv, $aliasMap);
+    if (empty($typeByCanon)) {
+        $projectsWarning = 'Projects tab parsed to an empty type map — entry types left unchanged.';
+    }
+}
+
+// Resolve a name to a type slug from the Projects map (alias- and fuzzy-aware),
+// or null when it isn't listed there.
+$resolveType = static function (string $name) use ($typeByCanon, $aliasMap): ?string {
+    if (empty($typeByCanon)) return null;
+    $c = canonical($name);
+    if ($c === '') return null;
+    $key = isset($aliasMap[$c]) ? canonical($aliasMap[$c]) : $c;
+    if (isset($typeByCanon[$key])) return $typeByCanon[$key];
+    $m = fuzzy_find($key, $typeByCanon);
+    return $m !== null ? $typeByCanon[$m] : null;
+};
+
 // Group sheet rows by canonicalised camp name (after alias resolution).
 $bySheet = [];
 $skipped = ['no_camp' => 0, 'no_title' => 0, 'section_header' => 0];
@@ -203,6 +243,9 @@ foreach ($claims as $name => $_) {
 $summary = [
     'sheet_rows_seen'    => count($dataRows),
     'skipped'            => $skipped,
+    'type_changes'       => [], // entries whose type was corrected from the Projects tab
+    'projects_type_map'  => count($typeByCanon),
+    'projects_warning'   => $projectsWarning,
     'unclaimed_updated'  => [],
     'unclaimed_cleared'  => [],
     'claimed_preserved'  => [],
@@ -233,6 +276,19 @@ foreach ($events['entries'] as $i => $entry) {
         $entryKey = canonical($aliasMap[$rawEntryKey]);
     } else {
         $entryKey = $rawEntryKey;
+    }
+
+    // Projects-tab type wins, but only when the entry is listed there — entries
+    // absent from that tab (mutant_vehicle, villages, manual fixes) keep their
+    // type. Applied to claimed camps too, since type isn't owner-edited content.
+    $resolvedType = $resolveType($entry['name']);
+    if ($resolvedType !== null && $resolvedType !== ($events['entries'][$i]['type'] ?? '')) {
+        $summary['type_changes'][] = [
+            'name'   => $events['entries'][$i]['name'],
+            'before' => $events['entries'][$i]['type'] ?? null,
+            'after'  => $resolvedType,
+        ];
+        $events['entries'][$i]['type'] = $resolvedType;
     }
 
     // Claim check: exact first, then fuzzy.
@@ -309,16 +365,18 @@ foreach ($entriesNeedingFuzzy as $i => $entryKey) {
 
 // Any sheet camps still in $bySheet are new — add them.
 foreach ($bySheet as $key => $group) {
+    // Type from the Projects tab if listed, else camp.
+    $newType = $resolveType($group['displayName']) ?? 'camp';
     $newEntry = [
         'name'   => $group['displayName'],
-        'type'   => 'camp',
+        'type'   => $newType,
         'events' => [],
     ];
     if ($group['neighbourhood'] !== '') {
         $newEntry['neighbourhood'] = $group['neighbourhood'];
     }
     foreach ($group['rows'] as $r) {
-        $newEntry['events'][] = build_event($r, $headerIndex, $TAG_COLUMNS, $group['displayName'], 'camp');
+        $newEntry['events'][] = build_event($r, $headerIndex, $TAG_COLUMNS, $group['displayName'], $newType);
     }
     // Same within-camp dedup as apply_sheet_group(), for brand-new entries
     // coming straight from the sheet.
@@ -502,6 +560,71 @@ function fuzzy_find(string $needle, array $haystack): ?string {
         }
     }
     return $best;
+}
+
+/**
+ * Parse the "Projects" tab into a [canonical-name => type-slug] map.
+ *
+ * The tab is a wide multi-section layout: a banner row holds the section titles
+ * ("THEME CAMPS", "ART PROJECTS", "SOUND CAMPS", "VILLAGES") above each
+ * section's name column. We map the three unambiguous sections and ignore
+ * VILLAGES (no slug for it). Names are alias-resolved to collide with
+ * events.json keys; when a name appears in multiple sections the more-specific
+ * type wins (sound_stage > art_installation > camp).
+ *
+ * Returns [] when the banner row can't be found, so a malformed tab is treated
+ * as "no type info" rather than aborting the reconcile.
+ */
+function build_project_type_map(string $csv, array $aliasMap): array {
+    $rows = [];
+    $fh = fopen('php://memory', 'r+');
+    fwrite($fh, $csv);
+    rewind($fh);
+    while (($r = fgetcsv($fh, 0, ',', '"', '')) !== false) {
+        $rows[] = $r;
+    }
+    fclose($fh);
+
+    $sectionSlug = [
+        'themecamps'  => 'camp',
+        'artprojects' => 'art_installation',
+        'soundcamps'  => 'sound_stage',
+    ];
+    $priority = ['sound_stage' => 3, 'art_installation' => 2, 'camp' => 1];
+    // Sub-header cells that repeat in the name columns below the banner.
+    $skip = array_flip(['camp', 'artprojects', 'soundcamps']);
+
+    // Banner row = the one carrying "THEME CAMPS"; its sub-header reads "CAMP".
+    $bannerIdx = null;
+    foreach ($rows as $i => $r) {
+        foreach ($r as $cell) {
+            if (canonical((string)$cell) === 'themecamps') { $bannerIdx = $i; break 2; }
+        }
+    }
+    if ($bannerIdx === null) return [];
+
+    // Each section's name column is the column its banner title sits in.
+    $colSlug = [];
+    foreach ($rows[$bannerIdx] as $col => $cell) {
+        $c = canonical((string)$cell);
+        if (isset($sectionSlug[$c])) $colSlug[$col] = $sectionSlug[$c];
+    }
+    if (empty($colSlug)) return [];
+
+    $map = [];
+    for ($i = $bannerIdx + 1, $n = count($rows); $i < $n; $i++) {
+        foreach ($colSlug as $col => $slug) {
+            $name = trim((string)($rows[$i][$col] ?? ''));
+            if ($name === '') continue;
+            $cn = canonical($name);
+            if ($cn === '' || isset($skip[$cn])) continue;
+            $key = isset($aliasMap[$cn]) ? canonical($aliasMap[$cn]) : $cn;
+            if (!isset($map[$key]) || $priority[$slug] > $priority[$map[$key]]) {
+                $map[$key] = $slug;
+            }
+        }
+    }
+    return $map;
 }
 
 function valid_time(string $t): bool {
