@@ -1091,7 +1091,7 @@
             "name": "Booty Crocker",
             "type": "camp",
             "events": [],
-            "claimed": false
+            "claimed": true
         },
         {
             "name": "Bubbly Bar",
@@ -4205,7 +4205,7 @@
                     "owner": "Electric Circus",
                     "ownerType": "camp",
                     "title": "Electric Circus Cabaret",
-                    "description": "",
+                    "description": "yez we got clowns, we got dancers, we got singers, we got occasional full frontal. We got sweet and sour and definitely umami. We will entertain you ragged. Bars open, come see the show. Always one night only",
                     "day": "Friday",
                     "startTime": "19:30",
                     "endTime": "20:30",
