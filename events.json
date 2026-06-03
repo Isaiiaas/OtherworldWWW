@@ -3,19 +3,19 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 270,
-        "eventCount": 1017,
+        "eventCount": 1035,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 191,
-            "camp_events": 806,
+            "camp_events": 824,
             "sound_stage": 19,
-            "sound_stage_events": 183,
+            "sound_stage_events": 187,
             "mutant_vehicle": 5,
             "mutant_vehicle_events": 0,
             "art_installation": 55,
-            "art_installation_events": 28
+            "art_installation_events": 24
         },
-        "lastReconciledAt": "2026-06-03T01:02:03+00:00",
+        "lastReconciledAt": "2026-06-03T02:02:02+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -1332,12 +1332,12 @@
                     "title": "Board Speed Dating",
                     "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
                     "day": "Friday",
-                    "startTime": "1500",
-                    "endTime": "1600",
-                    "durationHours": null,
+                    "startTime": "15:00",
+                    "endTime": "16:00",
+                    "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 1500 - 1600",
+                    "rawTimeText": "Friday 15:00 - 16:00",
                     "tags": [
                         "Refuge / Introspective",
                         "Game / Activity"
@@ -3188,8 +3188,8 @@
                 {
                     "owner": "CLuG",
                     "ownerType": "camp",
-                    "title": "Booty Crocker Presents",
-                    "description": "Booty Crocker Presents: The Art of Cakesitting 4.0: It’s exactly what it sounds like. You know the drill. No cake in the showers. 19+",
+                    "title": "Booty Crocker Presents: The Art of Cakesitting 4.0",
+                    "description": "It’s exactly what it sounds like. You know the drill. No cake in the showers. 19+",
                     "day": "Saturday",
                     "startTime": "16:00",
                     "endTime": "17:00",
@@ -4960,8 +4960,8 @@
                 {
                     "owner": "Fafway Village",
                     "ownerType": "camp",
-                    "title": "Indugle Your Census",
-                    "description": "Indugle Your Census: Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                    "title": "Indulge Your Census",
+                    "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "19:06",
@@ -5533,11 +5533,11 @@
                     "description": "Scrap Happy Junk Journals is a fun, hands- on workshop where participants transform everyday paper scraps into unique handmade journals using collage, stamping, layering, and simple bookmaking techniques. Ages 8+ (check out @upstyleart for inspo!)",
                     "day": "Sunday",
                     "startTime": "15:00",
-                    "endTime": "15:00",
-                    "durationHours": 24,
-                    "crossesMidnight": true,
+                    "endTime": "16:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 15:00",
+                    "rawTimeText": "Sunday 15:00 - 16:00",
                     "tags": [
                         "Interactive / Crafts",
                         "Game / Activity"
@@ -7960,38 +7960,6 @@
                 {
                     "owner": "Mother Tree",
                     "ownerType": "art_installation",
-                    "title": "Dance-formative Ecstatic Journey",
-                    "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
-                    "day": "Saturday",
-                    "startTime": "11:00",
-                    "endTime": "12:15",
-                    "durationHours": 1.25,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 11:00 - 12:15",
-                    "tags": [
-                        "Music / Dance"
-                    ]
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "art_installation",
-                    "title": "Journey through the Subconscious",
-                    "description": "Journey through the Subconscious: Come join for a fun minds-eye visualization journey, decoding symbolism that can reveal insite within the deeper layers of your psyche. Bring a journal if you’d like to write it down to reflect on it later.",
-                    "day": "Saturday",
-                    "startTime": "11:00",
-                    "endTime": "12:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 11:00 - 12:00",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "art_installation",
                     "title": "Somatic Relational Grounding",
                     "description": "An opportunity to learn, embody and practice somatic regulation tools that support us to ground into our body and relational awareness. We will journey with our body temple and nervous system in a profound way that will continue to ripple out.",
                     "day": "Saturday",
@@ -8001,20 +7969,6 @@
                     "crossesMidnight": false,
                     "normalizationFlags": [],
                     "rawTimeText": "Saturday 12:30 - 14:03",
-                    "tags": []
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "art_installation",
-                    "title": "Weaving the Relational Web",
-                    "description": "Step into a playful space for real human connection. Expect laughter, curiosity, and just the right amount of emotional moisture to add a little extra magic to your festival.",
-                    "day": "Saturday",
-                    "startTime": "14:30",
-                    "endTime": "16:00",
-                    "durationHours": 1.5,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 14:30 - 16:00",
                     "tags": []
                 },
                 {
@@ -8049,23 +8003,6 @@
                         "Workshop / Class",
                         "Music / Dance",
                         "Game / Activity"
-                    ]
-                },
-                {
-                    "owner": "Mother Tree",
-                    "ownerType": "art_installation",
-                    "title": "World Tree Within - Alchemy Dance",
-                    "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
-                    "day": "Saturday",
-                    "startTime": "1630",
-                    "endTime": "1800",
-                    "durationHours": null,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Saturday 1630 - 1800",
-                    "tags": [
-                        "Wellness / Yoga",
-                        "Music / Dance"
                     ]
                 },
                 {
@@ -8188,22 +8125,6 @@
                 {
                     "owner": "Nauti Norse",
                     "ownerType": "camp",
-                    "title": "Guided Couple’s Massage",
-                    "description": "Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
-                    "day": "Friday",
-                    "startTime": "11:00",
-                    "endTime": "12:00",
-                    "durationHours": 1,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 11:00 - 12:00",
-                    "tags": [
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Nauti Norse",
-                    "ownerType": "camp",
                     "title": "Consent and Kink with Skylar (19+)",
                     "description": "Come learn the rules of consent for the Tanric Tavern. This general consent workshop gets you a stamp to our SOP space. The workshop will be followed by some kinky education.",
                     "day": "Friday",
@@ -8308,12 +8229,12 @@
                     "title": "Guided Couple’s Massage",
                     "description": "Guided Couple’s Massage: Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
                     "day": "Saturday",
-                    "startTime": "11:00",
-                    "endTime": "12:00",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 11:00 - 12:00",
+                    "rawTimeText": "Saturday 12:00 - 13:00",
                     "tags": [
                         "Wellness / Yoga"
                     ]
@@ -8398,6 +8319,22 @@
                     "tags": [
                         "Game / Activity",
                         "19+"
+                    ]
+                },
+                {
+                    "owner": "Nauti Norse",
+                    "ownerType": "camp",
+                    "title": "Guided Couple’s Massage",
+                    "description": "Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
+                    "day": "Sunday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 11:00 - 12:00",
+                    "tags": [
+                        "Wellness / Yoga"
                     ]
                 },
                 {
@@ -8931,7 +8868,7 @@
                     "owner": "OTHER Red Tent",
                     "ownerType": "camp",
                     "title": "Sacred Rage Ceremony",
-                    "description": "Sacred Rage Ceremony: Access the quiet, rumbling weight of feminine grief/rage through embodied movement and sound. Embrace and allow the natural cycle of decay/death that feeds all life. *This ceremony is open to women (cis & trans), non-binary & gender fluid folks.",
+                    "description": "Access the quiet, rumbling weight of feminine grief/rage through embodied movement and sound. Embrace and allow the natural cycle of decay/death that feeds all life. *This ceremony is open to women (cis & trans), non-binary & gender fluid folks.",
                     "day": "Saturday",
                     "startTime": "19:00",
                     "endTime": "20:00",
@@ -9696,7 +9633,7 @@
                     "owner": "Recovery House",
                     "ownerType": "camp",
                     "title": "12 Step All Recovery Meeting at Recovery House.",
-                    "description": "12 Step All Recovery Meeting at Recovery House.: 12 Step All Recovery Meeting. Everyone welcome!",
+                    "description": "12 Step All Recovery Meeting. Everyone welcome!",
                     "day": "Saturday",
                     "startTime": "19:00",
                     "endTime": "20:00",
@@ -10464,32 +10401,15 @@
                 {
                     "owner": "Sensuary Camp",
                     "ownerType": "camp",
-                    "title": "Becoming Human",
-                    "description": "A guided circle to reflect,share, and connect - bringing awareness from the Sensuary into lived experience",
-                    "day": "Sunday",
-                    "startTime": "1200",
-                    "endTime": "1300",
-                    "durationHours": null,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Sunday 1200 - 1300",
-                    "tags": [
-                        "Workshop / Class",
-                        "Wellness / Yoga"
-                    ]
-                },
-                {
-                    "owner": "Sensuary Camp",
-                    "ownerType": "camp",
                     "title": "Sensorium",
                     "description": "Wanna lick a stone? See a tune? Touch the unexpected? Explore a living collection of sensations inside the Sensuary.",
                     "day": "Sunday",
-                    "startTime": "1200",
-                    "endTime": "1800",
-                    "durationHours": null,
+                    "startTime": "12:00",
+                    "endTime": "18:00",
+                    "durationHours": 6,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 1200 - 1800",
+                    "rawTimeText": "Sunday 12:00 - 18:00",
                     "tags": [
                         "Game / Activity"
                     ]
@@ -11897,12 +11817,12 @@
                     "title": "Taconoods Pre-Ignition Malnutrition Party",
                     "description": "Taconoods Pre-Ignition Malnutrition Party: Serving Sandstorm-inspired Taconoods and tunes to warm ya’s up for the big shindig!",
                     "day": "Saturday",
-                    "startTime": "18:00",
-                    "endTime": "19:30",
-                    "durationHours": 1.5,
+                    "startTime": "19:00",
+                    "endTime": "21:00",
+                    "durationHours": 2,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Saturday 18:00 - 19:30",
+                    "rawTimeText": "Saturday 19:00 - 21:00",
                     "tags": [
                         "Food / Drink",
                         "Music / Dance"
@@ -12542,12 +12462,12 @@
                     "title": "Astro Child DJ Set",
                     "description": "Dancey, bassey, fun and wonky tunes! Come boogie <3",
                     "day": "Sunday",
-                    "startTime": "2300",
+                    "startTime": "23:00",
                     "endTime": "00:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 2300 - 00:00",
+                    "rawTimeText": "Sunday 23:00 - 00:00",
                     "tags": [
                         "Music / Dance"
                     ]
@@ -12939,7 +12859,7 @@
                     "owner": "The Fizzy Familiar",
                     "ownerType": "camp",
                     "title": "+The Grand Jousting Tourney+",
-                    "description": "+The Grand Jousting Tourney+: Hear ye hear ye! The jousts return! We invite you to witness the spectacle of colorfully clashing knights fight atop steeds at high speeds. Come cheer, jeer, quaff a beer, and celebrate the 2nd year!",
+                    "description": "Hear ye hear ye! The jousts return! We invite you to witness the spectacle of colorfully clashing knights fight atop steeds at high speeds. Come cheer, jeer, quaff a beer, and celebrate the 2nd year!",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:30",
@@ -13046,8 +12966,8 @@
                 {
                     "owner": "The Living Room",
                     "ownerType": "camp",
-                    "title": "The Flair Stitch Project",
-                    "description": "The Flair Stitch Project: Crochet Circle: All skill levels welcome. Learn some basic stitches, make a granny square for our community quilt with our provided materials, or bring your own project and hang out in a chill space.",
+                    "title": "The Flair Stitch Project: Crochet Circle",
+                    "description": "All skill levels welcome. Learn some basic stitches, make a granny square for our community quilt with our provided materials, or bring your own project and hang out in a chill space.",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "16:00",
@@ -13171,7 +13091,7 @@
                     "owner": "The Low Bar",
                     "ownerType": "camp",
                     "title": "The Otherworld Beer Mile",
-                    "description": "The Otherworld Beer Mile: Run a mile and down 4 beers as fast as you can at the Otherworld Beer Mile. Medals awarded to finishers. Limited beer available—participants encouraged to bring their own.",
+                    "description": "Run a mile and down 4 beers as fast as you can at the Otherworld Beer Mile. Medals awarded to finishers. Limited beer available—participants encouraged to bring their own.",
                     "day": "Saturday",
                     "startTime": "13:00",
                     "endTime": "14:00",
@@ -15138,6 +15058,90 @@
                 {
                     "owner": "Zero Gravitas",
                     "ownerType": "camp",
+                    "title": "Kid's Aerial Silks",
+                    "description": "Come move your body to get off the ground and turn upside down",
+                    "day": "Friday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 10:00 - 11:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Standing Acro",
+                    "description": "climb, fly, and laugh through playful partner acro",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Slackline Sessions",
+                    "description": "wobble, balance, and find your flow one step at a time.",
+                    "day": "Friday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 11:00 - 12:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Flow Arts Playground",
+                    "description": "spin, toss, and explore props from poi to rope dart and beyond.",
+                    "day": "Friday",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 12:00 - 13:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Clowning 101",
+                    "description": "unleash your weird little clown and discover the joy of being ridiculous.",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "L-Basing With A Twist",
+                    "description": "funky transitions, spicy shapes, and playful acro surprises.",
+                    "day": "Friday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 14:00 - 15:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
                     "title": "Blind Date Acro",
                     "description": "Together we’ll learn a beginner-friendly L-base sequence... with a twist! along the way expect unexpected challenges, partner swaps, games, sensory changes, and yes… moments of doing acro blindfolded! Prerequisites: Bird, Chair, Side Star, Shoulder stand with hands on base’s legs. Please bring: A yoga mat and water bottle.",
                     "day": "Friday",
@@ -15148,10 +15152,220 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 14:00 - 15:30",
                     "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Clow Improv Chaos",
+                    "description": "build your clown persona through games, silliness, and spontaneous fun.",
+                    "day": "Friday",
+                    "startTime": "15:30",
+                    "endTime": "17:00:00",
+                    "durationHours": null,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 15:30 - 17:00:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Evening Silks Hour",
+                    "description": "climb, spin, and melt into the fabric as the day winds down.",
+                    "day": "Friday",
+                    "startTime": "17:00",
+                    "endTime": "18:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 17:00 - 18:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Doubles Aerial Hoop",
+                    "description": "move together through the hoop with dynamic partner shapes and flow.",
+                    "day": "Saturday",
+                    "startTime": "10:00",
+                    "endTime": "11:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 10:00 - 11:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Acro Playground",
+                    "description": "playful partner acro for curious movers and strong bases alike.",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Slackline Sessions",
+                    "description": "wobble, balance, and find your flow one step at a time.",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Aerial Loops in Motion",
+                    "description": "spin, hang, and explore the magic of aerial loops.",
+                    "day": "Saturday",
+                    "startTime": "12:00",
+                    "endTime": "13:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 12:00 - 13:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Kids Clown Club",
+                    "description": "games, giggles, and goofy clown adventures for tiny weirdos.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Intermediate Juggling Lab",
+                    "description": "sharpen your tricks and level up your juggling flow.",
+                    "day": "Saturday",
+                    "startTime": "14:00",
+                    "endTime": "15:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:00 - 15:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Intro to Juggling",
+                    "description": "toss your first patterns and discover the joy of dropping things beautifully.",
+                    "day": "Saturday",
+                    "startTime": "15:00",
+                    "endTime": "16:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 15:00 - 16:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Aerial Hoop Flow",
+                    "description": "beginner-friendly hoop shapes, spins, and floaty aerial fun.",
+                    "day": "Saturday",
+                    "startTime": "16:00",
+                    "endTime": "17:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 16:00 - 17:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Burlesque & Big Energy",
+                    "description": "tease, strut, and sparkle your way through a playful burlesque experience.",
+                    "day": "Sunday",
+                    "startTime": "11:00",
+                    "endTime": "13:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 11:00 - 13:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Flow Arts Playground",
+                    "description": "dive into spinning props, movement play, and flow-state magic.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Aerial Loops in Motion",
+                    "description": "aerial loops for curious bodies who want to spin and fly.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 14:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Slackline Sessions",
+                    "description": "challenge your balance and dance the line one shaky step at a time.",
+                    "day": "Sunday",
+                    "startTime": "13:00",
+                    "endTime": "15:00",
+                    "durationHours": 2,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 13:00 - 15:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Zero Gravitas",
+                    "ownerType": "camp",
+                    "title": "Intro to Aerial Hoop:",
+                    "description": "learn easy mounts, shapes, and smooth spins in the lyra.",
+                    "day": "Sunday",
+                    "startTime": "15:00",
+                    "endTime": "16:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 15:00 - 16:00",
+                    "tags": []
                 }
             ],
             "claimed": false,
-            "neighbourhood": "DOACRACY"
+            "neighbourhood": "ASHLAND"
         },
         {
             "name": "CLuG (Cyber Love Garden)",
@@ -15950,6 +16164,38 @@
                 {
                     "owner": "Under the Mother Tree",
                     "ownerType": "sound_stage",
+                    "title": "Dance-formative Ecstatic Journey",
+                    "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:15",
+                    "durationHours": 1.25,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:15",
+                    "tags": [
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Under the Mother Tree",
+                    "ownerType": "sound_stage",
+                    "title": "Journey through the Subconscious",
+                    "description": "Journey through the Subconscious: Come join for a fun minds-eye visualization journey, decoding symbolism that can reveal insite within the deeper layers of your psyche. Bring a journal if you’d like to write it down to reflect on it later.",
+                    "day": "Saturday",
+                    "startTime": "11:00",
+                    "endTime": "12:00",
+                    "durationHours": 1,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 11:00 - 12:00",
+                    "tags": [
+                        "Wellness / Yoga"
+                    ]
+                },
+                {
+                    "owner": "Under the Mother Tree",
+                    "ownerType": "sound_stage",
                     "title": "Singing soundbath",
                     "description": "Come integrate and bathe in the magic of a live vocal soundbath… continue your journey within the mystic, as I sing and heal, a touch of the fae, a touch of the angelic… & a bridge between worlds,",
                     "day": "Saturday",
@@ -15961,6 +16207,37 @@
                     "rawTimeText": "Saturday 12:30 - 13:30",
                     "tags": [
                         "Performance / Show",
+                        "Wellness / Yoga",
+                        "Music / Dance"
+                    ]
+                },
+                {
+                    "owner": "Under the Mother Tree",
+                    "ownerType": "sound_stage",
+                    "title": "Weaving the Relational Web",
+                    "description": "Step into a playful space for real human connection. Expect laughter, curiosity, and just the right amount of emotional moisture to add a little extra magic to your festival.",
+                    "day": "Saturday",
+                    "startTime": "14:30",
+                    "endTime": "16:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 14:30 - 16:00",
+                    "tags": []
+                },
+                {
+                    "owner": "Under the Mother Tree",
+                    "ownerType": "sound_stage",
+                    "title": "World Tree Within - Alchemy Dance",
+                    "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                    "day": "Saturday",
+                    "startTime": "16:30",
+                    "endTime": "18:00",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 16:30 - 18:00",
+                    "tags": [
                         "Wellness / Yoga",
                         "Music / Dance"
                     ]
@@ -16689,38 +16966,6 @@
                     "normalizationFlags": [],
                     "rawTimeText": "Friday 13:00 - 14:59",
                     "tags": []
-                },
-                {
-                    "owner": "The Really Lost Penguins Chill Cave",
-                    "ownerType": "camp",
-                    "title": "Really Lost Hot Chocolate",
-                    "description": "Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
-                    "day": "Friday",
-                    "startTime": "2100",
-                    "endTime": "0",
-                    "durationHours": null,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 2100 - 0",
-                    "tags": [
-                        "Food / Drink"
-                    ]
-                },
-                {
-                    "owner": "The Really Lost Penguins Chill Cave",
-                    "ownerType": "camp",
-                    "title": "Really Lost Snow Cones",
-                    "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
-                    "day": "Friday",
-                    "startTime": "13:00",
-                    "endTime": "15:00",
-                    "durationHours": 2,
-                    "crossesMidnight": false,
-                    "normalizationFlags": [],
-                    "rawTimeText": "Friday 13:00 - 15:00",
-                    "tags": [
-                        "Food / Drink"
-                    ]
                 },
                 {
                     "owner": "The Really Lost Penguins Chill Cave",

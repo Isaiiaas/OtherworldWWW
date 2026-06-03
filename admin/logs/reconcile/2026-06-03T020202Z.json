@@ -1,0 +1,1973 @@
+{
+    "ranAt": "2026-06-03T02:02:02+00:00",
+    "sheetId": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc",
+    "summary": {
+        "sheet_rows_seen": 996,
+        "skipped": {
+            "no_camp": 1,
+            "no_title": 0,
+            "section_header": 5
+        },
+        "type_changes": [],
+        "projects_type_map": 234,
+        "projects_warning": null,
+        "unclaimed_updated": [
+            {
+                "name": "A Sound Stage. oooooOOOOoooooo",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Abrabrabra",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Absurditea",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Badgers Hideout",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Big Top Rouge",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Blorb!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Boobs & Berries",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Bubbly Bar",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Burning Glam!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mystic Redneck",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Camp Otherbo’r’d",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Camp Squirrel",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Camp Who Says Ni",
+                "old_event_count": 37,
+                "new_event_count": 37
+            },
+            {
+                "name": "Campocalypse",
+                "old_event_count": 16,
+                "new_event_count": 16
+            },
+            {
+                "name": "Chill Pudding Camp",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Cinder-Fellas and the Playa Princesses",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "CLuG",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "Compliment Camp",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Confession Concession",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Cosmic Flow Camp",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Crib Bar",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Disco Loco",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Dyke Chilling Park",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Empowerment Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Empress Camp",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Everywhere I am is where the hugs will be. Look for the signs.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ewe-Turn",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Fafway Village",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Fairytale BookHub Café & Trash Fence Kid’s Play Area",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Fantasia",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "FDK’s Raveforest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Fix-it Station",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Flower Bower",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Flying Pancakes",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "FurTail Alley",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Garden of Eatin",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Graveyard Camp",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Gremlin Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Healing Kiss",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "HELLYEAHBROTHER WORLD",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "In the (soft,warm) Belly of the Beast",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ittakesa Village",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kids Village area",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Kiki at The Playground",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kitty Noir, The Gypsy Queen. Near the first gates at the very end of the road.",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Lalo & Team Compost Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Level Up+",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Looper Dome Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Lunar Moth Camp",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Magic Stick",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mahjong Camp",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Main road",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Michael Maloney",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Moistly Helpful Help Desk",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Mollusk Nation",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Mother Tree",
+                "old_event_count": 12,
+                "new_event_count": 8
+            },
+            {
+                "name": "Nano Donuts From The Future!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Nauti Norse",
+                "old_event_count": 19,
+                "new_event_count": 19
+            },
+            {
+                "name": "Neon Valhalla",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Nontes",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Orcar Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "OTHER Red Tent",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Phantasmagoria",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Pizza Party by Secret Slice Society",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Playing with the Elements",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Pogs 4 Applause",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "RaveForest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Recovery House",
+                "old_event_count": 19,
+                "new_event_count": 19
+            },
+            {
+                "name": "Reframing",
+                "old_event_count": 15,
+                "new_event_count": 15
+            },
+            {
+                "name": "Roving Coat Check Inc.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Rub-a-Dub-Dub A Song and a Scrub Crew",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Rule zERO",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Securititties Squad",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sensuary Camp",
+                "old_event_count": 10,
+                "new_event_count": 9
+            },
+            {
+                "name": "Shaman Dome",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Six Degrees of Bacon",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Sky Hummingbird Curios & Compliments Bar",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Sloplandia",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Slushy Cats",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Smut Café",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "Songs of the Heart Circle",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Soul Shower",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Stardust Saloon",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Steeped in Art",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Stockpot Memorial Mobile Kitchen",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Taconoods",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Temple of Jeff",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "The Abyss",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Agency",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fire Salon",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fizzy Familiar",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "The Living Room",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Low Bar",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "The Occult Library",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "the Playground",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "The Sisterhood of Unsolicited Advice",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Summoning",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Thirst Trap",
+                "old_event_count": 13,
+                "new_event_count": 13
+            },
+            {
+                "name": "Touch Temple",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Traveling Fairway Division of Sloplandia",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "True Love Temple",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Welcome to Arcadia",
+                "old_event_count": 21,
+                "new_event_count": 21
+            },
+            {
+                "name": "Welcome to the Resistance",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "White Lightning",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Zero Gravitas",
+                "old_event_count": 1,
+                "new_event_count": 22
+            },
+            {
+                "name": "Ripple Effect",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Skybar",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sound Habitat",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Under the Mother Tree",
+                "old_event_count": 6,
+                "new_event_count": 10
+            },
+            {
+                "name": "Dommy Mommy Drinks",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Fluoropong",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Glow Dome",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "The Really Lost Penguins Chill Cave",
+                "old_event_count": 18,
+                "new_event_count": 16
+            },
+            {
+                "name": "Living Womb Rebirthing Lounge @ Motherworld",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "???",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Bass House Brunch Bunch",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Tune Town Stage",
+                "old_event_count": 28,
+                "new_event_count": 28
+            },
+            {
+                "name": "Base Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mary Poppin's Pop Up",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Effigy",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "EFFIGY SHOW",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "EFFIGY AND FIRE PERFORMANCE",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "TEMPLE CEREMONY",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Roaming",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The People’s Night Parade",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Faffway Village",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Sunnydaze Esplanade (Horse Cakes)",
+                "old_event_count": 2,
+                "new_event_count": 2
+            }
+        ],
+        "unclaimed_cleared": [],
+        "claimed_preserved": [
+            "Babylon",
+            "Booty Crocker",
+            "Camp phat glASSes",
+            "Camp UMAMI",
+            "Camp Wet Landing",
+            "Cathartic Cantina",
+            "Chai trance",
+            "Cosmic Kev The Dreamidifier®",
+            "Cozy Corner",
+            "Curiouser & Curiouser Café",
+            "Electric Circus",
+            "Flamingo camp",
+            "Garden Cósmico",
+            "Harmonious Haberdashery",
+            "Jellyfish Lounge",
+            "Little Big",
+            "Luscious Lemon camp",
+            "Magical Mystery (Bus) Cruise",
+            "NERRRRRDS",
+            "Picnic Party",
+            "Portal Lounge",
+            "Salon Saloon",
+            "Slut Camp",
+            "The Cottage",
+            "The Den",
+            "Vic Drip",
+            "Wild Things Camp",
+            "Worst Camp Ever",
+            "Yarnia",
+            "Ironic Spin",
+            "Picnic party /MOUTH/Securitities",
+            "Alchemist’s Sketchbook",
+            "CERN in the Forest",
+            "MOUTH",
+            "Rat Town",
+            "Moonlit Tales"
+        ],
+        "added": [],
+        "fuzzy_matches": [],
+        "within_camp_dedupes": [],
+        "timing_synced": [
+            {
+                "camp": "The Cottage",
+                "title": "Astro Child DJ Set",
+                "before": {
+                    "day": "Sunday",
+                    "startTime": "2300",
+                    "endTime": "00:00"
+                },
+                "after": {
+                    "day": "Sunday",
+                    "startTime": "23:00",
+                    "endTime": "00:00"
+                },
+                "matched_via": "exact",
+                "sheet_title": "Astro Child DJ Set"
+            }
+        ],
+        "timing_ambiguous": [
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Moonlit Tales",
+                "title": "Moonlit Tales Storytime",
+                "tier": "substring",
+                "candidates": [
+                    "Moonlit Tales",
+                    "Moonlit Tales"
+                ]
+            }
+        ],
+        "timing_unchanged_match": 266,
+        "timing_no_match": 52
+    },
+    "changes": [
+        {
+            "name": "Camp Otherbo’r’d",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 13,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Camp Otherbo’r’d",
+                            "ownerType": "camp",
+                            "title": "Board Speed Dating",
+                            "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
+                            "day": "Friday",
+                            "startTime": "1500",
+                            "endTime": "1600",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 1500 - 1600",
+                            "tags": [
+                                "Refuge / Introspective",
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Camp Otherbo’r’d",
+                            "ownerType": "camp",
+                            "title": "Board Speed Dating",
+                            "description": "Study your board and learn what makes it like it is. Do you like them Alder? Do you Pine? What makes it Teak? Part game show, part bonding over slivers, part participatory participation.",
+                            "day": "Friday",
+                            "startTime": "15:00",
+                            "endTime": "16:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 15:00 - 16:00",
+                            "tags": [
+                                "Refuge / Introspective",
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 14,
+                "totalAfter": 14
+            },
+            "neighbourhood": {
+                "before": "BLACK ROCK",
+                "after": "BLACK ROCK"
+            }
+        },
+        {
+            "name": "CLuG",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 6,
+                "added": [
+                    {
+                        "owner": "CLuG",
+                        "ownerType": "camp",
+                        "title": "Booty Crocker Presents: The Art of Cakesitting 4.0",
+                        "description": "It’s exactly what it sounds like. You know the drill. No cake in the showers. 19+",
+                        "day": "Saturday",
+                        "startTime": "16:00",
+                        "endTime": "17:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 16:00 - 17:00",
+                        "tags": [
+                            "Performance / Show",
+                            "19+"
+                        ]
+                    }
+                ],
+                "removed": [
+                    {
+                        "owner": "CLuG",
+                        "ownerType": "camp",
+                        "title": "Booty Crocker Presents",
+                        "description": "Booty Crocker Presents: The Art of Cakesitting 4.0: It’s exactly what it sounds like. You know the drill. No cake in the showers. 19+",
+                        "day": "Saturday",
+                        "startTime": "16:00",
+                        "endTime": "17:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 16:00 - 17:00",
+                        "tags": [
+                            "Performance / Show",
+                            "19+"
+                        ]
+                    }
+                ],
+                "modified": [],
+                "totalBefore": 7,
+                "totalAfter": 7
+            },
+            "neighbourhood": {
+                "before": "SANDSTORM",
+                "after": "SANDSTORM"
+            }
+        },
+        {
+            "name": "Fafway Village",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 4,
+                "added": [
+                    {
+                        "owner": "Fafway Village",
+                        "ownerType": "camp",
+                        "title": "Indulge Your Census",
+                        "description": "Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                        "day": "Saturday",
+                        "startTime": "13:00",
+                        "endTime": "19:06",
+                        "durationHours": 6.1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 13:00 - 19:06",
+                        "tags": [
+                            "Game / Activity"
+                        ]
+                    }
+                ],
+                "removed": [
+                    {
+                        "owner": "Fafway Village",
+                        "ownerType": "camp",
+                        "title": "Indugle Your Census",
+                        "description": "Indugle Your Census: Thought- provoking questions, daily Oral Administration: form-filling excitement with paper & pencils. Results will be read aloud for the enjoyment of anyone who wishes to Indulge, and catalogued online with previous years’ questions & answers.",
+                        "day": "Saturday",
+                        "startTime": "13:00",
+                        "endTime": "19:06",
+                        "durationHours": 6.1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 13:00 - 19:06",
+                        "tags": [
+                            "Game / Activity"
+                        ]
+                    }
+                ],
+                "modified": [],
+                "totalBefore": 5,
+                "totalAfter": 5
+            },
+            "neighbourhood": {
+                "before": "SMOLDER",
+                "after": "SMOLDER"
+            }
+        },
+        {
+            "name": "Fix-it Station",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 13,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Fix-it Station",
+                            "ownerType": "camp",
+                            "title": "Scrap Happy Junk Journals",
+                            "description": "Scrap Happy Junk Journals is a fun, hands- on workshop where participants transform everyday paper scraps into unique handmade journals using collage, stamping, layering, and simple bookmaking techniques. Ages 8+ (check out @upstyleart for inspo!)",
+                            "day": "Sunday",
+                            "startTime": "15:00",
+                            "endTime": "15:00",
+                            "durationHours": 24,
+                            "crossesMidnight": true,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 15:00 - 15:00",
+                            "tags": [
+                                "Interactive / Crafts",
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Fix-it Station",
+                            "ownerType": "camp",
+                            "title": "Scrap Happy Junk Journals",
+                            "description": "Scrap Happy Junk Journals is a fun, hands- on workshop where participants transform everyday paper scraps into unique handmade journals using collage, stamping, layering, and simple bookmaking techniques. Ages 8+ (check out @upstyleart for inspo!)",
+                            "day": "Sunday",
+                            "startTime": "15:00",
+                            "endTime": "16:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 15:00 - 16:00",
+                            "tags": [
+                                "Interactive / Crafts",
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 14,
+                "totalAfter": 14
+            },
+            "neighbourhood": {
+                "before": "SPARK",
+                "after": "SPARK"
+            }
+        },
+        {
+            "name": "Mother Tree",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 8,
+                "added": [],
+                "removed": [
+                    {
+                        "owner": "Mother Tree",
+                        "ownerType": "art_installation",
+                        "title": "Dance-formative Ecstatic Journey",
+                        "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:15",
+                        "durationHours": 1.25,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:15",
+                        "tags": [
+                            "Music / Dance"
+                        ]
+                    },
+                    {
+                        "owner": "Mother Tree",
+                        "ownerType": "art_installation",
+                        "title": "Journey through the Subconscious",
+                        "description": "Journey through the Subconscious: Come join for a fun minds-eye visualization journey, decoding symbolism that can reveal insite within the deeper layers of your psyche. Bring a journal if you’d like to write it down to reflect on it later.",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:00",
+                        "tags": [
+                            "Wellness / Yoga"
+                        ]
+                    },
+                    {
+                        "owner": "Mother Tree",
+                        "ownerType": "art_installation",
+                        "title": "Weaving the Relational Web",
+                        "description": "Step into a playful space for real human connection. Expect laughter, curiosity, and just the right amount of emotional moisture to add a little extra magic to your festival.",
+                        "day": "Saturday",
+                        "startTime": "14:30",
+                        "endTime": "16:00",
+                        "durationHours": 1.5,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 14:30 - 16:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Mother Tree",
+                        "ownerType": "art_installation",
+                        "title": "World Tree Within - Alchemy Dance",
+                        "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                        "day": "Saturday",
+                        "startTime": "1630",
+                        "endTime": "1800",
+                        "durationHours": null,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 1630 - 1800",
+                        "tags": [
+                            "Wellness / Yoga",
+                            "Music / Dance"
+                        ]
+                    }
+                ],
+                "modified": [],
+                "totalBefore": 12,
+                "totalAfter": 8
+            },
+            "neighbourhood": {
+                "before": "KINDLE",
+                "after": "KINDLE"
+            }
+        },
+        {
+            "name": "Nauti Norse",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 17,
+                "added": [
+                    {
+                        "owner": "Nauti Norse",
+                        "ownerType": "camp",
+                        "title": "Guided Couple’s Massage",
+                        "description": "Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
+                        "day": "Sunday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 11:00 - 12:00",
+                        "tags": [
+                            "Wellness / Yoga"
+                        ]
+                    }
+                ],
+                "removed": [
+                    {
+                        "owner": "Nauti Norse",
+                        "ownerType": "camp",
+                        "title": "Guided Couple’s Massage",
+                        "description": "Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
+                        "day": "Friday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 11:00 - 12:00",
+                        "tags": [
+                            "Wellness / Yoga"
+                        ]
+                    }
+                ],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Nauti Norse",
+                            "ownerType": "camp",
+                            "title": "Guided Couple’s Massage",
+                            "description": "Guided Couple’s Massage: Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
+                            "day": "Saturday",
+                            "startTime": "11:00",
+                            "endTime": "12:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 11:00 - 12:00",
+                            "tags": [
+                                "Wellness / Yoga"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Nauti Norse",
+                            "ownerType": "camp",
+                            "title": "Guided Couple’s Massage",
+                            "description": "Guided Couple’s Massage: Join us in the Tantric Tavern for an RMT- guided couples massage. Take turns learning to relax and connect with your partner through touch.",
+                            "day": "Saturday",
+                            "startTime": "12:00",
+                            "endTime": "13:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 12:00 - 13:00",
+                            "tags": [
+                                "Wellness / Yoga"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 19,
+                "totalAfter": 19
+            },
+            "neighbourhood": {
+                "before": "SIDEQUEST",
+                "after": "SIDEQUEST"
+            }
+        },
+        {
+            "name": "OTHER Red Tent",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 5,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "OTHER Red Tent",
+                            "ownerType": "camp",
+                            "title": "Sacred Rage Ceremony",
+                            "description": "Sacred Rage Ceremony: Access the quiet, rumbling weight of feminine grief/rage through embodied movement and sound. Embrace and allow the natural cycle of decay/death that feeds all life. *This ceremony is open to women (cis & trans), non-binary & gender fluid folks.",
+                            "day": "Saturday",
+                            "startTime": "19:00",
+                            "endTime": "20:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 19:00 - 20:00",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "OTHER Red Tent",
+                            "ownerType": "camp",
+                            "title": "Sacred Rage Ceremony",
+                            "description": "Access the quiet, rumbling weight of feminine grief/rage through embodied movement and sound. Embrace and allow the natural cycle of decay/death that feeds all life. *This ceremony is open to women (cis & trans), non-binary & gender fluid folks.",
+                            "day": "Saturday",
+                            "startTime": "19:00",
+                            "endTime": "20:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 19:00 - 20:00",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 6,
+                "totalAfter": 6
+            },
+            "neighbourhood": {
+                "before": "PRECIPITATION",
+                "after": "PRECIPITATION"
+            }
+        },
+        {
+            "name": "Recovery House",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 18,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Recovery House",
+                            "ownerType": "camp",
+                            "title": "12 Step All Recovery Meeting at Recovery House.",
+                            "description": "12 Step All Recovery Meeting at Recovery House.: 12 Step All Recovery Meeting. Everyone welcome!",
+                            "day": "Saturday",
+                            "startTime": "19:00",
+                            "endTime": "20:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 19:00 - 20:00",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Recovery House",
+                            "ownerType": "camp",
+                            "title": "12 Step All Recovery Meeting at Recovery House.",
+                            "description": "12 Step All Recovery Meeting. Everyone welcome!",
+                            "day": "Saturday",
+                            "startTime": "19:00",
+                            "endTime": "20:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 19:00 - 20:00",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 19,
+                "totalAfter": 19
+            },
+            "neighbourhood": {
+                "before": "EVAPORATION",
+                "after": "EVAPORATION"
+            }
+        },
+        {
+            "name": "Sensuary Camp",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 8,
+                "added": [],
+                "removed": [
+                    {
+                        "owner": "Sensuary Camp",
+                        "ownerType": "camp",
+                        "title": "Becoming Human",
+                        "description": "A guided circle to reflect,share, and connect - bringing awareness from the Sensuary into lived experience",
+                        "day": "Sunday",
+                        "startTime": "1200",
+                        "endTime": "1300",
+                        "durationHours": null,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 1200 - 1300",
+                        "tags": [
+                            "Workshop / Class",
+                            "Wellness / Yoga"
+                        ]
+                    }
+                ],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Sensuary Camp",
+                            "ownerType": "camp",
+                            "title": "Sensorium",
+                            "description": "Wanna lick a stone? See a tune? Touch the unexpected? Explore a living collection of sensations inside the Sensuary.",
+                            "day": "Sunday",
+                            "startTime": "1200",
+                            "endTime": "1800",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 1200 - 1800",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Sensuary Camp",
+                            "ownerType": "camp",
+                            "title": "Sensorium",
+                            "description": "Wanna lick a stone? See a tune? Touch the unexpected? Explore a living collection of sensations inside the Sensuary.",
+                            "day": "Sunday",
+                            "startTime": "12:00",
+                            "endTime": "18:00",
+                            "durationHours": 6,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Sunday 12:00 - 18:00",
+                            "tags": [
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 10,
+                "totalAfter": 9
+            },
+            "neighbourhood": {
+                "before": "SIDEQUEST",
+                "after": "SIDEQUEST"
+            }
+        },
+        {
+            "name": "Taconoods",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 3,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "Taconoods",
+                            "ownerType": "camp",
+                            "title": "Taconoods Pre-Ignition Malnutrition Party",
+                            "description": "Taconoods Pre-Ignition Malnutrition Party: Serving Sandstorm-inspired Taconoods and tunes to warm ya’s up for the big shindig!",
+                            "day": "Saturday",
+                            "startTime": "18:00",
+                            "endTime": "19:30",
+                            "durationHours": 1.5,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 18:00 - 19:30",
+                            "tags": [
+                                "Food / Drink",
+                                "Music / Dance"
+                            ]
+                        },
+                        "after": {
+                            "owner": "Taconoods",
+                            "ownerType": "camp",
+                            "title": "Taconoods Pre-Ignition Malnutrition Party",
+                            "description": "Taconoods Pre-Ignition Malnutrition Party: Serving Sandstorm-inspired Taconoods and tunes to warm ya’s up for the big shindig!",
+                            "day": "Saturday",
+                            "startTime": "19:00",
+                            "endTime": "21:00",
+                            "durationHours": 2,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 19:00 - 21:00",
+                            "tags": [
+                                "Food / Drink",
+                                "Music / Dance"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 4,
+                "totalAfter": 4
+            },
+            "neighbourhood": {
+                "before": "TINKER",
+                "after": "TINKER"
+            }
+        },
+        {
+            "name": "The Fizzy Familiar",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 5,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "The Fizzy Familiar",
+                            "ownerType": "camp",
+                            "title": "+The Grand Jousting Tourney+",
+                            "description": "+The Grand Jousting Tourney+: Hear ye hear ye! The jousts return! We invite you to witness the spectacle of colorfully clashing knights fight atop steeds at high speeds. Come cheer, jeer, quaff a beer, and celebrate the 2nd year!",
+                            "day": "Saturday",
+                            "startTime": "13:00",
+                            "endTime": "14:30",
+                            "durationHours": 1.5,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 13:00 - 14:30",
+                            "tags": [
+                                "Food / Drink",
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "The Fizzy Familiar",
+                            "ownerType": "camp",
+                            "title": "+The Grand Jousting Tourney+",
+                            "description": "Hear ye hear ye! The jousts return! We invite you to witness the spectacle of colorfully clashing knights fight atop steeds at high speeds. Come cheer, jeer, quaff a beer, and celebrate the 2nd year!",
+                            "day": "Saturday",
+                            "startTime": "13:00",
+                            "endTime": "14:30",
+                            "durationHours": 1.5,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 13:00 - 14:30",
+                            "tags": [
+                                "Food / Drink",
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 6,
+                "totalAfter": 6
+            },
+            "neighbourhood": {
+                "before": "YES...AND?",
+                "after": "YES...AND?"
+            }
+        },
+        {
+            "name": "The Living Room",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 2,
+                "added": [
+                    {
+                        "owner": "The Living Room",
+                        "ownerType": "camp",
+                        "title": "The Flair Stitch Project: Crochet Circle",
+                        "description": "All skill levels welcome. Learn some basic stitches, make a granny square for our community quilt with our provided materials, or bring your own project and hang out in a chill space.",
+                        "day": "Saturday",
+                        "startTime": "13:00",
+                        "endTime": "16:00",
+                        "durationHours": 3,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 13:00 - 16:00",
+                        "tags": [
+                            "Workshop / Class"
+                        ]
+                    }
+                ],
+                "removed": [
+                    {
+                        "owner": "The Living Room",
+                        "ownerType": "camp",
+                        "title": "The Flair Stitch Project",
+                        "description": "The Flair Stitch Project: Crochet Circle: All skill levels welcome. Learn some basic stitches, make a granny square for our community quilt with our provided materials, or bring your own project and hang out in a chill space.",
+                        "day": "Saturday",
+                        "startTime": "13:00",
+                        "endTime": "16:00",
+                        "durationHours": 3,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 13:00 - 16:00",
+                        "tags": [
+                            "Workshop / Class"
+                        ]
+                    }
+                ],
+                "modified": [],
+                "totalBefore": 3,
+                "totalAfter": 3
+            },
+            "neighbourhood": {
+                "before": "BLACK ROCK",
+                "after": "BLACK ROCK"
+            }
+        },
+        {
+            "name": "The Low Bar",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 8,
+                "added": [],
+                "removed": [],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "The Low Bar",
+                            "ownerType": "camp",
+                            "title": "The Otherworld Beer Mile",
+                            "description": "The Otherworld Beer Mile: Run a mile and down 4 beers as fast as you can at the Otherworld Beer Mile. Medals awarded to finishers. Limited beer available—participants encouraged to bring their own.",
+                            "day": "Saturday",
+                            "startTime": "13:00",
+                            "endTime": "14:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 13:00 - 14:00",
+                            "tags": [
+                                "Food / Drink",
+                                "Game / Activity"
+                            ]
+                        },
+                        "after": {
+                            "owner": "The Low Bar",
+                            "ownerType": "camp",
+                            "title": "The Otherworld Beer Mile",
+                            "description": "Run a mile and down 4 beers as fast as you can at the Otherworld Beer Mile. Medals awarded to finishers. Limited beer available—participants encouraged to bring their own.",
+                            "day": "Saturday",
+                            "startTime": "13:00",
+                            "endTime": "14:00",
+                            "durationHours": 1,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Saturday 13:00 - 14:00",
+                            "tags": [
+                                "Food / Drink",
+                                "Game / Activity"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 9,
+                "totalAfter": 9
+            },
+            "neighbourhood": {
+                "before": "SCORCH",
+                "after": "SCORCH"
+            }
+        },
+        {
+            "name": "Zero Gravitas",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 1,
+                "added": [
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Kid's Aerial Silks",
+                        "description": "Come move your body to get off the ground and turn upside down",
+                        "day": "Friday",
+                        "startTime": "10:00",
+                        "endTime": "11:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 10:00 - 11:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Standing Acro",
+                        "description": "climb, fly, and laugh through playful partner acro",
+                        "day": "Friday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 11:00 - 12:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Slackline Sessions",
+                        "description": "wobble, balance, and find your flow one step at a time.",
+                        "day": "Friday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 11:00 - 12:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Flow Arts Playground",
+                        "description": "spin, toss, and explore props from poi to rope dart and beyond.",
+                        "day": "Friday",
+                        "startTime": "12:00",
+                        "endTime": "13:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 12:00 - 13:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Clowning 101",
+                        "description": "unleash your weird little clown and discover the joy of being ridiculous.",
+                        "day": "Friday",
+                        "startTime": "13:00",
+                        "endTime": "14:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 13:00 - 14:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "L-Basing With A Twist",
+                        "description": "funky transitions, spicy shapes, and playful acro surprises.",
+                        "day": "Friday",
+                        "startTime": "14:00",
+                        "endTime": "15:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 14:00 - 15:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Clow Improv Chaos",
+                        "description": "build your clown persona through games, silliness, and spontaneous fun.",
+                        "day": "Friday",
+                        "startTime": "15:30",
+                        "endTime": "17:00:00",
+                        "durationHours": null,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 15:30 - 17:00:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Evening Silks Hour",
+                        "description": "climb, spin, and melt into the fabric as the day winds down.",
+                        "day": "Friday",
+                        "startTime": "17:00",
+                        "endTime": "18:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 17:00 - 18:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Doubles Aerial Hoop",
+                        "description": "move together through the hoop with dynamic partner shapes and flow.",
+                        "day": "Saturday",
+                        "startTime": "10:00",
+                        "endTime": "11:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 10:00 - 11:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Acro Playground",
+                        "description": "playful partner acro for curious movers and strong bases alike.",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Slackline Sessions",
+                        "description": "wobble, balance, and find your flow one step at a time.",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Aerial Loops in Motion",
+                        "description": "spin, hang, and explore the magic of aerial loops.",
+                        "day": "Saturday",
+                        "startTime": "12:00",
+                        "endTime": "13:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 12:00 - 13:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Kids Clown Club",
+                        "description": "games, giggles, and goofy clown adventures for tiny weirdos.",
+                        "day": "Saturday",
+                        "startTime": "13:00",
+                        "endTime": "14:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 13:00 - 14:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Intermediate Juggling Lab",
+                        "description": "sharpen your tricks and level up your juggling flow.",
+                        "day": "Saturday",
+                        "startTime": "14:00",
+                        "endTime": "15:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 14:00 - 15:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Intro to Juggling",
+                        "description": "toss your first patterns and discover the joy of dropping things beautifully.",
+                        "day": "Saturday",
+                        "startTime": "15:00",
+                        "endTime": "16:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 15:00 - 16:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Aerial Hoop Flow",
+                        "description": "beginner-friendly hoop shapes, spins, and floaty aerial fun.",
+                        "day": "Saturday",
+                        "startTime": "16:00",
+                        "endTime": "17:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 16:00 - 17:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Burlesque & Big Energy",
+                        "description": "tease, strut, and sparkle your way through a playful burlesque experience.",
+                        "day": "Sunday",
+                        "startTime": "11:00",
+                        "endTime": "13:00",
+                        "durationHours": 2,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 11:00 - 13:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Flow Arts Playground",
+                        "description": "dive into spinning props, movement play, and flow-state magic.",
+                        "day": "Sunday",
+                        "startTime": "13:00",
+                        "endTime": "14:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 13:00 - 14:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Aerial Loops in Motion",
+                        "description": "aerial loops for curious bodies who want to spin and fly.",
+                        "day": "Sunday",
+                        "startTime": "13:00",
+                        "endTime": "14:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 13:00 - 14:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Slackline Sessions",
+                        "description": "challenge your balance and dance the line one shaky step at a time.",
+                        "day": "Sunday",
+                        "startTime": "13:00",
+                        "endTime": "15:00",
+                        "durationHours": 2,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 13:00 - 15:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Zero Gravitas",
+                        "ownerType": "camp",
+                        "title": "Intro to Aerial Hoop:",
+                        "description": "learn easy mounts, shapes, and smooth spins in the lyra.",
+                        "day": "Sunday",
+                        "startTime": "15:00",
+                        "endTime": "16:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Sunday 15:00 - 16:00",
+                        "tags": []
+                    }
+                ],
+                "removed": [],
+                "modified": [],
+                "totalBefore": 1,
+                "totalAfter": 22
+            },
+            "neighbourhood": {
+                "before": "DOACRACY",
+                "after": "ASHLAND"
+            }
+        },
+        {
+            "name": "Under the Mother Tree",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 6,
+                "added": [
+                    {
+                        "owner": "Under the Mother Tree",
+                        "ownerType": "sound_stage",
+                        "title": "Dance-formative Ecstatic Journey",
+                        "description": "Dance-formative Ecstatic Journey: A gently guided morning ecstatic dance from womb to transformation, w/ DJ Spruce Lee:",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:15",
+                        "durationHours": 1.25,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:15",
+                        "tags": [
+                            "Music / Dance"
+                        ]
+                    },
+                    {
+                        "owner": "Under the Mother Tree",
+                        "ownerType": "sound_stage",
+                        "title": "Journey through the Subconscious",
+                        "description": "Journey through the Subconscious: Come join for a fun minds-eye visualization journey, decoding symbolism that can reveal insite within the deeper layers of your psyche. Bring a journal if you’d like to write it down to reflect on it later.",
+                        "day": "Saturday",
+                        "startTime": "11:00",
+                        "endTime": "12:00",
+                        "durationHours": 1,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 11:00 - 12:00",
+                        "tags": [
+                            "Wellness / Yoga"
+                        ]
+                    },
+                    {
+                        "owner": "Under the Mother Tree",
+                        "ownerType": "sound_stage",
+                        "title": "Weaving the Relational Web",
+                        "description": "Step into a playful space for real human connection. Expect laughter, curiosity, and just the right amount of emotional moisture to add a little extra magic to your festival.",
+                        "day": "Saturday",
+                        "startTime": "14:30",
+                        "endTime": "16:00",
+                        "durationHours": 1.5,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 14:30 - 16:00",
+                        "tags": []
+                    },
+                    {
+                        "owner": "Under the Mother Tree",
+                        "ownerType": "sound_stage",
+                        "title": "World Tree Within - Alchemy Dance",
+                        "description": "World Tree Within - Alchemy Dance: Join us to dance and breathe into your inner world tree - with breath, movement, energy arts & sound - we dance to heal. Within our central axis ,we can anchor in our pillar of light, Above & Below- harmonizing and centering into Sacred Union within.",
+                        "day": "Saturday",
+                        "startTime": "16:30",
+                        "endTime": "18:00",
+                        "durationHours": 1.5,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Saturday 16:30 - 18:00",
+                        "tags": [
+                            "Wellness / Yoga",
+                            "Music / Dance"
+                        ]
+                    }
+                ],
+                "removed": [],
+                "modified": [],
+                "totalBefore": 6,
+                "totalAfter": 10
+            },
+            "neighbourhood": {
+                "before": "KINDLE",
+                "after": "KINDLE"
+            }
+        },
+        {
+            "name": "The Really Lost Penguins Chill Cave",
+            "action": "updated",
+            "diff": {
+                "unchangedCount": 15,
+                "added": [],
+                "removed": [
+                    {
+                        "owner": "The Really Lost Penguins Chill Cave",
+                        "ownerType": "camp",
+                        "title": "Really Lost Hot Chocolate",
+                        "description": "Really Lost Hot Chocolate: Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
+                        "day": "Friday",
+                        "startTime": "21:00",
+                        "endTime": "00:00",
+                        "durationHours": 3,
+                        "crossesMidnight": true,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 21:00 - 00:00",
+                        "tags": [
+                            "Food / Drink"
+                        ]
+                    },
+                    {
+                        "owner": "The Really Lost Penguins Chill Cave",
+                        "ownerType": "camp",
+                        "title": "Really Lost Snow Cones",
+                        "description": "Not all penguins who wander are lost…but we are! It’s ok though, we bring snow with us to keep cool. If you find us, we’ll share it with you! Give us an “ark, ark, ark” and we might even moisten it with one of our many home made syrup flavours.",
+                        "day": "Friday",
+                        "startTime": "13:00",
+                        "endTime": "15:00",
+                        "durationHours": 2,
+                        "crossesMidnight": false,
+                        "normalizationFlags": [],
+                        "rawTimeText": "Friday 13:00 - 15:00",
+                        "tags": [
+                            "Food / Drink"
+                        ]
+                    }
+                ],
+                "modified": [
+                    {
+                        "before": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Really Lost Hot Chocolate",
+                            "description": "Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
+                            "day": "Friday",
+                            "startTime": "2100",
+                            "endTime": "0",
+                            "durationHours": null,
+                            "crossesMidnight": false,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 2100 - 0",
+                            "tags": [
+                                "Food / Drink"
+                            ]
+                        },
+                        "after": {
+                            "owner": "The Really Lost Penguins Chill Cave",
+                            "ownerType": "camp",
+                            "title": "Really Lost Hot Chocolate",
+                            "description": "Really Lost Hot Chocolate: Help! We’re lost! But at least we aren’t cold and lost…because we have hot chocolate! If you can find us, we’ll share it with you! Follow your penguiny senses (or your nose) to our little travelling hot chocolate cart and we’ll warm you up too!",
+                            "day": "Friday",
+                            "startTime": "21:00",
+                            "endTime": "00:00",
+                            "durationHours": 3,
+                            "crossesMidnight": true,
+                            "normalizationFlags": [],
+                            "rawTimeText": "Friday 21:00 - 00:00",
+                            "tags": [
+                                "Food / Drink"
+                            ]
+                        }
+                    }
+                ],
+                "totalBefore": 18,
+                "totalAfter": 16
+            },
+            "neighbourhood": {
+                "before": "CONDENSATION",
+                "after": "CONDENSATION"
+            }
+        }
+    ]
+}
