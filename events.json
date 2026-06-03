@@ -6042,12 +6042,12 @@
                     "title": "The Dreamidifier®",
                     "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier®, a playful session to remember what matters most. The rinse cycle begins promptly, don’t miss the mist!",
                     "day": "Sunday",
-                    "startTime": "13:00",
-                    "endTime": "14:30",
+                    "startTime": "15:00",
+                    "endTime": "16:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 13:00 - 14:30"
+                    "rawTimeText": "Sunday 15:00 - 16:30"
                 },
                 {
                     "owner": "Garden Cósmico",
@@ -18337,7 +18337,8 @@
                     ]
                 }
             ],
-            "neighbourhood": "SIDEQUEST"
+            "neighbourhood": "SIDEQUEST",
+            "claimed": false
         }
     ],
     "unassignedEvents": []
