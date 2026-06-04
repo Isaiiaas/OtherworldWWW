@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 271,
-        "eventCount": 1042,
+        "eventCount": 1045,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 192,
-            "camp_events": 831,
+            "camp_events": 834,
             "sound_stage": 19,
             "sound_stage_events": 187,
             "mutant_vehicle": 5,
@@ -3233,9 +3233,48 @@
                     "tags": [
                         "Music / Dance"
                     ]
+                },
+                {
+                    "owner": "CLuG",
+                    "ownerType": "camp",
+                    "title": "BurnerSphere",
+                    "description": "Check out the virtual playa with AuntAthena. She has VR headsets ready to take your brain to Burning Man. And learn how you can explore more at home.",
+                    "day": "Friday",
+                    "startTime": "13:00",
+                    "endTime": "16:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 13:00 - 16:00"
+                },
+                {
+                    "owner": "CLuG",
+                    "ownerType": "camp",
+                    "title": "BurnerSphere",
+                    "description": "Check out the virtual playa with AuntAthena. She has VR headsets ready to take your brain to Burning Man. And learn how you can explore more at home.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "16:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 16:00"
+                },
+                {
+                    "owner": "CLuG",
+                    "ownerType": "camp",
+                    "title": "BurnerSphere",
+                    "description": "Check out the virtual playa with AuntAthena. She has VR headsets ready to take your brain to Burning Man. And learn how you can explore more at home.",
+                    "day": "Sunday",
+                    "startTime": "02:00",
+                    "endTime": "05:00",
+                    "durationHours": 3,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Sunday 02:00 - 05:00"
                 }
             ],
-            "claimed": false,
+            "claimed": true,
             "neighbourhood": "SANDSTORM"
         },
         {
