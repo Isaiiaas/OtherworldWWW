@@ -15,7 +15,7 @@
             "art_installation": 55,
             "art_installation_events": 24
         },
-        "lastReconciledAt": "2026-06-04T14:02:03+00:00",
+        "lastReconciledAt": "2026-06-04T15:02:03+00:00",
         "reconciledFromSheet": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc"
     },
     "entries": [
@@ -6042,12 +6042,12 @@
                     "title": "The Dreamidifier",
                     "description": "Are your dreams feeling dry and parched? Looking for some dreamspiration? Wet your dreams in the Dreamidifier, a playful session to remember what matters moist. The rinse cycle begins promptly, don’t miss the mist!",
                     "day": "Sunday",
-                    "startTime": "15:00",
-                    "endTime": "16:30",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
                     "durationHours": 1.5,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 15:00 - 16:30"
+                    "rawTimeText": "Sunday 13:00 - 14:30"
                 },
                 {
                     "owner": "Garden Cósmico",
