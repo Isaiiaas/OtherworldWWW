@@ -3266,12 +3266,12 @@
                     "title": "BurnerSphere",
                     "description": "Check out the virtual playa with AuntAthena. She has VR headsets ready to take your brain to Burning Man. And learn how you can explore more at home.",
                     "day": "Sunday",
-                    "startTime": "02:00",
-                    "endTime": "05:00",
+                    "startTime": "13:00",
+                    "endTime": "16:00",
                     "durationHours": 3,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Sunday 02:00 - 05:00"
+                    "rawTimeText": "Sunday 13:00 - 16:00"
                 }
             ],
             "claimed": true,
