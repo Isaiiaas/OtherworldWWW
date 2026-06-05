@@ -3,11 +3,11 @@
         "source": "www2026.pdf",
         "extractedAt": "2026-05-26T03:36:44.798Z",
         "entryCount": 271,
-        "eventCount": 1045,
+        "eventCount": 1047,
         "unassignedEventCount": 0,
         "countsByType": {
             "camp": 192,
-            "camp_events": 834,
+            "camp_events": 836,
             "sound_stage": 19,
             "sound_stage_events": 187,
             "mutant_vehicle": 5,
@@ -3107,8 +3107,35 @@
         {
             "name": "Circus Camp",
             "type": "camp",
-            "events": [],
-            "claimed": false
+            "events": [
+                {
+                    "owner": "Circus Camp",
+                    "ownerType": "camp",
+                    "title": "Silks, Slacklines, and Juggling (Open Circus)",
+                    "description": "Playtime! Open to anyone to come and play. Silks, slacklines, flow toys, you name it, we'll give you pointers to play with it.",
+                    "day": "Friday",
+                    "startTime": "16:00",
+                    "endTime": "17:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Friday 16:00 - 17:30"
+                },
+                {
+                    "owner": "Circus Camp",
+                    "ownerType": "camp",
+                    "title": "Silks, slacklines, juggling (open circus)",
+                    "description": "Playtime! Open to anyone to come and play. Silks, slacklines, flow toys, you name it, we'll give you pointers to play with it.",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:30",
+                    "durationHours": 1.5,
+                    "crossesMidnight": false,
+                    "normalizationFlags": [],
+                    "rawTimeText": "Saturday 13:00 - 14:30"
+                }
+            ],
+            "claimed": true
         },
         {
             "name": "Cloud City Lounge",
