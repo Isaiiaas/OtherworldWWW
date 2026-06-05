@@ -2,5 +2,5 @@
 // Auto-generated. IP => unix-timestamp of last successful claim.
 defined('DASHBOARD') or exit;
 return array (
-  '198.41.227.20' => 1780594942,
+  '162.159.102.12' => 1780686952,
 );
