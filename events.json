@@ -7221,13 +7221,13 @@
                     "ownerType": "camp",
                     "title": "What Could Go Wrong: UnTalent Show",
                     "description": "What Could Go Wrong: An Otherworld UnTalent Show: A celebration of mediocrity, almost- skills, and unfinished passions. Share something you’re not that good at (but love anyway) and be judged on sincerity, emotional overinvestment, and commitment to almostness. Low effort welcome.",
-                    "day": "Friday",
-                    "startTime": "19:00",
-                    "endTime": "20:00",
+                    "day": "Saturday",
+                    "startTime": "13:00",
+                    "endTime": "14:00",
                     "durationHours": 1,
                     "crossesMidnight": false,
                     "normalizationFlags": [],
-                    "rawTimeText": "Friday 19:00 - 20:00"
+                    "rawTimeText": "Saturday 13:00 - 14:00"
                 },
                 {
                     "owner": "Little Big",
