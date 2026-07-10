@@ -1,0 +1,739 @@
+{
+    "ranAt": "2026-07-10T08:02:04+00:00",
+    "sheetId": "1o9Ue218Yx8mMa9OGyPfd66NoofYI3O1ewkN8NB-qnVc",
+    "summary": {
+        "sheet_rows_seen": 1004,
+        "skipped": {
+            "no_camp": 1,
+            "no_title": 0,
+            "section_header": 5
+        },
+        "type_changes": [],
+        "projects_type_map": 234,
+        "projects_warning": null,
+        "unclaimed_updated": [
+            {
+                "name": "A Sound Stage. oooooOOOOoooooo",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Abrabrabra",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Absurditea",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Badgers Hideout",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Big Top Rouge",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Blorb!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Boobs & Berries",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Bubbly Bar",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Burning Glam!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mystic Redneck",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Camp Otherbo’r’d",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Camp Squirrel",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Camp Who Says Ni",
+                "old_event_count": 37,
+                "new_event_count": 37
+            },
+            {
+                "name": "Campocalypse",
+                "old_event_count": 16,
+                "new_event_count": 16
+            },
+            {
+                "name": "Chill Pudding Camp",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Cinder-Fellas and the Playa Princesses",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Compliment Camp",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Confession Concession",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Cosmic Flow Camp",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Crib Bar",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Disco Loco",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Dyke Chilling Park",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Empowerment Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Empress Camp",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Everywhere I am is where the hugs will be. Look for the signs.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ewe-Turn",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Fafway Village",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Fairytale BookHub Café & Trash Fence Kid’s Play Area",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Fantasia",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "FDK’s Raveforest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Fever Dream",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Fix-it Station",
+                "old_event_count": 14,
+                "new_event_count": 14
+            },
+            {
+                "name": "Flower Bower",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Flying Pancakes",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "FurTail Alley",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Garden of Eatin",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Graveyard Camp",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Gremlin Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Healing Kiss",
+                "old_event_count": 13,
+                "new_event_count": 13
+            },
+            {
+                "name": "HELLYEAHBROTHER WORLD",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "In the (soft,warm) Belly of the Beast",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Ittakesa Village",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kids Village area",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Kiki at The Playground",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Kitty Noir, The Gypsy Queen. Near the first gates at the very end of the road.",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Lalo & Team Compost Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Level Up+",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Looper Dome Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Lunar Moth Camp",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Magic Stick",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mahjong Camp",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Main road",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Michael Maloney",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Moistly Helpful Help Desk",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Mollusk Nation",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Mother Tree",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Nano Donuts From The Future!",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Nauti Norse",
+                "old_event_count": 17,
+                "new_event_count": 17
+            },
+            {
+                "name": "Neon Valhalla",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Nontes",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Orcar Camp",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "OTHER Red Tent",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Phantasmagoria",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Pizza Party by Secret Slice Society",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Playing with the Elements",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Pogs 4 Applause",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "RaveForest Cafe",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Recovery House",
+                "old_event_count": 19,
+                "new_event_count": 19
+            },
+            {
+                "name": "Reframing",
+                "old_event_count": 15,
+                "new_event_count": 15
+            },
+            {
+                "name": "Roving Coat Check Inc.",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Rub-a-Dub-Dub A Song and a Scrub Crew",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Rule zERO",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Securititties Squad",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sensuary Camp",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "Shaman Dome",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Six Degrees of Bacon",
+                "old_event_count": 8,
+                "new_event_count": 8
+            },
+            {
+                "name": "Sky Hummingbird Curios & Compliments Bar",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Sloplandia",
+                "old_event_count": 11,
+                "new_event_count": 11
+            },
+            {
+                "name": "Slushy Cats",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Smut Café",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "Songs of the Heart Circle",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Soul Shower",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Stardust Saloon",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Steeped in Art",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "Stockpot Memorial Mobile Kitchen",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Taconoods",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "Temple of Jeff",
+                "old_event_count": 7,
+                "new_event_count": 7
+            },
+            {
+                "name": "The Abyss",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Agency",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fire Salon",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The Fizzy Familiar",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "The Living Room",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Low Bar",
+                "old_event_count": 9,
+                "new_event_count": 9
+            },
+            {
+                "name": "The Occult Library",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "the Playground",
+                "old_event_count": 5,
+                "new_event_count": 5
+            },
+            {
+                "name": "The Sisterhood of Unsolicited Advice",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "The Summoning",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Thirst Trap",
+                "old_event_count": 13,
+                "new_event_count": 13
+            },
+            {
+                "name": "Touch Temple",
+                "old_event_count": 6,
+                "new_event_count": 6
+            },
+            {
+                "name": "Traveling Fairway Division of Sloplandia",
+                "old_event_count": 4,
+                "new_event_count": 4
+            },
+            {
+                "name": "True Love Temple",
+                "old_event_count": 12,
+                "new_event_count": 12
+            },
+            {
+                "name": "Welcome to Arcadia",
+                "old_event_count": 21,
+                "new_event_count": 21
+            },
+            {
+                "name": "Welcome to the Resistance",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "White Lightning",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Zero Gravitas",
+                "old_event_count": 22,
+                "new_event_count": 22
+            },
+            {
+                "name": "Ripple Effect",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Skybar",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Sound Habitat",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Under the Mother Tree",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "Dommy Mommy Drinks",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Fluoropong",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Glow Dome",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "The Really Lost Penguins Chill Cave",
+                "old_event_count": 17,
+                "new_event_count": 17
+            },
+            {
+                "name": "Living Womb Rebirthing Lounge @ Motherworld",
+                "old_event_count": 10,
+                "new_event_count": 10
+            },
+            {
+                "name": "???",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Bass House Brunch Bunch",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Tune Town Stage",
+                "old_event_count": 28,
+                "new_event_count": 28
+            },
+            {
+                "name": "Base Camp",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Mary Poppin's Pop Up",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Effigy",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "EFFIGY SHOW",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "EFFIGY AND FIRE PERFORMANCE",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "TEMPLE CEREMONY",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Roaming",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "The People’s Night Parade",
+                "old_event_count": 1,
+                "new_event_count": 1
+            },
+            {
+                "name": "Faffway Village",
+                "old_event_count": 3,
+                "new_event_count": 3
+            },
+            {
+                "name": "Sunnydaze Esplanade (Horse Cakes)",
+                "old_event_count": 2,
+                "new_event_count": 2
+            },
+            {
+                "name": "Nauti Norse Clan",
+                "old_event_count": 1,
+                "new_event_count": 1
+            }
+        ],
+        "unclaimed_cleared": [],
+        "claimed_preserved": [
+            "Babylon",
+            "Booty Crocker",
+            "Camp phat glASSes",
+            "Camp UMAMI",
+            "Camp Wet Landing",
+            "Cathartic Cantina",
+            "Chai trance",
+            "Circus Camp",
+            "CLuG",
+            "Cosmic Kev The Dreamidifier®",
+            "Cozy Corner",
+            "Curiouser & Curiouser Café",
+            "Electric Circus",
+            "Flamingo camp",
+            "Garden Cósmico",
+            "Harmonious Haberdashery",
+            "Jellyfish Lounge",
+            "Little Big",
+            "Luscious Lemon camp",
+            "Magical Mystery (Bus) Cruise",
+            "NERRRRRDS",
+            "Picnic Party",
+            "Portal Lounge",
+            "Salon Saloon",
+            "Slut Camp",
+            "The Cottage",
+            "The Den",
+            "Vic Drip",
+            "Wild Things Camp",
+            "Worst Camp Ever",
+            "Yarnia",
+            "Ironic Spin",
+            "Picnic party /MOUTH/Securitities",
+            "Alchemist’s Sketchbook",
+            "CERN in the Forest",
+            "MOUTH",
+            "Rat Town",
+            "Moonlit Tales"
+        ],
+        "added": [],
+        "fuzzy_matches": [],
+        "within_camp_dedupes": [
+            {
+                "name": "Healing Kiss",
+                "dropped": 1
+            }
+        ],
+        "timing_synced": [],
+        "timing_ambiguous": [
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Babylon",
+                "title": "Experience Babylon",
+                "tier": "exact",
+                "candidates": [
+                    "Experience Babylon",
+                    "Experience Babylon"
+                ]
+            },
+            {
+                "camp": "Moonlit Tales",
+                "title": "Moonlit Tales Storytime",
+                "tier": "substring",
+                "candidates": [
+                    "Moonlit Tales",
+                    "Moonlit Tales"
+                ]
+            }
+        ],
+        "timing_unchanged_match": 273,
+        "timing_no_match": 61
+    },
+    "changes": []
+}
